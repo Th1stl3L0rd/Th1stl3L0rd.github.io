@@ -4029,7 +4029,7 @@
 
     document.querySelector("#bookmarkLink").style.display = "hidden";
 
-    window.ondblclick = e => {
+    window.onclick = e => {
         if (e.target.tagName.toLowerCase() == "p") {
             if (document.querySelector("#bookmark") !== null) {
                 if(e.target.getAttribute("id") == "bookmark"){
