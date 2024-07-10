@@ -39,6 +39,40 @@
 
         @media (max-width: 800px)  {
 
+            .bg1 {
+                background-image: url("PixelWoodlandCastleBackground1_Mobile_800x1598.jpg");
+            }
+            .bg2 {
+                background-image: url("PixelCastleBackground1.jpg");
+            }
+            .bg3 {
+                background-image: url("PixelCastleBackground2.jpg");
+            }
+            .bg4 {
+                background-image: url("PixelWoodlandBackground1.jpg");
+            }
+            .bg5 {
+                background-image: url("PixelCloudBackground1.jpg");
+            }
+            .bg6 {
+                background-image: url("PixelMeadowBackground1.jpg");
+            }
+            .bg7 {
+                background-image: url("PixelCastleBackground3.jpg");
+            }
+            .bg8 {
+                background-image: url("PixelCastleBackground4.jpg");
+            }
+            .bg9 {
+                background-image: url("PixelCastleBackground5.jpg");
+            }
+            .bg10 {
+                background-image: url("PixelCliffandTreesBackground1.jpg");
+            }
+
+
+
+
             body{
                 background-size: cover;
                 /*background-image: url("PixelWoodlandCastleBackground1_Mobile_800x1598.jpg");*/
@@ -66,6 +100,18 @@
 <a href="where-everyone-knows-your-name.html">Where Everyone Knows Your Name</a>
 
 <a href="taking-the-biscuit.html">Taking the Biscuit</a>
+
+<script>
+
+    const bgClasses = ["bg1","bg2","bg3","bg4","bg5","bg6","bg7","bg8","bg9","bg10"];
+
+    const myNumber = Math.floor((Math.random() * bgClasses.length) + 1);
+
+    document.querySelector("body").classList.add(bgClasses[myNumber]);
+
+
+
+</script>
 
 </body>
 </html>
