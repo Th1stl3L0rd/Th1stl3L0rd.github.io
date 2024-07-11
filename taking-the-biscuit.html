@@ -57,7 +57,7 @@
         }
 
         p {
-            margin-bottom: 2rem;
+            margin-bottom: 3rem;
         }
 
         #firstP::first-letter {
@@ -93,7 +93,35 @@
 
         }
 
+        #navbarContainer {
+            display: grid;
+            grid-auto-flow: column;
+            /*justify-content: right;*/
+            height: 100px;
+        }
 
+        #bookmarkNavbar {
+            display: grid;
+            justify-content: right;
+        }
+
+        #bookmarkLink {
+            border: none;
+            display: grid;
+            width: 100px;
+            justify-self: right;
+        }
+
+        .bookmarked {
+            background-image: url('smoke.png');
+            background-repeat: no-repeat;
+            background-position: 100% 50%;
+            background-size: 50px 50px;
+        }
+
+        .hidden {
+            display: none;
+        }
 
 
 
@@ -106,6 +134,10 @@
 <a href="index.html">Return to Thy Thistle Lord's Keep</a>
 
 <img src="ChocolatePileBackground1.jpg">
+
+<div id="navbarContainer">
+    <a id="bookmarkNavbar" href="#bookmark"><img id="bookmarkLink" src="magic-wand-ezgif.com-gif-maker(1).gif"></a>
+</div>
 
 <h1>
     <strong>Taking the Biscuit</strong>
@@ -1616,6 +1648,37 @@
 </p>
 
 <a href="index.html">Return to Thy Thistle Lord's Keep</a>
+
+<script>
+    // document.querySelector("#bookmarkLink").classList.add("hidden");
+
+    document.querySelector("#bookmarkLink").style.display = "hidden";
+
+    window.onclick = e => {
+        if (e.target.tagName.toLowerCase() == "p") {
+            if (document.querySelector("#bookmark") !== null) {
+                if(e.target.getAttribute("id") == "bookmark"){
+                    document.querySelector("#bookmark").classList.remove("bookmarked");
+                    document.querySelector("#bookmark").removeAttribute("id");
+                    document.querySelector("#bookmarkLink").classList.add("hidden");
+                }
+                else{
+                    document.querySelector("#bookmark").classList.remove("bookmarked");
+                    document.querySelector("#bookmark").removeAttribute("id");
+                    e.target.classList.add("bookmarked");
+                    e.target.setAttribute("id", "bookmark");
+                    document.querySelector("#bookmarkLink").classList.remove("hidden");
+                }
+            }
+            else {
+                e.target.classList.add("bookmarked");
+                e.target.setAttribute("id", "bookmark");
+                document.querySelector("#bookmarkLink").classList.remove("hidden");
+            }
+        }
+    }
+
+</script>
 
 </body>
 
