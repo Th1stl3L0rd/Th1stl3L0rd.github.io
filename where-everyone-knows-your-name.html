@@ -112,9 +112,14 @@
 
         #bookmarkLink {
             border: none;
-            display: grid;
+            display: none;
             width: 100px;
             justify-self: right;
+        }
+
+        #wand {
+            border: none;
+            width: 100px;
         }
 
         .bookmarked {
@@ -122,10 +127,6 @@
             background-repeat: no-repeat;
             background-position: 100% 50%;
             background-size: 50px 50px;
-        }
-
-        .hidden {
-            display: none;
         }
 
 
@@ -150,8 +151,10 @@
 <img src="Food_750x250.jpg">
 
 <div id="navbarContainer">
-    <a id="bookmarkNavbar" href="#bookmark"><img id="bookmarkLink" src="magic-wand-ezgif.com-gif-maker(1).gif"></a>
-</div>
+    <div id="bookmarkNavbar">
+    <a id="bookmarkLink" href="#bookmark"><img id="wand" src="magic-wand-ezgif.com-gif-maker(1).gif"></a>
+    </div>
+    </div>
 
 <h1>
     Where Everyone Knows  Your Name
@@ -4025,32 +4028,50 @@
 
 <a href="index.html">Return to Thy Thistle Lord's Keep</a>
 <script>
-    // document.querySelector("#bookmarkLink").classList.add("hidden");
 
-    document.querySelector("#bookmarkLink").style.display = "hidden";
+    //set data attributes with ordered index numbers on p elements
+    let paragraphs = document.getElementsByTagName("p");
+    let count = 1;
+    for (let paragraph of paragraphs) {
+        paragraph.setAttribute("data-index",count.toString());
+        count++;
+    }
+
+    //check if local storage has a bookmark index
+    if(localStorage.getItem("bookmark")) {
+        let bookmarkIndex = localStorage.getItem("bookmark");
+        console.log(bookmarkIndex);
+        document.querySelector(`p[data-index="${bookmarkIndex}"]`).classList.add("bookmarked");
+        document.querySelector(`p[data-index="${bookmarkIndex}"]`).setAttribute("id", "bookmark");
+        document.querySelector("#bookmarkLink").style.display = "grid";
+    }
+
 
     window.onclick = e => {
         if (e.target.tagName.toLowerCase() == "p") {
             if (document.querySelector("#bookmark") !== null) {
                 if(e.target.getAttribute("id") == "bookmark"){
+                    localStorage.clear();
                     document.querySelector("#bookmark").classList.remove("bookmarked");
                     document.querySelector("#bookmark").removeAttribute("id");
-                    document.querySelector("#bookmarkLink").classList.add("hidden");
+                    document.querySelector("#bookmarkLink").style.display = "none";
                 }
                 else{
                     document.querySelector("#bookmark").classList.remove("bookmarked");
                     document.querySelector("#bookmark").removeAttribute("id");
                     e.target.classList.add("bookmarked");
                     e.target.setAttribute("id", "bookmark");
-                    document.querySelector("#bookmarkLink").classList.remove("hidden");
+                    localStorage.setItem("bookmark", e.target.getAttribute("data-index"));
+                    document.querySelector("#bookmarkLink").style.display = "grid";
                 }
             }
             else {
                 e.target.classList.add("bookmarked");
                 e.target.setAttribute("id", "bookmark");
-                document.querySelector("#bookmarkLink").classList.remove("hidden");
+                document.querySelector("#bookmarkLink").style.display = "grid";
             }
         }
+        console.log(localStorage.getItem("bookmark"));
     }
 
 </script>
