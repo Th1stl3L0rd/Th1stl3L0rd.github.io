@@ -4068,6 +4068,7 @@
             else {
                 e.target.classList.add("bookmarked");
                 e.target.setAttribute("id", "bookmark");
+                localStorage.setItem("bookmark", e.target.getAttribute("data-index"));
                 document.querySelector("#bookmarkLink").style.display = "grid";
             }
         }
