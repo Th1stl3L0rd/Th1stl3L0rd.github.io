@@ -1,0 +1,373 @@
+
+
+#navList {
+    color: white;
+    font-size: 1.2rem;
+    align-items: baseline;
+}
+
+.nav-item {
+    padding-right: 35px;
+}
+
+#activeLink {
+    color: #0dcaf0;
+}
+
+.nav-item a:hover {
+    color: hotpink;
+    background-color: transparent;
+}
+
+
+#homePageInfo {
+    height: 100%;
+    justify-self: center;
+}
+
+#homeHeader {
+    color: white;
+    font-size: 7.5rem;
+    text-align: center;
+    margin-top: 8%;
+    opacity: 0;
+    transition: opacity 1.25s linear .75s;
+}
+
+#sesameStreetSlogan {
+    color: white;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 1.25s linear .75s;
+}
+
+
+.carousel {
+    width: 59%;
+}
+
+.carousel-control-prev {
+    margin-left: 7.5%;
+}
+
+.carousel-control-next {
+    margin-right: 59%;
+}
+
+.carousel-inner {
+    margin-left: 25%;
+    border: solid;
+    border-color: #bc98f8;
+    border-radius: 25px;
+}
+
+.carousel-item h4 {
+    padding-top: 2%;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+.carousel-item p {
+    padding-top: 0;
+    padding-bottom: 0;
+    text-align: center;
+}
+
+#aboutUsHeader {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 10%;
+}
+
+#aboutUsP {
+    padding: 8% 10% 5% 10%;
+    font-size: 1.2rem;
+}
+
+#divorceHeader {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 7%;
+    margin-bottom: 3%;
+}
+
+.divorceP {
+    padding-bottom: 2%;
+}
+
+.divorceH {
+    color: #bc98f8;
+}
+
+#custodyHeader {
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 12%;
+    margin-bottom: 7%;
+}
+
+.custodyP {
+    padding-bottom: 7%;
+}
+
+.custodyH {
+    color: rgb(253, 202, 33);
+}
+
+#chatH {
+    padding-top: 10%;
+    color: #bc98f8;
+    text-align: center;
+}
+
+
+/* Button used to open the chat form - fixed at the bottom of the page */
+.open-button {
+    background-color: hotpink;
+    color: black;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    opacity: 0.8;
+    position: fixed;
+    bottom: 600px;
+    right: 1300px;
+    width: 280px;
+}
+
+/* The popup chat - hidden by default */
+.chat-popup {
+    display: none;
+    position: fixed;
+    bottom: 200px;
+    right: 1225px;
+    border: 3px solid #f1f1f1;
+    z-index: 9;
+}
+
+#myForm {
+    border: none;
+}
+
+
+/* Add styles to the form container */
+.form-container {
+    max-width: 400px;
+    padding: 10px;
+    background-color: gray;
+    border: none;
+    border-radius: 25px;
+}
+
+
+
+/* Full-width textarea */
+.form-container textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+    resize: none;
+    min-height: 200px;
+}
+
+/* When the textarea gets focus, do something */
+.form-container textarea:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+/* Set a style for the submit/send button */
+.form-container .btn {
+    background-color: rgba(110, 15, 238, 0.5);
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    margin-bottom:10px;
+    opacity: 0.8;
+}
+
+/* Add a red background color to the cancel button */
+.form-container .cancel {
+    background-color: rgba(0, 128, 0, 0.5);
+}
+
+/* Add some hover effects to buttons */
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+label {
+    color: black;
+}
+
+#meetingH {
+    text-align: center;
+
+    padding-bottom: 8%;
+}
+
+#meetingSubmitButton {
+    border: none;
+    background-color: #bc98f8;
+}
+
+#formH {
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 4%;
+}
+
+#formP {
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+
+#custodyButtonH {
+    color: rgb(59, 232, 238);
+    padding-bottom: 1%;
+}
+
+#divorceButtonH {
+    color: #3be8ee;
+    padding-top: 6%;
+    padding-bottom: 1%;
+}
+
+#motionH {
+    text-align: center;
+    padding-top: 10%;
+    padding-bottom: 4%;
+}
+
+#motionP {
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+
+#motionButtons a:hover {
+    color: white;
+}
+
+#custodyButtons a:hover {
+    color: white;
+}
+
+#divorceButtons a:hover {
+    color: white;
+}
+
+#contactSubmitButton {
+    border: none;
+    background-color: #bc98f8;
+}
+
+#contactH {
+    text-align: center;
+    padding-top: 4%;
+    padding-bottom: 4%;
+}
+
+#contactP {
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+
+#activeLink {
+    color: #0dcaf0;
+}
+
+.nav-item a:hover {
+    color: hotpink;
+    background-color: transparent;
+}
+
+#footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: white;
+    text-align: center;
+    border-style: solid;
+    border-top-color: white;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+#footerAbout {
+    width: 100%;
+    margin-top: 10%;
+    padding-top: 1%;
+    color: white;
+    text-align: center;
+    border-style: solid;
+    border-top-color: white;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+#footerDivorce {
+    width: 100%;
+    color: white;
+    text-align: center;
+    border-style: solid;
+    border-top-color: white;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+#footerCustody {
+    width: 100%;
+    margin-top: 10%;
+    padding-top: 1%;
+    color: white;
+    text-align: center;
+    border-style: solid;
+    border-top-color: white;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+#footerChat {
+    position: fixed;
+    right: 50%;
+    bottom: 0;
+    width: 100%;
+    margin-top: 10%;
+    padding-top: 1%;
+    padding-left: 50%;
+    color: white;
+    text-align: center;
+    border-style: solid;
+    border-top-color: white;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+#footerMeeting {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    width: 100%;
+    margin-top: 10%;
+    padding-top: 1%;
+    padding-right: 50%;
+    color: white;
+    text-align: center;
+    border-style: solid;
+    border-top-color: white;
+    border-bottom-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+

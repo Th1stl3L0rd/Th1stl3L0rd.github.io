@@ -1,0 +1,543 @@
+
+
+/*!*!*body styling*!*!*/
+body {
+    background-color: rgba(136, 72, 218, .40);
+    font-family: "Merienda", serif;
+    font-size: calc(15px + 0.390625vw);
+    background-image: url("../MontyPython_HolyGrail_CastleWallBackground5.jpg");
+}
+
+/*style the header*/
+#headerItems {
+    height: 190px;
+    border: dodgerblue;
+    border-style: groove;
+    border-width: 8px;
+    border-radius: 10px;
+    background-image: url("../MontyPython_HolyGrail_Header_Background_Final.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    opacity: 85%;
+    color: white;
+    position: relative;
+}
+
+
+h1 {
+    height: 50px;
+    padding-top: 50px;
+    margin-top: 15px;
+    font-family: "Merienda", serif;
+    opacity: 100%;
+}
+
+
+h1 #animateTitle {
+    position: absolute;
+}
+
+
+h6 {
+    height: 50px;
+    font-family: "Neucha", serif;
+    padding-left: 30px;
+    padding-top: 140px;
+    margin-top: 20px;
+    opacity: 100%;
+}
+
+
+h6 #animateSubTitle {
+    position: absolute;
+}
+
+
+/*Style the navbar*/
+#navbar {
+    grid-column: 1/3;
+    grid-row: 2/3;
+    overflow: hidden;
+    border-style: groove;
+    border-radius: 10px;
+    border-width: 8px;
+    border-color: #6e0fee;
+    background-image: linear-gradient(30deg,rgba(255, 0, 0, 0.85), rgba(255, 165, 0, 0.85), rgba(255, 255, 0, 0.85),
+    rgba(0, 128, 0, 0.85),rgb(0,0,255,.85),rgb(75,0,130,.85),rgb(238,130,238,.85));
+    z-index: 999;
+    margin-top: 0;
+    padding: 0;
+}
+
+
+#timBunny {
+    align-content: end;
+    justify-content: start;
+    padding-top: 80px;
+}
+
+
+#castleStack {
+    color: white;
+}
+
+
+.navbar-toggler-icon {
+    background-color: transparent;
+    border-color: transparent;
+}
+
+
+#navbar li {
+    list-style-type: none;
+    font-family: "El Messiri", sans-serif;
+    font-size: 1.5rem;
+    color: #f2f2f2;
+    text-shadow: 2px 2px black;
+    text-align: center;
+    padding: 5px 10px 5px 10px;
+    text-decoration: none;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+
+.breadcrumb .active a {
+    color: gray;
+}
+
+
+/*style the cards*/
+.card p {
+    font-size: 20px;
+}
+
+
+#redCard {
+    border-color: red;
+    border-style: groove;
+    border-width: 8px;
+    background-color: rgba(255, 0, 0, 0.5);
+    color: white;
+    text-shadow: 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black;
+    padding-top: 1rem;
+}
+
+
+#fullFrame.img-thumbnail {
+    background-color: black;
+    border-color: black;
+}
+
+
+#orangeCard {
+    border-color: orange;
+    border-style: groove;
+    border-width: 8px;
+    background-color: rgba(255, 165, 0, 0.50);
+    color: white;
+    text-shadow: 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black;
+    padding-top: 1rem;
+}
+
+
+#almostCloseUp.img-thumbnail {
+    background-color: black;
+    border-color: black;
+}
+
+
+#yellowCard {
+    border-color: yellow;
+    border-style: groove;
+    border-width: 8px;
+    background-color: rgba(255, 255, 0, 0.50);
+    color: white;
+    text-shadow: 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black;
+    padding-top: 1rem;
+}
+
+
+#closeUp.img-thumbnail {
+    background-color: black;
+    border-color: black;
+}
+
+
+#greenCard {
+    border-color: green;
+    border-style: groove;
+    border-width: 8px;
+    background-color: rgba(0, 128, 0, 0.50);
+    color: white;
+    text-shadow: 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black;
+    padding-top: 1rem;
+}
+
+
+#xtremeCloseUp.img-thumbnail {
+    background-color: black;
+    border-color: black;
+}
+
+
+#blueCard {
+    border-color: blue;
+    border-style: groove;
+    border-width: 8px;
+    background-color: rgba(0, 0, 255, 0.50);
+    color: white;
+    text-shadow: 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black;
+    padding-top: 1rem;
+}
+
+
+#xxtremeCloseUp.img-thumbnail {
+    background-color: black;
+    border-color: black;
+}
+
+
+#indigoCard {
+    border-color: indigo;
+    border-style: groove;
+    border-width: 8px;
+    background-color: rgba(75, 0, 130, 0.50);
+    color: white;
+    text-shadow: 1px 1px black, 2px 2px black, 3px 3px black, 4px 4px black;
+    padding-top: 1rem;
+}
+
+
+#indigoCard a{
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+
+#holyNail.img-thumbnail {
+    background-color: black;
+    border-color: black;
+}
+
+
+#berriesToHamster {
+    background-color: black;
+    border-color: black;
+}
+
+
+.button {
+    float: right;
+    justify-content: end;
+    border-style: groove;
+    border-radius: 10px;
+    border-color: #6e0fee;
+    border-width: 5px;
+    font-family: "El Messiri", sans-serif;
+    background-image: linear-gradient(30deg,rgba(255, 0, 0, 0.50), rgba(255, 165, 0, 0.50), rgba(255, 255, 0, 0.50),
+    rgba(0, 128, 0, 0.50),rgb(0,0,255,.50),rgb(75,0,130,.50),rgb(238,130,238,.50));
+}
+
+
+#tableCard {
+    background-color: rgba(110, 15, 238, 0.5);
+    padding: 0 1rem 0 1rem;
+}
+
+
+#favQuotes {
+    font-family: "El Messiri", sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    color: black;
+    margin-top: 15px;
+    background-color: rgba(238, 130, 238, 0.3);
+    border-style: groove;
+    border-color: black;
+    border-width: 10px;
+}
+
+
+#favQuotes td, #favQuotes th {
+    border: 2px solid black;
+    padding: 5px;
+    color: white;
+    text-shadow: 2px 2px black;
+    background-color: rgba(238, 130, 238, 0.3);
+}
+
+
+#favQuotes th {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    text-align: center;
+    background-color: rgba(128, 0, 128, 0.10);
+    color: white;
+    text-shadow: 2px 2px black;
+}
+
+
+#favQuotes tr:nth-child(even) {
+    background-color: rgba(219, 92, 241, 0.30);
+}
+
+
+#favQuotes tr:nth-child(odd) {
+    background-color: rgba(92, 117, 241, 0.3);
+}
+
+
+#camelotCard {
+    border-color: #6e0fee;
+    border-style: groove;
+    border-width: 8px;
+    background: transparent;
+    background-image: linear-gradient(30deg,rgba(255, 0, 0, 0.5), rgba(255, 165, 0, 0.5), rgba(255, 255, 0, 0.5),
+    rgba(0, 128, 0, 0.85),rgb(0,0,255,.5),rgb(75,0,130,.5),rgb(238,130,238,.5));
+    color: white;
+    text-shadow: 2px 2px black;
+    padding-top: 1rem;
+}
+
+
+#fantasyCamelot {
+    background-color: black;
+    border-color: black;
+}
+
+
+#camelotText a {
+    text-shadow: none;
+    text-decoration: none;
+    color: #6e0fee;
+    font-weight: bolder;
+}
+
+
+#sweetsCard {
+    border-color: #6e0fee;
+    border-style: groove;
+    border-width: 8px;
+    background-color: rgba(75, 0, 130, 0.50);
+    color: white;
+}
+
+
+#sweetsImg {
+    background-color: black;
+    border-color: black;
+}
+
+
+#sweetsList {
+    padding: 20px;
+}
+
+
+#sweetsList li {
+    background: rgba(255, 255, 255, 0.80);
+    font-weight: bold;
+    border-style: none;
+    border-color: black;
+    border-width: 8px;
+    line-height: 15px;
+}
+
+
+#sweetsCardBody {
+    display: grid;
+    align-content: center;
+}
+
+
+#currantCardBody {
+    display: grid;
+    align-content: center;
+}
+
+
+#sweetsTitle {
+    font-size: 1.2rem;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+
+
+#currantCard {
+    border-color: #6e0fee;
+    border-style: groove;
+    border-width: 8px;
+    background-color: rgba(75, 0, 130, 0.50);
+    color: white;
+}
+
+
+#currantImg {
+    border-color: black;
+    background-color: black;
+}
+
+
+#currantList {
+    padding: 20px;
+}
+
+
+#currantList li {
+    background: rgba(255, 255, 255, 0.80);
+    font-weight: bold;
+    border-style: none;
+    border-color: black;
+    border-width: 8px;
+    padding: 7px;
+    line-height: 20px;
+}
+
+
+#currantTitle {
+    font-size: 1.2rem;
+    text-decoration: underline;
+    text-decoration-color: black;
+}
+
+
+#containerForm {
+    background-color: rgba(110, 15, 238, 0.5);
+    border-style: groove;
+    border-color: #6e0fee;
+    border-width: 8px;
+}
+
+
+#commentsSection {
+    background-color: #20c997;
+    padding: 40px;
+    border-style: groove;
+    border-radius: 10px;
+    border-color: #6e0fee;
+    border-width: 8px;
+}
+
+#commentsSection h2 {
+    color: white;
+}
+
+#commentsSection p {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    font-weight: bold;
+    color: white;
+}
+
+label {
+    margin-left: 10px;
+}
+
+#submitButton {
+    color: white;
+    background-color: #6e0fee;
+}
+
+
+#seeComments {
+    color: whitesmoke;
+    font-weight: bolder;
+    font-family: "Lilita One", sans-serif;
+    text-shadow: 2px 2px black, 4px 4px deeppink, 6px 6px lawngreen, 8px 8px #6e0fee;
+
+}
+
+
+#mpLink {
+    border-color: #6e0fee;
+    border-style: groove;
+    border-width: 8px;
+    background: transparent;
+    background-image: linear-gradient(15deg,rgba(255, 0, 0, 0.50), rgba(255, 165, 0, 0.50), rgba(255, 255, 0, 0.50),
+    rgba(0, 128, 0, 0.50),rgb(0,0,255,.50),rgb(75,0,130,.50),rgb(238,130,238,.50));
+    border-radius: 10px;
+    color: white;
+    text-shadow: 2px 2px black;
+    padding: 20px;
+}
+
+
+#pilgramImg {
+    border-color: black;
+    background-color: black;
+}
+
+
+#mpLinktext {
+    border-style: solid;
+    border-radius: 10px;
+    border-color: black;
+    border-width: 5px;
+    background-color: #6e0fee;
+}
+
+
+#mpLink a {
+    color: deepskyblue;
+    background-color: transparent;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+
+#mpLink a:visited {
+    color: deeppink;
+    text-shadow: none;
+}
+
+
+#mpLink a:hover {
+    color: greenyellow;
+    background-color: transparent;
+    text-shadow: none;
+}
+
+
+#footerItems {
+    height: 100px;
+    border: black;
+    border-style: groove;
+    border-width: 8px;
+    border-radius: 10px;
+    background-image: url("/MontyPython_HolyGrail_Header_BackgroundBunny_Final_Inverted.png");
+    opacity: 85%;
+    color: white;
+    margin-bottom: 5px;
+    padding-top: 50px;
+}
+
+
+@media only screen and (max-width: 576px) {
+    h1 {
+        font-size: 17px;
+    }
+
+
+    #sweetsList li {
+        font-size: .75rem;
+        padding: 10px;
+    }
+
+    #currantList li {
+        font-size: .75rem;
+        padding: 8px;
+    }
+
+    #mpLink {
+        font-size: .75rem;
+        padding: 8px;
+    }
+
+    #footerItems {
+        font-size: .75rem;
+        padding: 8px;
+    }
+}
+

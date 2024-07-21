@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harmless Little Bunny!</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <script defer src="js/header.js"></script>
+    <script defer src="js/footer.js"></script>
+    <script defer src="js/main.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merienda">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neucha">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ADLaM Display">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Passion One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=El Messiri">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Concert One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yatra One">
+</head>
+
+
+<body onload="animateHeader()">
+
+<div class="container mx-auto">
+
+
+<div id="header"></div>
+
+
+
+
+    <div class="row" >
+        <div class="col" id="headerItems" onclick="changeHeaderImage()">
+            <h1 id="animateTitle">Harmless Little Bunny</h1>
+            <h6 id="animateSubTitle">A Monty Python and the Holy Grail Fan Page</h6>
+            <img id="timBunny" src="MontyPython_HolyGrail_TimAndBunny_BobbleHeads_transparent_Scale100px.png">
+        </div>
+    </div>
+
+
+    <div class="row d-flex justify-content-center">
+        <div class="card" id="redCard" style="width: 440px;" onclick="changeColor(this,'rgba(0, 128, 0, 0.50)')">
+            <img class="card-img-top img-fluid img-thumbnail" id="fullFrame" src="MontyPython_HolyGrail_Collective.png" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">King Arthur and the Knights of the Round table did indeed travel far and wide.</p>
+            </div>
+        </div>
+        <div class="card" id="orangeCard" style="width: 440px;" onclick="changeColor(this, 'rgba(0,0,255,0.5)')">
+            <img class="card-img-top img-fluid img-thumbnail" id="almostCloseUp" src="MontyPython_HolyGrail_Collective_700x393.png" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Perhaps travel is less than accurate.</p>
+            </div>
+        </div>
+        <div class="card" id="yellowCard" style="width: 440px;" onclick="changeColor(this, 'rgba(75, 0, 130, 0.50)')">
+            <img class="card-img-top img-fluid img-thumbnail" id="closeUp" src="MontyPython_HolyGrail_Collective_400x225.png" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">They voyaged, or rather traversed, perhaps even trekked, or at the very
+                    least ambled away? Sauntered? Swaggered? Hmm, strutted? Ah, they did in fact, glide-</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row d-flex justify-content-center">
+        <div class="card" id="greenCard" style="width: 440px;" onclick="changeColor(this, 'rgba(255,0,0,0.5)')">
+            <img class="card-img-top img-fluid img-thumbnail" id="xtremeCloseUp" src="MontyPython_HolyGrail_Collective_100x56.png" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">Traipsed, strolled, padded, trudged, tiptoed, rambled, pranced, peregrinated,
+                    waddled, pussyfooted, nipped, scuffed, sashayed. YES! THAT'S IT! Our Good Company of Valiant
+                    Pilgrims <span><i>SASHAYED</i></span> across the hills-</p>
+            </div>
+        </div>
+        <div class="card" id="blueCard" style="width: 440px;" onclick="changeColor(this, 'rgba(255, 165, 0, 0.50)')">
+            <img class="card-img-top img-fluid img-thumbnail" id="xxtremeCloseUp" src="MontyPython_HolyGrail_Collective_50x28.png" alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text">All parties involved with the previous paragraphs have been sacked and replaced
+                    with a team of highly-efficient Great Wooden Badgers. They have agreed to work for biscuits and tea,
+                    as well as a list denoting their favorite quotes from the film.</p>
+            </div>
+        </div>
+        <div class="card" id="indigoCard" style="width: 440px;" onclick="changeColor(this, 'rgba(255, 255, 0, 0.50)')">
+            <a id="holyNail" target="_blank" href="MontyPython_HolyGrail_Elderberries_600x337.jpg">
+                <img class="card-img-top img-fluid img-thumbnail" id="berriesToHamster" onmouseover="hamster(this)"
+                     onmouseout="elderberries(this)" src="MontyPython_HolyGrail_Elderberries_600x337.jpg"  alt="Card image cap"></a>
+            <div class="card-body">
+                <p class="card-text" id="hamsterText">What a lovely bunch of Elderberries. Did you click on the image? No?! Well, go on,
+                    then. We'll wait for you....</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <button class="button" id="hideButton" role="button" onclick="hideTable()">Hide Table?</button>
+    </div>
+
+
+    <div class="row">
+        <div class="card overflow-hidden" id="tableCard" style="border: #6e0fee; border-style: groove; border-radius: 10px; border-width: 8px">
+            <table class="table table-hover table-bordered table-striped border-dark" id="favQuotes">
+                <thead>
+                <tr>
+                    <th>Quote<button class="button" id="sortButton1" onclick="sortQuotes('quote')">Sort?</button></th>
+                    <th>Character(s)<button class="button" id="sortButton2" onclick="sortQuotes('character')">Sort?</button></th>
+                    <th>Scene<button class="button" id="sortButton3" onclick="sortQuotes('scene')">Sort?</button></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>I have to push the pram a lot...</td>
+                    <td>Baritone Round Table Knight</td>
+                    <td>Camelot is a silly place</td>
+                </tr>
+                <tr>
+                    <td>Help! Help! I'm being repressed!</td>
+                    <td>Dennis, Peasant of Filthfield</td>
+                    <td>Discerning systems of Government</td>
+                </tr>
+                <tr>
+                    <td>Well... I got <i>a</i> note.</td>
+                    <td>Sir Lancelot the Brave</td>
+                    <td>Storming Swamp Castle</td>
+                </tr>
+                <tr>
+                    <td>I don't know that!</td>
+                    <td>Sir Robin the-not-quite-so-brave-as-Sir-Lancelot</td>
+                    <td>Bridge of Death</td>
+                </tr>
+                <tr>
+                    <td>A duck!</td>
+                    <td>Arthur, King of the Britons</td>
+                    <td>Determining a witch</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="card" id="camelotCard" style="width: 100%;" onclick="changeHistoryColor()">
+            <img class="card-img-top img-fluid img-thumbnail" id="fantasyCamelot" onmouseover="changeCadbury(this)"
+                 onmouseout="changeCastle(this)" src="MontyPython_HolyGrail_CastleBackground_Fantasy.jpg"
+                 alt="Card image cap">
+            <div class="card-body">
+                <p class="card-text" id="camelotText">Camelot, or rather, what most people who are <i>not</i> Frank the
+                    Historian,
+                    visualize when thinking about this legendary place. A more accurate depiction of Camelot would be
+                    the remains of<a id="wikiPopover" href="https://en.wikipedia.org/wiki/Cadbury_Castle,_Somerset"
+                                     data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="right"
+                                     data-bs-content="Hold up there, you! You're leaving the bloody page!">
+                        Cadbury Castle,</a> located in Somerset.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row d-flex justify-content-center">
+        <div class="card" id="sweetsCard" onclick="changeSweetsImg()" style="width: 41.25rem; padding: 15px">
+            <img class="card-img img-fluid img-thumbnail" id="sweetsImg"
+                 src="MontyPython_HolyGrail_Sweets_Scale_604x667.jpg">
+            <div class="card-body card-img-overlay" id="sweetsCardBody">
+                <ul class="list-group" id="sweetsList">
+                    <li class="list-group-item" id="sweetsTitle">Trending Sweets</li>
+                    <li class="list-group-item">Calissons d'Aix - French Taunter</li>
+                    <li class="list-group-item">Candy Floss - Patsy</li>
+                    <li class="list-group-item">Chocolate Hobnob - Dennis</li>
+                    <li class="list-group-item">Jelly Babies - Sir Bedevere</li>
+                    <li class="list-group-item">Lemon Sherbet - Prince Herbert</li>
+                    <li class="list-group-item">Liquorice Comfits - Sir Lancelot</li>
+                    <li class="list-group-item">Space Dust - Robin's Minstrels</li>
+                    <li class="list-group-item">Sugar Mouse - The Black Knight</li>
+                    <li class="list-group-item">Swedish Fish - Knights Who Say Ni!</li>
+                    <li class="list-group-item">Turkish Delight - Frank, Historian</li>
+                </ul>
+            </div>
+        </div>
+        <div class="card" id="currantCard" onclick="changeCurrantImg()" style="width: 41.25rem; padding: 15px">
+            <img class="card-img img-fluid img-thumbnail" id="currantImg"
+                 src="MontyPython_HolyGrail_Currants_Crop_604x667.jpg">
+            <div class="card-body card-img-overlay" id="currantCardBody">
+                <ul class="list-group" id="currantList">
+                    <li class="list-group-item" id="currantTitle">Currant Events</li>
+                    <li class="list-group-item">Brother Maynard -<br> Thy Number Three: Oh, Holiest art Thou</li>
+                    <li class="list-group-item">Concord -<br> Morning Yoga and You!</li>
+                    <li class="list-group-item">Dingo and Zoot -<br> Dostoevsky's 'Crime and Punishment'</li>
+                    <li class="list-group-item">Lord of Swamp Castle -<br> Weekend Renovations: What NOT to Do</li>
+                    <li class="list-group-item">Page Turner -<br> "Aveeno changes my Life!!!"</li>
+                    <li class="list-group-item">Roger the Shrubber -<br> (293/47) House of Commons</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="card" id="mpLink" onclick="changeMPLinkColor()">
+                <span class="d-flex flex-wrap justify-content-center align-items-center" id="mpLinktext">
+                    Mad for Monty Python and the Holy Grail? Click&nbsp;
+            <a id="mpPopover" href="https://www.montypython.com/" data-bs-toggle="popover" data-bs-trigger="hover" data-bs-placement="right"
+               data-bs-content="Steady on! You're about to leave us!">here</a>&nbsp;for more info.</span>
+        </div>
+    </div>
+
+
+
+    <div id="footer"></div>
+
+</div>
+
+
+
+</body>
+</html>

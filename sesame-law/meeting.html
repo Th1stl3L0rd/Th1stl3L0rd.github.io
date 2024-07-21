@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meeting | Sesame Law Firm</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <script defer src="js/footer.js"></script>
+    <script defer src="js/main.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family= Libre Baskerville">
+</head>
+
+
+<body style="background-color: rgba(0,0,0,0.75); color: white; font-family: Libre Baskerville, sans-serif">
+
+<div class="container-fluid" id="aboutPage">
+
+    <div class="row">
+        <div class="col">
+            <div class="row" id="aboutUsImg">
+                <img src="SesameStreet_Background7_Scale970x1000_Cubist5.png">
+            </div>
+        </div>
+
+        <div class="col">
+            <div class="row" id="aboutUsInfo">
+                <nav class="navbar navbar-expand-lg justify-content-center" aria-label="breadcrumb" style="--bs-breadcrumb-divider: ''"; id="navbar">
+                    <div class="container-fluid">
+                        <a class="navbar-brand justify-content-start" href="index.html">
+                            <img src="SesameStreet_Logo_Scale267x100.png" id="sesameStreetBrand" height="75">
+                        </a>
+                        <a class="btn" href="index.html" role="button">
+                            <i class="justify-content-center bi-facebook" style="font-size: 1.5rem; color: #0e9df8;"></i>
+                        </a>
+
+                        <a class="btn" href="index.html" role="button">
+                            <i class="justify-content-center bi-instagram" style="font-size: 1.5rem; color: #f32af3;"></i>
+                        </a>
+                        <a class="btn" href="index.html" role="button">
+                            <i class="justify-content-center bi-linkedin" style="font-size: 1.5rem; color: #20fa23;"></i>
+                        </a>
+                        <button class="navbar-toggler" id="listToggle" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation" style="background: #ad71f3">
+                            <span class="navbar-toggle"></span>
+                            <i id="listStack" class="bi bi-list-stars"></i>
+                        </button>
+                        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                            <ul class="list-group list-group-horizontal breadcrumb breadcrumb-custom text-center" id="navList" >
+                                <li class="nav-item breadcrumb-item">
+                                    <a class="nav-link" href="index.html">Home</a>
+                                </li>
+                                <li class="nav-item breadcrumb-item">
+                                    <a class="nav-link" href="about.html">About</a>
+                                </li>
+                                <li class="nav-item breadcrumb-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Services</a>
+                                    <ul class="dropdown-menu bg-secondary border-0" id="dropDownServices">
+                                        <li><a class="dropdown-item" href="divorce.html">Divorce</a></li>
+                                        <li><a class="dropdown-item" href="custody.html">Custody</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item breadcrumb-item dropdown active">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" id="activeLink" aria-current="page">Online Help</a>
+                                    <ul class="dropdown-menu bg-secondary border-0" id="dropDownHelp">
+                                        <li><a class="dropdown-item" href="chat.html">Chat</a></li>
+                                        <li><a class="dropdown-item active bg-transparent" style="color: #3bdc3d">Meeting</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item breadcrumb-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Forms</a>
+                                    <ul class="dropdown-menu bg-secondary border-0" id="dropDownForms">
+                                        <li><a class="dropdown-item" href="filingForm.html">Filing a Form</a></li>
+                                        <li><a class="dropdown-item" href="filingMotion.html">Filing a Motion</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item breadcrumb-item">
+                                    <a class="nav-link" href="contact.html">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+
+                <div class="row" id="meetingForm">
+                    <div onsubmit="return false" class="container mb-3 mt-4 pt-5 pb-4" id="containerForm">
+                        <h2 id="meetingH">Set up a Meeting</h2>
+                        <form class="form-horizontal" action="welcome.php">
+                            <div class="row mb-3 mt-4" id="firstLine">
+                                <div class="col form-floating">
+                                    <input type="text" class="form-control" id="firstName" name="firstName"
+                                           placeholder="First Name goes Here"></input>
+                                    <label class="form-label" for="firstName">First Name</label>
+                                </div>
+                                <div class="col form-floating">
+                                    <input type="text" class="form-control" id="lastName" name="lastName"
+                                           placeholder="Last Name goes Here"></input>
+                                    <label class="form-label" for="lastName">Last Name</label>
+                                </div>
+                            </div>
+                            <div class="row mb-3 mt-4" id="forthLine">
+                                <div class="col form-floating">
+                                    <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control" id="phoneNumber" name="tel"
+                                           placeholder="Phone Number goes here"></input>
+                                    <label class="form-label" for="phoneNumber">Phone Number</label>
+                                </div>
+                                <div class="col form-floating">
+                                    <input type="email" class="form-control" id="emailAddress" name="email"
+                                           placeholder="Email Address goes here"></input>
+                                    <label class="form-label" for="emailAddress">Email Address</label>
+                                </div>
+                            </div>
+                            <div class="form-floating mb3 mt-4">
+                        <textarea class="form-control" id="myText" name="comments"
+                                  placeholder="Comment goes here"></textarea>
+                                <label class="form-label" for="myText">Comments</label>
+                            </div>
+                            <button type="submit" class="btn mb-3 mt-3" id="meetingSubmitButton">Submit</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div  id="footerMeeting">
+                    <div>
+                        <a class="container-fluid" href="index.html">
+                            <img src="SesameStreet_Logo_Scale267x100.png" id="sesameStreetBrands" height="50">
+                        </a>
+                    </div>
+                    <div>
+                        Copyright <span id="currentDate">2023</span> | Sesame Family Law | 123-456-7890 <br>
+                        123 Sesame Street, Manhattan New York 12345&nbsp;<span><sub><a href="#">Site Map</a></sub></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+
+
+
+
+</body>
+
+
+</html>

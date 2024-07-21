@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Harmless Little Bunny!_Contact Page</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js"></script>
+    <script defer src="js/header.js"></script>
+    <script defer src="js/footer.js"></script>
+    <script defer src="js/main.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merienda">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Neucha">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=ADLaM Display">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Passion One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=El Messiri">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Concert One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yatra One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lilita One">
+</head>
+
+
+<body onload="animateHeader()">
+
+<div class="container">
+
+    <div id="header"></div>
+
+
+    <div class="row" >
+        <div class="col" id="headerItems" onclick="changeHeaderImage()">
+            <h1 id="animateTitle">Harmless Little Bunny</h1>
+            <h6 id="animateSubTitle">A Monty Python and the Holy Grail Fan Page</h6>
+            <img id="timBunny" src="MontyPython_HolyGrail_TimAndBunny_BobbleHeads_transparent_Scale100px.png">
+        </div>
+    </div>
+
+
+    <div class="row" id="commentsSection" style="background-image: url(MontyPython_HolyGrail_Group_Crop1304x784.jpg)">
+            <div class="container mb-3 mt-3 pt-5 pb-5" id="containerForm">
+                <h2>Contact Us!</h2>
+                <p>Thank you for visiting Harmless Little Bunny. Please feel free to leave us
+                    a comment or two. Thank you and have a smashing day!</p>
+                <form class="form-horizontal" action="welcome.php">
+                    <div class="row mb-3 mt-3" id="firstLine">
+                        <div class="col form-floating">
+                        <input type="text" class="form-control" id="firstName" name="name"
+                                  placeholder="First Name goes Here"></input>
+                            <label class="form-label" for="firstName">First Name</label>
+                        </div>
+                        <div class="col form-floating">
+                        <input type="text" class="form-control" id="lastName" name="text"
+                                  placeholder="Last Name goes Here"></input>
+                            <label class="form-label" for="lastName">Last Name</label>
+                        </div>
+                    </div>
+                    <div class="row mb-3 mt-3" id="secondLine">
+                        <div class="col form-floating">
+                        <input type="text" class="form-control" id="streetAddress" name="text"
+                                  placeholder="Street Address goes here"></input>
+                            <label class="form-label" for="streetAddress">Street Address</label>
+                        </div>
+                    </div>
+                    <div class="row mb-3 mt-3" id="thirdLine">
+                        <div class="col form-floating">
+                            <input type="text" class="form-control" id="city" name="text"
+                                   placeholder="City goes here"></input>
+                            <label class="form-label" for="city">City</label>
+                        </div>
+                        <div class="col form-floating">
+                        <input type="text" class="form-control" id="state" name="text"
+                                  placeholder="State goes here"></input>
+                            <label class="form-label" for="state">State</label>
+                        </div>
+                        <div class="col form-floating">
+                        <input type="text" class="form-control" id="zip" name="text"
+                                  placeholder="Zip goes here"></input>
+                            <label class="form-label" for="zip">Zip Code</label>
+                        </div>
+                    </div>
+                    <div class="row mb-3 mt-3" id="forthLine">
+                        <div class="col form-floating">
+                        <input type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" class="form-control" id="phoneNumber" name="tel"
+                                  placeholder="Phone Number goes here"></input>
+                            <label class="form-label" for="phoneNumber">Phone Number</label>
+                        </div>
+                        <div class="col form-floating">
+                        <input type="email" class="form-control" id="emailAddress" name="email"
+                                  placeholder="Email Address goes here"></input>
+                            <label class="form-label" for="emailAddress">Email Address</label>
+                        </div>
+                    </div>
+                    <div class="form-floating mb3 mt-3">
+                        <textarea class="form-control" id="myText" name="text"
+                                  placeholder="Comment goes here"></textarea>
+                        <label class="form-label" for="myText">Comments</label>
+                    </div>
+                    <button type="submit" class="btn mb-3 mt-3" id="submitButton">Submit</button>
+                </form>
+            </div>
+    </div>
+
+    <div id="footer"></div>
+
+
+</div>
+
+
+
+
+</body>
+</html>

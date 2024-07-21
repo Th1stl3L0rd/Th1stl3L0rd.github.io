@@ -1,0 +1,217 @@
+
+body {
+    background-image: url("GoodOmens_Industrial_Background5.jpg");
+    background-repeat: no-repeat;
+    background-size: 1920px;
+}
+
+#centerForm {
+    display:flex;
+    justify-content: center;
+    padding-top: 50px;
+}
+
+form {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    /*margin: 30px;*/
+    padding: 20px;
+    border-style: groove;
+    /*border-radius: 5px;*/
+    border-color: black;
+    border-width: thick;
+    width: 900px;
+    background-color: rgba(107, 100, 116, 0.50);
+    font-family: "Cinzel", sans-serif;
+    font-size: 18px;
+    color: #3fc7fd;
+}
+
+#mainHeader {
+    grid-column: 1/6;
+    grid-row: 1/2;
+    color: #3fc7fd;
+    text-align: center;
+    font-size: 60px;
+    height: 30px;
+    /*background-color: #fca6eb;*/
+}
+
+#subHeader {
+    grid-column: 1/6;
+    grid-row: 2/3;
+    color: #3fc7fd;
+    text-align: center;
+    font-size: 30px;
+    height: 40px;
+    /*background-color: beige;*/
+}
+
+input {
+    height: 30px;
+    font-family: "Courgette", sans-serif;
+    padding-left: 10px;
+    border-style: groove;
+    border-color: black;
+    border-width: thick;
+    background-color: rgba(255, 255, 255, 0.50);
+}
+
+select {
+    font-family: "Skranji", sans-serif;
+    color: rgba(0, 0, 0, 0.90);
+}
+
+/*.checkBox {*/
+/*    color: red;*/
+/*    background-color: rgb(241, 171, 21);*/
+/*}*/
+
+#firstLine {
+    grid-column: 1/6;
+    grid-row: 3/4;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: 60px;
+    /*background-color: coral;*/
+
+}
+
+#secondLine {
+    grid-column: 1/6;
+    grid-row: 4/5;
+    display: grid;
+    grid-template-columns: 1fr;
+    height: 48px;
+    /*background-color: rgba(110, 15, 238, 0.43);*/
+}
+
+#request span {
+    padding-right: 10px;
+}
+
+#requestSelect {
+    width: 300px;
+}
+
+#demons span {
+    padding-right: 10px;
+}
+
+#thirdLine {
+    grid-column: 1/6;
+    grid-row: 5/6;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 50px;
+    /*background-color: #9aa05f;*/
+}
+
+#fourthLine {
+    grid-column: 1/6;
+    grid-row: 6/7;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 50px;
+    /*background-color: rgba(81, 50, 124, 0.62);*/
+}
+
+/*#dateReq {*/
+/*    width: 300px;*/
+/*}*/
+
+/*#resReq {*/
+/*    width: 300px;*/
+/*}*/
+
+#fifthLine {
+    grid-column: 1/6;
+    grid-row: 7/8;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 50px;
+    /*background-color: #1d72e0;*/
+}
+
+#sixthLine {
+    grid-column: 1/6;
+    grid-row: 8/9;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /*background-color: #24f115;*/
+}
+
+#seventhLine {
+    grid-column: 1/6;
+    grid-row: 9/10;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    /*background-color: #d415f1;*/
+    background-image: none;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+#comments {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    text-align: center;
+    margin: 15px;
+}
+
+textarea {
+    grid-column: 1/2;
+    grid-row: 1/3;
+    display: block;
+    margin: auto;
+    height: 150px;
+    width: 400px;
+    border-style: groove;
+    border-width: thick;
+    border-color: black;
+    background-color: rgba(255, 255, 255, 0.50);
+    /*text-align: center;*/
+    /*margin-right: auto;*/
+}
+
+textarea::placeholder {
+    text-align: center;
+    font-size: 20px;
+    font-family: "Sedgwick Ave Display", sans-serif;
+    color: rgba(0, 0, 0, 0.90);
+}
+
+#buttons {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    /*grid-column: 1/6;*/
+    /*grid-row: 10/11;*/
+    /*display: grid;*/
+    /*grid-template-columns: 1fr 1fr;*/
+    /*background-color: #d415f1;*/
+    padding: 15px;
+}
+
+#submitButton {
+    font-family: "Cinzel", sans-serif;
+    border-style: groove;
+    border-color: black;
+}
+
+#cancleButton {
+    font-family: "Cinzel", sans-serif;
+    border-style: groove;
+    border-color: black;
+}
+
+/*#imageFurfur {*/
+/*    float: right;*/
+/*    width: 100px;*/
+/*    z-index: 999;*/
+/*}*/
+
+
+
+

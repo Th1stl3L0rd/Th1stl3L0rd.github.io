@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Requisition Form/Department of Admissions/Hell</title>
+    <link rel="stylesheet" href="requisitionGO.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sedgwick Ave Display">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Courgette">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Skranji">
+</head>
+<body>
+
+<div id="centerForm">
+    <form onsubmit="return false">
+
+        <h1 id="mainHeader">Department of Admissions </h1>
+        <h3 id="subHeader">Requisition Form</h3>
+
+        <div id="firstLine">
+            <div id="userName">Name: <input id="userNameInput" type="text" name="userName" size="18"
+                                            value="" maxlength="40"></div>
+            <div id="userTitle">Title: <input id="userTitleInput" type="text" name="userTitle" size="18"
+                                              value="" maxlength="40"></div>
+            <div id="userID">ID: <input id="userIDInput" type="text" name="userID" size="18" value=""
+                                        maxlength="25"></div>
+        </div>
+
+        <div id="secondLine">
+            <div id="request"><span>Request:</span><select id="requestSelect" onclick="dropRequest()" name="requestSelect">
+            <option value="piffle" selected>Don't Bother Us with Your Piffle</option>
+            <option value="workLeave">Work Leave</option>
+            <option value="tempAss">Temporary Reassignment</option>
+            <option value="deptTrans">Department Transfer</option>
+            <option value="audDuke">Audience with Grand Duke</option>
+            <option value="pudding">Sticky Toffee Pudding</option>
+            </select></div>
+        </div>
+
+
+        <div id="thirdLine">
+            <div>Do you require demons?<input class="checkBox" id="demonYes" type="checkbox" name="demonYes"> Yes
+                <input class="checkBox" id="demonNo" type="checkbox" name="demonNo"> No</div>
+
+
+            <div id="demons"><span>How many?</span><select id="demonSelect" onclick="dropDemon()" name="demonSelect">
+            <option value="patience" selected>You're Trying Our Impatience</option>
+            <option value="oneHund">100</option>
+            <option value="oneThou">1,000</option>
+            <option value="tenThou">10,000</option>
+            <option value="oneLeg">1 Legion</option>
+            <option value="sixLeg">10 Legions</option>
+            <option value="sixLeg">26 Legions</option>
+            </select></div>
+        </div>
+
+
+        <div id="fourthLine">
+            <div id="dateReq">Date of Request : <input id="dateReqInput" type="text" name="dateReq" size="18" value=""
+                                          maxlength="25"></div>
+            <div id="resReq">Reason for Request : <input id="resReqInput" type="text" name="resReq" size="18"
+                                             value="" maxlength="100"></div>
+        </div>
+
+
+        <div id="fifthLine">
+        <div id="armYes">Does this involve Armageddon?<input id="armYesInput" type="checkbox" name="armYes"> Yes
+            <input class="checkBox" id="armNo" type="checkbox" name="armNo"> No</div>
+
+        <div id="tosteYes">Does this involve TOSTE?<input id="tosteYesInput" type="checkbox" name="tosteYes"> Yes
+            <input class="checkBox" id="tosteNo" type="checkbox" name="tosteNo"> No</div>
+        </div>
+
+        <div id="sixthLine">
+            <div id="authName">Auth. By : <input id="authNameInput" type="text" name="authName" size="15" value=""
+                                        maxlength="20"></div>
+            <div id="authTitle">Title : <input id="authTitleInput" type="text" name="authTitle" size="15" value=""
+                                maxlength="20"></div>
+            <div id="authID">Auth.# <input id="authIDInput" type="text" name="authID" size="15" value=""
+                                             maxlength="20"></div>
+        </div>
+
+        <div id="seventhLine">
+<!--            <div><h5 id="commentsHeader">Comments</h5></div>-->
+            <div id="comments">Comments: <textarea id="commentsArea" rows="10" cols="100" name="comments" placeholder=
+                    "Be prepared for a trip to the Dung Heaps if you so much as think about adding anything to this box!"></textarea></div>
+
+
+            <div id="buttons">
+                <div id="submit">
+                    <input id="submitButton" onclick="showSeal()" type="submit" name="formSubmit" value="Submit"/>
+                </div>
+
+                <div id="cancle">
+                    <input id="cancleButton" onclick="clearForm()" type="submit" name="formCancle" value="Save your Tongue"/>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</div>
+
+<script src="requisitionGO.js"></script>
+</body>
+</html>
