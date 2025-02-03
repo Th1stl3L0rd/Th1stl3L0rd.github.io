@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test Javascript Output to PHP Text File</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yatra One">
+
+    <style>
+
+        body {
+            background-image: url("geometricBackground.jpg");
+            background-size: cover;
+            font-size: 2rem;
+            font-family: Yatra One, sans-serif;
+            margin: auto;
+            width: 50%;
+            text-align: center;
+        }
+
+
+
+        .outputBlock {
+            display: none;
+        }
+
+        .geometricBackground {
+            background-image: url("geometricBackground1.jpg");
+        }
+
+        span {
+            color: deeppink;
+            font-weight: bold;
+            text-shadow: 1px 1px black, 2px 2px black, 3px 3px 10px darkviolet;
+        }
+
+    </style>
+
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <nav>
+        <h1>Test Form to PHP Text File</h1>
+        <a class="active" id="home"  href="">Home</a>
+        <a id="about" href="">About</a>
+        <a id="contact" href="">Contact</a>
+        <a id="outputHub" href="">Collected Files</a>
+    </nav>
+
+    <div class="block" id="formblock">
+
+        <div class="list" id="formList">
+            <div class="stickyTop" id="stickyList">
+                <h2 class="formInputTitle" >Main Form</h2>
+            </div>
+
+            <form class="formInput" id="mainForm">
+                <div>
+                    <label>First Name</label>
+                    <input type="text" class=firstName>
+                </div>
+                <div>
+                    <label>Last Name</label>
+                    <input type="text" class=lastName>
+                </div>
+                <div>
+                    <label>Favorite Color</label>
+                    <input type="text" class=favoriteColor>
+                </div>
+                <div>
+                    <label>Favorite Food</label>
+                    <input type="text" class=favoriteFood>
+                </div>
+
+                <div class="formButtons" id="buttonsMainForm">
+                    <button type="reset" class="resetButton" id="reset">Reset</button>
+                    <button type="button" class="submitButton" id="submitForm" onclick="formOutput()">Submit</button>
+                </div>
+
+            </form>
+
+            <!-- The javascript output applies to the contents of this div-->
+            <div class="outputBlock" id="outputMainForm">
+
+                <div class="geometricBackground">
+
+                    <!-- This is the output that I want to convert into a text file that can be stored on the
+                     "collected Files" page. I want the same exact css to apply to both pages. -->
+                    <p class="paragraph" id="helloPersonParagraph">
+                        Hello, <span class="firstNameWord"></span> <span class="lastNameWord"></span> and welcome to
+                        this page!<br>
+                        Your favorite color is <span class="favoriteColorWord"></span> and your
+                        favorite food is <span class="favoriteFoodWord"></span>. You are so cool!
+                    </p>
+
+                    <div class="paragraphButtons" id="paragraphButtonsMainForm">
+                        <button type="submit">Save</button>
+                        <button type="reset" onclick="returnToForm()">Change Info?</button>
+                        <button type="button">Return to Forms</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<script>
+
+    function formOutput() {
+
+
+        //generated variables
+        let outputHello = document.querySelector('.outputBlock');
+        let geoDisplay = document.querySelector('.geometricBackground');
+        let helloP = document.querySelector('.paragraph');
+        let inputForm = document.querySelector('.formInput');
+
+        //input
+        let firstNameWord = document.querySelector('.firstName');
+        let lastNameWord = document.querySelector('.lastName');
+        let favoriteColorWord = document.querySelector('.favoriteColor');
+        let favoriteFoodWord = document.querySelector('.favoriteFood');
+
+        //output
+        let paragraphFirstName = document.querySelector('.firstNameWord');
+        let paragraphLastName = document.querySelector('.lastNameWord');
+        let paragraphFavoriteColor = document.querySelector('.favoriteColorWord');
+        let paragraphFavoriteFood = document.querySelector('.favoriteFoodWord');
+
+        //properly filled personal info
+        paragraphFirstName.textContent = firstNameWord.value;
+        paragraphLastName.textContent = lastNameWord.value;
+        paragraphFavoriteColor.textContent = favoriteColorWord.value;
+        paragraphFavoriteFood.textContent = favoriteFoodWord.value;
+
+        inputForm.style.display = 'none';
+        outputHello.style.display = 'block';
+        geoDisplay.style.display = 'block';
+        helloP.style.display = 'block';
+
+        
+
+    }
+
+</script>
+
+
+
+</body>
+
+
+
+</html>

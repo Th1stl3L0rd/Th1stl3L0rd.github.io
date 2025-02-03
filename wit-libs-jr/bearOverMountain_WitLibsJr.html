@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>The Bear Went Over the Mountain</title>
+    <link href="witLibsJr.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yatra One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=New Amsterdam">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee Shade">
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <nav>
+        <h1>Wit Libs Jr.</h1>
+        <a id="home" href="witLibsJr.html">Home</a>
+        <a id="rules" href="rulesWitLibsJr.html">Rules</a>
+        <a id="about" href="aboutWitLibsJr.html">About</a>
+        <a id="storyBook" href="storyBookWitLibsJr.html">Story Book!</a>
+    </nav>
+
+    <div class="block" id="storyblock">
+
+        <div class="list" id="storyList">
+            <div class="stickyTop" id="stickyStoryList">
+                <h2 class="storyInputTitle" >The Bear Went Over the Mountain</h2>
+            </div>
+
+        <form class="storyInput_WitLibsJr" id="bearOverMountainStory" action="bearOverMountain.php" method="post">
+            <div>
+                <label class="noun" onmouseover="labelHint">Noun</label>
+                <input class=bear type="text"  placeholder="" name="text">
+            </div>
+            <div>
+                <label>Noun</label>
+                <input class=mountain type="text" placeholder="" name="text">
+            </div>
+            <div>
+                <label>Verb (Dynamic)</label>
+                <input class=see type="text" placeholder="" name="text">
+            </div>
+            <div>
+                <label>Noun</label>
+                <input class=river type="text" placeholder="" name="text">
+            </div>
+            <div>
+                <label>Verb (Dynamic)</label>
+                <input class=seeAgain type="text" placeholder="" name="text">
+            </div>
+            <div>
+                <label>Noun</label>
+                <input class=forest type="text" placeholder="" name="text">
+            </div>
+            <div>
+                <label>Verb (Dynamic)</label>
+                <input class=seeAgainAgain type="text" placeholder="" name="text">
+            </div>
+            <div>
+                <label>Adj. (Absolute)</label>
+                <input class=big type="text" placeholder="" name="text">
+            </div>
+            <div>
+                <label>Noun</label>
+                <input class=tree type="text" placeholder="" name="text">
+            </div>
+            <div>
+                <label>Verb (Dynamic)</label>
+                <input class=seeAgainAgainAgain type="text" placeholder="" name="text">
+            </div>
+
+
+
+            <div class="formButtons" id="buttonsBearOverMountain">
+                <button type="reset" class="resetButton" id="reset">Reset</button>
+                <button type="submit" name="submit" value="Save Data" class="createButton" id="create" onclick="createStory()">Create</button>
+            </div>
+
+        </form>
+
+            <div class="storyBlock" id="createStoryBearMountain">
+
+                <div class="mapBackground">
+
+                    <p class="paragraph" id="bearMountainParagraph">
+                        The <span class="bearWord"></span> went over the <span class="mountainWord"></span>,<br>
+                        the <span class="bearWordTwo"></span> went over the <span class="mountainWordTwo"></span>,<br>
+                        the <span class="bearWordThree"></span> went over the <span class="mountainWordThree"></span>,<br>
+                        to <span class="seeWord"></span> what she could <span class="seeWordTwo"></span>.<br>
+                        And all that she could <span class="seeWordThree"></span>,<br>
+                        and all that she could <span class="seeWordFour"></span>,<br>
+                        was the other side of the <span class="mountainWordFour"></span>,<br>
+                        the other side of the <span class="mountainWordFive"></span>,<br>
+                        the other side of the <span class="mountainWordSix"></span>,<br>
+                        was all that she could <span class="seeWordFive"></span>.<br>
+                        <br>
+                        The <span class="bearWordFour"></span> went across the <span class="riverWord"></span>,<br>
+                        the <span class="bearWordFive"></span> went across the <span class="riverWordTwo"></span>,<br>
+                        the <span class="bearWordSix"></span> went across the <span class="riverWordThree"></span>,<br>
+                        to <span class="seeWordSix"></span> what she could <span class="seeWordSeven"></span>.<br>
+                        And all that she could <span class="seeWordEight"></span>,<br>
+                        and all that she could <span class="seeWordNine"></span>,<br>
+                        was the other side of the <span class="riverWordFour"></span>,<br>
+                        the other side of the <span class="riverWordFive"></span>,<br>
+                        the other side of the <span class="riverWordSix"></span>,<br>
+                        was all that she could <span class="seeWordTen"></span>.<br>
+                        <br>
+                        The <span class="bearWordSeven"></span> went through the <span class="forestWord"></span>,<br>
+                        the <span class="bearWordEight"></span> went through the <span class="forestWordTwo"></span>,<br>
+                        the <span class="bearWordNine"></span> went through the <span class="forestWordThree"></span>,<br>
+                        to <span class="seeWordEleven"></span> what she could <span class="seeWordTwelve"></span>.<br>
+                        And all that she could <span class="seeWordThirteen"></span>,<br>
+                        and all that she could <span class="seeWordFourteen"></span>,<br>
+                        was the other side of the <span class="forestWordFour"></span>,<br>
+                        the other side of the <span class="forestWordFive"></span>,<br>
+                        the other side of the <span class="forestWordSix"></span>,<br>
+                        was all that she could <span class="seeWordFifteen"></span>.<br>
+                        <br>
+                        The <span class="bearWordTen"></span> climbed up the <span class="bigWord"></span>
+                        <span class="treeWord"></span>,<br>
+                        The <span class="bearWordEleven"></span> climbed up the <span class="bigWordTwo"></span>
+                        <span class="treeWordTwo"></span>,<br>
+                        The <span class="bearWordTwelve"></span> climbed up the <span class="bigWordThree"></span>
+                        <span class="treeWordThree"></span>,<br>
+                        to <span class="seeWordSixteen"></span> what she could <span class="seeWordSeventeen"></span>.<br>
+                        And all that she could <span class="seeWordEighteen"></span>,<br>
+                        and all that she could <span class="seeWordNineteen"></span>,<br>
+                        was the <span class="forestWordSeven"></span>, <span class="riverWordSeven"></span>, and
+                        <span class="mountainWordSeven"></span>,<br>
+                        the <span class="forestWordEight"></span>, <span class="riverWordEight"></span>, and
+                        <span class="mountainWordEight"></span>,<br>
+                        the <span class="forestWordNine"></span>, <span class="riverWordNine"></span>, and
+                        <span class="mountainWordNine"></span>,<br>
+                        was all that she could <span class="seeWordTwenty"></span>.<br>
+                        Was all that she could <span class="seeWordTwentyOne"></span>.<br>
+                    </p>
+
+                    <div class="storyButtons" id="storyButtonsBearMountain">
+                        <button type="submit">Save</button>
+                        <button type="reset" onclick="returnToForm">Play Again</button>
+                        <button type="button">Return to Stories</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    </div>
+
+    <script>
+
+
+        // //explicitly enables popovers
+        // let popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
+        // let popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+        //     return new bootstrap.Popover(popoverTriggerEl)
+        // })
+
+        function labelHint(){
+
+            let nounLabel = document.querySelector('.noun');
+
+
+
+
+        }
+
+
+        function createStory() {
+
+            //generated story variable
+            let storyBlock = document.querySelector('.storyBlock');
+            let mapDisplay = document.querySelector('.mapBackground');
+            let story = document.querySelector('.paragraph');
+            let storyForm = document.querySelector('.storyInput_WitLibsJr');
+
+            //input
+            let bearWord = document.querySelector('.bear');
+            let mountainWord = document.querySelector('.mountain');
+            let bearWordTwo = document.querySelector('.bear');
+            let mountainWordTwo = document.querySelector('.mountain');
+            let bearWordThree = document.querySelector('.bear');
+            let mountainWordThree = document.querySelector('.mountain');
+            let seeWord = document.querySelector('.see');
+            let seeWordTwo = document.querySelector('.see');
+            let seeWordThree = document.querySelector('.see');
+            let seeWordFour = document.querySelector('.see');
+            let mountainWordFour = document.querySelector('.mountain');
+            let mountainWordFive = document.querySelector('.mountain');
+            let mountainWordSix = document.querySelector('.mountain');
+            let seeWordFive = document.querySelector('.see');
+            //
+            let bearWordFour = document.querySelector('.bear');
+            let riverWord = document.querySelector('.river');
+            let bearWordFive = document.querySelector('.bear');
+            let riverWordTwo = document.querySelector('.river');
+            let bearWordSix = document.querySelector('.bear');
+            let riverWordThree = document.querySelector('.river');
+            let seeWordSix = document.querySelector('.seeAgain');
+            let seeWordSeven = document.querySelector('.seeAgain');
+            let seeWordEight = document.querySelector('.seeAgain');
+            let seeWordNine = document.querySelector('.seeAgain');
+            let riverWordFour = document.querySelector('.river');
+            let riverWordFive = document.querySelector('.river');
+            let riverWordSix = document.querySelector('.river');
+            let seeWordTen = document.querySelector('.seeAgain');
+            //
+            let bearWordSeven = document.querySelector('.bear');
+            let forestWord = document.querySelector('.forest');
+            let bearWordEight = document.querySelector('.bear');
+            let forestWordTwo = document.querySelector('.forest');
+            let bearWordNine = document.querySelector('.bear');
+            let forestWordThree = document.querySelector('.forest');
+            let seeWordEleven = document.querySelector('.seeAgainAgain');
+            let seeWordTwelve = document.querySelector('.seeAgainAgain');
+            let seeWordThirteen = document.querySelector('.seeAgainAgain');
+            let seeWordFourteen = document.querySelector('.seeAgainAgain');
+            let forestWordFour = document.querySelector('.forest');
+            let forestWordFive = document.querySelector('.forest');
+            let forestWordSix = document.querySelector('.forest');
+            let seeWordFifteen = document.querySelector('.seeAgainAgain');
+
+            let bearWordTen = document.querySelector('.bear');
+            let bigWord = document.querySelector('.big');
+            let treeWord = document.querySelector('.tree');
+            let bearWordEleven = document.querySelector('.bear');
+            let bigWordTwo = document.querySelector('.big');
+            let treeWordTwo = document.querySelector('.tree');
+            let bearWordTwelve = document.querySelector('.bear');
+            let bigWordThree = document.querySelector('.big');
+            let treeWordThree = document.querySelector('.tree');
+            let seeWordSixteen = document.querySelector('.seeAgainAgainAgain');
+            let seeWordSeventeen = document.querySelector('.seeAgainAgainAgain');
+            let seeWordEighteen = document.querySelector('.seeAgainAgainAgain');
+            let seeWordNineteen = document.querySelector('.seeAgainAgainAgain');
+            let forestWordSeven = document.querySelector('.forest');
+            let riverWordSeven = document.querySelector('.river');
+            let mountainWordSeven = document.querySelector('.mountain');
+            let forestWordEight = document.querySelector('.forest');
+            let riverWordEight = document.querySelector('.river');
+            let mountainWordEight = document.querySelector('.mountain');
+            let forestWordNine = document.querySelector('.forest');
+            let riverWordNine = document.querySelector('.river');
+            let mountainWordNine = document.querySelector('.mountain');
+            let seeWordTwenty = document.querySelector('.seeAgainAgainAgain');
+            let seeWordTwentyOne = document.querySelector('.seeAgainAgainAgain');
+            //
+            // //output
+            let paragraphBear = document.querySelector('.bearWord');
+            let paragraphMountain = document.querySelector('.mountainWord');
+            let paragraphBearTwo = document.querySelector('.bearWordTwo');
+            let paragraphMountainTwo = document.querySelector('.mountainWordTwo');
+            let paragraphBearThree = document.querySelector('.bearWordThree');
+            let paragraphMountainThree = document.querySelector('.mountainWordThree');
+            let paragraphSee = document.querySelector('.seeWord');
+            let paragraphSeeTwo = document.querySelector('.seeWordTwo');
+            let paragraphSeeThree = document.querySelector('.seeWordThree');
+            let paragraphSeeFour = document.querySelector('.seeWordFour');
+            let paragraphMountainFour = document.querySelector('.mountainWordFour');
+            let paragraphMountainFive = document.querySelector('.mountainWordFive');
+            let paragraphMountainSix = document.querySelector('.mountainWordSix');
+            let paragraphSeeFive = document.querySelector('.seeWordFive');
+            //
+            let paragraphBearFour = document.querySelector('.bearWordFour');
+            let paragraphRiver = document.querySelector('.riverWord');
+            let paragraphBearFive = document.querySelector('.bearWordFive');
+            let paragraphRiverTwo = document.querySelector('.riverWordTwo');
+            let paragraphBearSix = document.querySelector('.bearWordSix');
+            let paragraphRiverThree = document.querySelector('.riverWordThree');
+            let paragraphSeeSix = document.querySelector('.seeWordSix');
+            let paragraphSeeSeven = document.querySelector('.seeWordSeven');
+            let paragraphSeeEight = document.querySelector('.seeWordEight');
+            let paragraphSeeNine = document.querySelector('.seeWordNine');
+            let paragraphRiverFour = document.querySelector('.riverWordFour');
+            let paragraphRiverFive = document.querySelector('.riverWordFive');
+            let paragraphRiverSix = document.querySelector('.riverWordSix');
+            let paragraphSeeTen = document.querySelector('.seeWordTen');
+
+            let paragraphBearSeven = document.querySelector('.bearWordSeven');
+            let paragraphForest = document.querySelector('.forestWord');
+            let bparagraphBearEight = document.querySelector('.bearWordEight');
+            let paragraphForestTwo = document.querySelector('.forestWordTwo');
+            let paragraphBearNine = document.querySelector('.bearWordNine');
+            let paragraphForestThree = document.querySelector('.forestWordThree');
+            let paragraphSeeEleven = document.querySelector('.seeWordEleven');
+            let paragraphSeeTwelve = document.querySelector('.seeWordTwelve');
+            let paragraphSeeThirteen = document.querySelector('.seeWordThirteen');
+            let paragraphSeeFourteen = document.querySelector('.seeWordFourteen');
+            let paragraphForestFour = document.querySelector('.forestWordFour');
+            let paragraphForestFive = document.querySelector('.forestWordFive');
+            let paragraphForestSix = document.querySelector('.forestWordSix');
+            let paragraphSeeFifteen = document.querySelector('.seeWordFifteen');
+
+            let paragraphBearTen = document.querySelector('.bearWordTen');
+            let paragraphBig = document.querySelector('.bigWord');
+            let paragraphTree = document.querySelector('.treeWord');
+            let paragraphBearEleven = document.querySelector('.bearWordEleven');
+            let paragraphBigTwo = document.querySelector('.bigWordTwo');
+            let paragraphTreeTwo = document.querySelector('.treeWordTwo');
+            let paragraphBearTwelve = document.querySelector('.bearWordTwelve');
+            let paragraphBigThree = document.querySelector('.bigWordThree');
+            let paragraphTreeThree = document.querySelector('.treeWordThree');
+            let paragraphSeeSixteen = document.querySelector('.seeWordSixteen');
+            let paragraphSeeSeventeen = document.querySelector('.seeWordSeventeen');
+            let paragraphSeeEighteen = document.querySelector('.seeWordEighteen');
+            let paragraphSeeNineteen = document.querySelector('.seeWordNineteen');
+            let paragraphForestSeven = document.querySelector('.forestWordSeven');
+            let paragraphRiverSeven = document.querySelector('.riverWordSeven');
+            let paragraphMountainSeven = document.querySelector('.mountainWordSeven');
+            let paragraphForestEight = document.querySelector('.forestWordEight');
+            let paragraphRiverEight = document.querySelector('.riverWordEight');
+            let paragraphMountainEight = document.querySelector('.mountainWordEight');
+            let paragraphForestNine = document.querySelector('.forestWordNine');
+            let paragraphRiverNine = document.querySelector('.riverWordNine');
+            let paragraphMountainNine = document.querySelector('.mountainWordNine');
+            let paragraphSeeTwenty = document.querySelector('.seeWordTwenty');
+            let paragraphSeeTwentyOne = document.querySelector('.seeWordTwentyOne');
+            //
+            // //properly filled story
+            paragraphBear.textContent = bearWord.value;
+            paragraphMountain.textContent = mountainWord.value;
+            paragraphBearTwo.textContent = bearWordTwo.value;
+            paragraphMountainTwo.textContent = mountainWordTwo.value;
+            paragraphBearThree.textContent = bearWordThree.value;
+            paragraphMountainThree.textContent = mountainWordThree.value;
+            paragraphSee.textContent = seeWord.value;
+            paragraphSeeTwo.textContent = seeWordTwo.value;
+            paragraphSeeThree.textContent = seeWordThree.value;
+            paragraphSeeFour.textContent = seeWordFour.value;
+            paragraphMountainFour.textContent = mountainWordFour.value;
+            paragraphMountainFive.textContent = mountainWordFive.value;
+            paragraphMountainSix.textContent = mountainWordSix.value;
+            paragraphSeeFive.textContent = seeWordFive.value;
+            //
+            paragraphBearFour.textContent = bearWordFour.value;
+            paragraphRiver.textContent = riverWord.value;
+            paragraphBearFive.textContent = bearWordFive.value;
+            paragraphRiverTwo.textContent = riverWordTwo.value;
+            paragraphBearSix.textContent = bearWordSix.value;
+            paragraphRiverThree.textContent = riverWordThree.value;
+            paragraphSeeSix.textContent = seeWordSix.value;
+            paragraphSeeSeven.textContent = seeWordSeven.value;
+            paragraphSeeEight.textContent = seeWordEight.value;
+            paragraphSeeNine.textContent = seeWordNine.value;
+            paragraphRiverFour.textContent = riverWordFour.value;
+            paragraphRiverFive.textContent = riverWordFive.value;
+            paragraphRiverSix.textContent = riverWordSix.value;
+            paragraphSeeTen.textContent = seeWordTen.value;
+
+            paragraphBearSeven.textContent = bearWordSeven.value;
+            paragraphForest.textContent = forestWord.value;
+            bparagraphBearEight.textContent = bearWordEight.value;
+            paragraphForestTwo.textContent = forestWordTwo.value;
+            paragraphBearNine.textContent = bearWordNine.value;
+            paragraphForestThree.textContent = forestWordThree.value;
+            paragraphSeeEleven.textContent = seeWordEleven.value;
+            paragraphSeeTwelve.textContent = seeWordTwelve.value;
+            paragraphSeeThirteen.textContent = seeWordThirteen.value;
+            paragraphSeeFourteen.textContent = seeWordFourteen.value;
+            paragraphForestFour.textContent = forestWordFour.value;
+            paragraphForestFive.textContent = forestWordFive.value;
+            paragraphForestSix.textContent = forestWordSix.value;
+            paragraphSeeFifteen.textContent = seeWordFifteen.value;
+
+            paragraphBearTen.textContent = bearWordTen.value;
+            paragraphBig.textContent = bigWord.value;
+            paragraphTree.textContent = treeWord.value;
+            paragraphBearEleven.textContent = bearWordEleven.value;
+            paragraphBigTwo.textContent = bigWordTwo.value;
+            paragraphTreeTwo.textContent = treeWordTwo.value;
+            paragraphBearTwelve.textContent = bearWordTwelve.value;
+            paragraphBigThree.textContent = bigWordThree.value;
+            paragraphTreeThree.textContent = treeWordThree.value;
+            paragraphSeeSixteen.textContent = seeWordSixteen.value;
+            paragraphSeeSeventeen.textContent = seeWordSeventeen.value;
+            paragraphSeeEighteen.textContent = seeWordEighteen.value;
+            paragraphSeeNineteen.textContent = seeWordNineteen.value;
+            paragraphForestSeven.textContent = forestWordSeven.value;
+            paragraphRiverSeven.textContent = riverWordSeven.value;
+            paragraphMountainSeven.textContent = mountainWordSeven.value;
+            paragraphForestEight.textContent = forestWordEight.value;
+            paragraphRiverEight.textContent = riverWordEight.value;
+            paragraphMountainEight.textContent = mountainWordEight.value;
+            paragraphForestNine.textContent = forestWordNine.value;
+            paragraphRiverNine.textContent = riverWordNine.value;
+            paragraphMountainNine.textContent = mountainWordNine.value;
+            paragraphSeeTwenty.textContent = seeWordTwenty.value;
+            paragraphSeeTwentyOne.textContent = seeWordTwentyOne.value;
+
+            storyForm.style.display = 'none';
+
+            storyBlock.style.display = 'block';
+
+            mapDisplay.style.display = 'block';
+
+            story.style.display = 'block';
+
+
+        }
+
+    </script>
+
+</body>
+
+</html>

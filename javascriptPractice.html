@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript Practice</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yatra One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marcellus">
+    <style>
+
+        body {
+            font-family: Marcellus, sans-serif;
+            margin: 3rem;
+        }
+
+        h1 {
+            margin-bottom: 5rem;
+        }
+
+        h2 {
+            margin-top: 5rem;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+<h1>This is a JavaScript Practice page</h1>
+
+
+
+<h2>Let's see what we can do with it!</h2>
+
+<p id="changeResponse">Try clicking on the button below.</p>
+
+<button type="button" onclick='document.getElementById("changeResponse").innerHTML = "Hey! You did it! Keep going!"'>Click Me!</button>
+
+
+
+<h2>Ok. Let's try something a little bit harder.</h2>
+
+<button onclick="document.getElementById('faceImage').src='Kawaii_Face_Awake.png'">Wake Up</button>
+
+<img id="faceImage" src="Kawaii_Face_Asleep.png" style="width:10rem">
+
+<button onclick="document.getElementById('faceImage').src='Kawaii_Face_Asleep.png'">Go to Sleep</button>
+
+
+
+<h2>Or how about this?</h2>
+
+<button onclick="document.getElementById('foodImage').src='Kawaii_Chocolate Bar_250x300.png'">Hungry?</button>
+
+<img id="foodImage" src="BlankImage_250x300.png" style="width: 8rem">
+
+<button onclick="document.getElementById('foodImage').src='Kawaii_Coffee_250x300.png'">Thirsty?</button>
+
+
+
+<h2>Or this?</h2>
+
+<p id="wordSizeChage">I can chage size!.</p>
+
+<button type="button" onclick="document.getElementById('wordSizeChage').style.fontSize='1.5rem'">Big</button>
+
+<button type="button" onclick="document.getElementById('wordSizeChage').style.fontSize='1rem'">Small</button>
+
+
+
+<h2>What's next?</h2>
+
+<p id="hideShowWorld">Hello, World!.</p>
+
+<button type="button" onclick="document.getElementById('hideShowWorld').style.display='none'">Hide</button>
+
+<button type="button" onclick="document.getElementById('hideShowWorld').style.display='block'">Show</button>
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+</html>

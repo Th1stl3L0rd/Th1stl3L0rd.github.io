@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Six Little Ducks</title>
+    <link href="witLibsJr.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yatra One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=New Amsterdam">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee Shade">
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <nav>
+        <h1>Wit Libs Jr.</h1>
+        <a id="home" href="witLibsJr.html">Home</a>
+        <a id="rules" href="rulesWitLibsJr.html">Rules</a>
+        <a id="about" href="aboutWitLibsJr.html">About</a>
+        <a id="storyBook" href="storyBookWitLibsJr.html">Story Book!</a>
+    </nav>
+
+    <div class="block" id="storyblock">
+
+        <div class="list" id="storyList">
+            <div class="stickyTop" id="stickyStoryList">
+                <h2 class="storyInputTitle" >Six Little Ducks</h2>
+            </div>
+
+            <form class="storyInput_WitLibsJr" id="sixDucksStory">
+                <div>
+                    <label>Number</label>
+                    <input type="text" class=six>
+                </div>
+                <div>
+                    <label>Adj. (Absolute)</label>
+                    <input type="text" class=littleDucks>
+                </div>
+                <div>
+                    <label>Noun (Plural)</label>
+                    <input type="text" class=ducks>
+                </div>
+                <div>
+                    <label>Adj. (Absolute)</label>
+                    <input type="text" class=fat>
+                </div>
+                <div>
+                    <label>Adj. (Absolute)</label>
+                    <input type="text" class=skinny>
+                </div>
+                <div>
+                    <label>Adj. (Absolute)</label>
+                    <input type="text" class=fair>
+                </div>
+                <div>
+                    <label>Prev. Noun (Sng.)</label>
+                    <input type="text" class=duck>
+                </div>
+                <div>
+                    <label>Noun</label>
+                    <input type="text" class=feather>
+                </div>
+                <div>
+                    <label>Body Part</label>
+                    <input type="text" class=back>
+                </div>
+                <div>
+                    <label>Sound</label>
+                    <input type="text" class=quack>
+                </div>
+
+                <div class="formButtons" id="buttonsSixDucks">
+                    <button type="reset" class="resetButton" id="reset">Reset</button>
+                    <button type="button" class="createButton" id="create"  onclick="createStory()">Create</button>
+                </div>
+
+            </form>
+
+        <div class="storyBlock" id="createStorySixDucks">
+
+            <div class="mapBackground">
+
+                <p class="paragraph" id="sixDucksParagraph">
+                    <span class="sixWord"></span> <span class="littleWordDucks"></span> <span class="ducksWord"></span>,
+                    that I once knew.<br>
+                    <span class="fatWord"></span> ones, <span class="skinnyWord"></span> ones,
+                    <span class="fairWord"></span> ones, too.<br>
+                    But the one <span class="littleWordDucksTwo"></span> <span class="duckWord"></span>,<br>
+                    with a <span class="featherWord"></span> on its <span class="backWord"></span>,<br>
+                    they led the others with a <span class="quackWord"></span>, <span class="quackWordTwo"></span>,
+                    <span class="quackWordThree"></span>.
+                </p>
+
+                <div class="storyButtons" id="storyButtonsSixDucks">
+                    <button type="submit">Save</button>
+                    <button type="reset" onclick="returnToForm">Play Again</button>
+                    <button type="button">Return to Stories</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<script>
+
+    function createStory() {
+
+
+        //generated story variable
+        let storyBlock = document.querySelector('.storyBlock');
+        let mapDisplay = document.querySelector('.mapBackground');
+        let story = document.querySelector('.paragraph');
+        let storyForm = document.querySelector('.storyInput_WitLibsJr');
+
+        //input
+        let sixWord = document.querySelector('.six');
+        let littleWordDucks = document.querySelector('.littleDucks');
+        let ducksWord = document.querySelector('.ducks');
+        let fatWord = document.querySelector('.fat');
+        let skinnyWord = document.querySelector('.skinny');
+        let fairWord = document.querySelector('.fair');
+        let littleWordDucksTwo = document.querySelector('.littleDucks');
+        let duckWord = document.querySelector('.duck');
+        let featherWord = document.querySelector('.feather');
+        let backWord = document.querySelector('.back');
+        let quackWord = document.querySelector('.quack');
+        let quackWordTwo = document.querySelector('.quack');
+        let quackWordThree = document.querySelector('.quack');
+
+        //output
+        let paragraphSix = document.querySelector('.sixWord');
+        let paragraphLittleDucks = document.querySelector('.littleWordDucks');
+        let paragraphDucks = document.querySelector('.ducksWord');
+        let paragraphFat = document.querySelector('.fatWord');
+        let paragraphSkinny = document.querySelector('.skinnyWord');
+        let paragraphFair = document.querySelector('.fairWord');
+        let paragraphLittleDucksTwo = document.querySelector('.littleWordDucksTwo');
+        let paragraphDuck = document.querySelector('.duckWord');
+        let paragraphFeather = document.querySelector('.featherWord');
+        let paragraphBack = document.querySelector('.backWord');
+        let paragraphQuack = document.querySelector('.quackWord');
+        let paragraphQuackTwo = document.querySelector('.quackWordTwo');
+        let paragraphQuackThree = document.querySelector('.quackWordThree');
+
+
+        //properly filled story
+        paragraphSix.textContent = sixWord.value;
+        paragraphLittleDucks.textContent = littleWordDucks.value;
+        paragraphDucks.textContent = ducksWord.value;
+        paragraphFat.textContent = fatWord.value;
+        paragraphSkinny.textContent = skinnyWord.value;
+        paragraphFair.textContent = fairWord.value;
+        paragraphLittleDucksTwo.textContent = littleWordDucksTwo.value;
+        paragraphDuck.textContent = duckWord.value;
+        paragraphFeather.textContent = featherWord.value;
+        paragraphBack.textContent = backWord.value;
+        paragraphQuack.textContent = quackWord.value;
+        paragraphQuackTwo.textContent = quackWordTwo.value;
+        paragraphQuackThree.textContent = quackWordThree.value;
+
+
+        storyForm.style.display = 'none';
+
+        storyBlock.style.display = 'block';
+
+        mapDisplay.style.display = 'block';
+
+        story.style.display = 'block';
+    }
+
+</script>
+
+
+
+
+    </div>
+
+
+
+</body>
+
+
+
+</html>

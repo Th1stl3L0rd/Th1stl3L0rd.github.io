@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SpongeBob SquarePants</title>
+    <link href="witLibsJr.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yatra One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=New Amsterdam">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee Shade">
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <nav>
+        <h1>Wit Libs Jr.</h1>
+        <a id="home" href="witLibsJr.html">Home</a>
+        <a id="rules" href="rulesWitLibsJr.html">Rules</a>
+        <a id="about" href="aboutWitLibsJr.html">About</a>
+        <a id="storyBook" href="storyBookWitLibsJr.html">Story Book!</a>
+    </nav>
+
+    <div class="block" id="storyblock">
+
+        <div class="list" id="storyList">
+            <div class="stickyTop" id="stickyStoryList">
+                <h2 class="storyInputTitle" >SpongeBob SquarePants!</h2>
+            </div>
+
+            <form class="storyInput_WitLibsJr" id="spongeBobStory">
+                <div>
+                    <label>Noun</label>
+                    <input type="text" class=pineapple>
+                </div>
+                <div>
+                    <label>Noun</label>
+                    <input type="text" class=sea>
+                </div>
+                <div>
+                    <label>Name</label>
+                    <input type="text" class=bob>
+                </div>
+                <div>
+                    <label>Noun (Plural)</label>
+                    <input type="text" class=pants>
+                </div>
+                <div>
+                    <label>Adj. (Absolute)</label>
+                    <input type="text" class=absorbent>
+                </div>
+                <div>
+                    <label>Adj. (Absolute)</label>
+                    <input type="text" class=yellow>
+                </div>
+                <div>
+                    <label>Adj. (Absolute)</label>
+                    <input type="text" class=porous>
+                </div>
+                <div>
+                    <label>Adj. (Absolute)</label>
+                    <input type="text" class=nautical>
+                </div>
+                <div>
+                    <label>Verb (Dynamic)</label>
+                    <input type="text" class=drop>
+                </div>
+                <div>
+                    <label>Noun</label>
+                    <input type="text" class=deck>
+                </div>
+                <div>
+                    <label>Verb (Dynamic)</label>
+                    <input type="text" class=flop>
+                </div>
+                <div>
+                    <label>Noun</label>
+                    <input type="text" class=fish>
+                </div>
+
+                <div class="formButtons" id="buttonsspongeBob">
+                    <button type="reset" class="resetButton" id="reset">Reset</button>
+                    <button type="button" class="createButton" id="create" onclick="createStory()">Create</button>
+                </div>
+
+            </form>
+
+            <div class="storyBlock" id="createStorySpongeBob">
+
+                <div class="mapBackground">
+
+                    <p class="paragraph" id="spongeBobParagraph">
+                        Who lives in a <span class="pineappleWord"></span> under the <span class="seaWord"></span>?<br>
+                        <em>Sponge<span class="bobWord"></span> Square<span class="pantsWord"></span></em><br>
+                        <span class="absorbentWord"></span> and <span class="yellowWord"></span> and
+                        <span class="porousWord"></span>, is he- <br>
+                        <em>Sponge<span class="bobWordTwo"></span> Square<span class="pantsWordTwo"></span></em><br>
+                        If <span class="nauticalWord"></span> nonsense be somethin' you wish- <br>
+                        <em>Sponge<span class="bobWordThree"></span> Square<span class="pantsWordThree"></span></em><br>
+                        Then <span class="dropWord"></span> on the <span class="deckWord"></span> and
+                        <span class="flopWord"></span> like a <span class="fishWord"></span>!<br>
+                        <em>Sponge<span class="bobWordFour"></span> Square<span class="pantsWordFour"></span></em><br>
+                        (Ready?)<br>
+                        <b><em>Sponge<span class="bobWordFive"></span> Square<span class="pantsWordFive"></span></em></b>
+                        <b><em>Sponge<span class="bobWordSix"></span> Square<span class="pantsWordSix"></span></em></b>
+                        <b><em>Sponge<span class="bobWordSeven"></span> Square<span class="pantsWordSeven"></span></em></b>
+                        <b style="font-size: 3.25rem;">Sponge<span class="bobWordEight"></span>... Square<span class="pantsWordEight"></span>!!!</b>
+                    </p>
+
+
+                    <div class="storyButtons" id="storyButtonsLittleTeapot">
+                        <button type="submit">Save</button>
+                        <button type="reset" onclick="returnToForm">Play Again</button>
+                        <button type="button">Return to Stories</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<script>
+
+    function createStory() {
+
+
+        //generated story variable
+        let storyBlock = document.querySelector('.storyBlock');
+        let mapDisplay = document.querySelector('.mapBackground');
+        let story = document.querySelector('.paragraph');
+        let storyForm = document.querySelector('.storyInput_WitLibsJr');
+
+        //input
+        let pineappleWord = document.querySelector('.pineapple');
+        let seaWord = document.querySelector('.sea');
+        let bobWord = document.querySelector('.bob');
+        let pantsWord = document.querySelector('.pants');
+        let absorbentWord = document.querySelector('.absorbent');
+        let yellowWord = document.querySelector('.yellow');
+        let porousWord = document.querySelector('.porous');
+        let bobWordTwo = document.querySelector('.bob');
+        let pantsWordTwo = document.querySelector('.pants');
+        let nauticalWord = document.querySelector('.nautical');
+        let bobWordThree = document.querySelector('.bob');
+        let pantsWordThree = document.querySelector('.pants');
+        let dropWord = document.querySelector('.drop');
+        let deckWord = document.querySelector('.deck');
+        let flopWord = document.querySelector('.flop');
+        let fishWord = document.querySelector('.fish');
+        let bobWordFour = document.querySelector('.bob');
+        let pantsWordFour = document.querySelector('.pants');
+        let bobWordFive = document.querySelector('.bob');
+        let pantsWordFive = document.querySelector('.pants');
+        let bobWordSix = document.querySelector('.bob');
+        let pantsWordSix = document.querySelector('.pants');
+        let bobWordSeven = document.querySelector('.bob');
+        let pantsWordSeven = document.querySelector('.pants');
+        let bobWordEight = document.querySelector('.bob');
+        let pantsWordEight = document.querySelector('.pants');
+
+        //output
+        let paragraphPineapple = document.querySelector('.pineappleWord');
+        let paragraphSea = document.querySelector('.seaWord');
+        let paragraphBob = document.querySelector('.bobWord');
+        let paragraphPants = document.querySelector('.pantsWord');
+        let paragraphAbsorbent = document.querySelector('.absorbentWord');
+        let paragraphYellow = document.querySelector('.yellowWord');
+        let paragraphPorous = document.querySelector('.porousWord');
+        let paragraphBobTwo = document.querySelector('.bobWordTwo');
+        let paragraphPantsTwo = document.querySelector('.pantsWordTwo');
+        let paragraphNautical = document.querySelector('.nauticalWord');
+        let paragraphBobThree = document.querySelector('.bobWordThree');
+        let paragraphPantsThree = document.querySelector('.pantsWordThree');
+        let paragraphDrop = document.querySelector('.dropWord');
+        let paragraphDeck = document.querySelector('.deckWord');
+        let paragraphFlop = document.querySelector('.flopWord');
+        let paragraphFish = document.querySelector('.fishWord');
+        let paragraphBobFour = document.querySelector('.bobWordFour');
+        let paragraphPantsFour = document.querySelector('.pantsWordFour');
+        let paragraphBobFive = document.querySelector('.bobWordFive');
+        let paragraphPantsFive = document.querySelector('.pantsWordFive');
+        let paragraphBobSix = document.querySelector('.bobWordSix');
+        let paragraphPantsSix = document.querySelector('.pantsWordSix');
+        let paragraphBobSeven = document.querySelector('.bobWordSeven');
+        let paragraphPantsSeven = document.querySelector('.pantsWordSeven');
+        let paragraphBobEight = document.querySelector('.bobWordEight');
+        let paragraphPantsEight = document.querySelector('.pantsWordEight');
+
+        //properly filled story
+        paragraphPineapple.textContent = pineappleWord.value;
+        paragraphSea.textContent = seaWord.value;
+        paragraphBob.textContent = bobWord.value;
+        paragraphPants.textContent = pantsWord.value;
+        paragraphAbsorbent.textContent = absorbentWord.value;
+        paragraphYellow.textContent = yellowWord.value;
+        paragraphPorous.textContent = porousWord.value;
+        paragraphBobTwo.textContent = bobWordTwo.value;
+        paragraphPantsTwo.textContent = pantsWordTwo.value;
+        paragraphNautical.textContent = nauticalWord.value;
+        paragraphBobThree.textContent = bobWordThree.value;
+        paragraphPantsThree.textContent = pantsWordThree.value;
+        paragraphDrop.textContent = dropWord.value;
+        paragraphDeck.textContent = deckWord.value;
+        paragraphFlop.textContent = flopWord.value;
+        paragraphFish.textContent = fishWord.value;
+        paragraphBobFour.textContent = bobWordFour.value;
+        paragraphPantsFour.textContent = pantsWordFour.value;
+        paragraphBobFive.textContent = bobWordFive.value;
+        paragraphPantsFive.textContent = pantsWordFive.value;
+        paragraphBobSix.textContent = bobWordSix.value;
+        paragraphPantsSix.textContent = pantsWordSix.value;
+        paragraphBobSeven.textContent = bobWordSeven.value;
+        paragraphPantsSeven.textContent = pantsWordSeven.value;
+        paragraphBobEight.textContent = bobWordEight.value;
+        paragraphPantsEight.textContent = pantsWordEight.value;
+
+
+
+        storyForm.style.display = 'none';
+
+        storyBlock.style.display = 'block';
+
+        mapDisplay.style.display = 'block';
+
+        story.style.display = 'block';
+    }
+
+</script>
+
+
+
+</body>
+
+
+
+</html>

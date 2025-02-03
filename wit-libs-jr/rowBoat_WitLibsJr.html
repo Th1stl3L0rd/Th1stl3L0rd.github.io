@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Row Row Row Your Boat</title>
+    <link href="witLibsJr.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yatra One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=New Amsterdam">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee Shade">
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <nav>
+        <h1>Wit Libs Jr.</h1>
+        <a id="home" href="witLibsJr.html">Home</a>
+        <a id="rules" href="rulesWitLibsJr.html">Rules</a>
+        <a id="about" href="aboutWitLibsJr.html">About</a>
+        <a id="storyBook" href="storyBookWitLibsJr.html">Story Book!</a>
+    </nav>
+
+    <div class="block" id="storyblock">
+
+        <div class="list" id="storyList">
+            <div class="stickyTop" id="stickyStoryList">
+                <h2 class="storyInputTitle" >Row Row Row Your Boat</h2>
+            </div>
+
+            <form class="storyInput_WitLibsJr" id="rowBoatStory">
+                <div>
+                    <label>Verb (Dynamic)</label>
+                    <input type="text" class=row>
+                </div>
+                <div>
+                    <label>Noun</label>
+                    <input type="text" class=boat>
+                </div>
+                <div>
+                    <label>Adverb</label>
+                    <input type="text" class=gently>
+                </div>
+                <div>
+                    <label>Noun</label>
+                    <input type="text" class=stream>
+                </div>
+                <div>
+                    <label>Adverb</label>
+                    <input type="text" class=merrily>
+                </div>
+                <div>
+                    <label>Noun</label>
+                    <input type="text" class=dream>
+                </div>
+
+                <div class="formButtons" id="buttonsRowBoat">
+                    <button type="reset" class="resetButton" id="reset">Reset</button>
+                    <button type="button" class="createButton" id="create" onclick="createStory()">Create</button>
+                </div>
+
+            </form>
+
+
+            <div class="storyBlock" id="createStoryRowBoat">
+
+                <div class="mapBackground">
+
+                    <p class="paragraph" id="rowBoatParagraph">
+                        <span class="rowWord"></span>, <span class="rowWordTwo"></span>, <span class="rowWordThree"></span>
+                        your <span class="boatWord"></span>.<br>
+                        <span class="gentlyWord"></span> down the <span class="streamWord"></span>.<br>
+                        <span class="merrilyWord"></span>, <span class="merrilyWordTwo"></span>,
+                        <span class="merrilyWordThree"></span>, <span class="merrilyWordFour"></span>.<br>
+                        Life is but a <span class="dreamWord"></span>.
+                    </p>
+
+                    <div class="storyButtons" id="storyButtonsRowBoat">
+                        <button type="submit">Save</button>
+                        <button type="reset" onclick="returnToForm">Play Again</button>
+                        <button type="button">Return to Stories</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<script>
+
+    function createStory() {
+
+
+        //generated story variable
+        let storyBlock = document.querySelector('.storyBlock');
+        let mapDisplay = document.querySelector('.mapBackground');
+        let story = document.querySelector('.paragraph');
+        let storyForm = document.querySelector('.storyInput_WitLibsJr');
+
+        //input
+        let rowWord = document.querySelector('.row');
+        let rowWordTwo = document.querySelector('.row');
+        let rowWordThree = document.querySelector('.row');
+        let boatWord = document.querySelector('.boat');
+        let gentlyWord = document.querySelector('.gently');
+        let streamWord = document.querySelector('.stream');
+        let merrilyWord = document.querySelector('.merrily');
+        let merrilyWordTwo = document.querySelector('.merrily');
+        let merrilyWordThree = document.querySelector('.merrily');
+        let merrilyWordFour = document.querySelector('.merrily');
+        let dreamWord = document.querySelector('.dream');
+
+        //output
+        let paragraphRow = document.querySelector('.rowWord');
+        let paragraphRowTwo = document.querySelector('.rowWordTwo');
+        let paragraphRowThree = document.querySelector('.rowWordThree');
+        let paragraphBoat = document.querySelector('.boatWord');
+        let paragraphGently = document.querySelector('.gentlyWord');
+        let paragraphStream = document.querySelector('.streamWord');
+        let paragraphMerrily = document.querySelector('.merrilyWord');
+        let paragraphMerrilyTwo = document.querySelector('.merrilyWordTwo');
+        let paragraphMerrilyThree = document.querySelector('.merrilyWordThree');
+        let paragraphMerrilyFour = document.querySelector('.merrilyWordFour');
+        let paragraphDream = document.querySelector('.dreamWord');
+
+        //properly filled story
+        paragraphRow.textContent = rowWord.value;
+        paragraphRowTwo.textContent = rowWordTwo.value;
+        paragraphRowThree.textContent = rowWordThree.value;
+        paragraphBoat.textContent = boatWord.value;
+        paragraphGently.textContent = gentlyWord.value;
+        paragraphStream.textContent = streamWord.value;
+        paragraphMerrily.textContent = merrilyWord.value;
+        paragraphMerrilyTwo.textContent = merrilyWordTwo.value;
+        paragraphMerrilyThree.textContent = merrilyWordThree.value;
+        paragraphMerrilyFour.textContent = merrilyWordFour.value;
+        paragraphDream.textContent = dreamWord.value;
+
+
+        storyForm.style.display = 'none';
+
+        storyBlock.style.display = 'block';
+
+        mapDisplay.style.display = 'block';
+
+        story.style.display = 'block';
+    }
+
+</script>
+
+
+
+</body>
+
+
+
+</html>

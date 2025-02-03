@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mary Had a Little Lamb</title>
+    <link href="witLibsJr.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yatra One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=New Amsterdam">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee Shade">
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <nav>
+        <h1>Wit Libs Jr.</h1>
+        <a id="home" href="witLibsJr.html">Home</a>
+        <a id="rules" href="rulesWitLibsJr.html">Rules</a>
+        <a id="about" href="aboutWitLibsJr.html">About</a>
+        <a id="storyBook" href="storyBookWitLibsJr.html">Story Book!</a>
+    </nav>
+
+    <div class="block" id="storyblock">
+
+        <div class="list" id="storyList">
+            <div class="stickyTop" id="stickyStoryList">
+                <h2 class="storyInputTitle" >Mary Had a Little Lamb</h2>
+            </div>
+
+            <form class="storyInput_WitLibsJr" id="maryLambStory">
+                <div>
+                    <label>Name</label>
+                    <input type="text" class=mary>
+                </div>
+                <div>
+                    <label>Adj. (Absolute)</label>
+                    <input type="text" class=littleMary>
+                </div>
+                <div>
+                    <label>Noun</label>
+                    <input type="text" class=lamb>
+                </div>
+                <div>
+                    <label>Noun</label>
+                    <input type="text" class=fleece>
+                </div>
+                <div>
+                    <label>Color</label>
+                    <input type="text" class=white>
+                </div>
+                <div>
+                    <label>Noun (Plural)</label>
+                    <input type="text" class=snow>
+                </div>
+
+                <div class="formButtons" id="buttonsMaryLamb">
+                    <button type="reset" class="resetButton" id="reset">Reset</button>
+                    <button type="button" class="createButton" id="create" onclick="createStory()">Create</button>
+                </div>
+
+            </form>
+
+            <div class="storyBlock" id="createStoryMaryLamb">
+
+                <div class="mapBackground">
+
+                    <p class="paragraph" id="maryLambParagraph">
+                        <span class="maryWord"></span> had a <span class="littleWordMary"></span> <span class="lambWord"></span>,<br>
+                        <span class="littleWordMaryTwo"></span> <span class="lambWordTwo"></span>,
+                        <span class="littleWordMaryThree"></span> <span class="lambWordThree"></span>.<br>
+                        <span class="maryWordTwo"></span> had a <span class="littleWordMaryFour"></span> <span class="lambWordFour"></span>,<br>
+                        it`s <span class="fleeceWord"></span> was <span class="whiteWord"></span> as <span class="snowWord"></span>.
+                        And everywhere that <span class="maryWordThree"></span> went,
+                        <span class="maryWordFour"></span> went, <span class="maryWordFive"></span> went,
+                        and everywhere that <span class="maryWordSix"></span> went,
+                        the <span class="lambWordFive"></span> was sure to go.
+
+<!--                        It followed her to school one day-->
+<!--                        school one day, school one day.-->
+<!--                        It followed her to school one day,-->
+<!--                        which was against the rules.-->
+<!--                        It made the children laugh and play,-->
+<!--                        laugh and play, laugh and play,-->
+<!--                        it made the children laugh and play-->
+<!--                        - to see a lamb in school.-->
+
+<!--                        And so the teacher turned it out,-->
+<!--                        turned it out, turned it out.-->
+<!--                        And so the teacher turned it out,-->
+<!--                        but still it lingered near,-->
+<!--                        And waited patiently about,-->
+<!--                        patiently about, patiently about,-->
+<!--                        And waited patiently about-->
+<!--                        - till Mary did appear.-->
+
+<!--                        "Why does the lamb love Mary so?"-->
+<!--                        Love Mary so? Love Mary so?-->
+<!--                        "Why does the lamb love Mary so,"-->
+<!--                        the eager children cry.-->
+<!--                        "Why, Mary loves the lamb, you know."-->
+<!--                        The lamb, you know, the lamb, you know,-->
+<!--                        "Why, Mary loves the lamb, you know,"-->
+<!--                        the teacher did reply.-->
+                    </p>
+
+                    <div class="storyButtons" id="storyButtonsLittleTeapot">
+                        <button type="submit">Save</button>
+                        <button type="reset" onclick="returnToForm">Play Again</button>
+                        <button type="button">Return to Stories</button>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</div>
+
+
+<script>
+
+    function createStory() {
+
+
+        //generated story variable
+        let storyBlock = document.querySelector('.storyBlock');
+        let mapDisplay = document.querySelector('.mapBackground');
+        let story = document.querySelector('.paragraph');
+        let storyForm = document.querySelector('.storyInput_WitLibsJr');
+
+        //input
+        let maryWord = document.querySelector('.mary');
+        let littleWordMary = document.querySelector('.littleMary');
+        let lambWord = document.querySelector('.lamb');
+        let littleWordMaryTwo = document.querySelector('.littleMary');
+        let lambWordTwo = document.querySelector('.lamb');
+        let littleWordMaryThree = document.querySelector('.littleMary');
+        let lambWordThree = document.querySelector('.lamb');
+        let maryWordTwo = document.querySelector('.mary');
+        let littleWordMaryFour = document.querySelector('.littleMary');
+        let lambWordFour = document.querySelector('.lamb');
+        let fleeceWord = document.querySelector('.fleece');
+        let whiteWord = document.querySelector('.white');
+        let snowWord = document.querySelector('.snow');
+        let maryWordThree = document.querySelector('.mary');
+        let maryWordFour = document.querySelector('.mary');
+        let maryWordFive = document.querySelector('.mary');
+        let maryWordSix = document.querySelector('.mary');
+        let lambWordFive = document.querySelector('.lamb');
+
+        //output
+        let paragraphMary = document.querySelector('.maryWord');
+        let paragraphLittleMary = document.querySelector('.littleWordMary');
+        let paragraphLamb = document.querySelector('.lambWord');
+        let paragraphLittleMaryTwo = document.querySelector('.littleWordMaryTwo');
+        let paragraphLambTwo = document.querySelector('.lambWordTwo');
+        let paragraphLittleMaryThree = document.querySelector('.littleWordMaryThree');
+        let paragraphLambThree = document.querySelector('.lambWordThree');
+        let paragraphMaryTwo = document.querySelector('.maryWordTwo');
+        let paragraphLittleMaryFour = document.querySelector('.littleWordMaryFour');
+        let paragraphLambFour = document.querySelector('.lambWordFour');
+        let paragraphFleece = document.querySelector('.fleeceWord');
+        let paragraphWhite = document.querySelector('.whiteWord');
+        let paragraphSnow = document.querySelector('.snowWord');
+        let paragraphMaryThree = document.querySelector('.maryWordThree');
+        let paragraphMaryFour = document.querySelector('.maryWordFour');
+        let paragraphMaryFive = document.querySelector('.maryWordFive');
+        let paragraphMarySix = document.querySelector('.maryWordSix');
+        let paragraphLambFive = document.querySelector('.lambWordFive');
+
+        //properly filled story
+        paragraphMary.textContent = maryWord.value;
+        paragraphLittleMary.textContent = littleWordMary.value;
+        paragraphLamb.textContent = lambWord.value;
+        paragraphLittleMaryTwo.textContent = littleWordMaryTwo.value;
+        paragraphLambTwo.textContent = lambWordTwo.value;
+        paragraphLittleMaryThree.textContent = littleWordMaryThree.value;
+        paragraphLambThree.textContent = lambWordThree.value;
+        paragraphMaryTwo.textContent = maryWordTwo.value;
+        paragraphLittleMaryFour.textContent = littleWordMaryFour.value;
+        paragraphLambFour.textContent = lambWordFour.value;
+        paragraphFleece.textContent = fleeceWord.value;
+        paragraphWhite.textContent = whiteWord.value;
+        paragraphSnow.textContent = snowWord.value;
+        paragraphMaryThree.textContent = maryWordThree.value;
+        paragraphMaryFour.textContent = maryWordFour.value;
+        paragraphMaryFive.textContent = maryWordFive.value;
+        paragraphMarySix.textContent = maryWordSix.value;
+        paragraphLambFive.textContent = lambWordFive.value;
+
+
+        storyForm.style.display = 'none';
+
+        storyBlock.style.display = 'block';
+
+        mapDisplay.style.display = 'block';
+
+        story.style.display = 'block';
+    }
+
+</script>
+
+
+</body>
+
+
+
+</html>

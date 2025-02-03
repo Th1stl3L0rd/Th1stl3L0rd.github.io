@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WitLibs Jr!</title>
+    <link href="witLibsJr.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yatra One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=New Amsterdam">
+</head>
+
+<body>
+
+<div class="container">
+
+    <nav>
+        <h1>Wit Libs Jr.</h1>
+        <a class="active" id="home">Home</a>
+        <a id="rules" href="rulesWitLibsJr.html">Rules</a>
+        <a id="about" href="aboutWitLibsJr.html">About</a>
+        <a id="storyBook" href="storyBookWitLibsJr.html">Story Book!</a>
+    </nav>
+
+
+    <div class="block" id="playersBlock">
+
+        <div id="playersList">
+            <a id="playerAeschylus" href="aeschylus_WitLibsJr.html">Aeschylus</a>   <!--php begin record onclick, record
+            all data throughout so that it can record the proper save file, save file will output to the storybook page,
+            use $varName = 'p #bearMountainP'; echo '.varName.'; to show the completed story p. it the php is working,
+            it will record whoever makes the story correctly. so... onclick function recordAeschylus(),php echo/print
+            can set a timeout for each player i think set it with a function that says if player returns to home page timeout
+            that way it can start a new session if another or even same name is clicked. clear all tract data when return to
+            homepage. also use readfile() to read whatever is saved. or fopen, fread, and fclose are a better option,
+             can do more with it. use the r in fread for read only on the saved game files. SESSION must be set before
+              anything else in the document, add this to each user page, so that when they click on their name on the
+               home page it will take them to their page and start recording. i thin i need php json encode and decode
+               so that the computer will recognize the player and save all the data. i think i need to make a function
+               that says if onclick save then function converttojson () this function will turn the createstory data
+               into json that can be read by php and stored as a text file into the storybook page, i think...
+               oh, maybe i can just create a text file when the player creates the story initially and make a function
+               that says if the save button is clicked it will save the text file, otherwise it will discard it.
+               so... [onclick createstory(): convert output to textfile, onclick save: save textfile to storybook page(date/time
+               and user log for each file saved)-->
+            <a id="playerIdris" href="idris_WitLibsJr.html">Idris</a>
+            <a id="playerCornelius" href="cornelius_WitLibsJr.html">Cornelius</a>
+            <a id="playerMommy" href="mommy_WitLibsJr.html">Mommy</a>
+            <a id="playerDaddy" href="daddy_WitLibsJr.html">Daddy</a>
+            <a id="playerWes" href="wes_WitLibsJr.html">Uncle Wes</a>
+            <a id="playerGPa" href="gPa_WitLibsJr.html">Grandpa</a>
+            <a id="playerGuest" href="guest_WitLibsJr.html">Guest</a>
+        </div>
+
+    </div>
+
+</div>
+
+
+</body>
+
+
+</html>

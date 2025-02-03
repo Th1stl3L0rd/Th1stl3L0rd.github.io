@@ -1,0 +1,170 @@
+
+
+
+<html>
+<head>
+
+    <title>Fading Test Page</title>
+
+    <style>
+
+        body {
+            background-image: url("Mario_PeachCastle1.jpeg");
+            background-size: cover;
+        }
+
+        .fadingTest {
+            margin: 10% 50% 25% 25%;
+            width: 500px;
+            height: 500px;
+            border-style: groove;
+            border-width: 1rem;
+            border-color: deeppink;
+            background: transparent;
+
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+
+        }
+
+        .fadingBlock {
+            /*margin: auto;*/
+            /*width: 100%;*/
+            /*height: 100%;*/
+            /*display: block;*/
+            /*opacity: 1;*/
+            background-size: cover;
+            background-image: url("Mario_MysteryBox1_500x500.png");
+
+            width: 500px;
+            height: 500px;
+
+            /*background-color: #904ea2;*/
+
+            z-index: 99;
+
+            grid-area: 1 / 1 / 2 / 2;
+
+        }
+
+
+        .fadingBoo {
+            /*margin: auto;*/
+            /*width: 100%;*/
+            /*height: 100%;*/
+            /*display: block;*/
+            /*opacity: 0;*/
+            background-size: cover;
+            background-image: url("Mario_KingBoo1_500x500.jpg");
+
+            width: 500px;
+            height: 500px;
+
+            /*background-color: #95c207;*/
+
+            z-index: 98;
+
+            grid-area: 1 / 1 / 2 / 2;
+
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="fadingTest" id="fadeTest">
+
+    <div class="fadingBlock" id="fadeMBlock">
+        <div class="buttons" id="mBlockButtons">
+            <button type="button" class="createButton" id="create" onclick="revealBoo()">Reveal</button>
+        </div>
+    </div>
+
+    <div class="fadingBoo" id="fadeBoo">
+        <div class="buttons">
+            <button type="button" class="returnButton" id="returnBlock" onclick="returnMBlock()">Return</button>
+        </div>
+    </div>
+
+</div>
+
+<script>
+
+    // document.querySelector("#create").addEventListener('click',() => {
+    //
+    //     revealBoo();
+    //
+    // });
+    //
+    //
+    // document.querySelector("#returnBlock").addEventListener('click',() => {
+    //
+    //     returnMBlock();
+    //
+    // });
+
+
+    function revealBoo() {
+
+        let fadeBlock = document.querySelector('.fadingBlock');
+        let fadeBoo = document.querySelector('.fadingBoo')
+
+        fadeBlock.style.transition = 'opacity .5s ease-in-out';
+        fadeBlock.style.opacity = '0';
+
+        setTimeout(function () {
+            fadeBlock.style.zIndex= '98';
+            fadeBoo.style.zIndex= '99';
+        }, 500);
+
+
+        // if (window.getComputedStyle(fadeBlock).getPropertyValue("display") === "block") {
+        //     fadeBlock.style.opacity = '0';
+        //     fadeBlock.style.transition = '2s ease-in';
+        //     fadeBlock.style.display = 'none';
+        //     // fadeBoo.style.display = 'block';
+        // }
+
+    }
+
+
+    function returnMBlock() {
+        let fadeBlock = document.querySelector('.fadingBlock');
+        let fadeBoo = document.querySelector('.fadingBoo')
+
+        fadeBoo.style.zIndex= '98';
+        fadeBlock.style.zIndex= '99';
+
+        fadeBlock.style.transition = 'opacity .5s ease-in-out';
+        fadeBlock.style.opacity = '1';
+
+        setTimeout(function () {
+            fadeBlock.style.transition = 'opacity .5s ease-in-out';
+            fadeBlock.style.opacity = '1';
+        }, 500);
+
+
+        // if (window.getComputedStyle(fadeBoo).getPropertyValue("display") === "block") {
+        //     fadeBoo.style.opacity = '0';
+        //     fadeBoo.style.transition = '2s ease-in';
+        //     fadeBoo.style.display = 'none';
+        //
+        // }
+
+    }
+
+
+
+
+
+
+
+</script>
+
+</body>
+
+</html>

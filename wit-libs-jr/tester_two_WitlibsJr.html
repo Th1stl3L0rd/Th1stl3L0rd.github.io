@@ -1,0 +1,648 @@
+
+
+
+<html>
+
+<head>
+
+    <title>Tester fade out</title>
+
+    <style>
+
+        body {
+            background-image: url("Minecraft_Lake_Background2.jpg");
+        }
+
+
+
+        .testerStoryList {
+            position: relative;
+            margin: 10% 50% 50% 25%;
+            height: 50%;
+            width: 50%;
+            border-style: groove;
+            border-width: 1rem;
+            border-color: deeppink;
+            background: transparent;
+            /*background-color: black;*/
+        }
+
+        .testerCreateStory {
+            position: absolute;
+            margin: auto;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            /*display: none;*/
+            /*animation: fadein 20s;*/
+            background-size: cover;
+            background-image: url("Minecraft_NetherPortal_Background1.jpg");
+        }
+
+
+        .testerForm {
+            position: absolute;
+            margin: auto;
+            width: 100%;
+            height: 100%;
+            /*opacity: 1;*/
+            /*display: none;*/
+            /*opacity: 0;*/
+            /*transition: 2s ease-in-out;*/
+            background-size: cover;
+            background: linear-gradient(30deg, rgba(255, 0, 0, 0.6), rgba(255, 165, 0, 0.6), rgba(255, 255, 0, 0.6), rgba(0, 128, 0, 0.6), rgba(0, 0, 255, 0.6), rgba(75, 0, 130, 0.6), rgba(238, 130, 238, 0.6));
+
+        }
+
+        p {
+            color: white;
+        }
+
+        /*.testerCreateStory {*/
+        /*    position: absolute;*/
+        /*    margin: auto;*/
+        /*    width: 100%;*/
+        /*    height: 100%;*/
+        /*    !*display: none;*!*/
+        /*    background-size: cover;*/
+        /*    background-image: url("Minecraft_NetherPortal_Background1.jpg");*/
+        /*}*/
+
+
+
+    </style>
+
+</head>
+
+<body>
+
+<div class="testerStoryList" id="testerStoryList">
+
+    <div class="testerCreateStory" id="testerCreateStory">
+        <p>this is a paragraph to display stuff. I wish I could get this div to fade out. why won't it fade?</p>
+        <div class="buttons">
+            <button type="button" class="replayButton" id="replay" onclick="replayStory()">Replay</button>
+        </div>
+
+
+    </div>
+
+    <form class="testerForm" id="testerForm">
+
+        <div>
+            <label>Adj. (Absolute)</label>
+            <input type="text" class="itsy">
+        </div>
+        <div>
+            <label>Adj. (Absolute)</label>
+            <input type="text" class="bitsy">
+        </div>
+        <div>
+            <label>Noun</label>
+            <input type="text" class="spider" >
+        </div>
+
+        <div class="buttons" id="buttonsItsyBitsySpider">
+            <button type="reset" class="resetButton" id="reset">Reset</button>
+            <button type="button" class="createButton" id="create" onclick="createStory()">Create</button>
+        </div>
+
+
+    </form>
+
+
+
+<!--    <div class="testerCreateStory" id="testerCreateStory">-->
+<!--        <p>this is a paragraph to display stuff.</p>-->
+<!--    </div>-->
+
+</div>
+
+
+
+<script>
+
+    function createStory() {
+
+        let form = document.querySelector('.testerForm');
+        let createStory = document.querySelector('.testerCreateStory')
+
+        // form.style.display = 'none';
+        form.style.transition = '5s ease-in';
+        form.style.opacity = '0';
+        createStory.style.display = 'block';
+        // createStory.style.transition = '10s ease-in';
+        // createStory.style.opacity = '1';
+
+        if (window.getComputedStyle(createStory).getPropertyValue("display") === "block") {
+            createStory.style.transition = '5s ease-in';
+            createStory.style.opacity = '1';
+
+            // else form.style.display = 'block';
+            // form.style.transition = '1s ease-out';
+            // form.style.opacity = '1'
+        }
+    }
+
+    // function replayStory () {
+    //
+    //     let form = document.querySelector('.testerForm');
+    //     let createStory = document.querySelector('.testerCreateStory')
+    //
+    //     createStory.style.transition = '1s ease-in-out';
+    //     createStory.style.opacity = '1';
+    //     createStory.style.display = 'none';
+    //     form.style.display = 'block';
+    //
+    //
+    //     if (window.getComputedStyle(form).getPropertyValue("display") === "block") {
+    //         form.style.transition = '1s ease-out';
+    //         form.style.opacity = '1';
+    //     }
+    //
+    //     if (window.getComputedStyle(createStory).getPropertyValue("opacity") === "1") {
+    //         createStory.style.transition = '1s ease-in-out';
+    //         createStory.style.opacity = '0';
+    //     }
+    //
+    //
+    //
+    //     // if (window.getComputedStyle(createStory).getPropertyValue("display") === "none") {
+    //     //     createStory.style.transition = '1s ease-in-out';
+    //     //     createStory.style.opacity = '0';
+    //     //
+    //     //     // else form.style.display = 'block';
+    //     //     // form.style.transition = '1s ease-out';
+    //     //     // form.style.opacity = '1'
+    //     // }
+    //
+    // }
+
+
+</script>
+
+
+</body>
+
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<html>-->
+
+<!--<head>-->
+<!--    <title>tester</title>-->
+<!--    <style>-->
+<!--        .pattern-column {-->
+<!--            position: relative;-->
+<!--            display: inline-grid;-->
+<!--            /*overflow: hidden;*/-->
+<!--            background: darkgrey;-->
+<!--            width: 60px;-->
+<!--        }-->
+<!--        .pattern-column div {-->
+<!--            width: 0;-->
+<!--            height: 0;-->
+<!--            border-top: 50px solid transparent;-->
+<!--            border-right: 100px solid darkgrey;-->
+<!--            border-bottom: 50px solid transparent;-->
+<!--            margin-left: -40px;-->
+<!--            margin-top: -30px;-->
+<!--        }-->
+<!--        .pattern-column div:nth-child(2n) {-->
+<!--            border-left: 100px solid grey;-->
+<!--            border-right: 0;-->
+<!--            margin-left: 0;-->
+<!--        }-->
+<!--        .pattern-column div:nth-child(3n) {-->
+<!--            border-right-color: #ccc;-->
+<!--            border-left-color: #ccc;-->
+<!--        }-->
+<!--    </style>-->
+<!--</head>-->
+
+<!--<body>-->
+
+<!--<div class="pattern-column">-->
+<!--    <div></div>-->
+<!--    <div></div>-->
+<!--    <div></div>-->
+<!--</div>-->
+
+<!--<div class="pattern-column">-->
+<!--    <div></div>-->
+<!--    <div></div>-->
+<!--    <div></div>-->
+<!--</div>-->
+
+<!--<div class="pattern-column">-->
+<!--    <div></div>-->
+<!--    <div></div>-->
+<!--    <div></div>-->
+<!--</div>-->
+
+<!--<div class="pattern-column">-->
+<!--    <div></div>-->
+<!--    <div></div>-->
+<!--    <div></div>-->
+<!--</div>-->
+
+<!--<div class="pattern-column">-->
+<!--    <div></div>-->
+<!--    <div></div>-->
+<!--    <div></div>-->
+<!--</div>-->
+
+<!--</body>-->
+
+<!--</html>-->
+
+
+
+
+
+
+
+
+<!--<html>-->
+
+<!--<head>-->
+<!--    <title>tester page</title>-->
+<!--    <link href="witLibsJr.css" rel="stylesheet">-->
+<!--</head>-->
+
+<!--<body>-->
+
+<!--<form class="form">-->
+<!--    <label>Adj.</label>-->
+<!--    <input type="text" class="itsy">-->
+<!--    <label>Adj.</label>-->
+<!--    <input type="text" class="bitsy">-->
+<!--    <label>Noun</label>-->
+<!--    <input type="text" class="spider">-->
+<!--</form>-->
+<!--<button onclick="createStory()">Submit</button>-->
+<!--<p class="paragraph">-->
+<!--    The <span class="itsyWord"></span> <span class="bitsyWord"> </span> <span class="spiderWord"></span>-->
+<!--</p>-->
+
+
+<!--<form class="form">-->
+<!--    <label>Merchant name <input type="text" class="mName"></label><br>-->
+<!--    <label>Merchant ID number <input type="text" class="mId"></label><br>-->
+<!--    <label>Merchant email <input type="text" class="mEmail"></label><br>-->
+<!--</form>-->
+<!--<button onclick="generateEmail()">-->
+<!--    Generate-->
+<!--</button>-->
+<!--<p class="paragraph">-->
+<!--    Merchant name is <span class="merchantN"></span>, merchant ID is <span class="merchantID"></span>-->
+<!--    and his email is <span class="merchantE"></span>.-->
+<!--</p>-->
+
+<!--<script>-->
+<!--    function createStory() {-->
+<!--        //generated email variable-->
+<!--        var story = document.querySelector('.paragraph');-->
+
+<!--        //input-->
+<!--        var itsyWord = document.querySelector('.itsy');-->
+<!--        var bitsyWord = document.querySelector('.bitsy');-->
+<!--        var spiderWord = document.querySelector('.spider');-->
+
+<!--        //output-->
+<!--        var paragraphItsy = document.querySelector('.itsyWord');-->
+<!--        var paragraphBitsy = document.querySelector('.bitsyWord');-->
+<!--        var paragraphSpider = document.querySelector('.spiderWord');-->
+<!--        var paragraph = document.getElementById('field2');-->
+
+<!--        //properly filled email-->
+<!--        paragraphItsy.textContent = itsyWord.value;-->
+<!--        paragraphBitsy.textContent = bitsyWord.value;-->
+<!--        paragraphSpider.textContent = spiderWord.value;-->
+
+<!--        //displaying email, giding text fields-->
+<!--        itsyWord.style.display = 'none';-->
+<!--        bitsyWord.style.display = 'none';-->
+<!--        spiderWord.style.display = 'none';-->
+<!--        story.style.display = 'block';-->
+<!--    }-->
+<!--</script>-->
+
+<!--</body>-->
+
+<!--</html>-->
+
+
+
+<!--FORM 2:-->
+<!--<br>-->
+<!--<form class="form" id="form2">-->
+<!--    <label>Merchant name <input type="text" class="mName"></label><br>-->
+<!--    <label>Merchant ID number <input type="text" class="mId"></label><br>-->
+<!--    <label>Merchant email <input type="text" class="mEmail"></label><br>-->
+<!--</form>-->
+<!--<button onclick="generateEmail(2)">-->
+<!--    Generate-->
+<!--</button>-->
+<!--<p id="paragraph2">-->
+<!--    Merchant nname is <span class="merchantN"></span>, merchant ID is <span class="merchantID"></span> and his email is <span class="merchantE"></span>.-->
+<!--</p>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head lang="en">-->
+<!--    <meta charset="UTF-8">-->
+<!--    <script language="JavaScript">-->
+<!--        function showInput() {-->
+<!--            document.getElementById('display').innerHTML =-->
+<!--                document.getElementById("tester_form").value;-->
+<!--        }-->
+<!--    </script>-->
+
+<!--</head>-->
+<!--<body>-->
+
+<!--<form id="tester_form">-->
+<!--    <label><b>Enter a Message</b></label>-->
+<!--    <input type="text" name="message">-->
+<!--    <label><b>Enter a Message</b></label>-->
+<!--    <input type="text" name="message">-->
+<!--    <label><b>Enter a Message</b></label>-->
+<!--    <input type="text" name="message">-->
+<!--    <label><b>Enter a Message</b></label>-->
+<!--    <input type="text" name="message">-->
+
+<!--</form>-->
+
+<!--<input type="submit" onclick="showInput();"><br/>-->
+<!--<label>Your input: </label>-->
+<!--<p><span id='display'></span></p>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+<!--<!DOCTYPE html>-->
+<!--<html>-->
+<!--<head>-->
+<!--    <title>HTML JavaScript output on same page</title>-->
+<!--    <script type="text/JavaScript">-->
+<!--        function showMessage(){-->
+<!--            var message = document.getElementById("message").value;-->
+<!--            display_message.innerHTML= message;-->
+<!--        }-->
+<!--    </script>-->
+<!--</head>-->
+<!--<body>-->
+<!--<form>-->
+<!--    Enter message: <input type="text" id = "message">-->
+<!--    <input type="button" onclick="showMessage()" value="submit" />-->
+<!--</form>-->
+<!--<p> Message is: <span id = "display_message"></span> </p>-->
+<!--<p></p>-->
+<!--</body>-->
+<!--</html>-->
+
+
+
+
+
+
+<!--<html>-->
+
+<!--<head>-->
+<!--        <title>HTML JavaScript output on same page</title>-->
+<!--</head>-->
+
+<!--<body>-->
+
+<!--<form id="exampleForm">-->
+<!--    <label for="name">Name:</label>-->
+<!--    <input type="text" id="name" name="name"><br>-->
+<!--    <label for="email">Email:</label>-->
+<!--    <input type="email" id="email" name="email"><br>-->
+<!--    <input type="submit" value="Submit">-->
+<!--</form>-->
+
+<!--<script>-->
+
+<!--document.getElementById('exampleForm').addEventListener('submit', function(event) {-->
+<!--event.preventDefault();-->
+<!--var name = document.getElementById('name').value;-->
+<!--var email = document.getElementById('email').value;-->
+<!--document.getElementById('displayValues').innerHTML = '<h2>Submitted Values</h2>' +-->
+<!--'<p>Name: ' + name + '</p>' +-->
+<!--'<p>Email: ' + email + '</p>';-->
+<!--});-->
+
+<!--</script>-->
+
+
+<!--</body>-->
+
+<!--</html>-->
+
+
+
+
+
+
+
+
+
+
+
+<!--<html>-->
+<!--<head>-->
+<!--    <title>Display Form Values</title>-->
+<!--    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>-->
+<!--</head>-->
+<!--<body>-->
+<!--<h2>Example Form</h2>-->
+<!--<form id="exampleForm">-->
+<!--&lt;!&ndash;    <label for="itsy">Adj. (Absolute):</label>&ndash;&gt;-->
+<!--&lt;!&ndash;    <input type="text" id="itsy" name="name"><br>&ndash;&gt;-->
+<!--&lt;!&ndash;    <label for="bitsy">Adj. (Absolute):</label>&ndash;&gt;-->
+<!--&lt;!&ndash;    <input type="text" id="bitsy" name="name"><br>&ndash;&gt;-->
+<!--&lt;!&ndash;    <label for="spider">Noun:</label>&ndash;&gt;-->
+<!--&lt;!&ndash;    <input type="text" id="spider" name="name"><br>&ndash;&gt;-->
+
+<!--    <label for="name">Name:</label>-->
+<!--    <input type="text" id="name" name="name"><br>-->
+<!--    <label for="email">Email:</label>-->
+<!--    <input type="email" id="email" name="email"><br>-->
+<!--    <input type="submit" value="Submit">-->
+<!--</form>-->
+<!--<div id="displayValues"></div>-->
+<!--<script>-->
+<!--    $(document).ready(function() {-->
+<!--        $('#exampleForm').submit(function(event) {-->
+<!--            event.preventDefault();-->
+<!--            // Serialize form data-->
+<!--            var formData = $(this).serializeArray();-->
+<!--            // Display values on the same page-->
+<!--            var displayHTML = '<h2>Submitted Values</h2>';-->
+<!--            $.each(formData, function(index, field) {-->
+<!--                displayHTML += '<p>' + field.name + ': ' + field.value + '</p>';-->
+<!--            });-->
+<!--            $('#displayValues').html(displayHTML);-->
+<!--        });-->
+<!--    });-->
+<!--</script>-->
+<!--</body>-->
+<!--</html>-->
+
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Itsy Bitsy Spider</title>-->
+<!--    <link href="witLibsJr.css" rel="stylesheet">-->
+<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yatra One">-->
+<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=New Amsterdam">-->
+<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Russo One">-->
+<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee">-->
+<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bungee Shade">-->
+<!--</head>-->
+
+
+<!--<body>-->
+
+<!--<div class="container">-->
+
+<!--    <nav>-->
+<!--        <h1>Wit Libs Jr.</h1>-->
+<!--        <a id="home" href="witLibsJr.html">Home</a>-->
+<!--        <a id="rules" href="rulesWitLibsJr.html">Rules</a>-->
+<!--        <a id="about" href="aboutWitLibsJr.html">About</a>-->
+<!--        <a id="storyBook" href="storyBookWitLibsJr.html">Story Book!</a>-->
+<!--    </nav>-->
+
+<!--    <div class="block" id="storyblock">-->
+
+<!--        <div class="list" id="storyList">-->
+<!--            <div class="stickyTop" id="stickyStoryList">-->
+<!--                <h2 class="storyInputTitle" >Itsy Bitsy Spider</h2>-->
+<!--            </div>-->
+
+<!--            &lt;!&ndash;            <input type="text" class="form-control" id="firstName" name="name"&ndash;&gt;-->
+<!--            &lt;!&ndash;                   placeholder="First Name goes Here"></input>&ndash;&gt;-->
+<!--            &lt;!&ndash;            <label class="form-label" for="firstName">First Name</label>&ndash;&gt;-->
+
+<!--            <form action="itsyBitsySpider.php" method="post" class="storyInput_WitLibsJr" id="itsyBistySpiderStory">-->
+<!--                &lt;!&ndash;            <p class="storyInputTitle" >The Bear Went Over the Mountain</p>&ndash;&gt;-->
+<!--                <div>-->
+<!--                    <label class="form-label" for="itsy">Adj. (Absolute)</label>-->
+<!--                    <input type="text" class="form-control" id="itsy" name="name" placeholder=""></input>-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <label class="form-label" for="bitsy">Adj. (Absolute)</label>-->
+<!--                    <input type="text" class="form-control" id="bitsy" name="name" placeholder="">-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <label class="form-label" for="spider">Noun</label>-->
+<!--                    <input type="text" class="form-control" id="spider" name="name" placeholder="">-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <label class="form-label" for="climbed">Verb (Past-tense)</label>-->
+<!--                    <input type="text" class="form-control" id="climbed" name="name" placeholder="">-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <label class="form-label" for="waterspout">Noun</label>-->
+<!--                    <input type="text" class="form-control" id="waterspout" name="name" placeholder="">-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <label class="form-label" for="rain">Noun</label>-->
+<!--                    <input type="text" class="form-control" id="rain" name="name"  placeholder="">-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <label class="form-label" for="washed">Verb (Past-tense)</label>-->
+<!--                    <input type="text" class="form-control" id="washed" name="name" placeholder="">-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <label class="form-label" for="sun">Noun</label>-->
+<!--                    <input type="text" class="form-control" id="sun" name="name"  placeholder="">-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <label class="form-label" for="dried">Verb (Past-tense)</label>-->
+<!--                    <input type="text" class="form-control" id="dried" name="name"  placeholder="">-->
+<!--                </div>-->
+
+<!--                <div class="buttons" id="buttonsItsyBitsySpider">-->
+<!--                    <button type="reset" class="resetButton" id="reset">Reset</button>-->
+<!--                    <button type="submit" class="createButton" id="create">Create</button>-->
+<!--                </div>-->
+
+<!--            </form>-->
+
+<!--        </div>-->
+
+        <!--        <form action="/action_page.php" method="get">-->
+        <!--            <label for="fname">First name:</label>-->
+        <!--            <input type="text" id="fname" name="fname"><br><br>-->
+        <!--            <label for="lname">Last name:</label>-->
+        <!--            <input type="text" id="lname" name="lname"><br><br>-->
+        <!--            <button type="submit" value="Submit">Submit</button>-->
+        <!--            <button type="reset" value="Reset">Reset</button>-->
+        <!--        </form>-->
+        <!--        -->
+
+        <!--        <p>The itsy bitsy spider climbed up the water spout,-->
+        <!--        down came the rain and washed the spider out,-->
+        <!--        out came the sun and dried up all the rain,-->
+        <!--        and the isty bitsy spider climbed up the spout again.</p>-->
+
+
+
+    </div>
+
+
+
+</body>
+
+
+
+</html>

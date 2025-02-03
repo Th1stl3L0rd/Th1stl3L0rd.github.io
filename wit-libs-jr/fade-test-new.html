@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+
+        #fadeContainer {
+            display: grid;
+            width: 500px;
+            height: 500px;
+
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+        }
+
+        #divFirst {
+            width: 500px;
+            height: 500px;
+
+            background-color: #95c207;
+
+            z-index: 99;
+
+            grid-area: 1 / 1 / 2 / 2;
+        }
+
+        #divSecond {
+            width: 500px;
+            height: 500px;
+
+            background-color: #904ea2;
+
+            z-index: 98;
+
+            grid-area: 1 / 1 / 2 / 2;
+        }
+
+    </style>
+
+
+
+</head>
+<body>
+
+<div id="fadeContainer">
+
+    <div id="divFirst">
+        <button id="button1">change</button>
+    </div>
+
+    <div id="divSecond">
+        <button id="button2">change back</button>
+    </div>
+
+</div>
+
+
+<script>
+
+    document.querySelector("#button1").addEventListener('click',() => {
+
+        firstToSecond();
+
+    });
+
+
+    document.querySelector("#button2").addEventListener('click',() => {
+
+        secondToFirst();
+
+    });
+
+    function firstToSecond() {
+
+        let firstBlock = document.querySelector('#divFirst');
+        let secondBlock = document.querySelector('#divSecond');
+
+        firstBlock.style.transition = 'opacity .5s ease-in-out';
+        firstBlock.style.opacity = '0';
+
+        setTimeout(function () {
+            firstBlock.style.zIndex= '98';
+            secondBlock.style.zIndex= '99';
+        }, 500);
+
+    }
+
+    function secondToFirst() {
+
+        let firstBlock = document.querySelector('#divFirst');
+        let secondBlock = document.querySelector('#divSecond');
+
+        secondBlock.style.zIndex= '98';
+        firstBlock.style.zIndex= '99';
+
+        firstBlock.style.transition = 'opacity .5s ease-in-out';
+        firstBlock.style.opacity = '1';
+
+        setTimeout(function () {
+            firstBlock.style.transition = 'opacity .5s ease-in-out';
+            firstBlock.style.opacity = '1';
+        }, 500);
+
+
+    }
+
+
+
+</script>
+
+
+
+
+
+
+
+</body>
+</html>
