@@ -15,7 +15,7 @@
     <style>
 
         body {
-            width: 90vw;
+            width: 100vw;
             margin: auto;
             background-image: url("Barbossa_Shipwreck_Background_1.jpg");
             background-repeat: no-repeat;
@@ -36,8 +36,6 @@
         }
 
         .gridContainer {
-            width: 60vw;
-            margin: auto;
             place-self: center;
             display: grid;
             grid-template-columns: repeat(auto-fit, 400px);
@@ -58,6 +56,7 @@
         }
 
         .flip-card {
+
             background-color: transparent;
             width: 400px;
             height: 534px;
@@ -124,6 +123,10 @@
         }
 
         .flip-card:active .flip-card-back {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-back:active {
             transform: rotateY(180deg);
         }
 
@@ -309,6 +312,9 @@
             /*padding-bottom: 10%;*/
             /*margin-bottom: 5%;*/
         }
+
+
+
 
 
 
