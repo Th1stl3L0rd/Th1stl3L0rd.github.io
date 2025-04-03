@@ -1,0 +1,1387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Barbossa and His Many Foods</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yatra One">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Carattere">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bokor">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Metamorphous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Eagle Lake">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lugrasimo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Germania One">
+
+    <style>
+
+        body {
+            width: 90vw;
+            margin: auto;
+            background-image: url("Barbossa_Shipwreck_Background_1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+        }
+
+        #title {
+            text-align: center;
+            font-size: 2.25rem;
+            font-family: Lugrasimo, sans-serif;
+            font-weight: bolder;
+            text-shadow: 1px 1px 3px black,
+            2px 2px 7px deepskyblue,
+            3px 3px 10px lime,
+            5px 5px 15px white,
+            8px 8px 20px white;
+        }
+
+        .gridContainer {
+            place-self: center;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, 400px);
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .card-text {
+            text-align: center;
+            font-family: Germania One, sans-serif;
+            font-size: 1.25rem;
+            margin: 3%;
+            padding: 3%;
+            border-style: solid;
+            border-color: black;
+            border-radius: 20%;
+            background-color: blanchedalmond;
+        }
+
+        .flip-card {
+            background-color: transparent;
+            width: 400px;
+            height: 534px;
+            perspective: 1000px;
+            margin-top: 6%;
+        }
+
+        .flip-card-inner {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            background-image: url("Barbossa_Coins_Background1.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-style: solid;
+            border-width: thick;
+            border-radius: 5%;
+            border-color: rgba(45,255,196,.9);
+            animation: pulse-animation 1.25s alternate-reverse infinite;
+        }
+
+        @keyframes pulse-animation
+        {
+            0% {
+                box-shadow:0 0 30px 3px rgba(45,255,196,1);
+            }
+
+            25% {
+                box-shadow:0 0 40px 4px rgba(45,255,196,1);
+            }
+
+            50% {
+                box-shadow:0 0 50px 5px rgba(45,255,196,1);
+            }
+
+            75% {
+                box-shadow:0 0 60px 6px rgba(45,255,196,1);
+            }
+
+            100% {
+                box-shadow: 0 0 70px 7px rgba(45,255,196,1);
+            }
+
+        }
+
+        .flip-card-front img {
+            border-bottom-style: solid;
+            border-width: thick;
+            border-color: rgba(45,255,196,.9);
+            border-top-left-radius: 5%;
+            border-top-right-radius: 5%;
+            overflow: hidden;
+        }
+
+        .flip-card:hover .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card:active .flip-card-inner {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card:active .flip-card-back {
+            transform: rotateY(180deg);
+        }
+
+        .flip-card-front, .flip-card-back {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+        }
+
+        .flip-card-front {
+            /*background-color: #bbb;*/
+            /*color: black;*/
+        }
+
+        .flip-card-back {
+            /*background-color: #2980b9;*/
+            background-image: url("Barbossa_Coins_Background1.jpg");
+            color: white;
+            transform: rotateY(180deg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: 534px;
+            border-radius: 5%;
+            overflow: hidden;
+
+        }
+
+        .card-info {
+            background-color: blanchedalmond;
+            color: black;
+            margin: 8%;
+            padding: 2%;
+            height: 450px;
+            text-align: left;
+            /*display: flex;*/
+        }
+
+        /*.food-img {*/
+        /*    float: right;*/
+        /*    height: 150px;*/
+        /*    !*background-color: transparent;*!*/
+        /*    !*border: none;*!*/
+        /*    !*width: 300px;*!*/
+        /*    !*height: 300px;*!*/
+        /*}*/
+
+        /*.card-info h1 {*/
+        /*    padding-left: 2%;*/
+        /*    margin-bottom: 0;*/
+        /*}*/
+
+        .card-info img {
+            float: right;
+            margin-left: 5%;
+            margin-right: 5%;
+            height: 7rem;
+            /*border-style: none;*/
+            /*border-radius: 50%;*/
+            /*background-color: rgba(45,255,196,.35);*/
+        }
+
+        .card-info p {
+            margin-top: 3%;
+            margin-bottom: 0;
+        }
+
+        .foodTitle {
+            font-size: 2.5rem;
+            font-weight: bolder;
+            margin-right: 2%;
+            padding-left: 5%;
+        }
+
+        .foodSound {
+            font-size: 1.25rem;
+            padding-left: 5%;
+        }
+
+        #carrotImg {
+            height: 10rem;
+        }
+
+        #fondueImg {
+            height: 8rem;
+        }
+
+        #horseradishImg {
+            height: 9rem;
+        }
+
+        #iceCreamImg {
+            height: 9rem;
+        }
+
+        #jambalayaImg {
+            height: 8rem;
+        }
+
+        #jambalayaTitle {
+            font-size: 1.9rem;
+        }
+
+        #ketchupImg {
+            height: 7rem;
+        }
+
+        #ketchupTitle {
+            font-size: 2.25rem;
+        }
+
+        #mustardImg {
+            height: 7.5rem;
+        }
+
+        #mustardTitle {
+            font-size: 2.35rem;
+        }
+
+        #mayoImg {
+            height: 6rem;
+        }
+
+        #pickleImg {
+            height: 6rem;
+        }
+
+        #redCakeTitle {
+            font-size: 2.25rem;
+        }
+
+        #umeboshiImg {
+            height: 5rem;
+        }
+
+        #umeboshiTitle {
+            font-size: 2.125rem;
+        }
+
+        #vegemiteImg {
+            height: 6rem;
+        }
+
+        #wasabiImg {
+            height: 5.75rem;
+        }
+
+        #wasabiTitle {
+            font-size: 2rem;
+        }
+
+        #zucchiniImg {
+            height: 5.5rem;
+        }
+
+        #zucchiniTitle {
+            font-size: 2rem;
+        }
+
+
+        /*#horseradishTitle {*/
+        /*    font-size: 1.75rem;*/
+        /*}*/
+
+
+        /*#donutImg {*/
+        /*    height: 5rem;*/
+        /*}*/
+
+
+
+
+
+
+        li {
+            margin-bottom: 5%;
+        }
+
+        li span {
+            position: relative;
+            left: -5px;
+            /*padding-bottom: 10%;*/
+            /*margin-bottom: 5%;*/
+        }
+
+
+
+    </style>
+
+</head>
+
+
+<body>
+
+<div class="container">
+
+    <div id="title">
+        <p>You know the first thing I'm going to do after the curse is lifted?</p>
+    </div>
+
+    <div class="gridContainer">
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="BarbossaApples1_1000x1120.jpg" alt="Avatar" style="width:400px;">
+                    <p class="card-text">Eat a whole bushel of apples</p>
+                </div>
+                <div class="flip-card-back">
+                    <div class="card-info">
+                        <div>
+                            <img class="food-img" src="Barbossa_Apple_Transparent_Scale1000x1011.png">
+                            <p class="foodTitle">Apple</p>
+                            <p class="foodSound">/ăp′əl/</p>
+                            <ul>
+                                <li>
+                                    <span>A cultivated deciduous tree (Malus domestica or M. pumila) in the rose family,
+                                    native to Eurasia and having alternate simple leaves and white or pink flowers.</span>
+                                </li>
+                                <li>
+                                    <span>The firm, edible, usually rounded fruit of this tree.</span>
+                                </li>
+                                <li>
+                                    <span>Any of several other plants, especially those with fruits suggestive of the apple,
+                                        such as the crabapple or custard apple.</span>
+                                </li>
+                                <li>
+                                    <span>The fruit of any of these plants. The fleshy pome or fruit of a
+                                    rosaceous tree (Pyrus malus) cultivated in numberless varieties in the temperate
+                                        zones.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="Barbossa_BakedBeans2_1000x1120.jpg" alt="Avatar" style="width:400px;">
+                    <p class="card-text">Eat a whole crock of baked beans</p>
+                </div>
+                <div class="flip-card-back">
+                    <div class="card-info">
+                        <div>
+                            <img class="food-img" src="Barbossa_BakedBeans_Transparent_Scale1000x756.png">
+                            <p class="foodTitle">Baked Beans</p>
+                            <p class="foodSound">/beɪkt biːnz/</p>
+                            <ul>
+                                <li>
+                                    <span>Beans that have been softened by soaking and boiling and then baked
+                                            usually with tomato sauce, sugar, salt pork and seasoning.</span>
+                                </li>
+                                <li>
+                                        <span>Baked beans is a dish traditionally containing white common beans that
+                                            are parboiled and then baked in sauce at low temperature for a lengthy
+                                            period. Canned baked beans are not baked, but are cooked through a steam
+                                            process. Baked beans originated in Native American cuisine, and are made
+                                            from beans indigenous to the Americas.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="BarbossaCarrots1_1000x1120.jpg" alt="Avatar" style="width:400px;">
+                    <p class="card-text">Eat a whole bunch of carrots</p>
+                </div>
+                <div class="flip-card-back">
+                    <div class="card-info">
+                        <div>
+                            <img class="food-img" id="carrotImg" src="Barbossa_Carrot_Transparent_Scale1000x1451.png">
+                            <p class="foodTitle">Carrot</p>
+                            <p class="foodSound">/kăr′ət/</p>
+                            <ul>
+                                <li>
+                                    <span>A biennial Eurasian plant (Daucus carota subsp. sativus) in
+                                        the parsley family, widely cultivated as an annual for its edible
+                                        taproot. </span>
+                                </li>
+                                <li>
+                                        <span>The carrot is a root vegetable, typically orange in colour, though
+                                        heirloom variants including purple, black, red, white, and yellow cultivars
+                                        exist, all of which are domesticated forms of the wild carrot, Daucus
+                                        carota, native to Europe and Southwestern Asia. The plant probably
+                                        originated in Iran and was originally cultivated for its leaves and
+                                        seeds.</span>
+                                </li>
+                                <li>
+                                    <span>Queen Anne's lace.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="Barbossa_Donuts1_1000x1120.jpg" alt="Avatar" style="width:400px;">
+                    <p class="card-text">Eat a whole plate of donuts</p>
+                </div>
+                <div class="flip-card-back">
+                    <div class="card-info">
+                        <div>
+                            <img class="food-img" id="donutImg" src="Barbossa_Donut_Transparent_Scale_1000x708.png">
+                            <p class="foodTitle">Donut</p>
+                            <p class="foodSound">/dō′nŭt″, -nət/</p>
+                            <ul>
+                                <li>
+                                    <span>A deep-fried piece of dough or batter, commonly made in a toroidal or
+                                        ellipsoidal shape, and mixed with various sweeteners and flavors,
+                                        sometimes filled with jelly, custard or cream.</span>
+                                </li>
+                                <li>
+                                        <span>A doughnut is a type of pastry made from leavened fried dough.
+                                            It is popular in many countries and is prepared in various forms
+                                            as a sweet snack that can be homemade or purchased in bakeries,
+                                            supermarkets, food stalls, and franchised specialty vendors.
+                                            Doughnut is the traditional spelling, while donut is the simplified
+                                            version; the terms are used interchangeably.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="Barbossa_Eggs1_1000x1120.jpg" alt="Avatar" style="width:400px;">
+                    <p class="card-text">Eat a whole basket of eggs</p>
+                </div>
+                <div class="flip-card-back">
+                    <div class="card-info">
+                        <div>
+                            <img class="food-img" src="Barbossa_Egg_Transparent_Scale1000x1211.png">
+                            <p class="foodTitle">Egg</p>
+                            <p class="foodSound">/eg/</p>
+                            <ul>
+                                <li>
+                                    <span>The hard-shelled reproductive body produced by a bird and especially
+                                        by the common domestic chicken</span>
+                                </li>
+                                <li>
+                                        <span>Most eggs laid by domestic fowl, except those specifically set aside for
+                                            hatching, are not fertilized but are sold mainly for human consumption.
+                                            Eggs produced in quantity come from chickens, ducks, geese, turkeys,
+                                            guinea fowl, pigeons, pheasants, and quail.</span>
+                                </li>
+                                <li><span>There are multiple parts to the egg: the egg white, the egg yolk and
+                                        various thin membranes, Every part of the egg is edible, although the eggshell
+                                        is usually thrown away. Eggs are a good source of protein.</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="Barbossa_Fondu1_1000x1120.jpg" alt="Avatar" style="width:400px;">
+                    <p class="card-text">Eat a whole pot of fondue</p>
+                </div>
+                <div class="flip-card-back">
+                    <div class="card-info">
+                        <div>
+                            <img class="food-img" id="fondueImg" src="Barbossa_Fondue_Transparent_Scale1000x999.png">
+                            <p class="foodTitle">Fondue</p>
+                            <p class="foodSound">/fɒnˈdjuː/</p>
+                            <ul>
+                                <li>
+                                    <span>Fondue is a Swiss dish of melted cheese and wine served in a communal pot
+                                        over a portable stove heated with a candle or spirit lamp, and eaten by
+                                        dipping bread and sometimes vegetables or other foods into the cheese using
+                                        long-stemmed forks.</span>
+                                </li>
+                                <li>
+                                        <span>Fondues are a group of distinct dishes that can be either savoury
+                                            or sweet.</span>
+                                </li>
+                                <li>
+                                    <span>Slices of fruit, cake or pastry are dipped in a caquelon of melted
+                                        chocolate, often flavored with rum or kirschwasser. Dessert fondues may
+                                        also be made with coconut, honey, caramel, or marshmallow. Chocolate fondue
+                                        usually uses milk chocolate.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="BarbossaLylesGoldenSyrup1_1000x1120.jpg" alt="Avatar" style="width:400px;">
+                    <p class="card-text">Eat a whole tin of golden syrup</p>
+                </div>
+                <div class="flip-card-back">
+                    <div class="card-info">
+                        <div>
+                            <img class="food-img" src="Barbossa_GoldenSyrup_Transparent_Scale1000x1120.png">
+                            <p class="foodTitle">Golden Syrup</p>
+                            <p class="foodSound">/ɡəʊl.dən sɪr.əp/</p>
+                            <ul>
+                                <li>
+                                    <span>Golden syrup or light treacle is a thick, amber-coloured form of
+                                        inverted sugar syrup made by the process of refining sugar cane or
+                                        sugar beet juice into sugar. It is used in a variety of baking recipes
+                                        and desserts. It has an appearance and consistency similar to honey,
+                                        and is often used as a substitute where honey is unavailable.</span>
+                                </li>
+                                <li>
+                                        <span>Golden syrup is a Newtonian fluid. Its density is approximately
+                                            1430 kg·m−3 at room temperature, and its viscosity is 210 Pa·s at 12 °C.
+                                            It is useful in experimental fluid dynamics, being cheap, transparent
+                                            and non-toxic.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="Barbossa_Horseradish1_1000x1120.jpg" alt="Avatar" style="width:400px;">
+                    <p class="card-text">Eat a whole jar of horseradish</p>
+                </div>
+                <div class="flip-card-back">
+                    <div class="card-info">
+                        <div>
+                            <img class="food-img" id="horseradishImg" src="Barbossa_Horseradish_Transparent_Scale1000x1472.png">
+                            <p class="foodTitle" id="horseradishTitle">Horse- radish</p>
+                            <p class="foodSound">/ˈhɔːsˌræd.ɪʃ/</p>
+                            <ul>
+                                <li>
+                                    <span>Horseradish is a perennial plant of the family Brassicaceae. It is
+                                        a root vegetable, cultivated and used worldwide as a spice and as a
+                                        condiment. The species is probably native to Southeastern Europe and
+                                        Western Asia.</span>
+                                </li>
+                                <li>
+                                        <span>A tall coarse white-flowered herb (Armoracia rusticana synonym
+                                            Cochlearia armoracia) of the mustard family.</span>
+                                </li>
+                                <li>
+                                    <span>A condiment made from ground-up horseradish root.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="Barbossa_IceCream1_1000x1120.jpg" alt="Avatar" style="width:400px;">
+                    <p class="card-text">Eat a whole gallon of ice cream</p>
+                </div>
+                <div class="flip-card-back">
+                    <div class="card-info">
+                        <div>
+                            <img class="food-img" id="iceCreamImg" src="Barbossa_IceCream_Transparent_Scale1000x1651.png">
+                            <p class="foodTitle" >Ice Cream</p>
+                            <p class="foodSound">/ˌaɪs ˈkriːm/</p>
+                            <ul>
+                                <li>
+                                    <span>Ice cream is a frozen dessert typically made from milk or cream that has
+                                        been flavoured with a sweetener, either sugar or an alternative, and a spice,
+                                        such as cocoa or vanilla, or with fruit, such as strawberries or peaches.
+                                        Food colouring is sometimes added in addition to stabilizers. The mixture
+                                        is cooled below the freezing point of water and stirred to incorporate air
+                                        spaces and prevent detectable ice crystals from forming.</span>
+                                </li>
+                                <li>
+                                    <span>Frozen custard and French-type ice creams also contain eggs.</span>
+                                </li>
+                                <li>
+                                        <span>Ice cream is also the basis of other desserts, such as baked Alaska,
+                                            ice cream cake, and milkshakes.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="Barbossa_Jambalaya1_1000x1120.jpg" alt="Avatar" style="width:400px;">
+                    <p class="card-text">Eat a whole pan of jambalaya</p>
+                </div>
+                <div class="flip-card-back">
+                    <div class="card-info">
+                        <div>
+                            <img class="food-img" id="jambalayaImg" src="Barbossa_Jambalaya_Transparent_Scale1000x1005.png">
+                            <p class="foodTitle" id="jambalayaTitle">Jambalaya</p>
+                            <p class="foodSound">/ˌdʒæm.bəˈleɪ.ə/</p>
+                            <ul>
+                                <li>
+                                    <span>Jambalaya is a savory rice dish that developed in the U.S. state of
+                                        Louisiana fusing together African, Spanish, and French influences,
+                                        consisting mainly of meat and/or seafood, and vegetables mixed with
+                                        rice and spices.</span>
+                                </li>
+                                <li>
+                                        <span>Rice cooked usually with ham, sausage, chicken, shrimp, or oysters
+                                            and seasoned with herbs.</span>
+                                </li>
+                                <li>
+                                    <span>One of the best ways to feed a lot of people on a budget.</span>
+                                </li>
+                                <li>
+                                    <span>From Louisiana French, from Provençal jambalaia chicken and rice stew.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="BarbossaKetchup1_1000x1120.jpg" alt="Avatar" style="width:400px;">
+                    <p class="card-text">Eat a whole bottle of ketchup</p>
+                </div>
+                <div class="flip-card-back">
+                    <div class="card-info">
+                        <div>
+                            <img class="food-img" id="ketchupImg" src="Barbossa_Ketchup_Transparent_Scale1000x817.png">
+                            <p class="foodTitle" id="ketchupTitle">Ketchup</p>
+                            <p class="foodSound">/ˈketʃ.ʌp/</p>
+                            <ul>
+                                <li>
+                                    <span>Ketchup or catsup is a table condiment with a sweet and sour flavor.
+                                        "Ketchup" now typically refers to tomato ketchup, although early recipes
+                                        for different varieties of ketchup contained mushrooms, oysters, mussels,
+                                        egg whites, grapes, or walnuts, among other ingredients. Tomato ketchup
+                                        is made from tomatoes, sugar, vinegar, seasonings and spices (commonly
+                                        includes onions, allspice, coriander, cloves, cumin, garlic, mustard and
+                                        sometimes include celery, cinnamon, or ginger).</span>
+                                </li>
+                                <li>
+                                        <span>The origin of the word ketchup is not entirely clear; the word
+                                            likely derives from the Chinese ke-tsiap, a fish brine, probably
+                                            by way of the Malaysian ketjap.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="BarbossaLettuce1_1000x1120.jpg" alt="Avatar" style="width:400px;">
+                    <p class="card-text">Eat a whole head of lettuce</p>
+                </div>
+                <div class="flip-card-back">
+                    <div class="card-info">
+                        <div>
+                            <img class="food-img" src="Barbossa_Lettuce_Transparent_Scale1000x994.png">
+                            <p class="foodTitle">Lettuce</p>
+                            <p class="foodSound">/ˈlet.ɪs/</p>
+                            <ul>
+                                <li>
+                                    <span>Lettuce is an annual plant of the family Asteraceae mostly grown as a
+                                        leaf vegetable. The leaves are most often used raw in green salads,
+                                        although lettuce is also seen in other kinds of food, such as sandwiches,
+                                        wraps and soups; it can also be grilled. Its stem and seeds are sometimes
+                                        used as well (such as celtuce).</span>
+                                </li>
+                                <li>
+                                        <span>Lettuce is generally a rich source of vitamins K and A, though
+                                            the nutritional quality varies, depending on the variety.</span>
+                                </li>
+                                <li>
+                                    <span>Lettuce was originally farmed by the ancient Egyptians, who transformed
+                                        it from a plant whose seeds were used to obtain oil into an important food
+                                        crop raised for its succulent leaves and oil-rich seeds.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--            <div class="flip-card">-->
+        <!--                <div class="flip-card-inner">-->
+        <!--                    <div class="flip-card-front">-->
+        <!--                        <img src="BarbossaMapleSyrup1_1000x1120.jpg" alt="Avatar" style="width:400px;">-->
+        <!--                        <p class="card-text">Eat a whole bottle of maple syrup</p>-->
+        <!--                    </div>-->
+        <!--                    <div class="flip-card-back">-->
+        <!--                        <div class="card-info">-->
+        <!--                            <div>-->
+        <!--                                <img class="food-img" src="Barbossa_Apple_Transparent_Scale1000x1011.png">-->
+        <!--                                <p class="foodTitle">Apple</p>-->
+        <!--                                <p class="foodSound">/ăp′əl/</p>-->
+        <!--                                <ul>-->
+        <!--                                    <li>-->
+        <!--                                    <span>A cultivated deciduous tree (Malus domestica or M. pumila) in the rose family,-->
+        <!--                                    native to Eurasia and having alternate simple leaves and white or pink flowers.</span>-->
+        <!--                                    </li>-->
+        <!--                                    <li>-->
+        <!--                                        <span>The firm, edible, usually rounded fruit of this tree.</span>-->
+        <!--                                    </li>-->
+        <!--                                    <li>-->
+        <!--                                    <span>Any of several other plants, especially those with fruits suggestive of the apple,-->
+        <!--                                        such as the crabapple or custard apple.</span>-->
+        <!--                                    </li>-->
+        <!--                                    <li>-->
+        <!--                                    <span>The fruit of any of these plants. The fleshy pome or fruit of a-->
+        <!--                                    rosaceous tree (Pyrus malus) cultivated in numberless varieties in the temperate-->
+        <!--                                        zones.</span>-->
+        <!--                                    </li>-->
+        <!--                                </ul>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+
+        <!--            <div class="flip-card">-->
+        <!--                <div class="flip-card-inner">-->
+        <!--                    <div class="flip-card-front">-->
+        <!--                        <img src="Barbossa_Mustard2_1000x1120.jpg" alt="Avatar" style="width:400px;">-->
+        <!--                        <p class="card-text">Eat a whole jar of mustard</p>-->
+        <!--                    </div>-->
+        <!--                    <div class="flip-card-back">-->
+        <!--                        <div class="card-info">-->
+        <!--                            <div>-->
+        <!--                                <img class="food-img" id="mustardImg" src="Barbossa_Mustard_Transparent_Scale1000x920.png">-->
+        <!--                                <p class="foodTitle" id="mustardTitle">Mustard</p>-->
+        <!--                                <p class="foodSound">/ˈmʌs.təd/</p>-->
+        <!--                                <ul>-->
+        <!--                                    <li>-->
+        <!--                                    <span>Mustard is a condiment made from the seeds of a mustard plant. The whole,-->
+        <!--                                        ground, cracked, or bruised mustard seeds are mixed with water, vinegar,-->
+        <!--                                        lemon juice, wine, or other liquids, salt, and often other flavorings and-->
+        <!--                                        spices, to create a paste or sauce ranging in color from bright yellow to-->
+        <!--                                        dark brown. The seed itself has a strong, pungent, and somewhat bitter-->
+        <!--                                        taste. The taste of mustard condiments ranges from sweet to spicy.</span>-->
+        <!--                                    </li>-->
+        <!--                                    <li>-->
+        <!--                                        <span>Mustard is commonly paired with meats, vegetables and cheeses,-->
+        <!--                                            especially as a condiment for sandwiches, hamburgers, and hot dogs.-->
+        <!--                                            It is also used as an ingredient in many dressings, glazes, sauces,-->
+        <!--                                            soups, relishes, and marinades.</span>-->
+        <!--                                    </li>-->
+        <!--                                </ul>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="Barbossa_Mayo1_1000x1120.jpg" alt="Avatar" style="width:400px;">
+                    <p class="card-text">Eat a whole jar of mayonnaise</p>
+                </div>
+                <div class="flip-card-back">
+                    <div class="card-info">
+                        <div>
+                            <img class="food-img" id="mayoImg" src="Barbossa_Mayo_Transparent_Scale1000x656.png">
+                            <p class="foodTitle" id="mayoTitle">Mayo- nnaise</p>
+                            <p class="foodSound">/ˌmeɪ.əˈneɪz/</p>
+                            <ul>
+                                <li>
+                                    <span>Mayonnaise, colloquially referred to as "mayo", is a thick,
+                                        creamy sauce with a rich and tangy taste that is commonly used
+                                        on sandwiches, hamburgers, bound salads, and French fries.</span>
+                                </li>
+                                <li>
+                                        <span>It also forms the base for various other sauces, such as
+                                            tartar sauce, fry sauce, remoulade, salsa golf, ranch dressing,
+                                            and rouille.</span>
+                                </li>
+                                <li>
+                                        <span>Mayonnaise is an emulsion of oil, egg yolk, and an acid,
+                                            either vinegar or lemon juice; there are many variants using
+                                            additional flavorings.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="Barbossa_Nougat1_1000x1120.jpg" alt="Avatar" style="width:400px;">
+                    <p class="card-text">Eat a whole tray of nougat</p>
+                </div>
+                <div class="flip-card-back">
+                    <div class="card-info">
+                        <div>
+                            <img class="food-img" id="nougatImg" src="Barbossa_Nougat_Transparent_Scale1000x1043.png">
+                            <p class="foodTitle" id="nougatTitle">Nougat</p>
+                            <p class="foodSound">/ˈnuː.ɡɑː, -ɡət/</p>
+                            <ul>
+                                <li>
+                                    <span>Nougat is a family of confections made with sugar or honey, roasted nuts,
+                                        whipped egg whites, and sometimes chopped candied fruit. The consistency of
+                                        nougat is chewy, and it is used in a variety of candy bars and chocolates.
+                                        The word nougat comes from Occitan nogat, which means 'nutted' or 'nutty'.</span>
+                                </li>
+                                <li>
+                                        <span>The origins of Nougat can be traced back to the early 13th century,
+                                            when it first appeared in a text by the renowned Italian traveller,
+                                            Marco Polo. According to Polo, Nougat was a foodstuff enjoyed by the
+                                            Mongols: made from an amalgamation of honey, nuts and egg whites beaten
+                                            until light and fluffy; their sweet tooths were evidently appeased.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="BarbossaOlives1_1000x1120.jpg" alt="Avatar" style="width:400px;">
+                    <p class="card-text">Eat a whole bowl of olives</p>
+                </div>
+                <div class="flip-card-back">
+                    <div class="card-info">
+                        <div>
+                            <img class="food-img" src="Barbossa_Olives_Transparent_Scale1000x688.png">
+                            <p class="foodTitle">Olive</p>
+                            <p class="foodSound">/ˈɑː.lɪv, ˈɒl.ɪv/</p>
+                            <ul>
+                                <li>
+                                    <span>A small, green or black fruit that is eaten or used to produce oil.</span>
+                                </li>
+                                <li>
+                                        <span>A species of small evergreen tree or shrub in the family Oleaceae,
+                                            which includes species such as lilac, jasmine, forsythia, and the true
+                                            ash tree.</span>
+                                </li>
+                                <li>
+                                    <span>Its fruit is classed botanically as a drupe, similar to the cherry or
+                                        peach.</span>
+                                </li>
+                                <li>
+                                    <span>It was first cultivated on the Greek island of Crete about 3500 BC and
+                                        was widely prized for a variety of purposes, including as a fuel,
+                                        fertilizer, ointment, lubricant, medical remedy, and food</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="BarbossaPickles1_1000x1120.jpg" alt="Avatar" style="width:400px;">
+                    <p class="card-text">Eat a whole jar of pickles</p>
+                </div>
+                <div class="flip-card-back">
+                    <div class="card-info">
+                        <div>
+                            <img class="food-img" id="pickleImg" src="Barbossa_Pickle_Transparent_Scale1000x578.png">
+                            <p class="foodTitle">Pickle</p>
+                            <p class="foodSound">/ˈpɪk.əl/</p>
+                            <ul>
+                                <li>
+                                    <span>A vegetable or fruit in vinegar or in salty water, especially a cucumber.</span>
+                                </li>
+                                <li>
+                                        <span>The fermentation process is executed either by immersing the cucumbers
+                                            in an acidic solution or through souring by lacto-fermentation.</span>
+                                </li>
+                                <li>
+                                    <span>Referred to as a gherkin (/ˈɡɜːrkɪn/ GUR-kin) in Britain, Ireland,
+                                        South Africa, and New Zealand – usually small or miniature cucumber
+                                        that has been pickled in a brine, vinegar, or other solution and left to
+                                        ferment.</span>
+                                </li>
+                                <li>
+                                    <span>Archaeologists believe ancient Mesopotamians pickled food as far back
+                                        as 2400 B.C.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="Barbossa_Quiche1_1000x1120.jpg" alt="Avatar" style="width:400px;">
+                    <p class="card-text">Eat a whole Quiche Lorraine</p>
+                </div>
+                <div class="flip-card-back">
+                    <div class="card-info">
+                        <div>
+                            <img class="food-img" id="quicheImg" src="Barbossa_Quiche_Transparent_Scale1000x961.png">
+                            <p class="foodTitle">Quiche</p>
+                            <p class="foodSound">/kiːʃ/</p>
+                            <ul>
+                                <li>
+                                        <span>Quiche is a French tart consisting of a pastry crust filled with
+                                            savoury custard and pieces of cheese, meat, seafood or vegetables. </span>
+                                </li>
+                                <li>
+                                        <span>The early versions of quiche were made of bread dough but today
+                                            shortcrust and puff pastry are used.</span>
+                                </li>
+                                <li>
+                                    <span>It may be served hot or cold.</span>
+                                </li>
+                                <li>
+                                    <span>Types include: Quiche au Camembert, Quiche aux champignons, Quiche aux
+                                        endives, Quiche aux épinards, Quiche au fromage de Gruyère, Quiche aux
+                                        fromage blanc, Quiche aux fruits de mer, Quiche aux oignons, Quiche aux
+                                        poireaux, Quiche au Roquefort, Quiche comtoise, Quiche lorraine, and
+                                        Quiche niçoise, à la tomate</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="Barbossa_RedCake1_1000x1120.jpg" alt="Avatar" style="width:400px;">
+                    <p class="card-text">Eat a whole red velvet cake</p>
+                </div>
+                <div class="flip-card-back">
+                    <div class="card-info">
+                        <div>
+                            <img class="food-img" id="redCakeImg" src="Barbossa_redCake_Transparent_Scale1000x1152.png">
+                            <p class="foodTitle" id="redCakeTitle">Red Velvet Cake</p>
+                            <p class="foodSound">/ˌred ˈvel.vɪt ˌkeɪk/</p>
+                            <ul>
+                                <li>
+                                        <span>Red velvet cake is a red-colored layer cake with cream cheese or
+                                            ermine icing. The origin of the cake is unknown, although it is popular
+                                            in the Southern United States and has been served as a dessert at New
+                                            York City's Waldorf-Astoria hotel since the 1920s.</span>
+                                </li>
+                                <li>
+                                        <span>Red velvet cake is eaten on Juneteenth because it is a symbolic
+                                            food that represents the bloodshed and sacrifice of enslaved African
+                                            Americans during slavery and the Civil War.</span>
+                                </li>
+                                <li>
+                                        <span>The cake lost popularity after Red Dye #2 was linked to cancer in
+                                            the 1970s. FD&C Red No. 40 has replaced it since that time.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="Barbossa_Salami1_1000x1120.jpg" alt="Avatar" style="width:400px;">
+                    <p class="card-text">Eat a whole log of salami</p>
+                </div>
+                <div class="flip-card-back">
+                    <div class="card-info">
+                        <div>
+                            <img class="food-img" id="salamiImg" src="Barbossa_Salami_Transparent_Scale_1000x889.png">
+                            <p class="foodTitle" id="salamiTitle">Salami</p>
+                            <p class="foodSound">/səˈlɑː.mi/</p>
+                            <ul>
+                                <li>
+                                        <span>Salami is a salume consisting of fermented and air-dried meat,
+                                            typically pork. Historically, salami was popular among Southern,
+                                            Eastern, and Central European peasants because it can be stored at
+                                            room temperature for up to 45 days once cut, supplementing a potentially
+                                            meager or inconsistent supply of fresh meat. Countries and regions across
+                                            Europe make their own traditional varieties of salami.</span>
+                                </li>
+                                <li>
+                                        <span>A traditional salami, with its typical marbled appearance, is made from
+                                            beef or pork (sometimes specifically veal). Makers also use other meats,
+                                            including venison and poultry (mostly turkey). Goose salami is traditional
+                                            in parts of northern Italy.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="BarbossaTurkey1_1000x1120.jpg" alt="Avatar" style="width:400px;">
+                    <p class="card-text">Eat a whole roast turkey</p>
+                </div>
+                <div class="flip-card-back">
+                    <div class="card-info">
+                        <div>
+                            <img class="food-img" src="Barbossa_Turkey_Transparent_Scale1000x1080.png">
+                            <p class="foodTitle">Turkey</p>
+                            <p class="foodSound">/ˈtɝː.ki, ˈtɜː.ki/</p>
+                            <ul>
+                                <li>
+                                    <span>The turkey is a large bird native to North America.
+                                        There are two extant turkey species: the wild turkey of eastern and central
+                                        North America and the ocellated turkey of the Yucatán Peninsula in Mexico.
+                                        Males of both species have a distinctive fleshy wattle, called a
+                                        snood, that hangs from the top of the beak.</span>
+                                </li>
+                                <li>
+                                        <span>The earliest turkeys evolved in North America over 20 million years
+                                            ago. They share a recent common ancestor with grouse, pheasants, and
+                                            other fowl. The wild turkey species is the ancestor of the domestic
+                                            turkey, which was domesticated approximately 2,000 years ago by indigenous
+                                            peoples.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="Barbossa_Umeboshi1_1000x1120.jpg" alt="Avatar" style="width:400px;">
+                    <p class="card-text">Eat a whole bowl of umeboshi</p>
+                </div>
+                <div class="flip-card-back">
+                    <div class="card-info">
+                        <div>
+                            <img class="food-img" id="umeboshiImg" src="Barbossa_Umeboshi_Transparent_Original_429x279.png">
+                            <p class="foodTitle" id="umeboshiTitle">Umeboshi</p>
+                            <p class="foodSound">/ˌuː.məˈbɒʃ.i/</p>
+                            <ul>
+                                <li>
+                                        <span>Umeboshi are pickled ume fruits common in Japan. The word umeboshi
+                                            is often translated into English as 'salted Japanese plums',
+                                            'Japanese plums' or 'preserved plums'. Ume is a species of fruit-bearing
+                                            tree in the genus Prunus, which is often called a "plum", but is actually
+                                            more closely related to the apricot. Pickled ume which are not dried are
+                                            called umezuke.</span>
+                                </li>
+                                <li>
+                                        <span>Umeboshi are a popular kind of Japanese tsukemono and are extremely
+                                            sour and salty. Sweet umeboshi made with honey also exist. They are
+                                            usually served as a side dish for rice or eaten on rice balls for
+                                            breakfast and lunch. They are occasionally served boiled or seasoned
+                                            for dinner.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--            <div class="flip-card">-->
+        <!--                <div class="flip-card-inner">-->
+        <!--                    <div class="flip-card-front">-->
+        <!--                        <img src="BarbossaPopcorn1_1000x1120.jpg" alt="Avatar" style="width:400px;">-->
+        <!--                        <p class="card-text">Eat a whole bucket of popcorn</p>-->
+        <!--                    </div>-->
+        <!--                    <div class="flip-card-back">-->
+        <!--                        <div class="card-info">-->
+        <!--                            <div>-->
+        <!--                                <img class="food-img" src="Barbossa_Apple_Transparent_Scale1000x1011.png">-->
+        <!--                                <p class="foodTitle">Apple</p>-->
+        <!--                                <p class="foodSound">/ăp′əl/</p>-->
+        <!--                                <ul>-->
+        <!--                                    <li>-->
+        <!--                                    <span>A cultivated deciduous tree (Malus domestica or M. pumila) in the rose family,-->
+        <!--                                    native to Eurasia and having alternate simple leaves and white or pink flowers.</span>-->
+        <!--                                    </li>-->
+        <!--                                    <li>-->
+        <!--                                        <span>The firm, edible, usually rounded fruit of this tree.</span>-->
+        <!--                                    </li>-->
+        <!--                                    <li>-->
+        <!--                                    <span>Any of several other plants, especially those with fruits suggestive of the apple,-->
+        <!--                                        such as the crabapple or custard apple.</span>-->
+        <!--                                    </li>-->
+        <!--                                    <li>-->
+        <!--                                    <span>The fruit of any of these plants. The fleshy pome or fruit of a-->
+        <!--                                    rosaceous tree (Pyrus malus) cultivated in numberless varieties in the temperate-->
+        <!--                                        zones.</span>-->
+        <!--                                    </li>-->
+        <!--                                </ul>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+
+        <!--            <div class="flip-card">-->
+        <!--                <div class="flip-card-inner">-->
+        <!--                    <div class="flip-card-front">-->
+        <!--                        <img src="BarbossaPotatoes1_1000x1120.jpg" alt="Avatar" style="width:400px;">-->
+        <!--                        <p class="card-text">Eat a whole sack of potatoes</p>-->
+        <!--                    </div>-->
+        <!--                    <div class="flip-card-back">-->
+        <!--                        <div class="card-info">-->
+        <!--                            <div>-->
+        <!--                                <img class="food-img" src="Barbossa_Apple_Transparent_Scale1000x1011.png">-->
+        <!--                                <p class="foodTitle">Apple</p>-->
+        <!--                                <p class="foodSound">/ăp′əl/</p>-->
+        <!--                                <ul>-->
+        <!--                                    <li>-->
+        <!--                                    <span>A cultivated deciduous tree (Malus domestica or M. pumila) in the rose family,-->
+        <!--                                    native to Eurasia and having alternate simple leaves and white or pink flowers.</span>-->
+        <!--                                    </li>-->
+        <!--                                    <li>-->
+        <!--                                        <span>The firm, edible, usually rounded fruit of this tree.</span>-->
+        <!--                                    </li>-->
+        <!--                                    <li>-->
+        <!--                                    <span>Any of several other plants, especially those with fruits suggestive of the apple,-->
+        <!--                                        such as the crabapple or custard apple.</span>-->
+        <!--                                    </li>-->
+        <!--                                    <li>-->
+        <!--                                    <span>The fruit of any of these plants. The fleshy pome or fruit of a-->
+        <!--                                    rosaceous tree (Pyrus malus) cultivated in numberless varieties in the temperate-->
+        <!--                                        zones.</span>-->
+        <!--                                    </li>-->
+        <!--                                </ul>-->
+        <!--                            </div>-->
+        <!--                        </div>-->
+        <!--                    </div>-->
+        <!--                </div>-->
+        <!--            </div>-->
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="Barbossa_Vegetmite1_1000x1120.jpg" alt="Avatar" style="width:400px;">
+                    <p class="card-text">Eat a whole jar of Vegemite</p>
+                </div>
+                <div class="flip-card-back">
+                    <div class="card-info">
+                        <div>
+                            <img class="food-img" id="vegemiteImg" src="Barbossa_Vegemite_Transparent_Scale1000x866.png">
+                            <p class="foodTitle">Vegemite</p>
+                            <p class="foodSound">/ˈvedʒ.i.maɪt/</p>
+                            <ul>
+                                <li>
+                                    <span>Vegemite is a thick, dark brown Australian food spread made from
+                                        leftover brewers' yeast extract with various vegetable and spice
+                                        additives.</span>
+                                </li>
+                                <li>
+                                        <span>A spread for sandwiches, toast, crumpets and cracker biscuits
+                                            as well as a filling for pastries, Vegemite is similar to other
+                                            yeast-based spreads such as Marmite in the UK and its New Zealand
+                                            version, Australian Promite, MightyMite, AussieMite, OzEmite, German
+                                            Vitam-R and Swiss Cenovis.</span>
+                                </li>
+                                <li>
+                                    <span>Vegemite has a strong flavour. It is salty, slightly bitter, malty and
+                                        has an umami flavour similar to beef bouillon (because it is rich in
+                                        glutamates). It is known for being high in B vitamins. </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="BarbossaWasabiPlate1_1000x1120.jpg" alt="Avatar" style="width:400px;">
+                    <p class="card-text">Eat a whole plate of wasabi</p>
+                </div>
+                <div class="flip-card-back">
+                    <div class="card-info">
+                        <div>
+                            <img class="food-img" id="wasabiImg" src="Barbossa_Wasabi_Transparent_Scale1000x551.png">
+                            <p class="foodTitle" id="wasabiTitle">Wasabi</p>
+                            <p class="foodSound">/wəˈsɑː.bi/</p>
+                            <ul>
+                                <li>
+                                    <span>Wasabi or Japanese horseradish is a plant of the family Brassicaceae,
+                                        which also includes horseradish and mustard in other genera. The plant
+                                        is native to Japan, the Russian Far East including Sakhalin, and the Korean
+                                        Peninsula. It grows naturally along stream beds in mountain river valleys in
+                                        Japan. Wasabi is grown for its rhizomes, which are ground into a paste as a
+                                        pungent condiment for sushi and other foods.</span>
+                                </li>
+                                <li>
+                                        <span>It is similar in taste to hot mustard or horseradish rather than
+                                            chilli peppers, in that it stimulates the nose more than the tongue,
+                                            but freshly grated wasabi has a subtly distinct flavour.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="Barbossa_XOSauce1_1000x1120.jpg" alt="Avatar" style="width:400px;">
+                    <p class="card-text">Eat a whole jar of XO sauce</p>
+                </div>
+                <div class="flip-card-back">
+                    <div class="card-info">
+                        <div>
+                            <img class="food-img" id="xoImg" src="Barbossa_XOSauce_Transparent_Scale1000x684.png">
+                            <p class="foodTitle" id="xoTitle">XO sauce</p>
+                            <p class="foodSound" id="xoSound">/eks əʊ sɑːs/</p>
+                            <ul>
+                                <li>
+                                    <span>XO sauce is a spicy seafood sauce from Hong Kong with an umami flavour.
+                                        It is commonly used in southern Chinese regions such as Guangdong.</span>
+                                </li>
+                                <li>
+                                        <span>XO sauce is made of roughly-chopped dried seafood, including dried
+                                            scallops, fish and shrimp, which are cooked with chilli peppers,
+                                            onions and garlic.</span>
+                                </li>
+                                <li>
+                                        <span>Typical ingredients of XO sauce include dried scallop, red chilli
+                                            pepper, Jinhua ham, dried shrimp, garlic and vegetable oil. Some other
+                                            recipes also call for salted cured fish and diced onion</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="Barbossa_Yogurt1_1000x1120.jpg" alt="Avatar" style="width:400px;">
+                    <p class="card-text">Eat a whole tub of yogurt</p>
+                </div>
+                <div class="flip-card-back">
+                    <div class="card-info">
+                        <div>
+                            <img class="food-img" id="yogurtImg" src="Barbossa_Yogurt_Transparent_Scale_1000x829.png">
+                            <p class="foodTitle" id="yogurtTitle">Yogurt</p>
+                            <p class="foodSound">/ˈjoʊ.ɡɚt, ˈjɒɡ.ət/</p>
+                            <ul>
+                                <li>
+                                    <span>Yogurt is a food produced by bacterial fermentation of milk. Fermentation
+                                        of sugars in the milk by these bacteria produces lactic acid, which acts on
+                                        milk protein to give yogurt its texture and characteristic tart flavor</span>
+                                </li>
+                                <li>
+                                        <span>Cow's milk is most commonly used to make yogurt. Milk from water
+                                            buffalo, goats, ewes, mares, camels, and yaks is also used to produce
+                                            yogurt.</span>
+                                </li>
+                                <li>
+                                        <span>The milk used may be homogenized or not. It may be pasteurized or
+                                            raw.</span>
+                                </li>
+                                <li><span>
+                                        To offset its natural sourness, yogurt is also sold sweetened.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="Barbossa_ZucchiniBread1_1000x1120.jpg" alt="Avatar" style="width:400px;">
+                    <p class="card-text">Eat a whole loaf of zucchini bread</p>
+                </div>
+                <div class="flip-card-back">
+                    <div class="card-info">
+                        <div>
+                            <img class="food-img" id="zucchiniImg" src="Barbossa_Zucchini_Transparent_Scale1000x621.png">
+                            <p class="foodTitle" id="zucchiniTitle">Zucchini Bread</p>
+                            <p class="foodSound">/zuːˈkiː.ni bred/</p>
+                            <ul>
+                                <li>
+                                    <span>Zucchini bread is a type of quick bread made with shredded zucchini, and is
+                                        similar to banana bread in structure.</span>
+                                </li>
+                                <li>
+                                        <span>Zucchini bread may be eaten cold, at room temperature, or even toasted,
+                                            either plain or with toppings, such as butter, cream cheese, or honey.</span>
+                                </li>
+                                <li>
+                                        <span>Zucchini bread is made by combining flour, sweetener, eggs, oil, and
+                                            spices. There are many variations, from gluten-free, to vegan, to
+                                            paleo. A popular flavor variant is chocolate, and may include the use
+                                        of cocoa powder and/or chocolate chips.</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+</div>
+
+</body>
+
+</html>
