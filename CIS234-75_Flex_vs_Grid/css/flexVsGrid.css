@@ -1,0 +1,89 @@
+
+
+#flexContainer {
+    border-style: double;
+    border-color: #6610f2;
+    border-radius: 20px;
+    border-width: thick;
+    align-self: center;
+    justify-content: center;
+    margin-top: 25px;
+    color: white;
+}
+
+.d-flex {
+    font-weight: bolder;
+}
+
+#dFlexRow {
+    background-color: mediumvioletred;
+}
+
+#rowReverseDFlexRow {
+    background-color: coral;
+}
+
+#columnDFlexRow {
+    background-color: gold;
+}
+
+#justContBetweenRow {
+    background-color: mediumseagreen;
+}
+
+#dFlexGrowRow {
+    background-color: mediumturquoise;
+}
+
+#flexWrapRow {
+    background-color: mediumpurple;
+}
+
+
+
+
+#gridContainer {
+    border-style: double;
+    border-color: #6610f2;
+    border-radius: 20px;
+    border-width: thick;
+    align-self: center;
+    justify-content: center;
+    margin-top: 25px;
+    color: white;
+}
+
+/*.row {*/
+/*    ma*/
+/*}*/
+
+.col {
+    font-weight:bolder;
+    border-color: black;
+    border-style: solid;
+}
+
+#span2Row {
+    background-color: mediumvioletred;
+}
+
+#span6Row {
+    background-color: coral;
+}
+
+#span3Row {
+    background-color: gold;
+}
+
+#noSpanRow {
+    background-color: mediumseagreen;
+}
+
+#span4Row {
+    background-color: mediumturquoise;
+}
+
+#span12Row {
+    background-color: mediumpurple;
+}
+

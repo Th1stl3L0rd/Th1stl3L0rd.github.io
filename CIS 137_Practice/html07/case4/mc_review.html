@@ -1,0 +1,137 @@
+<!--
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 7
+   Case Problem 4
+
+   Millennium Computers Ratings Page
+   Author: Trista Fedoruk
+   Date: 11/26/19
+
+   Filename:   mc_review.html
+
+   This is an additional file to offer customers a chance to rate MC services.
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>MC Reviews</title>
+    <link href="mc_styles.css" rel="stylesheet" />
+    <link href="mc_forms.css" rel="stylesheet" />
+    <link href="mc_guide.html" />
+    <link href="mc_pc.html" />
+    <link href="mc_review.html" />
+    <script src="mc_script.js"></script>
+</head>
+
+
+<body>
+
+
+<nav class="navbar" id="top">
+    <a href="#" id="main-mc">Millennium Computers</a>
+    <div id="links">
+        <a href="#">Home</a>
+        <a href="mc_guide.html">Guide</a>
+        <a href="mc_pc.html">Order</a>
+        <a href="mc_review.html">Reviews</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </div>
+</nav>
+
+
+<header id="main-header">
+    <h1>Reviews</h1>
+
+</header>
+
+<form id="cRate" action="http://www.mill_computers.com/orders/process.cgi" method="post">
+
+
+<fieldset id="custRate">
+    <legend>Tell Us About Your Experience</legend>
+
+    <div class="formRow">
+        <label for="rateName">Name</label>
+        <input name="custName" id="rateName" type="text" placeholder="Herman Munster" />
+    </div>
+
+    <div class="formRow">
+        <label for="email">Email</label>
+        <input name="custEmail" id="email" type="email" placeholder="h_munster@mbird.com" />
+    </div>
+
+    <div class="formRow">
+    <label for="orderDate">Order Date</label>
+    <input name="custOrder" id="orderDate" type="date" placeholder="mm/dd/yyyy" />
+    </div>
+
+    <div class="formRow" id="ordNum">
+        <label for="orderNum">Order Number</label>
+        <input name="custOrdNum" id="orderNum" type="text" placeholder="123456" />
+    </div>
+
+    <div class="formRow" id="ordCorrect">
+    <label>Correct Order Received?</label>
+    <span class="rateGroup">
+        <label for="cYes">Yes</label>
+        <input name="oCorrect" id="cYes" value="yes" type="radio" />
+        <label for="cNo">No</label>
+        <input name="oCorrect" id="cNo" value="no" type="radio" />
+    </span>
+    </div>
+
+    <div class="formRow" id="ordOnTime">
+    <label>Timely Delivery?</label>
+    <span class="rateGroup">
+        <label for="sYes">Yes</label>
+        <input name="oArrive" id="sYes" value="yes" type="radio" />
+        <label for="sNo">No</label>
+        <input name="oArrive" id="sNo" value="no" type="radio" />
+    </span>
+    </div>
+
+    <div class="formRow" id="custService">
+    <label>Friendly Customer Service?</label>
+    <span class="rateGroup">
+        <label for="csYes">Yes</label>
+        <input name="csHelp" id="csYes" value="yes" type="radio" />
+        <label for="csNo">No</label>
+        <input name="csHelp" id="csNo" value="no" type="radio" />
+    </span>
+    </div>
+
+    <div class="formRow" id="overallRating">
+    <label for="starRate">Overall Rating</label>
+        <select name="custRating" id="starRate">
+            <option value="select" selected>Select</option>
+            <option value="star5">5 Stars / Very Happy</option>
+            <option value="star4">4 Stars / Happy</option>
+            <option value="star3">3 Stars / Adequate</option>
+            <option value="star2">2 Stars / So-So</option>
+            <option value="star1">1 Star / Dissatisfied</option>
+        </select>
+    </div>
+
+    <div class="formRow" id="commRating">
+    <label for="commBox">Additional Comments</label>
+    <textarea name="addComm" id="commBox"></textarea>
+    </div>
+
+    <div class="formRow" id="submit">
+        <input type="submit" value="Send Order" />
+        <input type="reset" value="Cancel" />
+        <input value="Contact Me" onclick="" type="button"/>
+    </div>
+
+</fieldset>
+
+</form>
+
+</body>
+
+</html>

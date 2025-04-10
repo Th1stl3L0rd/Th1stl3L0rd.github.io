@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flexbox Example</title>
+    <link rel="stylesheet" href="css/flexVsGrid.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js"></script>
+</head>
+
+
+<body style="background-color: black">
+
+<div class="container" id="flexContainer">
+
+    <h1 id="flexHeader">Flexbox Example</h1>
+    <h6 id="flexP">The following Flexbox layout contains various properties that alter the appearance of each column. In an xxl
+        (1400+ px) screen each row will be contained on a single line. Depending on the screen size of the device used
+        to view this layout, the elements may change their position and wrap either up or down a row. This style
+        creates a staggered look that resembles a brick wall.</h6>
+
+
+    <div class="d-flex p-2" id="dFlexRow">
+        <div class="p-2 border border-3 border-black">d-flex item</div>
+        <div class="p-2 border border-3 border-black">d-flex item1</div>
+        <div class="p-2 border border-3 border-black">d-flex item2</div>
+        <div class="p-2 border border-3 border-black">d-flex item3</div>
+        <div class="p-2 border border-3 border-black">d-flex item4</div>
+        <div class="p-2 border border-3 border-black">d-flex item5</div>
+        <div class="p-2 border border-3 border-black">d-flex item6</div>
+        <div class="p-2 border border-3 border-black">d-flex item7</div>
+    </div>
+
+
+    <div class="d-flex flex-row-reverse p-2" id="rowReverseDFlexRow">
+        <div class="p-2 border border-3 border-black">flex-row-reverse item1</div>
+        <div class="p-2 border border-3 border-black">flex-row-reverse item2</div>
+        <div class="p-2 border border-3 border-black">flex-row-reverse item3</div>
+        <div class="p-2 border border-3 border-black">flex-row-reverse item4</div>
+        <div class="p-2 border border-3 border-black">flex-row-reverse item5</div>
+    </div>
+
+
+    <div class="d-flex flex-column p-2" id="columnDFlexRow">
+        <div class="p-2 border border-3 border-black">flex-column item1</div>
+        <div class="p-2 border border-3 border-black">flex-column item2</div>
+        <div class="p-2 border border-3 border-black">flex-column item3</div>
+    </div>
+
+
+    <div class="d-flex justify-content-between p-2" id="justContBetweenRow">
+        <div class="p-2 border border-3 border-black">justify-content-between item 1</div>
+        <div class="p-2 border border-3 border-black">justify-content-between item2</div>
+        <div class="p-2 border border-3 border-black">justify-content-between item3</div>
+    </div>
+
+
+    <div class="d-flex p-2" id="dFlexGrowRow">
+        <div class="p-2 border border-3 border-black">d-flex item1</div>
+        <div class="p-2 border border-3 border-black">d-flex item2</div>
+        <div class="p-2 border border-3 border-black">d-flex item3</div>
+        <div class="p-2 border border-3 border-black">d-flex item4</div>
+        <div class="p-2 border border-3 border-black flex-grow-1">flex-grow-1 item5</div>
+    </div>
+
+
+    <div class="d-flex flex-wrap mb-2 p-2" id="flexWrapRow">
+        <div class="p-2 border border-3 border-black">flex-wrap item1</div>
+        <div class="p-2 border border-3 border-black">flex-wrap item2</div>
+        <div class="p-2 border border-3 border-black">flex-wrap item3</div>
+        <div class="p-2 border border-3 border-black">flex-wrap item4</div>
+        <div class="p-2 border border-3 border-black">flex-wrap item5</div>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+<script src="js/flexVsGrid.js"></script>
+
+</body>
+
+
+
+</html>

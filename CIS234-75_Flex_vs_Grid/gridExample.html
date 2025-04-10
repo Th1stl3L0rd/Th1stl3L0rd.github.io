@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Grid Example</title>
+    <link rel="stylesheet" href="css/flexVsGrid.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.js"></script>
+</head>
+
+
+<body style="background-color: black">
+
+<div class="container" id="gridContainer">
+
+    <h1 id="gridHeader">Grid Example</h1>
+    <h6 id="gridP">The following Grid layout uses rows and columns to create a rigid structure. In an xxl
+        (1400+ px) screen each row's columns will be contained on a single line. Depending on the screen size of the
+        device used to view this layout, the columns may divide and move up or down a row to fit accordingly. By using
+        the property col-sm-*, we can create specific widths for each column within their rows that will be responsive
+        for mobile screens (567px or less).</h6>
+
+
+    <div class="row mx-auto p-2" id="span2Row">
+        <div class="col col-sm-6">col-sm-6</div>
+        <div class="col col-sm-6">col-sm-6</div>
+    </div>
+
+
+    <div class="row mx-auto p-2" id="span6Row">
+        <div class="col col-sm-2">col-sm-2</div>
+        <div class="col col-sm-2">col-sm-2</div>
+        <div class="col col-sm-2">col-sm-2</div>
+        <div class="col col-sm-2">col-sm-2</div>
+        <div class="col col-sm-2">col-sm-2</div>
+        <div class="col col-sm-2">col-sm-2</div>
+    </div>
+
+
+    <div class="row mx-auto p-2" id="span3Row">
+        <div class="col col-sm-4">col-sm-4</div>
+        <div class="col col-sm-4">col-sm-4</div>
+        <div class="col col-sm-4">col-sm-4</div>
+    </div>
+
+
+    <div class="row mx-auto p-2" id="noSpanRow">
+        <div class="col col-sm">col-sm</div>
+    </div>
+
+
+    <div class="row mx-auto p-2" id="span4Row">
+        <div class="col col-sm-3">col-sm-4</div>
+        <div class="col col-sm-3">col-sm-4</div>
+        <div class="col col-sm-3">col-sm-4</div>
+        <div class="col col-sm-3">col-sm-4</div>
+    </div>
+
+
+    <div class="row mx-auto mb-2 p-2" id="span12Row">
+        <div class="col col-sm-1">col-sm-1</div>
+        <div class="col col-sm-1">col-sm-1</div>
+        <div class="col col-sm-1">col-sm-1</div>
+        <div class="col col-sm-1">col-sm-1</div>
+        <div class="col col-sm-1">col-sm-1</div>
+        <div class="col col-sm-1">col-sm-1</div>
+        <div class="col col-sm-1">col-sm-1</div>
+        <div class="col col-sm-1">col-sm-1</div>
+        <div class="col col-sm-1">col-sm-1</div>
+        <div class="col col-sm-1">col-sm-1</div>
+        <div class="col col-sm-1">col-sm-1</div>
+        <div class="col col-sm-1">col-sm-1</div>
+    </div>
+
+
+</div>
+
+
+
+
+
+
+<script src="js/flexVsGrid.js"></script>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,9 @@
+<section><h1>Welcome to Harpe Gaming.</h1>
+    <p><h2>We have a simple philosophy. It has three main points:</h2></p>
+    <ul>
+        <li>Unplug</li>
+        <li>Interact</li>
+        <li>Reconnect</li>
+    </ul>
+    
+</section>

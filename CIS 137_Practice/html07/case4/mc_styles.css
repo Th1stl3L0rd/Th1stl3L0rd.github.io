@@ -1,0 +1,112 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Share+Tech&display=swap');
+
+/*
+   New Perspectives on HTML and CSS, 7th Edition
+   Tutorial 7
+   Case Problem 4
+
+   Millennium Computers Style Sheet
+
+   Author: Trista Fedoruk
+   Date: 11/26/19
+
+   Filename:         mc_styles.css
+
+*/
+
+
+/*html styles*/
+
+html {
+    background: url("purple_matrix.png");
+    background-color: rgb(90, 0, 90);
+    font-family: "Share Tech", sans-serif;
+}
+
+
+/*navigation styles*/
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: transparent;
+    width: 100%;
+    margin: 0;
+    font-size: 1.3rem;
+    font-weight: bolder;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+nav a {
+    text-decoration: none;
+    color: #65c362;
+    text-shadow: #1a09a8 2px 2px, rgb(11, 195, 213) 3px 3px;
+    width: 80px;
+    margin: 3px 3px 0 3px;
+    text-align: center;
+}
+
+nav #links a:hover, footer a:active {
+    color: rgb(11, 195, 213);
+}
+
+nav a#main-mc {
+    margin-right: auto;
+    width: 300px;
+    font-size: 2.75rem;
+    text-shadow: rgb(26, 9, 168) 2px 2px, rgb(11, 195, 213) 3px 3px;
+    color: rgb(101, 195, 98);
+    text-align: left;
+}
+
+nav #links {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+/* header styles*/
+
+#main-header h1 {
+    color: #65c362;
+    text-shadow: #1a09a8 3px 3px, rgb(11, 195, 213) 4px 4px;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 0;
+    font-size: 2rem;
+}
+
+/* page rating styles*/
+
+div#pageRateContainer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+div#pageRateContainer p#ratePage {
+    color: rgb(101, 195, 98);
+    text-shadow: black 1px 1px, #41025e 2px 2px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    background-color: rgba(11, 195, 213, 0.5);
+    border-radius: 5px;
+    border: solid #65c362;
+}
+
+p#ratePage a {
+    text-decoration: none;
+    color: rgb(101, 195, 98);
+    text-shadow: black 1px 1px, #41025e 2px 2px;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+p#ratePage a:hover, footer a:active {
+    color: rgb(11, 195, 213);
+    text-shadow: black 2px 2px, #41025e 3px 3px;
+}
+
+

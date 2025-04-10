@@ -1,0 +1,305 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Laila|Cabin+Sketch|ZCOOL+XiaoWei&display=swap');
+/*
+    CIS-137, Fall 2019, Carroll Community College
+    Assignment 7
+    Design a basic webpage using css grid and flexbox
+
+    Benedict Otterbatch
+    Author: Trista Fedoruk
+    Date: 11/1/19
+
+    Filename: Otterbatch_styles.css
+*/
+
+/*body styles*/
+
+html, body {
+    background-color: rgb(65, 65, 65);
+    margin: 0;
+}
+
+p {
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+
+/*navigation styles*/
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    background-color: rgb(121, 75, 161);
+    width: 100%;
+    margin: 0;
+    font-family: "Cabin Sketch", sans-serif;
+    font-size: 12pt;
+    font-weight: bolder;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+nav a {
+    text-decoration: none;
+    color: #e5c3ff;
+    width: 80px;
+    margin: 5px 10px 5px 10px;
+    text-align: right;
+}
+
+nav #links a:hover, footer a:active {
+    color: deeppink;
+}
+
+nav a#main-zoo {
+    margin-right: auto;
+    width: 300px;
+    font-size: 2.7rem;
+    font-variant-caps: normal;
+    text-shadow: #7fc62e 1px 1px;
+    color: #790079;
+    text-align: left;
+    transition: text-shadow 2.5s;
+}
+
+nav a#main-zoo:hover {
+    text-shadow: #7fc62e 1px 1px, #7fc62e 5px 5px 10px;
+}
+
+nav #links {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+
+/*header styles*/
+
+header#main-header {
+    background: linear-gradient(plum, aqua, aquamarine);
+}
+
+header#main-header h1 {
+    font-family: Papyrus, Laila, sans-serif;
+    font-size: 34pt;
+    text-align: center;
+    text-shadow: mediumvioletred;
+    color: #421a50;
+    margin: 0;
+}
+
+header#main-header h2 {
+    font-family: "ZCOOL XiaoWei", "Trebuchet MS", sans-serif;
+    font-size: 16pt;
+    text-align: center;
+    color: blueviolet;
+    margin: 0;
+}
+
+header#main-header p {
+    text-align: justify;
+    margin: 0;
+    padding: 10px 40px 10px 40px;
+    color: #232323;
+}
+
+header#main-header p a {
+    text-decoration: none;
+    color: #0900c5;
+}
+
+header#main-header p a:hover {
+    color: rgba(178, 0, 178, 0.91);
+}
+
+/*section styles*/
+
+section {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-gap: 30px;
+    justify-content: center;
+}
+
+section article {
+    width: 300px;
+    border-radius: 40px;
+    background-color: greenyellow;
+    text-align: center;
+    margin: 60px 60px;
+    perspective: 600px;
+    border: thick groove magenta;
+}
+
+section article#otterbatch1 {
+    box-shadow: magenta -40px -1px 80px;
+    margin-top: 150px;
+}
+
+section article#otterbatch2 {
+    width: 375px;
+    box-shadow: magenta 0 0 80px;
+}
+
+section article#otterbatch3 {
+    box-shadow: magenta 40px -1px 80px;
+    margin-top: 150px;
+}
+
+section article img {
+    border-radius: 40px 40px 0 0;
+    width: 100%;
+}
+
+section article p {
+    padding: 10px;
+}
+
+
+/*footer styles*/
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    padding-left: 15px;
+    padding-bottom: 1px;
+    width: 100%;
+    text-align: left;
+    background-color: rgb(121, 75, 161);
+    color: #e5c3ff;
+    font-size: 12pt;
+    font-family: "Cabin Sketch", "Trebuchet MS", sans-serif;
+    font-weight: bolder;
+}
+
+footer a {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    padding-right: 15px;
+    padding-bottom: 1px;
+    width: 100px;
+    text-align: right;
+    text-decoration: none;
+    color: #e5c3ff;
+    font-weight: bolder;
+}
+
+footer a:hover, footer a:active {
+    color: deeppink;
+}
+
+
+/*media queries*/
+
+@media only screen and (max-width: 1180px) {
+    section {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(300px, 1fr));
+        grid-gap: 10px;
+        box-shadow: magenta 0px 0px 80px;
+        justify-content: center;
+    }
+
+    section article#otterbatch2 {
+        width: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 1020px) {
+
+    section {
+        grid-gap: 10px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        grid-template-columns: repeat(3, 275px);
+    }
+
+    section article {
+        width: 250px;
+        margin: 0;
+    }
+
+    section article#otterbatch1 {
+        margin: 0;
+        box-shadow: magenta 0px 0px 15px;
+    }
+
+    section article#otterbatch3 {
+        margin: 0;
+        box-shadow: magenta 0px 0px 15px;
+    }
+
+    section article#otterbatch2 {
+        width: 250px;
+        box-shadow: magenta 0px 0px 15px;
+    }
+
+    section article img {
+        width: 100%;
+    }
+
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    section {
+        grid-gap: 40px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+        grid-template-columns: 300px;
+    }
+
+    section article {
+        width: 300px;
+        margin: 0;
+    }
+
+    section article#otterbatch1 {
+        margin: 0;
+        box-shadow: magenta 0px 0px 30px;
+    }
+
+    section article#otterbatch3 {
+        margin: 0;
+        box-shadow: magenta 0px 0px 30px;
+    }
+
+    section article#otterbatch2 {
+        width: 300px;
+        box-shadow: magenta 0px 0px 30px;
+    }
+
+    section article img {
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    nav {
+        flex-flow: nowrap;
+    }
+
+    nav #links a {
+        width: 64px;
+    }
+
+    nav #links {
+        width: 70px;
+        justify-content: flex-end;
+        padding-right: 10px;
+    }
+
+}
+
+@media only screen and (max-width: 330px) {
+    footer {
+        font-size: 8pt;
+    }
+}
+
+
