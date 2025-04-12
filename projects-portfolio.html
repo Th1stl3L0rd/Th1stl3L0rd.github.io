@@ -76,7 +76,51 @@
             background-image: url("ThistleLord_MagicalCreatures18_Scale1024x577.png");
         }
 
+        .stickyTop {
 
+            position: sticky;
+            top: 0;
+            width: 95vw;
+            height: 50px;
+            /*margin: auto;*/
+            background-color: black;
+            border-style: ridge;
+            border-color: #d36dfd;
+        }
+
+        .navbar-brand {
+            height: 37px;
+            margin-top: 5px;
+            margin-left: 5px;
+        }
+
+        .navA a {
+            float: right;
+            display: block;
+            margin: auto;
+            padding-right: 12px;
+            padding-bottom: 15px;
+            border-style: none;
+            border-color: transparent;
+            background-color: transparent;
+            font-size: 1.1rem;
+            font-weight: bolder;
+            text-shadow: none;
+            text-align: center;
+            width: 60px;
+            /*height: 5%;*/
+            color: mediumseagreen;
+        }
+
+        .stickyTop a:hover {
+            /*background-color: #ddd;*/
+            color: mediumvioletred;
+        }
+
+        .stickyTop a.active {
+            /*background-color: #04AA6D;*/
+            color: #d36dfd;
+        }
 
 
         a {
@@ -122,6 +166,19 @@
     </style>
 </head>
 <body>
+
+
+<div class="stickyTop">
+    <nav class="navA">
+        <img class="navbar-brand"
+             src="ThistleLord_Brand1_Thistle_Transparent_Purple_Magenta_Lime_Bloom%20Only_Scale321x274.png"
+             alt="Image of thistle">
+        <a href="projects-school.html">School</a>
+        <a class="active" href="#">Portfolio</a>
+        <a href="stories.html">Stories</a>
+        <a href="index.html">Home</a>
+    </nav>
+</div>
 
 
 <a href="">Cool CSS Examples</a>
