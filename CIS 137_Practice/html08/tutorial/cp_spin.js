@@ -1,5 +1,5 @@
 /*
-   New Perspectives on HTML and CSS, 7th Edition
+   New Perspectives on HTML and css, 7th Edition
    Tutorial 8
    Tutorial Case
 

@@ -1,0 +1,45 @@
+/*The original code was designed by Christopher Aue.*/
+/*https://christopheraue.net/design/fading-pages-on-load-and-unload*/
+
+/*I have adjusted the code to suit my personal preferences, but most of it remains in its original state.*/
+
+/*YOU MUST USE:   <svg id="fader"></svg>    IN THE BODY OF THE HTML.*/
+/*IT MUST BE THE FIRST LINE OF CODE OR THE EFFECT WILL NOT WORK!*/
+/*YOU MUST IMPORT THIS css FILE: <link rel="stylesheet" href="page-fade-041225.css"> INTO THE HEAD!*/
+/*DO NOT FORGET TO IMPORT THE ACCOMPANYING JS FILE  < script src = "script.js" > < /script>   IN THE HEAD!*/
+
+
+#fader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    pointer-events: none;
+    background: black;
+    animation-duration: .75s;
+    animation-timing-function: ease-in-out;
+}
+
+
+
+@keyframes fade-out {
+    from { opacity: 1 }
+    to { opacity: 0 }
+}
+
+@keyframes fade-in {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+
+#fader.fade-out {
+    opacity: 0;
+    animation-name: fade-out;
+}
+
+#fader.fade-in {
+    opacity: 1;
+    animation-name: fade-in;
+}

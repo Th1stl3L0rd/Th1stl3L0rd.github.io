@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Where Everyone Knows Your Name</title>
+    <script src="/scripts/page-fade-041225.js"></script>
+    <link rel="stylesheet" href="/css/page-fade-041225.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yatra One">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster Two">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Eagle Lake">
@@ -111,7 +113,11 @@
             font-family: Yatra One, sans-serif;
             font-weight: bold;
             color: black;
-            text-shadow: 3px 3px 3px limegreen;
+            text-shadow: 2px 2px 2px limegreen,
+                        3px 3px 3px limegreen,
+                        4px 4px 4px darkviolet,
+                        5px 5px 5px darkviolet,
+                        6px 6px 6px darkmagenta;
             border-style: none;
             border-radius: 25px;
             padding: .5rem;
@@ -176,8 +182,13 @@
 </head>
 <body>
 
+<svg id="fader"></svg>
+<script>
+    fadeInPage();
+</script>
 
-<a href="index.html">Return to Thy Thistle Lord's Keep</a>
+
+<a href="stories.html">Return to Stories</a>
 
 <!--<img src="Freds_Place_Scale500x294.png">-->
 

@@ -14,7 +14,7 @@
  * LicenseModernizr is available under the MIT and BSD licenses:
 
  * MIT License
- * Copyright (c) 2009–2010 Faruk Ate?
+ * Copyright (c) 2009ï¿½2010 Faruk Ate?
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
  * in the Software without restriction, including without limitation the rights
@@ -70,7 +70,7 @@
  * element of the page, one for each cutting-edge feature. If the UA
  * supports it, a class like "cssgradients" will be added. If not,
  * the class name will be "no-cssgradients". This allows for simple
- * if-conditionals in CSS styling, making it easily to have fine
+ * if-conditionals in css styling, making it easily to have fine
  * control over the look and feel of your website.
  * 
  * @author        Faruk Ates
@@ -264,9 +264,9 @@ window.Modernizr = (function(window,doc,undefined){
     }
 
     /**
-     * test_props is a generic CSS / DOM property test; if a browser supports
+     * test_props is a generic css / DOM property test; if a browser supports
      *   a certain property, it won't return undefined for it.
-     *   A supported CSS property returns empty string when its not yet set.
+     *   A supported css property returns empty string when its not yet set.
      */
     function test_props( props, callback ) {
         for ( var i in props ) {
@@ -426,7 +426,7 @@ window.Modernizr = (function(window,doc,undefined){
     };
     
     
-    // In testing support for a given CSS property, it's legit to test:
+    // In testing support for a given css property, it's legit to test:
     //    elem.style[styleName] !== undefined
     // If the property is supported it will return an empty string,
     // if unsupported it will return undefined.
@@ -466,7 +466,7 @@ window.Modernizr = (function(window,doc,undefined){
     
     
     tests[opacity] = function() {
-        // Browsers that actually have CSS Opacity implemented have done so
+        // Browsers that actually have css Opacity implemented have done so
         //  according to spec, which means their return values are within the
         //  range of [0.0,1.0] - including the leading zero.
         
@@ -490,7 +490,7 @@ window.Modernizr = (function(window,doc,undefined){
     
     tests[cssgradients] = function() {
         /**
-         * For CSS Gradients syntax, please see:
+         * For css Gradients syntax, please see:
          * http://webkit.org/blog/175/introducing-css-gradients/
          * https://developer.mozilla.org/en/CSS/-moz-linear-gradient
          * https://developer.mozilla.org/en/CSS/-moz-radial-gradient
