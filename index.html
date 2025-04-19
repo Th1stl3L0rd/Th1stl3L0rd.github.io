@@ -501,13 +501,13 @@
 
 
 
-    const alreadyShown = localStorage.getItem('alreadyShown');
+    const alreadyShown = sessionStorage.getItem('alreadyShown');
     if (alreadyShown === 'true') {
         document.getElementById('splashThistleContainer').style.display = 'none';
     }
 
     setTimeout(() => {
-        localStorage.setItem('alreadyShown', 'true');
+        sessionStorage.setItem('alreadyShown', 'true');
         document.getElementById('success').style.display = 'none';
     }, 4000);
 
