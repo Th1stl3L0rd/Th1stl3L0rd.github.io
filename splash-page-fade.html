@@ -1,0 +1,296 @@
+
+<html>
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Metamorphous">
+    <style>
+        #splashThistleContainer {
+            background-color: black;
+            width: 100%;
+            height: 100%;
+            -webkit-animation: div-fade-out 3.5s ease-in-out forwards;
+            animation: div-fade-out 3.5s ease-in-out forwards;
+            animation-delay: 13.5s;
+        }
+
+        @keyframes div-fade-out {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        @-webkit-keyframes div-fade-out {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        #splashThistleImage {
+            display: block;
+            margin-left: 15%;
+            margin-right: 15%;
+            padding-top: 50%;
+            -webkit-animation: thistle-pulse 3.5s ease-in-out infinite, fade-in-out-thistle 12.5s ease-in-out forwards;
+            animation: thistle-pulse 3.5s ease-in-out infinite, fade-in-out-thistle 12.5s ease-in-out forwards;
+        }
+
+        @keyframes fade-in-out-thistle {
+            0%, 100% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            75% {
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes fade-in-out-thistle {
+            0%, 100% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+            }
+            75% {
+                opacity: 1;
+            }
+        }
+
+        @-webkit-keyframes thistle-pulse {
+            0% {
+                transform: scale(.98);
+                filter: drop-shadow(0px 0px 8px magenta);
+                -webkit-filter: drop-shadow(0px 0px 8px magenta);
+                -webkit-transition: all 1s ease-in-out;
+                -o-transition: all 1s ease-in-out;
+                transition: all 1s ease-in-out;
+            }
+            25% {
+                transform: scale(1);
+                filter: drop-shadow(0px 0px 18px magenta);
+                -webkit-filter: drop-shadow(0px 0px 18px magenta);
+                -webkit-transition: all 1s ease-in-out;
+                -o-transition: all 1s ease-in-out;
+                transition: all 1s ease-in-out;
+            }
+            50% {
+                transform: scale(.98);
+                filter: drop-shadow(0px 0px 8px magenta);
+                -webkit-filter: drop-shadow(0px 0px 8px magenta);
+                -webkit-transition: all 1s ease-in-out;
+                -o-transition: all 1s ease-in-out;
+                transition: all 1s ease-in-out;
+            }
+            75% {
+                transform: scale(1);
+                filter: drop-shadow(0px 0px 18px magenta);
+                -webkit-filter: drop-shadow(0px 0px 18px magenta);
+                -webkit-transition: all 1s ease-in-out;
+                -o-transition: all 1s ease-in-out;
+                transition: all 1s ease-in-out;
+            }
+            100% {
+                transform: scale(.98);
+                filter: drop-shadow(0px 0px 8px magenta);
+                -webkit-filter: drop-shadow(0px 0px 8px magenta);
+                -webkit-transition: all 1s ease-in-out;
+                -o-transition: all 1s ease-in-out;
+                transition: all 1s ease-in-out;
+            }
+        }
+
+        @keyframes thistle-pulse {
+            0% {
+                transform: scale(.98);
+                filter: drop-shadow(0px 0px 8px magenta);
+                -webkit-filter: drop-shadow(0px 0px 8px magenta);
+                -webkit-transition: all 1s ease-in-out;
+                -o-transition: all 1s ease-in-out;
+                transition: all 1s ease-in-out;
+            }
+            25% {
+                transform: scale(1);
+                filter: drop-shadow(0px 0px 18px magenta);
+                -webkit-filter: drop-shadow(0px 0px 18px magenta);
+                -webkit-transition: all 1s ease-in-out;
+                -o-transition: all 1s ease-in-out;
+                transition: all 1s ease-in-out;
+            }
+            50% {
+                transform: scale(.98);
+                filter: drop-shadow(0px 0px 8px magenta);
+                -webkit-filter: drop-shadow(0px 0px 8px magenta);
+                -webkit-transition: all 1s ease-in-out;
+                -o-transition: all 1s ease-in-out;
+                transition: all 1s ease-in-out;
+            }
+
+            75% {
+                transform: scale(1);
+                filter: drop-shadow(0px 0px 18px magenta);
+                -webkit-filter: drop-shadow(0px 0px 18px magenta);
+                -webkit-transition: all 1s ease-in-out;
+                -o-transition: all 1s ease-in-out;
+                transition: all 1s ease-in-out;
+            }
+            100% {
+                transform: scale(.98);
+                filter: drop-shadow(0px 0px 8px magenta);
+                -webkit-filter: drop-shadow(0px 0px 8px magenta);
+                -webkit-transition: all 1s ease-in-out;
+                -o-transition: all 1s ease-in-out;
+                transition: all 1s ease-in-out;
+            }
+        }
+
+        #splashThistleWords {
+            text-align: center;
+        }
+
+        #splashThistleWords span {
+            text-align: center;
+            font-size: 5rem;
+            font-family: metamorphous, sans-serif;
+            font-weight: bolder;
+            text-shadow: 1px 1px 3px limegreen,
+            2px 2px 6px mediumseagreen,
+            3px 3px 9px mediumseagreen,
+            4px 4px 12px mediumseagreen,
+            5px 5px 15px mediumvioletred,
+            6px 6px 18px mediumvioletred,
+            7px 7px 21px mediumvioletred,
+            8px 8px 24px mediumorchid,
+            9px 9px 27px mediumorchid;
+        }
+
+        .one .letterSpan {
+            opacity: 0;
+            transform: translate(0px, 0px) rotate(0deg) scale(1);
+            animation: revolveScale 10s forwards, splash-word-delay 4s forwards;
+        }
+
+        .animate {
+            font-size: 2.25rem;
+            margin: 100px 0 0;
+        }
+
+        .animate span {
+            display: inline-block;
+        }
+
+        .animate .l1 {
+            animation-delay: 4.05s;
+        }
+        .animate .l2 {
+            animation-delay: 4.1s;
+        }
+        .animate .l3 {
+            animation-delay: 4.15s;
+        }
+        .animate .l4 {
+            animation-delay: 4.2s;
+        }
+        .animate .l5 {
+            animation-delay: 4.25s;
+        }
+        .animate .l6 {
+            animation-delay: 4.3s;
+        }
+        .animate .l7 {
+            animation-delay: 4.35s;
+        }
+        .animate .l8 {
+            animation-delay: 4.4s;
+        }
+        .animate .l9 {
+            animation-delay: 4.45s;
+        }
+        .animate .l10 {
+            animation-delay: 4.5s;
+        }
+        .animate .l11 {
+            animation-delay: 4.55s;
+        }
+
+
+        @keyframes splash-word-delay {
+            0% {
+                transition-delay: 4s;
+            }
+        }
+
+        @-webkit-keyframes splash-word-delay {
+            0% {
+                transition-delay: 4s;
+            }
+        }
+
+        @keyframes revolveScale {
+            0% {
+                opacity: 0;
+            }
+            50% {
+                opacity: 1;
+                transform: translate(0px, 0px) rotate(1800deg) scale(1);
+            }
+            100% {
+                opacity: 0;
+                transform: translate(0px, 0px) rotate(1800deg) scale(1);
+            }
+        }
+
+
+
+    </style>
+</head>
+<body id="body">
+
+
+
+<div id="splashThistleContainer">
+        <img id="splashThistleImage" src="ThistleLord_Brand1_Thistle_Transparent_Purple_Magenta_Lime.png">
+    <p class="animate one" id="splashThistleWords">
+        <span class="letterSpan l1">T</span><span class="letterSpan l2">h</span><span class="letterSpan l3">i</span>
+        <span class="letterSpan l4">s</span><span class="letterSpan l5">t</span><span class="letterSpan l6">l</span>
+        <span class="letterSpan l7">e</span>&nbsp;
+        <span class="letterSpan l8">L</span><span class="letterSpan l9">o</span><span class="letterSpan l10">r</span>
+        <span class="letterSpan l11">d</span>
+    </p>
+</div>
+
+<script>
+
+    hideImg();
+
+    // Function to hide the div
+    function hideImg() {
+        console.log("banana");
+        var splashImg = document.getElementById('splashThistleImage');
+        var splashDiv = document.getElementById('splashThistleContainer');
+
+        // Start fading out
+        splashImg.style.opacity = '0';
+        // splashDiv.style.opacity = '0';
+
+        // After the transition, set display to none
+        setTimeout(function() {
+            splashImg.style.display = 'none';
+            splashDiv.style.display = 'none';
+        }, 18000); // Time matches the CSS transition duration
+    }
+
+    // Set timeout to trigger the hide function after 10 seconds
+    setTimeout(hideImg, 18000); // 10000 milliseconds = 10 seconds
+
+</script>
+
+
+</body>
+</html>
