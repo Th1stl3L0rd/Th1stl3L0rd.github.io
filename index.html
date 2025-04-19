@@ -494,45 +494,27 @@
             splashImg.style.display = 'none';
             splashDiv.style.display = 'none';
         }, 18000); // Time matches the CSS transition duration
-
-        // if (splashImg(style.display = 'none')) {
-        //     splashDiv.style.display = 'none';
-        //     splashDiv.style.zIndex = '-99999999999';
-        //     splashDiv.style.position = 'relative';
-        // }
-
     }
 
     // Set timeout to trigger the hide function after 10 seconds
     setTimeout(hideImg, 18000); // 10000 milliseconds = 10 seconds
 
-    // hideSplashDiv();
-    //
-    // // Function to hide the div
-    // function hideSplashDiv() {
-    //     console.log("banana");
-    //     var splashDiv = document.getElementById('splashThistleContainer');
-    //
-    //     // Start fading out
-    //     splashDiv.style.opacity = '0';
-    //
-    //     // After the transition, set display to none
-    //     setTimeout(function() {
-    //         splashDiv.style.display = 'none';
-    //         splashDiv.style.zIndex = '-9999999999999999999';
-    //     }, 12500); // Time matches the CSS transition duration
-    //
-    // }
-    //
-    // // Set timeout to trigger the hide function after 10 seconds
-    // setTimeout(hideSplashDiv, 5); // 10000 milliseconds = 10 seconds
+
+
+    const alreadyShown = localStorage.getItem('alreadyShown');
+    if (alreadyShown === 'true') {
+        document.getElementById('splashThistleContainer').style.display = 'none';
+    }
+
+    setTimeout(() => {
+        localStorage.setItem('alreadyShown', 'true');
+        document.getElementById('success').style.display = 'none';
+    }, 4000);
+
+
 
 </script>
 
-
-<!--<div id="firstDiv">-->
-<!--    <p>This is the first div.</p>-->
-<!--</div>-->
 
 <svg id="fader"></svg>
 <script>
