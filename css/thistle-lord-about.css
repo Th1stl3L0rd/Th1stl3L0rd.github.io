@@ -1,0 +1,84 @@
+
+
+body {
+    background-image: url("../giphy-3991822413.gif");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+#container {
+    font-family: Metamorphous, sans-serif;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: ghostwhite;
+    text-shadow: 1px 1px 1px black,
+    2px 2px 2px black,
+    3px 3px 3px black,
+    4px 4px 4px black,
+    5px 5px 5px limegreen,
+    6px 6px 6px darkmagenta,
+    7px 7px 7px darkmagenta,
+    8px 8px 8px darkmagenta,
+    9px 9px 9px deeppink;
+    margin: 5%;
+    padding: 5%;
+    background-color: rgba(211, 109, 253, 0.5);
+}
+
+
+h1 {
+    font-family: Yatra One, sans-serif;
+    font-size: 5rem;
+    text-align: center;
+    margin-bottom: 10%;
+}
+
+a {
+    text-decoration: none;
+    font-size: 2rem;
+    color: lightgreen;
+    text-shadow: 1px 1px 1px black,
+    2px 2px 2px black,
+    3px 3px 5px deeppink,
+    4px 4px 10px ghostwhite;
+    animation: fade-in 5s ease-in 3s forwards, escape-pulse 3.5s ease-in-out infinite;
+    opacity: 0;
+}
+
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes escape-pulse {
+    0% {
+        transform: scale(1);
+        filter: drop-shadow(0px 0px 8px black);
+        transition: all 2s ease-in-out;
+    }
+    25% {
+        transform: scale(5);
+        filter: drop-shadow(0px 0px 18px black);
+        transition: all 2s ease-in-out;
+    }
+    50% {
+        transform: scale(1);
+        filter: drop-shadow(0px 0px 8px black);
+        transition: all 1s ease-in-out;
+    }
+    75% {
+        transform: scale(5);
+        filter: drop-shadow(0px 0px 18px black);
+        transition: all 1s ease-in-out;
+    }
+    100% {
+        transform: scale(1);
+        filter: drop-shadow(0px 0px 8px black);
+        transition: all 1s ease-in-out;
+    }
+}

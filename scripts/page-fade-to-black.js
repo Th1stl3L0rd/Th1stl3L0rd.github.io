@@ -4,10 +4,11 @@
 // YOU MUST USE:   <svg id="fader"></svg>    IN THE BODY OF THE HTML.
 // IT MUST IMMEDIATELY BE FOLLOWED BY THE SCRIPT:  fadeInPage();  OR IT WILL NOT WORK!
 // THEY MUST BE THE FIRST LINES OF CODE IN THE BODY OR THE EFFECT WILL NOT WORK!
-// YOU MUST IMPORT THIS SCRIPT: < script src = "page-fade-041225.js" >< /script> INTO THE HEAD BEFORE ANY OTHER JS PAGE!
-// DO NOT FORGET TO IMPORT THE ACCOMPANYING css FILE: <link rel="stylesheet" href="page-fade-041225.css"> IN THE HEAD!
+// YOU MUST IMPORT THIS SCRIPT: < script src = "page-fade-to-black.js" >< /script> INTO THE HEAD BEFORE ANY OTHER JS PAGE!
+// DO NOT FORGET TO IMPORT THE ACCOMPANYING CSS FILE: <link rel="stylesheet" href="page-fade-to-black.css"> IN THE HEAD!
 
-// fadeInPage();
+// This JS was finalized on April 12th 2025 by Trista Fedoruk
+
 
 
 function fadeInPage() {

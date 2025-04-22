@@ -5,295 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thy ThistleLord's Keep</title>
-    <script src = "scripts/page-fade-041225.js"></script>
-    <link rel="stylesheet" href="css/page-fade-041225.css">
+    <script src = "scripts/page-fade-to-black.js"></script>
+    <link rel="stylesheet" href="css/thistle-lord-splash-page.css">
+    <link rel="stylesheet" href="css/page-fade-to-black.css">
+<!--    <link rel="stylesheet" href="css/thistle-lord-main.css">-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yatra One">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Metamorphous">
 
     <style>
-
-        #splashThistleContainer {
-            position: fixed;
-            top: 0;
-            left: 0;
-            background-color: black;
-            width: 100%;
-            height: 100%;
-            -webkit-animation: div-fade-out 3.5s ease-in-out forwards;
-            animation: div-fade-out 3.5s ease-in-out forwards;
-            animation-delay: 13.5s;
-            z-index: 9999999999999999999;
-        }
-
-        @keyframes div-fade-out {
-            0% {
-                opacity: 1;
-            }
-            100% {
-                opacity: 0;
-            }
-        }
-
-        @-webkit-keyframes div-fade-out {
-            0% {
-                opacity: 1;
-            }
-            100% {
-                opacity: 0;
-            }
-        }
-
-        #splashThistleImage {
-            display: block;
-            margin-left: 15%;
-            margin-right: 15%;
-            padding-top: 50%;
-            width: 75%;
-            -webkit-animation: thistle-pulse 3.5s ease-in-out infinite, fade-in-out-thistle 12.5s ease-in-out forwards;
-            animation: thistle-pulse 3.5s ease-in-out infinite, fade-in-out-thistle 12.5s ease-in-out forwards;
-        }
-
-        @keyframes fade-in-out-thistle {
-            0%, 100% {
-                opacity: 0;
-            }
-            50% {
-                opacity: 1;
-            }
-            75% {
-                opacity: 1;
-            }
-        }
-
-        @-webkit-keyframes fade-in-out-thistle {
-            0%, 100% {
-                opacity: 0;
-            }
-            50% {
-                opacity: 1;
-            }
-            75% {
-                opacity: 1;
-            }
-        }
-
-        @-webkit-keyframes thistle-pulse {
-            0% {
-                transform: scale(.98);
-                filter: drop-shadow(0px 0px 8px magenta);
-                -webkit-filter: drop-shadow(0px 0px 8px magenta);
-                -webkit-transition: all 1s ease-in-out;
-                -o-transition: all 1s ease-in-out;
-                transition: all 1s ease-in-out;
-            }
-            25% {
-                transform: scale(1);
-                filter: drop-shadow(0px 0px 18px magenta);
-                -webkit-filter: drop-shadow(0px 0px 18px magenta);
-                -webkit-transition: all 1s ease-in-out;
-                -o-transition: all 1s ease-in-out;
-                transition: all 1s ease-in-out;
-            }
-            50% {
-                transform: scale(.98);
-                filter: drop-shadow(0px 0px 8px magenta);
-                -webkit-filter: drop-shadow(0px 0px 8px magenta);
-                -webkit-transition: all 1s ease-in-out;
-                -o-transition: all 1s ease-in-out;
-                transition: all 1s ease-in-out;
-            }
-            75% {
-                transform: scale(1);
-                filter: drop-shadow(0px 0px 18px magenta);
-                -webkit-filter: drop-shadow(0px 0px 18px magenta);
-                -webkit-transition: all 1s ease-in-out;
-                -o-transition: all 1s ease-in-out;
-                transition: all 1s ease-in-out;
-            }
-            100% {
-                transform: scale(.98);
-                filter: drop-shadow(0px 0px 8px magenta);
-                -webkit-filter: drop-shadow(0px 0px 8px magenta);
-                -webkit-transition: all 1s ease-in-out;
-                -o-transition: all 1s ease-in-out;
-                transition: all 1s ease-in-out;
-            }
-        }
-
-        @keyframes thistle-pulse {
-            0% {
-                transform: scale(.98);
-                filter: drop-shadow(0px 0px 8px magenta);
-                -webkit-filter: drop-shadow(0px 0px 8px magenta);
-                -webkit-transition: all 1s ease-in-out;
-                -o-transition: all 1s ease-in-out;
-                transition: all 1s ease-in-out;
-            }
-            25% {
-                transform: scale(1);
-                filter: drop-shadow(0px 0px 18px magenta);
-                -webkit-filter: drop-shadow(0px 0px 18px magenta);
-                -webkit-transition: all 1s ease-in-out;
-                -o-transition: all 1s ease-in-out;
-                transition: all 1s ease-in-out;
-            }
-            50% {
-                transform: scale(.98);
-                filter: drop-shadow(0px 0px 8px magenta);
-                -webkit-filter: drop-shadow(0px 0px 8px magenta);
-                -webkit-transition: all 1s ease-in-out;
-                -o-transition: all 1s ease-in-out;
-                transition: all 1s ease-in-out;
-            }
-
-            75% {
-                transform: scale(1);
-                filter: drop-shadow(0px 0px 18px magenta);
-                -webkit-filter: drop-shadow(0px 0px 18px magenta);
-                -webkit-transition: all 1s ease-in-out;
-                -o-transition: all 1s ease-in-out;
-                transition: all 1s ease-in-out;
-            }
-            100% {
-                transform: scale(.98);
-                filter: drop-shadow(0px 0px 8px magenta);
-                -webkit-filter: drop-shadow(0px 0px 8px magenta);
-                -webkit-transition: all 1s ease-in-out;
-                -o-transition: all 1s ease-in-out;
-                transition: all 1s ease-in-out;
-            }
-        }
-
-        #splashThistleWords {
-            margin-top: 10%;
-            text-align: center;
-            font-size: 1.75rem;
-            font-family: metamorphous, sans-serif;
-            font-weight: bolder;
-            /*letter-spacing: .05px;*/
-            text-shadow: 1px 1px 3px limegreen,
-            2px 2px 6px mediumseagreen,
-            3px 3px 9px mediumseagreen,
-            4px 4px 12px mediumseagreen,
-            5px 5px 15px mediumvioletred,
-            6px 6px 18px mediumvioletred,
-            7px 7px 21px mediumvioletred,
-            8px 8px 24px mediumorchid,
-            9px 9px 27px mediumorchid;
-
-        }
-
-        /*#splashThistleWords span {*/
-        /*    text-align: center;*/
-        /*    font-size: 1.6rem;*/
-        /*    font-family: metamorphous, sans-serif;*/
-        /*    font-weight: bolder;*/
-        /*    text-shadow: 1px 1px 3px limegreen,*/
-        /*    2px 2px 6px mediumseagreen,*/
-        /*    3px 3px 9px mediumseagreen,*/
-        /*    4px 4px 12px mediumseagreen,*/
-        /*    5px 5px 15px mediumvioletred,*/
-        /*    6px 6px 18px mediumvioletred,*/
-        /*    7px 7px 21px mediumvioletred,*/
-        /*    8px 8px 24px mediumorchid,*/
-        /*    9px 9px 27px mediumorchid;*/
-        /*}*/
-
-        /*span {*/
-        /*    margin: 0;*/
-        /*    padding: 0;*/
-        /*    letter-spacing: 0;*/
-        /*}*/
-
-        .one .letterSpan {
-            opacity: 0;
-            transform: translate(0px, 0px) rotate(0deg) scale(1);
-            animation: revolveScale 10s forwards, splash-word-delay 4s forwards;
-        }
-
-        .animate {
-            font-size: 2.25rem;
-            margin: 100px 0 0;
-        }
-
-        .animate span {
-            display: inline-block;
-        }
-
-        .animate .l1 {
-            animation-delay: 4.05s;
-        }
-        .animate .l2 {
-            animation-delay: 4.1s;
-        }
-        .animate .l3 {
-            animation-delay: 4.15s;
-        }
-        .animate .l4 {
-            animation-delay: 4.2s;
-        }
-        .animate .l5 {
-            animation-delay: 4.25s;
-        }
-        .animate .l6 {
-            animation-delay: 4.3s;
-        }
-        .animate .l7 {
-            animation-delay: 4.35s;
-        }
-        .animate .l8 {
-            animation-delay: 4.4s;
-        }
-        .animate .l9 {
-            animation-delay: 4.45s;
-        }
-        .animate .l10 {
-            animation-delay: 4.5s;
-        }
-        .animate .l11 {
-            animation-delay: 4.55s;
-        }
-
-
-        @keyframes splash-word-delay {
-            0% {
-                transition-delay: 4s;
-            }
-        }
-
-        @-webkit-keyframes splash-word-delay {
-            0% {
-                transition-delay: 4s;
-            }
-        }
-
-        @keyframes revolveScale {
-            0% {
-                opacity: 0;
-            }
-            50% {
-                opacity: 1;
-                transform: translate(0px, 0px) rotate(1800deg) scale(1);
-            }
-            100% {
-                opacity: 0;
-                transform: translate(0px, 0px) rotate(1800deg) scale(1);
-            }
-        }
-
 
         body {
             background-image: url("ThistleLord_Sinister1_Pixelized_Scale1023x576.png");
             background-size: cover;
             background-attachment: fixed;
             background-repeat: no-repeat;
-            /*width: 100%;*/
-            /*height: 2815px;*/
             background-position: center;
-            /*width: 100%;*/
-            /*margin: 5rem;*/
-            /*margin-top: 15rem;*/
-
         }
 
         .bg1 {
@@ -362,7 +88,6 @@
             top: 0;
             width: 95vw;
             height: 50px;
-            /*margin: auto;*/
             background-color: black;
             border-style: ridge;
             border-color: #d36dfd;
@@ -375,7 +100,6 @@
         }
 
         .navA #thistleSecret {
-            /*float: left;*/
             font-size: 1.35rem;
             text-align: center;
             width: 270px;
@@ -386,7 +110,6 @@
         .navA #thistleSecret:hover {
             color: mediumseagreen;
         }
-
 
         .navA a {
             float: right;
@@ -402,24 +125,16 @@
             text-shadow: none;
             text-align: center;
             width: 60px;
-            /*height: 5%;*/
             color: mediumseagreen;
         }
 
         .stickyTop a:hover {
-            /*background-color: #ddd;*/
             color: mediumvioletred;
         }
 
         .stickyTop a.active {
-            /*background-color: #04AA6D;*/
             color: #d36dfd;
         }
-
-
-
-
-
 
         a {
             font-size: 2.5rem;
@@ -430,7 +145,6 @@
             border-style: ridge;
             border-color: slategrey;
             border-width: 10px;
-            /*border-radius: 25px;*/
             padding: .75rem;
             background-color: rgba(139, 45, 227, 0.8);
             display: block;
@@ -440,25 +154,18 @@
             width: 80%;
             text-align: center;
             text-decoration: none;
-
         }
 
-
-
         @media (max-width: 800px)  {
-
             a {
                 font-size: 4.5vw;
             }
-
         }
 
         @media (max-width: 480px)  {
-
             a {
                 font-size: 4.5vw;
             }
-
         }
 
     </style>
@@ -499,8 +206,6 @@
     // Set timeout to trigger the hide function after 10 seconds
     setTimeout(hideImg, 18000); // 10000 milliseconds = 10 seconds
 
-
-
     const alreadyShown = sessionStorage.getItem('alreadyShown');
     if (alreadyShown === 'true') {
         document.getElementById('splashThistleContainer').style.display = 'none';
@@ -511,61 +216,12 @@
         document.getElementById('success').style.display = 'none';
     }, 4000);
 
-
-
 </script>
 
 
 <svg id="fader"></svg>
 <script>
     fadeInPage();
-
-
-    // function fadeInPage() {
-    //
-    //     if (!window.AnimationEvent) { return; }
-    //
-    //     var fader = document.getElementById('fader');
-    //     fader.classList.add('fade-out');
-    // }
-    //
-    // document.addEventListener('DOMContentLoaded', function() {
-    //     if (!window.AnimationEvent) { return; }
-    //
-    //     var anchors = document.getElementsByTagName('a');
-    //
-    //     for (var idx=0; idx<anchors.length; idx+=1) {
-    //
-    //         if (anchors[idx].hostname !== window.location.hostname ||
-    //             anchors[idx].pathname === window.location.pathname) {
-    //             continue;
-    //         }
-    //
-    //         anchors[idx].addEventListener('click', function(event) {
-    //             var fader = document.getElementById('fader'),
-    //                 anchor = event.currentTarget;
-    //
-    //             var listener = function() {
-    //                 window.location = anchor.href;
-    //                 fader.removeEventListener('animationend', listener);
-    //             };
-    //             fader.addEventListener('animationend', listener);
-    //
-    //             event.preventDefault();
-    //
-    //             fader.classList.add('fade-in');
-    //         });
-    //     }
-    // });
-    //
-    // window.addEventListener('pageshow', function (event) {
-    //     if (!event.persisted) {
-    //         return;
-    //     }
-    //     var fader = document.getElementById('fader');
-    //     fader.classList.remove('fade-in');
-    // });
-
 </script>
 
 
@@ -575,40 +231,16 @@
              src="ThistleLord_Brand1_Thistle_Transparent_Purple_Magenta_Lime_Bloom%20Only_Scale321x274.png"
              alt="Image of thistle">
         <a id="thistleSecret" href="thistle-lord-about.html">Thy Thistle Lord's Keep</a>
-
-
     </nav>
 </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
 <a href="stories.html">Stories</a>
-
 <a href="projects-portfolio.html">Portfolio Projects</a>
-
 <a href="projects-school.html">School Projects</a>
 
 
-
-
-
-
-
-<br>
-<br>
-
 <script>
-
 
     const bgClasses = ["bg1","bg2","bg3","bg4","bg5","bg6","bg7","bg8","bg9","bg10","bg11","bg12","bg13","bg14","bg15"];
 
@@ -617,8 +249,6 @@
     document.querySelector("body").classList.add(bgClasses[myNumber]);
 
     console.log(bgClasses[myNumber]);
-
-
 
 </script>
 
