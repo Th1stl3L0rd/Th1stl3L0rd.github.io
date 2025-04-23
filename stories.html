@@ -7,158 +7,10 @@
     <title>Stories by Thy ThistleLord</title>
     <script src="scripts/page-fade-to-black.js"></script>
     <link rel="stylesheet" href="css/page-fade-to-black.css">
-<!--    <link rel="stylesheet" href="css/thistle-lord-main.css">-->
+    <link rel="stylesheet" href="css/thistle-lord-main.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yatra One">
-    <style>
-
-        body {
-            background-image: url("ThistleLord_ForestHut1_Scale1024x576.png");
-            background-size: cover;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
-            background-position: center;
-        }
-
-        .bg21 {
-            background-image: url("ThistleLord_ForestHut1_Scale1024x576.png");
-        }
-        .bg22 {
-            background-image: url("ThistleLord_ForestHut2_Scale1024x577.png");
-        }
-        .bg23 {
-            background-image: url("ThistleLord_ForestHut3_Scale1023x576.png");
-        }
-        .bg24 {
-            background-image: url("ThistleLord_ForestHut4_Scale1024x576.png");
-        }
-        .bg25 {
-            background-image: url("ThistleLord_ForestHut5_Scale1023x576.png");
-        }
-        .bg26 {
-            background-image: url("ThistleLord_MagicalForest1_Scale1023x576.png");
-        }
-        .bg27 {
-            background-image: url("ThistleLord_MagicalForest2_Scale1024x576.png");
-        }
-        .bg28 {
-            background-image: url("ThistleLord_MagicalForest3_Scale1024x576.png");
-        }
-        .bg29 {
-            background-image: url("ThistleLord_MagicalForest4_Scale1023x577.png");
-        }
-        .bg30 {
-            background-image: url("ThistleLord_MagicalForest5_Scale1024x577.png");
-        }
-        .bg31 {
-            background-image: url("ThistleLord_MagicalForest6_Scale1023x576.png");
-        }
-        .bg32 {
-            background-image: url("ThistleLord_MagicalForest7_Scale1023x576.png");
-        }
-        .bg33 {
-            background-image: url("ThistleLord_MagicalForest8_Scale1024x576.png");
-        }
-        .bg34 {
-            background-image: url("ThistleLord_MagicalForest9_Scale1024x576.png");
-        }
-        .bg35 {
-            background-image: url("ThistleLord_MagicalForest10_Scale1024x576.png");
-        }
-        .bg36 {
-            background-image: url("ThistleLord_MagicalForest11_Scale1024x576.png");
-        }
-
-
-        .stickyTop {
-            position: sticky;
-            top: 0;
-            width: 95vw;
-            height: 50px;
-            /*margin: auto;*/
-            background-color: black;
-            border-style: ridge;
-            border-color: #d36dfd;
-        }
-
-        .navbar-brand {
-            height: 35px;
-            margin-top: 5px;
-            margin-left: 5px;
-        }
-
-        .navA a {
-            float: right;
-            display: block;
-            margin: auto;
-            padding-right: 33px;
-            padding-bottom: 15px;
-            border-style: none;
-            border-color: transparent;
-            background-color: transparent;
-            font-size: 1rem;
-            font-weight: bolder;
-            text-shadow: none;
-            text-align: center;
-            width: 33px;
-            /*height: 5%;*/
-            color: mediumseagreen;
-        }
-
-        .stickyTop a:hover {
-            /*background-color: #ddd;*/
-            color: mediumvioletred;
-        }
-
-        .stickyTop a.active {
-            /*background-color: #04AA6D;*/
-            color: #d36dfd;
-        }
-
-
-
-
-        a {
-            font-size: 2.5rem;
-            font-family: Yatra One, sans-serif;
-            font-weight: bolder;
-            color: black;
-            text-shadow: 1px 1px 1px limegreen, 5px 5px 5px deeppink, 4px 4px 4px deepskyblue;
-            border-style: ridge;
-            border-color: slategrey;
-            border-width: 10px;
-            /*border-radius: 25px;*/
-            padding: .75rem;
-            background-color: rgba(139, 45, 227, 0.8);
-            display: block;
-            margin-top: 25%;
-            margin-left: auto;
-            margin-right: auto;
-            width: 80%;
-            text-align: center;
-            text-decoration: none;
-
-        }
-
-
-
-        @media (max-width: 800px)  {
-
-            a {
-                font-size: 4.5vw;
-            }
-
-        }
-
-        @media (max-width: 480px)  {
-
-            a {
-                font-size: 4.5vw;
-            }
-
-        }
-
-    </style>
 </head>
+
 <body>
 
 <svg id="fader"></svg>
@@ -168,9 +20,9 @@
 
 
 <div class="stickyTop">
-    <nav class="navA">
-        <img class="navbar-brand"
-             src="ThistleLord_Brand1_Thistle_Transparent_Purple_Magenta_Lime_Bloom%20Only_Scale321x274.png"
+    <nav class="navA-secondary">
+        <img class="navbar-brand-secondary"
+             src="images/ThistleLord_Brand1_Thistle_Transparent_Purple_Magenta_Lime_Bloom%20Only_Scale321x274.png"
              alt="Image of thistle">
         <a href="projects-school.html">School</a>
         <a href="projects-portfolio.html">Portfolio</a>
@@ -181,31 +33,18 @@
 
 
 <a href="where-everyone-knows-your-name.html">Where Everyone Knows Your Name</a>
-
 <a href="taking-the-biscuit.html">Taking the Biscuit</a>
-
 <a href="sparkles.html">Sparkles!</a>
-
 <a href="editing-index.html">Edit Mode</a>
 
-
-
-
-
-<br>
-<br>
-
+<!--Script below is for the random backgrounds for this page. The css is in thistle-lord-main.css-->
 <script>
 
-    const bgClasses = ["bg21","bg22","bg23","bg24","bg25","bg26","bg27","bg28","bg29","bg30","bg31","bg32","bg33","bg34","bg35"];
-
+    const bgClasses = ["bg21","bg22","bg23","bg24","bg25","bg26","bg27","bg28","bg29","bg30","bg31",
+                        "bg32","bg33","bg34","bg35"];
     const myNumber = Math.floor((Math.random() * bgClasses.length) + 1);
-
     document.querySelector("body").classList.add(bgClasses[myNumber]);
-
     console.log(bgClasses[myNumber]);
-
-
 
 </script>
 

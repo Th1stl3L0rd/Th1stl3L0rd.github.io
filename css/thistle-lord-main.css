@@ -8,216 +8,216 @@ body {
     background-position: center;
 }
 
-/*.bg1 {*/
-/*    background-image: url("ThistleLord_Sinister1_Pixelized_Scale1023x576.png");*/
-/*}*/
-/*.bg2 {*/
-/*    background-image: url("ThistleLord_Sinister2_Pixelized_Scale1023x577.png");*/
-/*}*/
-/*.bg3 {*/
-/*    background-image: url("ThistleLord_Sinister3_Pixelized_Scale1024x577.png");*/
-/*}*/
-/*.bg4 {*/
-/*    background-image: url("ThistleLord_Sinister4_Pixelized_Scale1024x577.png");*/
-/*}*/
-/*.bg5 {*/
-/*    background-image: url("ThistleLord_Sinister5_Pixelized_Scale1024x577.png");*/
-/*}*/
-/*.bg6 {*/
-/*    background-image: url("ThistleLord_Sinister6_Pixelized_Scale1024x576.png");*/
-/*}*/
-/*.bg7 {*/
-/*    background-image: url("ThistleLord_Thistles1_Pixelized_Scale1024x576.png");*/
-/*}*/
-/*.bg8 {*/
-/*    background-image: url("ThistleLord_Thistles2_Pixelized_Scale1024x576.png");*/
-/*}*/
-/*.bg9 {*/
-/*    background-image: url("ThistleLord_Thistles3_Pixelized_Scale1023x576.png");*/
-/*}*/
-/*.bg10 {*/
-/*    background-image: url("ThistleLord_Thistles4_Pixelized_Scale1024x576.png");*/
-/*}*/
-/*.bg11 {*/
-/*    background-image: url("ThistleLord_ThistlesAndCastle1_Pixelized_Scale1024x577.png");*/
-/*}*/
-/*.bg12 {*/
-/*    background-image: url("ThistleLord_ThistlesAndCastle2_Pixelized_Scale1024x576.png");*/
-/*}*/
-/*.bg13 {*/
-/*    background-image: url("ThistleLord_ThistlesAndCastle3_Pixelized_Scale1024x576.png");*/
-/*}*/
-/*.bg14 {*/
-/*    background-image: url("ThistleLord_ThistlesAndCastle4_Pixelized_Scale1024x576.png");*/
-/*}*/
-/*.bg15 {*/
-/*    background-image: url("ThistleLord_ThistlesAndCastle5_Pixelized_Scale1024x576.png");*/
-/*}*/
-/*.bg16 {*/
-/*    background-image: url("ThistleLord_ThistlesAndCastle6_Pixelized_Scale1024x576.png");*/
-/*}*/
-/*.bg17 {*/
-/*    background-image: url("ThistleLord_ThistlesAndCastle7_Pixelized_Scale1023x576.png");*/
-/*}*/
-/*.bg18 {*/
-/*    background-image: url("ThistleLord_ThistlesAndCastle8_Pixelized_Scale1023x576.png");*/
-/*}*/
-/*.bg19 {*/
-/*    background-image: url("ThistleLord_ThistlesAndCastle9_Pixelized_Scale1024x576.png");*/
-/*}*/
-/*.bg20 {*/
-/*    background-image: url("ThistleLord_ThistlesAndCastle10_Pixelized_Scale1024x576.png");*/
-/*}*/
-/*.bg21 {*/
-/*    background-image: url("ThistleLord_ForestHut1_Scale1024x576.png");*/
-/*}*/
-/*.bg22 {*/
-/*    background-image: url("ThistleLord_ForestHut2_Scale1024x577.png");*/
-/*}*/
-/*.bg23 {*/
-/*    background-image: url("ThistleLord_ForestHut3_Scale1023x576.png");*/
-/*}*/
-/*.bg24 {*/
-/*    background-image: url("ThistleLord_ForestHut4_Scale1024x576.png");*/
-/*}*/
-/*.bg25 {*/
-/*    background-image: url("ThistleLord_ForestHut5_Scale1023x576.png");*/
-/*}*/
-/*.bg26 {*/
-/*    background-image: url("ThistleLord_MagicalForest1_Scale1023x576.png");*/
-/*}*/
-/*.bg27 {*/
-/*    background-image: url("ThistleLord_MagicalForest2_Scale1024x576.png");*/
-/*}*/
-/*.bg28 {*/
-/*    background-image: url("ThistleLord_MagicalForest3_Scale1024x576.png");*/
-/*}*/
-/*.bg29 {*/
-/*    background-image: url("ThistleLord_MagicalForest4_Scale1023x577.png");*/
-/*}*/
-/*.bg30 {*/
-/*    background-image: url("ThistleLord_MagicalForest5_Scale1024x577.png");*/
-/*}*/
-/*.bg31 {*/
-/*    background-image: url("ThistleLord_MagicalForest6_Scale1023x576.png");*/
-/*}*/
-/*.bg32 {*/
-/*    background-image: url("ThistleLord_MagicalForest7_Scale1023x576.png");*/
-/*}*/
-/*.bg33 {*/
-/*    background-image: url("ThistleLord_MagicalForest8_Scale1024x576.png");*/
-/*}*/
-/*.bg34 {*/
-/*    background-image: url("ThistleLord_MagicalForest9_Scale1024x576.png");*/
-/*}*/
-/*.bg35 {*/
-/*    background-image: url("ThistleLord_MagicalForest10_Scale1024x576.png");*/
-/*}*/
-/*.bg36 {*/
-/*    background-image: url("ThistleLord_MagicalForest11_Scale1024x576.png");*/
-/*}*/
-/*.bg36 {*/
-/*    background-image: url("ThistleLord_MagicalCreatures1_Scale1024x577.png");*/
-/*}*/
-/*.bg37 {*/
-/*    background-image: url("ThistleLord_MagicalCreatures2_Scale1024x576.png");*/
-/*}*/
-/*.bg38 {*/
-/*    background-image: url("ThistleLord_MagicalCreatures3_Scale1024x576.png");*/
-/*}*/
-/*.bg39 {*/
-/*    background-image: url("ThistleLord_MagicalCreatures4_Scale1023x576.png");*/
-/*}*/
-/*.bg40 {*/
-/*    background-image: url("ThistleLord_MagicalCreatures5_Scale1024x577.png");*/
-/*}*/
-/*.bg41 {*/
-/*    background-image: url("ThistleLord_MagicalCreatures6_Scale1024x576.png");*/
-/*}*/
-/*.bg42 {*/
-/*    background-image: url("ThistleLord_MagicalCreatures7_Scale1024x576.png");*/
-/*}*/
-/*.bg43 {*/
-/*    background-image: url("ThistleLord_MagicalCreatures8_Scale1024x576.png");*/
-/*}*/
-/*.bg44 {*/
-/*    background-image: url("ThistleLord_MagicalCreatures9_Scale1023x576.png");*/
-/*}*/
-/*.bg45 {*/
-/*    background-image: url("ThistleLord_MagicalCreatures10_Scale1023x576.png");*/
-/*}*/
-/*.bg46 {*/
-/*    background-image: url("ThistleLord_MagicalCreatures11_Scale1024x576.png");*/
-/*}*/
-/*.bg47 {*/
-/*    background-image: url("ThistleLord_MagicalCreatures12_Scale1024x576.png");*/
-/*}*/
-/*.bg48 {*/
-/*    background-image: url("ThistleLord_MagicalCreatures13_Scale1024x576.png");*/
-/*}*/
-/*.bg49 {*/
-/*    background-image: url("ThistleLord_MagicalCreatures14_Scale1023x576.png");*/
-/*}*/
-/*.bg50 {*/
-/*    background-image: url("ThistleLord_MagicalCreatures15_Scale1024x576.png");*/
-/*}*/
-/*.bg51 {*/
-/*    background-image: url("ThistleLord_MagicalCreatures16_Scale1024x576.png");*/
-/*}*/
-/*.bg52 {*/
-/*    background-image: url("ThistleLord_MagicalCreatures17_Scale1024x577.png");*/
-/*}*/
-/*.bg53 {*/
-/*    background-image: url("ThistleLord_MagicalCreatures18_Scale1024x577.png");*/
-/*}*/
-/*.bg54 {*/
-/*    background-image: url("ThistleLord_PixieImpForest1_Scale1023x577.png");*/
-/*}*/
-/*.bg55 {*/
-/*    background-image: url("ThistleLord_PixieImpForest2_Scale1024x577.png");*/
-/*}*/
-/*.bg56 {*/
-/*    background-image: url("ThistleLord_PixieImpForest3_Scale1022x576.png");*/
-/*}*/
-/*.bg57 {*/
-/*    background-image: url("ThistleLord_PixieImpForest4_Scale1024x576.png");*/
-/*}*/
-/*.bg58 {*/
-/*    background-image: url("ThistleLord_PixieImpForest5_Scale1024x576.png");*/
-/*}*/
-/*.bg59 {*/
-/*    background-image: url("ThistleLord_PixieImp1_Scale1024x577.png");*/
-/*}*/
-/*.bg60 {*/
-/*    background-image: url("ThistleLord_PixieImp2_Scale1024x576.png");*/
-/*}*/
-/*.bg61 {*/
-/*    background-image: url("ThistleLord_PixieImp3_Scale1024x576.png");*/
-/*}*/
-/*.bg62 {*/
-/*    background-image: url("ThistleLord_PixieImp4_Scale1024x576.png");*/
-/*}*/
-/*.bg63 {*/
-/*    background-image: url("ThistleLord_PixieImp5_Scale1024x577.png");*/
-/*}*/
-/*.bg64 {*/
-/*    background-image: url("ThistleLord_PixieImp6_Scale1024x576.png");*/
-/*}*/
-/*.bg65 {*/
-/*    background-image: url("ThistleLord_PixieImp7_Scale1024x576.png");*/
-/*}*/
-/*.bg66 {*/
-/*    background-image: url("ThistleLord_PixieImp8_Scale1024x577.png");*/
-/*}*/
-/*.bg67 {*/
-/*    background-image: url("ThistleLord_PixieImp9_Scale1024x576.png");*/
-/*}*/
-/*.bg68 {*/
-/*    background-image: url("ThistleLord_PixieImp10_Scale1024x576.png");*/
-/*}*/
-/*.bg69 {*/
-/*    background-image: url("ThistleLord_PixieImp11_Scale1024x576.png");*/
-/*}*/
+.bg1 {
+    background-image: url("../images/ThistleLord_Sinister1_Pixelized_Scale1023x576.png");
+}
+.bg2 {
+    background-image: url("../images/ThistleLord_Sinister2_Pixelized_Scale1023x577.png");
+}
+.bg3 {
+    background-image: url("../images/ThistleLord_Sinister3_Pixelized_Scale1024x577.png");
+}
+.bg4 {
+    background-image: url("../images/ThistleLord_Sinister4_Pixelized_Scale1024x577.png");
+}
+.bg5 {
+    background-image: url("../images/ThistleLord_Sinister5_Pixelized_Scale1024x577.png");
+}
+.bg6 {
+    background-image: url("../images/ThistleLord_Sinister6_Pixelized_Scale1024x576.png");
+}
+.bg7 {
+    background-image: url("../images/ThistleLord_Thistles1_Pixelized_Scale1024x576.png");
+}
+.bg8 {
+    background-image: url("../images/ThistleLord_Thistles2_Pixelized_Scale1024x576.png");
+}
+.bg9 {
+    background-image: url("../images/ThistleLord_Thistles3_Pixelized_Scale1023x576.png");
+}
+.bg10 {
+    background-image: url("../images/ThistleLord_Thistles4_Pixelized_Scale1024x576.png");
+}
+.bg11 {
+    background-image: url("../images/ThistleLord_ThistlesAndCastle1_Pixelized_Scale1024x577.png");
+}
+.bg12 {
+    background-image: url("../images/ThistleLord_ThistlesAndCastle2_Pixelized_Scale1024x576.png");
+}
+.bg13 {
+    background-image: url("../images/ThistleLord_ThistlesAndCastle3_Pixelized_Scale1024x576.png");
+}
+.bg14 {
+    background-image: url("../images/ThistleLord_ThistlesAndCastle4_Pixelized_Scale1024x576.png");
+}
+.bg15 {
+    background-image: url("../images/ThistleLord_ThistlesAndCastle5_Pixelized_Scale1024x576.png");
+}
+.bg16 {
+    background-image: url("../images/ThistleLord_ThistlesAndCastle6_Pixelized_Scale1024x576.png");
+}
+.bg17 {
+    background-image: url("../images/ThistleLord_ThistlesAndCastle7_Pixelized_Scale1023x576.png");
+}
+.bg18 {
+    background-image: url("../images/ThistleLord_ThistlesAndCastle8_Pixelized_Scale1023x576.png");
+}
+.bg19 {
+    background-image: url("../images/ThistleLord_ThistlesAndCastle9_Pixelized_Scale1024x576.png");
+}
+.bg20 {
+    background-image: url("../images/ThistleLord_ThistlesAndCastle10_Pixelized_Scale1024x576.png");
+}
+.bg21 {
+    background-image: url("../images/ThistleLord_ForestHut1_Scale1024x576.png");
+}
+.bg22 {
+    background-image: url("../images/ThistleLord_ForestHut2_Scale1024x577.png");
+}
+.bg23 {
+    background-image: url("../images/ThistleLord_ForestHut3_Scale1023x576.png");
+}
+.bg24 {
+    background-image: url("../images/ThistleLord_ForestHut4_Scale1024x576.png");
+}
+.bg25 {
+    background-image: url("../images/ThistleLord_ForestHut5_Scale1023x576.png");
+}
+.bg26 {
+    background-image: url("../images/ThistleLord_MagicalForest1_Scale1023x576.png");
+}
+.bg27 {
+    background-image: url("../images/ThistleLord_MagicalForest2_Scale1024x576.png");
+}
+.bg28 {
+    background-image: url("../images/ThistleLord_MagicalForest3_Scale1024x576.png");
+}
+.bg29 {
+    background-image: url("../images/ThistleLord_MagicalForest4_Scale1023x577.png");
+}
+.bg30 {
+    background-image: url("../images/ThistleLord_MagicalForest5_Scale1024x577.png");
+}
+.bg31 {
+    background-image: url("../images/ThistleLord_MagicalForest6_Scale1023x576.png");
+}
+.bg32 {
+    background-image: url("../images/ThistleLord_MagicalForest7_Scale1023x576.png");
+}
+.bg33 {
+    background-image: url("../images/ThistleLord_MagicalForest8_Scale1024x576.png");
+}
+.bg34 {
+    background-image: url("../images/ThistleLord_MagicalForest9_Scale1024x576.png");
+}
+.bg35 {
+    background-image: url("../images/ThistleLord_MagicalForest10_Scale1024x576.png");
+}
+.bg36 {
+    background-image: url("../images/ThistleLord_MagicalForest11_Scale1024x576.png");
+}
+.bg36 {
+    background-image: url("../images/ThistleLord_MagicalCreatures1_Scale1024x577.png");
+}
+.bg37 {
+    background-image: url("../images/ThistleLord_MagicalCreatures2_Scale1024x576.png");
+}
+.bg38 {
+    background-image: url("../images/ThistleLord_MagicalCreatures3_Scale1024x576.png");
+}
+.bg39 {
+    background-image: url("../images/ThistleLord_MagicalCreatures4_Scale1023x576.png");
+}
+.bg40 {
+    background-image: url("../images/ThistleLord_MagicalCreatures5_Scale1024x577.png");
+}
+.bg41 {
+    background-image: url("../images/ThistleLord_MagicalCreatures6_Scale1024x576.png");
+}
+.bg42 {
+    background-image: url("../images/ThistleLord_MagicalCreatures7_Scale1024x576.png");
+}
+.bg43 {
+    background-image: url("../images/ThistleLord_MagicalCreatures8_Scale1024x576.png");
+}
+.bg44 {
+    background-image: url("../images/ThistleLord_MagicalCreatures9_Scale1023x576.png");
+}
+.bg45 {
+    background-image: url("../images/ThistleLord_MagicalCreatures10_Scale1023x576.png");
+}
+.bg46 {
+    background-image: url("../images/ThistleLord_MagicalCreatures11_Scale1024x576.png");
+}
+.bg47 {
+    background-image: url("../images/ThistleLord_MagicalCreatures12_Scale1024x576.png");
+}
+.bg48 {
+    background-image: url("../images/ThistleLord_MagicalCreatures13_Scale1024x576.png");
+}
+.bg49 {
+    background-image: url("../images/ThistleLord_MagicalCreatures14_Scale1023x576.png");
+}
+.bg50 {
+    background-image: url("../images/ThistleLord_MagicalCreatures15_Scale1024x576.png");
+}
+.bg51 {
+    background-image: url("../images/ThistleLord_MagicalCreatures16_Scale1024x576.png");
+}
+.bg52 {
+    background-image: url("../images/ThistleLord_MagicalCreatures17_Scale1024x577.png");
+}
+.bg53 {
+    background-image: url("../images/ThistleLord_MagicalCreatures18_Scale1024x577.png");
+}
+.bg54 {
+    background-image: url("../images/ThistleLord_PixieImpForest1_Scale1023x577.png");
+}
+.bg55 {
+    background-image: url("../images/ThistleLord_PixieImpForest2_Scale1024x577.png");
+}
+.bg56 {
+    background-image: url("../images/ThistleLord_PixieImpForest3_Scale1022x576.png");
+}
+.bg57 {
+    background-image: url("../images/ThistleLord_PixieImpForest4_Scale1024x576.png");
+}
+.bg58 {
+    background-image: url("../images/ThistleLord_PixieImpForest5_Scale1024x576.png");
+}
+.bg59 {
+    background-image: url("../images/ThistleLord_PixieImp1_Scale1024x577.png");
+}
+.bg60 {
+    background-image: url("../images/ThistleLord_PixieImp2_Scale1024x576.png");
+}
+.bg61 {
+    background-image: url("../images/ThistleLord_PixieImp3_Scale1024x576.png");
+}
+.bg62 {
+    background-image: url("../images/ThistleLord_PixieImp4_Scale1024x576.png");
+}
+.bg63 {
+    background-image: url("../images/ThistleLord_PixieImp5_Scale1024x577.png");
+}
+.bg64 {
+    background-image: url("../images/ThistleLord_PixieImp6_Scale1024x576.png");
+}
+.bg65 {
+    background-image: url("../images/ThistleLord_PixieImp7_Scale1024x576.png");
+}
+.bg66 {
+    background-image: url("../images/ThistleLord_PixieImp8_Scale1024x577.png");
+}
+.bg67 {
+    background-image: url("../images/ThistleLord_PixieImp9_Scale1024x576.png");
+}
+.bg68 {
+    background-image: url("../images/ThistleLord_PixieImp10_Scale1024x576.png");
+}
+.bg69 {
+    background-image: url("../images/ThistleLord_PixieImp11_Scale1024x576.png");
+}
 
 .stickyTop {
     position: sticky;
@@ -229,7 +229,7 @@ body {
     border-color: #d36dfd;
 }
 
-.navbar-brand {
+.navbar-brand-main {
     height: 37px;
     margin-top: 5px;
     margin-left: 5px;
@@ -261,6 +261,30 @@ body {
     text-shadow: none;
     text-align: center;
     width: 60px;
+    color: mediumseagreen;
+}
+
+.navbar-brand-secondary {
+    height: 35px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.navA-secondary a {
+    float: right;
+    display: block;
+    margin: auto;
+    padding-right: 33px;
+    padding-bottom: 15px;
+    border-style: none;
+    border-color: transparent;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-shadow: none;
+    text-align: center;
+    width: 33px;
+    /*height: 5%;*/
     color: mediumseagreen;
 }
 

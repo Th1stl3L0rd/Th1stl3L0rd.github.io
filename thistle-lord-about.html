@@ -21,25 +21,133 @@
 
 <h1>Thy Thistle Lord's Secret Dungeon</h1>
     <a href="index.html">Escape!</a>
-<p>Zounds! Ye have found my Secret Dungeon! I suppose you want to know all about me, eh? Well...</p>
-<p>I enjoy long walks on the beach...</p>
-<p>Oh, that's not what ye want?...</p>
-<p>My favourite colour is purple...</p>
-<p>Still not what ye want?...</p>
-<p>Well, all I've got left is this little diatribe...</p>
-<p>I'm just a wayward web developer, practicing me craft wherever the wind blows me. I'd never consider meself anything
-more than a fledgling, though I've been known to do more than spread my wings occasionally. Flying's not really the
-    tricky part, it's the falling that's such a pain. But I get right back up again and start over... well, sometimes
-    I need a bit of a breather first, but I manage it all the same. Oh, I suppose you want to know about me projects
-    and such. Just head back the way ye came, <em>if ye can...</em> There's no knowing for sure whether you'll make it
-    back through the labyrinth of my mind. But I digress... Deep in the enchanted forest, ye will find ancient projects
-    from my days as a young school boy. Don't mind the creatures, they don't bite, <em>usually.</em> If ye wander into
-    the less-deep enchanted forest ye will find all the projects I'm currently experimenting with. There's lots of
-loose magic about in there, but ye should be fine. Anyway, the final area holds me writing hut, and all the stories
-    that have been published so far. There's a lot more where they came from to be sure.</p>
-<p>Now, what are ye waiting for... get back there and do some proper exploring!</p>
+    <button onclick="translateText()">Translate</button>
+<p id="firstP">Egad! Thou hast founde myn Secret Dungeon! I trowe thou wishest to know all of me, aye?  Well, tarry
+    a while, and I shall tell thee all of me...</p>
+<p id="secondP">I welde the faire wyndes of Spring upon the hethe...</p>
+<p id="thirdP">Alas, that is noght what ye desire...?</p>
+<p id="fourthP">My felawe colour is that of the thistle in blostme...</p>
+<p id="fifthP">Yit nat þat ye soughte?...</p>
+<p id="sixthP">Wel, al that I have lefte is this litel diatribe...</p>
+<p id="seventhP">I be but a wendling web-maker, plying my craft whereso the wynd doth blow me.  I wolde nevere hold me for
+    aught of more than a yongling, though I haue be knowen to do more than fliche my fetheres now and than.
+    Flitting is nat soothly the difficul part, it is the falland that is such a sorwe.  But I arise eft and
+    biginne eft... wel, somtymes I neede a litel rest first, but I bringe it to passe al the same.  Alas, I
+    suppose ye desire to know of my werkes and such.  Turn ye back the way that ye came,
+    <em>if ye may... ha, ha, ha, ha!</em>  Nought is certain whether ye shall return through the maze of my wit.
+    But I strayeth... Deep within the forboden wode, thou shalt find olde workes from my days as a yonge knave.
+    Ne recketh ye of the creatures, for they biteth not, <em>for the most part.</em> If ye wend into the lasse-deep
+    y-enchanted wode, ye shall finden all the werkes that I am now assaying. Ther is moche loos magic aboute
+    in there, but þou schalt be wel.  Howereso, the final stede holdith my writinge-cot, and alle the
+    stories þat ben y-printed til now. Ther is a gret multitude of more whider they comen fro, forsoth.</p>
+<p id="eigthP">Now, what be ye abidyng for... go ye bak þider and do summe rihtful exploringe!</p>
     <a href="index.html">Escape!</a>
 </div>
+
+<script>
+
+    function translateText() {
+        var a = document.getElementById("firstP");
+        var b = document.getElementById("secondP");
+        var c = document.getElementById("thirdP");
+        var d = document.getElementById("fourthP");
+        var e = document.getElementById("fifthP");
+        var f = document.getElementById("sixthP");
+        var g = document.getElementById("seventhP");
+        var h = document.getElementById("eigthP");
+
+        if (a.innerHTML === "Egad! Thou hast founde myn Secret Dungeon! I trowe thou wishest to know all of me, aye?" +
+            "  Well, tarry\n" +
+            "    a while, and I shall tell thee all of me...") {
+            a.innerHTML = "Wow! You found my Secret Dungeon! I suppose you wish to know all about me, eh? Well, please" +
+                " stay a while and I will tell you all about me...";
+        } else {
+            a.innerHTML = "Egad! Thou hast founde myn Secret Dungeon! I trowe thou wishest to know all of me, aye?" +
+                "  Well, tarry\n" +
+                "    a while, and I shall tell thee all of me...";
+        }
+
+        if (b.innerHTML === "I welde the faire wyndes of Spring upon the hethe...") {
+            b.innerHTML = "I enjoy the fair winds of Spring upon the heath...";
+        } else {
+            b.innerHTML = "I welde the faire wyndes of Spring upon the hethe...";
+        }
+
+        if (c.innerHTML === "Alas, that is noght what ye desire...?") {
+            c.innerHTML = "Oh, that's not what you want?...";
+        } else {
+            c.innerHTML = "Alas, that is noght what ye desire...?";
+        }
+
+        if (d.innerHTML === "My felawe colour is that of the thistle in blostme...") {
+            d.innerHTML = "My favourite colour is that of the thistle in bloom...";
+        } else {
+            d.innerHTML = "My felawe colour is that of the thistle in blostme...";
+        }
+
+        if (e.innerHTML === "Yit nat þat ye soughte?...") {
+            e.innerHTML = "Still not what you are after?...";
+        } else {
+            e.innerHTML = "Yit nat þat ye soughte?...";
+        }
+
+        if (f.innerHTML === "Wel, al that I have lefte is this litel diatribe...") {
+            f.innerHTML = "Well, all I have left is this little diatribe...";
+        } else {
+            f.innerHTML = "Wel, al that I have lefte is this litel diatribe...";
+        }
+
+        if (g.innerHTML === "I be but a wendling web-maker, plying my craft whereso the wynd doth blow me.  I wolde nevere hold me for\n" +
+            "    aught of more than a yongling, though I haue be knowen to do more than fliche my fetheres now and than.\n" +
+            "    Flitting is nat soothly the difficul part, it is the falland that is such a sorwe.  But I arise eft and\n" +
+            "    biginne eft... wel, somtymes I neede a litel rest first, but I bringe it to passe al the same.  Alas, I\n" +
+            "    suppose ye desire to know of my werkes and such.  Turn ye back the way that ye came,\n" +
+            "    <em>if ye may... ha, ha, ha, ha!</em>  Nought is certain whether ye shall return through the maze of my wit.\n" +
+            "    But I strayeth... Deep within the forboden wode, thou shalt find olde workes from my days as a yonge knave.\n" +
+            "    Ne recketh ye of the creatures, for they biteth not, <em>for the most part.</em> If ye wend into the lasse-deep\n" +
+            "    y-enchanted wode, ye shall finden all the werkes that I am now assaying. Ther is moche loos magic aboute\n" +
+            "    in there, but þou schalt be wel.  Howereso, the final stede holdith my writinge-cot, and alle the\n" +
+            "    stories þat ben y-printed til now. Ther is a gret multitude of more whider they comen fro, forsoth.") {
+            g.innerHTML = "I'm just a wayward web developer, practicing me craft wherever the wind blows me. I'd never consider meself anything\n" +
+                "more than a fledgling, though I've been known to do more than spread my wings occasionally. Flying's not really the\n" +
+                "    tricky part, it's the falling that's such a pain. But I get right back up again and start over... well, sometimes\n" +
+                "    I need a bit of a breather first, but I manage it all the same. Oh, I suppose ye want to know about me projects\n" +
+                "    and such. Just head back the way ye came, <em>if ye can... ha, ha, ha, ha!</em> There's no knowing for sure whether\n" +
+                "    you'll make it back through the labyrinth of me mind. But I digress... Deep in the enchanted forest, ye will find\n" +
+                "    ancient projects from me days as a young lad. Don't mind the creatures, they don't bite, <em>usually.</em> If ye\n" +
+                "    wander into the less-deep enchanted forest ye will find all the projects I'm currently experimenting with. There's\n" +
+                "    lots of loose magic about in there, but ye should be fine. Anyway, the final area holds me writing hut, and all\n" +
+                "    the stories that have been published so far. There's a lot more where they came from to be sure.";
+        } else {
+            g.innerHTML = "I be but a wendling web-maker, plying my craft whereso the wynd doth blow me.  I wolde nevere hold me for\n" +
+                "    aught of more than a yongling, though I haue be knowen to do more than fliche my fetheres now and than.\n" +
+                "    Flitting is nat soothly the difficul part, it is the falland that is such a sorwe.  But I arise eft and\n" +
+                "    biginne eft... wel, somtymes I neede a litel rest first, but I bringe it to passe al the same.  Alas, I\n" +
+                "    suppose ye desire to know of my werkes and such.  Turn ye back the way that ye came,\n" +
+                "    <em>if ye may... ha, ha, ha, ha!</em>  Nought is certain whether ye shall return through the maze of my wit.\n" +
+                "    But I strayeth... Deep within the forboden wode, thou shalt find olde workes from my days as a yonge knave.\n" +
+                "    Ne recketh ye of the creatures, for they biteth not, <em>for the most part.</em> If ye wend into the lasse-deep\n" +
+                "    y-enchanted wode, ye shall finden all the werkes that I am now assaying. Ther is moche loos magic aboute\n" +
+                "    in there, but þou schalt be wel.  Howereso, the final stede holdith my writinge-cot, and alle the\n" +
+                "    stories þat ben y-printed til now. Ther is a gret multitude of more whider they comen fro, forsoth.";
+        }
+
+        if (h.innerHTML === "Now, what be ye abidyng for... go ye bak þider and do summe rihtful exploringe!") {
+            h.innerHTML = "Now, what are you waiting for... Get back there and do some proper exploring!";
+        } else {
+            h.innerHTML = "Now, what be ye abidyng for... go ye bak þider and do summe rihtful exploringe!";
+        }
+
+
+    }
+
+
+
+    // const element = document.getElementsByTagName("p");
+    //
+    // document.getElementById("demo").innerHTML = 'The text in first paragraph (index 0) is: ' + element[0].innerHTML;
+
+</script>
 
 </body>
 

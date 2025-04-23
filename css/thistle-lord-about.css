@@ -82,3 +82,70 @@ a {
         transition: all 1s ease-in-out;
     }
 }
+
+button {
+    float: right;
+    width: 175px;
+    height: 50px;
+    border-style: solid;
+    border-radius: 10px;
+    border-width: 7px;
+    border-color: transparent;
+    font-size: 1.75rem;
+    font-weight: bolder;
+    font-family: Metamorphous, sans-serif;
+    /*color: mediumorchid;*/
+    background-color: lightgreen;
+    box-shadow: 1px 1px 3px black,
+    2px 2px 6px black,
+    3px 3px 9px deeppink,
+    4px 4px 12px ghostwhite;
+    animation: button-fade-in 5s ease-in-out 3s forwards, button-pulse 3.5s ease-in-out 5s infinite;
+    opacity: 0;
+    /*5px 5px 15px mediumvioletred,*/
+    /*6px 6px 18px mediumvioletred,*/
+    /*7px 7px 21px mediumvioletred,*/
+    /*8px 8px 24px mediumorchid,*/
+    /*9px 9px 27px mediumorchid;*/
+    /*color: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);;*/
+    /*background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);*/
+    /*background-color: #6f42c1;*/
+
+}
+
+@keyframes button-fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes button-pulse {
+    0% {
+        transform: scale(.98);
+        filter: drop-shadow(0px 0px 8px black);
+        transition: all 2s ease-in-out;
+    }
+    25% {
+        transform: scale(1);
+        filter: drop-shadow(0px 0px 18px black);
+        transition: all 2s ease-in-out;
+    }
+    50% {
+        transform: scale(.98);
+        filter: drop-shadow(0px 0px 8px black);
+        transition: all 1s ease-in-out;
+    }
+    75% {
+        transform: scale(1);
+        filter: drop-shadow(0px 0px 18px black);
+        transition: all 1s ease-in-out;
+    }
+    100% {
+        transform: scale(.98);
+        filter: drop-shadow(0px 0px 8px black);
+        transition: all 1s ease-in-out;
+    }
+}
