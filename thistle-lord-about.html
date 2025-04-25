@@ -21,7 +21,7 @@
 
 <h1>Thy Thistle Lord's Secret Dungeon</h1>
     <a href="index.html">Escape!</a>
-    <button onclick="translateText()">Translate</button>
+    <button id="translateButton" onclick="translateText()">Translate</button>
 <p id="firstP">Egad! Thou hast founde myn Secret Dungeon! I trowe thou wishest to know all of me, aye?  Well, tarry
     a while, and I shall tell thee all of me...</p>
 <p id="secondP">I welde the faire wyndes of Spring upon the hethe...</p>
@@ -55,6 +55,26 @@
         var f = document.getElementById("sixthP");
         var g = document.getElementById("seventhP");
         var h = document.getElementById("eigthP");
+        // const pText = document.getElementById("translateButton");
+        //
+        // const fadeOutText = [
+        //     { opacity: "0"},
+        //     { duration: "3000"}
+        // ];
+        //
+        // const fadeInText = [
+        //     { opacity: "1"},
+        //     { duration: "6000"}
+        // ];
+        //
+        // pText.addEventListener("click", () => {
+        //     pText.animate(fadeOutText, fadeInText);
+        // });
+
+        // pText.animate(fadeOutText, fadeInText);
+
+        // document.getElementsByTagName("p").setAttribute("class", "fade-out-text");
+        // document.getElementsByTagName("p").setAttribute("class", "fade-in-text");
 
         if (a.innerHTML === "Egad! Thou hast founde myn Secret Dungeon! I trowe thou wishest to know all of me, aye?" +
             "  Well, tarry\n" +

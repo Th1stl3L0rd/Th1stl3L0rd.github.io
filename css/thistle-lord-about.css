@@ -149,3 +149,33 @@ button {
         transition: all 1s ease-in-out;
     }
 }
+
+.fade-out-text {
+    animation: fadeOutText 2s forwards;
+    opacity: 1;
+}
+
+.fade-in-text {
+    animation: fadeInText 3s forwards;
+    opacity: 0;
+}
+
+@keyframes fadeOutText {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+
+}
+
+@keyframes fadeInText {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+
+}
