@@ -34,7 +34,7 @@
 
 
 
-        #comedyCheck {
+        #comedyCheckHeading {
             float: left;
             width: 8vw;
             margin-right: 0;
@@ -63,6 +63,79 @@
             font-size: 2rem;
             font-weight: bolder;
         }
+        #comedyCheckBody {
+            float: right;
+            width: 8vw;
+            margin-right: 0;
+            animation: comedy-glow-pulse-one 1.5s ease-in-out infinite alternate-reverse;
+            /*comedy-glow-pulse-two 2.5s ease-in-out 3.5s infinite,*/
+            /*comedy-glow-pulse-three 2.5s ease-in-out 6s infinite;*/
+            /*background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,154,0,1) 10%, rgba(208,222,33,1) 20%, rgba(79,220,74,1) 30%, rgba(63,218,216,1) 40%, rgba(47,201,226,1) 50%, rgba(28,127,238,1) 60%, rgba(95,21,242,1) 70%, rgba(186,12,248,1) 80%, rgba(251,7,217,1) 90%, rgba(255,0,0,1) 100%);*/
+            /*border-color: white;*/
+            /*filter: sepia(1) hue-rotate(160deg) saturate(100) contrast(1) brightness(1);*/
+        }
+        @keyframes comedy-glow-pulse-one {
+            0% {
+                filter: drop-shadow(0px 0px 0px black);
+            }
+            /*25% {*/
+            /*    filter: drop-shadow(0px 0px 2px black);*/
+
+            /*}*/
+            /*50% {*/
+            /*    filter: drop-shadow(0px 0px 5px black);*/
+
+            /*}*/
+            /*75% {*/
+            /*    filter: drop-shadow(0px 0px 2px black);*/
+
+            /*}*/
+            100% {
+                filter: drop-shadow(0px 0px 10px black);
+            }
+        }
+
+        /*    @keyframes comedy-glow-pulse-two {*/
+        /*        0% {*/
+        /*            filter: drop-shadow(0px 0px 0px magenta);*/
+        /*        }*/
+        /*        25% {*/
+        /*            filter: drop-shadow(0px 0px 3px magenta);*/
+
+        /*        }*/
+        /*        50% {*/
+        /*            filter: drop-shadow(0px 0px 4px magenta);*/
+
+        /*        }*/
+        /*        75% {*/
+        /*            filter: drop-shadow(0px 0px 3px magenta);*/
+
+        /*        }*/
+        /*        100% {*/
+        /*            filter: drop-shadow(0px 0px 0px magenta);*/
+        /*        }*/
+        /*    }*/
+        /*@keyframes comedy-glow-pulse-three {*/
+        /*    0% {*/
+        /*        filter: drop-shadow(0px 0px 0px deepskyblue);*/
+        /*    }*/
+        /*    25% {*/
+        /*        filter: drop-shadow(0px 0px 4px deepskyblue);*/
+
+        /*    }*/
+        /*    50% {*/
+        /*        filter: drop-shadow(0px 0px 5px deepskyblue);*/
+
+        /*    }*/
+        /*    75% {*/
+        /*        filter: drop-shadow(0px 0px 4px deepskyblue);*/
+
+        /*    }*/
+        /*    100% {*/
+        /*        filter: drop-shadow(0px 0px 0px deepskyblue);*/
+        /*    }*/
+        /*}*/
+
         .card-text {
             margin: 2.5%;
             font-size: 1.5rem;
@@ -89,7 +162,7 @@
         <div class="card" id="heading">
             <h1>MYSTERY SCIENCE THEATER 3000</h1>
             <h2>Episode Guide</h2>
-            <span><img id="comedyCheck" src="MST3K_Images/theater_comedy_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg">
+            <span><img id="comedyCheckHeading" src="MST3K_Images/theater_comedy_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg">
             <p>Denotes that you already have this film!</p></span>
         </div>
     </div>
@@ -125,7 +198,9 @@
             <img class="card-img-top img-fluid img-thumbnail" id="godzillaVsMegalon"
                  src="MST3K_Images/011325_GodzillaVsMegalon_Crop1050x662_Scale420x265.jpg"
                  alt="Godzilla vs. Megalon Image">
-            <div class="card-title">Godzilla Vs Megalon - 212</div>
+            <div class="card-title">Godzilla Vs Megalon - 212
+                <img id="comedyCheckBody" src="MST3K_Images/theater_comedy_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg">
+            </div>
             <div class="card-body">
                 <p class="card-text">The world is under threat from the great Megalon and his evil sidekick
                     Gigan! Rex Dart - Eskimo Spy, will save the day with the help of Godzilla and his good
