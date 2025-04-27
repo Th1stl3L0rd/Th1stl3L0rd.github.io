@@ -67,7 +67,8 @@
             float: right;
             width: 8vw;
             margin-right: 0;
-            animation: comedy-glow-pulse-one 1.5s ease-in-out infinite alternate-reverse;
+            /*background: transparent;*/
+            animation: comedy-glow-pulse-one 3s ease-in-out infinite;
             /*comedy-glow-pulse-two 2.5s ease-in-out 3.5s infinite,*/
             /*comedy-glow-pulse-three 2.5s ease-in-out 6s infinite;*/
             /*background: linear-gradient(90deg, rgba(255,0,0,1) 0%, rgba(255,154,0,1) 10%, rgba(208,222,33,1) 20%, rgba(79,220,74,1) 30%, rgba(63,218,216,1) 40%, rgba(47,201,226,1) 50%, rgba(28,127,238,1) 60%, rgba(95,21,242,1) 70%, rgba(186,12,248,1) 80%, rgba(251,7,217,1) 90%, rgba(255,0,0,1) 100%);*/
@@ -75,24 +76,37 @@
             /*filter: sepia(1) hue-rotate(160deg) saturate(100) contrast(1) brightness(1);*/
         }
         @keyframes comedy-glow-pulse-one {
-            0% {
-                filter: drop-shadow(0px 0px 0px black);
-            }
+            /*0% {*/
+            /*    !*filter: drop-shadow(0px 0px 0px black);*!*/
+            /*    !*filter: drop-shadow(0px 0px 1px red)*!*/
+            /*    !*drop-shadow(0px 0px 2px orange)*!*/
+            /*    !*drop-shadow(0px 0px 3px yellow)*!*/
+            /*    !*drop-shadow(0px 0px 4px lawngreen)*!*/
+            /*    !*drop-shadow(0px 0px 5px deepskyblue)*!*/
+            /*    !*drop-shadow(0px 0px 6px blueviolet)*!*/
+            /*    !*drop-shadow(0px 0px 7px mediumvioletred) ;*!*/
+            /*}*/
             /*25% {*/
             /*    filter: drop-shadow(0px 0px 2px black);*/
 
             /*}*/
-            /*50% {*/
-            /*    filter: drop-shadow(0px 0px 5px black);*/
-
-            /*}*/
+            50% {
+                /*filter: drop-shadow(0px 0px 5px black);*/
+                filter: drop-shadow(0px 0px 1px red)
+                drop-shadow(0px 0px 2px orange)
+                drop-shadow(0px 0px 3px yellow)
+                drop-shadow(0px 0px 4px lawngreen)
+                drop-shadow(0px 0px 5px deepskyblue)
+                drop-shadow(0px 0px 6px blueviolet)
+                drop-shadow(0px 0px 7px mediumvioletred);
+            }
             /*75% {*/
             /*    filter: drop-shadow(0px 0px 2px black);*/
 
             /*}*/
-            100% {
-                filter: drop-shadow(0px 0px 10px black);
-            }
+            /*100% {*/
+            /*    !*filter: drop-shadow(0px 0px 7px black);*!*/
+            /*}*/
         }
 
         /*    @keyframes comedy-glow-pulse-two {*/
