@@ -6,183 +6,223 @@
 
     <style>
 
+        body {
+            /*margin-top: 50%;*/
+            margin-right: 5%;
+            margin-left: 5%;
+            background-image: url("images/ThistleLord_Clock1_Pixelized_Scale1024x576.png");
+            background-size: cover;
+            background-attachment: fixed;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
         #epilogue {
             font-family: Charm, sans-serif;
-            font-size: 1.5rem;
+            font-size: 6rem;
             text-align: center;
+            margin-top: 75%;
             margin-bottom: 5%;
+            animation: words-glow-pulse-one 3s ease-in-out infinite;
+        }
+
+        @keyframes words-glow-pulse-one {
+
+            50% {
+                filter: drop-shadow(0px 0px 1px red)
+                drop-shadow(0px 0px 2px orange)
+                drop-shadow(0px 0px 3px yellow)
+                drop-shadow(0px 0px 4px lawngreen)
+                drop-shadow(0px 0px 5px deepskyblue)
+                drop-shadow(0px 0px 6px blueviolet)
+                drop-shadow(0px 0px 7px mediumvioletred);
+            }
         }
 
         #epilogue img {
-            width: 10%;
-            height: 10%;
+            width: 18%;
+            height: 18%;
             border-style: none;
             display: inline-block;
             position: relative;
             top: 35px;
-            filter: sepia(1) hue-rotate(215deg) saturate(100) contrast(0.8) brightness(0.6);
+            animation: star-glow-pulse-one 3s ease-in-out infinite;
+            /*filter: sepia(1) hue-rotate(215deg) saturate(100) contrast(0.8) brightness(0.6);*/
         }
 
-        /* this is epilogue No. 2 without letter animation and sped up*/
+        @keyframes star-glow-pulse-one {
 
-        ul{
-            margin: 2.5rem 0 10rem 0;
-            display:flex;
-
-        }
-        ul li{
-            list-style:none;
-            width:40px;
-            height:40px;
-            font-size: 2rem;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-            border-radius:50%;
-            animation:grow 2s ease-in-out infinite;
-        }
-        @keyframes grow
-        {
-            0% , 40% , 100%
-            {
-                transform:scale(.5);
-            }
-            20%{
-                transform:scale(2);
-
+            50% {
+                filter: drop-shadow(0px 0px 1px red)
+                drop-shadow(0px 0px 2px orange)
+                drop-shadow(0px 0px 3px yellow)
+                drop-shadow(0px 0px 4px lawngreen)
+                drop-shadow(0px 0px 5px deepskyblue)
+                drop-shadow(0px 0px 6px blueviolet)
+                drop-shadow(0px 0px 7px mediumvioletred);
             }
         }
 
-        ul li img {
-            border-style: none;
-            border-radius: 50%;
-        }
+        /*!* this is epilogue No. 2 without letter animation and sped up*!*/
 
-        ul li:nth-child(1){
-            animation-delay:-2.2s;
-            background:#fd4b67;
-            box-shadow:0 0 50px #fd4b67;
-        }
+        /*ul{*/
+        /*    margin: 5rem 0 10rem 0;*/
+        /*    display:flex;*/
 
-        ul li:nth-child(2){
-            animation-delay:-2.1s;
-            background:coral;
-            box-shadow:0 0 50px coral;
-        }
+        /*}*/
+        /*ul li{*/
+        /*    list-style:none;*/
+        /*    width:40px;*/
+        /*    height:40px;*/
+        /*    font-size: 2rem;*/
+        /*    text-align: center;*/
+        /*    margin: 0;*/
+        /*    padding: 0;*/
+        /*    border-radius:50%;*/
+        /*    animation:grow 2s ease-in-out infinite;*/
+        /*}*/
+        /*@keyframes grow*/
+        /*{*/
+        /*    0% , 40% , 100%*/
+        /*    {*/
+        /*        transform:scale(.5);*/
+        /*    }*/
+        /*    20%{*/
+        /*        transform:scale(2);*/
 
-        ul li:nth-child(3){
-            animation-delay:-2s;
-            background:#ffca2c;
-            box-shadow:0 0 50px #ffca2c;
-        }
+        /*    }*/
+        /*}*/
 
-        ul li:nth-child(4){
-            animation-delay:-1.9s;
-            background:mediumseagreen;
-            box-shadow:0 0 50px mediumseagreen;
-        }
+        /*ul li img {*/
+        /*    border-style: none;*/
+        /*    border-radius: 50%;*/
+        /*}*/
 
-        ul li:nth-child(5){
-            animation-delay:-1.8s;
-            background:dodgerblue;
-            box-shadow:0 0 50px dodgerblue;
-        }
+        /*ul li:nth-child(1){*/
+        /*    animation-delay:-2.2s;*/
+        /*    background:#fd4b67;*/
+        /*    box-shadow:0 0 50px #fd4b67;*/
+        /*}*/
 
-        ul li:nth-child(6){
-            animation-delay:-1.7s;
-            background:blueviolet;
-            box-shadow:0 0 50px blueviolet;
-        }
+        /*ul li:nth-child(2){*/
+        /*    animation-delay:-2.1s;*/
+        /*    background:coral;*/
+        /*    box-shadow:0 0 50px coral;*/
+        /*}*/
 
-        ul li:nth-child(7){
-            animation-delay:-1.6s;
-            background:mediumvioletred;
-            box-shadow:0 0 50px mediumvioletred;
-        }
+        /*ul li:nth-child(3){*/
+        /*    animation-delay:-2s;*/
+        /*    background:#ffca2c;*/
+        /*    box-shadow:0 0 50px #ffca2c;*/
+        /*}*/
 
-        ul li:nth-child(8){
-            animation-delay:-1.5s;
-            background:#fd4b67;
-            box-shadow:0 0 50px #fd4b67;
-        }
+        /*ul li:nth-child(4){*/
+        /*    animation-delay:-1.9s;*/
+        /*    background:mediumseagreen;*/
+        /*    box-shadow:0 0 50px mediumseagreen;*/
+        /*}*/
 
-        ul li:nth-child(9){
-            animation-delay:-1.4s;
-            background:coral;
-            box-shadow:0 0 50px coral;
-        }
+        /*ul li:nth-child(5){*/
+        /*    animation-delay:-1.8s;*/
+        /*    background:dodgerblue;*/
+        /*    box-shadow:0 0 50px dodgerblue;*/
+        /*}*/
 
-        ul li:nth-child(10){
-            animation-delay:-1.3s;
-            background:#ffca2c;
-            box-shadow:0 0 50px #ffca2c;
-        }
+        /*ul li:nth-child(6){*/
+        /*    animation-delay:-1.7s;*/
+        /*    background:blueviolet;*/
+        /*    box-shadow:0 0 50px blueviolet;*/
+        /*}*/
 
-        ul li:nth-child(11){
-            animation-delay:-1.2s;
-            background:mediumseagreen;
-            box-shadow:0 0 50px mediumseagreen;
-        }
+        /*ul li:nth-child(7){*/
+        /*    animation-delay:-1.6s;*/
+        /*    background:mediumvioletred;*/
+        /*    box-shadow:0 0 50px mediumvioletred;*/
+        /*}*/
 
-        ul li:nth-child(12){
-            animation-delay:-1.1s;
-            background:dodgerblue;
-            box-shadow:0 0 50px dodgerblue;
-        }
+        /*ul li:nth-child(8){*/
+        /*    animation-delay:-1.5s;*/
+        /*    background:#fd4b67;*/
+        /*    box-shadow:0 0 50px #fd4b67;*/
+        /*}*/
 
-        ul li:nth-child(13){
-            animation-delay:-1s;
-            background:blueviolet;
-            box-shadow:0 0 50px blueviolet;
-        }
+        /*ul li:nth-child(9){*/
+        /*    animation-delay:-1.4s;*/
+        /*    background:coral;*/
+        /*    box-shadow:0 0 50px coral;*/
+        /*}*/
 
-        ul li:nth-child(14){
-            animation-delay:-0.9s;
-            background:mediumvioletred;
-            box-shadow:0 0 50px mediumvioletred;
-        }
+        /*ul li:nth-child(10){*/
+        /*    animation-delay:-1.3s;*/
+        /*    background:#ffca2c;*/
+        /*    box-shadow:0 0 50px #ffca2c;*/
+        /*}*/
 
-        ul li:nth-child(15){
-            animation-delay:-.8s;
-            background:#fd4b67;
-            box-shadow:0 0 50px #fd4b67;
-        }
+        /*ul li:nth-child(11){*/
+        /*    animation-delay:-1.2s;*/
+        /*    background:mediumseagreen;*/
+        /*    box-shadow:0 0 50px mediumseagreen;*/
+        /*}*/
 
-        ul li:nth-child(16){
-            animation-delay:-.7s;
-            background:coral;
-            box-shadow:0 0 50px coral;
-        }
+        /*ul li:nth-child(12){*/
+        /*    animation-delay:-1.1s;*/
+        /*    background:dodgerblue;*/
+        /*    box-shadow:0 0 50px dodgerblue;*/
+        /*}*/
 
-        ul li:nth-child(17){
-            animation-delay:-.6s;
-            background:#ffca2c;
-            box-shadow:0 0 50px #ffca2c;
-        }
+        /*ul li:nth-child(13){*/
+        /*    animation-delay:-1s;*/
+        /*    background:blueviolet;*/
+        /*    box-shadow:0 0 50px blueviolet;*/
+        /*}*/
 
-        ul li:nth-child(18){
-            animation-delay:-0.5s;
-            background:mediumseagreen;
-            box-shadow:0 0 50px mediumseagreen;
-        }
+        /*ul li:nth-child(14){*/
+        /*    animation-delay:-0.9s;*/
+        /*    background:mediumvioletred;*/
+        /*    box-shadow:0 0 50px mediumvioletred;*/
+        /*}*/
 
-        ul li:nth-child(19){
-            animation-delay:-0.4s;
-            background:dodgerblue;
-            box-shadow:0 0 50px dodgerblue;
-        }
+        /*ul li:nth-child(15){*/
+        /*    animation-delay:-.8s;*/
+        /*    background:#fd4b67;*/
+        /*    box-shadow:0 0 50px #fd4b67;*/
+        /*}*/
 
-        ul li:nth-child(20){
-            animation-delay:-0.3s;
-            background:blueviolet;
-            box-shadow:0 0 50px blueviolet;
-        }
+        /*ul li:nth-child(16){*/
+        /*    animation-delay:-.7s;*/
+        /*    background:coral;*/
+        /*    box-shadow:0 0 50px coral;*/
+        /*}*/
 
-        ul li:nth-child(21){
-            animation-delay:-0.2s;
-            background:mediumvioletred;
-            box-shadow:0 0 50px mediumvioletred;
-        }
+        /*ul li:nth-child(17){*/
+        /*    animation-delay:-.6s;*/
+        /*    background:#ffca2c;*/
+        /*    box-shadow:0 0 50px #ffca2c;*/
+        /*}*/
+
+        /*ul li:nth-child(18){*/
+        /*    animation-delay:-0.5s;*/
+        /*    background:mediumseagreen;*/
+        /*    box-shadow:0 0 50px mediumseagreen;*/
+        /*}*/
+
+        /*ul li:nth-child(19){*/
+        /*    animation-delay:-0.4s;*/
+        /*    background:dodgerblue;*/
+        /*    box-shadow:0 0 50px dodgerblue;*/
+        /*}*/
+
+        /*ul li:nth-child(20){*/
+        /*    animation-delay:-0.3s;*/
+        /*    background:blueviolet;*/
+        /*    box-shadow:0 0 50px blueviolet;*/
+        /*}*/
+
+        /*ul li:nth-child(21){*/
+        /*    animation-delay:-0.2s;*/
+        /*    background:mediumvioletred;*/
+        /*    box-shadow:0 0 50px mediumvioletred;*/
+        /*}*/
 
     </style>
 
@@ -192,35 +232,35 @@
 
 <div id="epilogue">
     <img src="star_shine_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg">
-    Project Coming Soon!
+    Coming Soon!
     <img src="star_shine_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg">
 </div>
 
-<div>
-    <ul>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-    </ul>
-</div>
+<!--<div>-->
+<!--    <ul>-->
+<!--        <li></li>-->
+<!--        <li></li>-->
+<!--        <li></li>-->
+<!--        <li></li>-->
+<!--        <li></li>-->
+<!--        <li></li>-->
+<!--        <li></li>-->
+<!--        <li></li>-->
+<!--        <li></li>-->
+<!--        <li></li>-->
+<!--        <li></li>-->
+<!--        <li></li>-->
+<!--        <li></li>-->
+<!--        <li></li>-->
+<!--        <li></li>-->
+<!--        <li></li>-->
+<!--        <li></li>-->
+<!--        <li></li>-->
+<!--        <li></li>-->
+<!--        <li></li>-->
+<!--        <li></li>-->
+<!--    </ul>-->
+<!--</div>-->
 
 
 </body>
