@@ -1,0 +1,168 @@
+body {
+    margin-right: 5%;
+    margin-left: 5%;
+    background-image: url("../images/ThistleLord_Eerie1_Pixelized_Scale1024x577.png");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+a {
+    display: block;
+    padding-top: 30px;
+    font-family: Yatra One, sans-serif;
+    font-size: 3rem;
+    text-decoration: none;
+    color: deepskyblue;
+}
+
+
+.sparkles img {
+    opacity: 0;
+    width: 5%;
+    height: 5%;
+}
+
+#sparkleOne img {
+    margin-top: 40%;
+    margin-left: 15%;
+    animation: sparkleOne-glow-pulse 1.75s ease-in-out .05s infinite;
+}
+@keyframes sparkleOne-glow-pulse {
+    50% {
+        opacity: 1;
+        transform: scale(3);
+        filter: drop-shadow(0px 0px 1px red)
+        drop-shadow(0px 0px 2px orange)
+        drop-shadow(0px 0px 3px yellow)
+        drop-shadow(0px 0px 4px lawngreen)
+        drop-shadow(0px 0px 5px deepskyblue)
+        drop-shadow(0px 0px 6px blueviolet)
+        drop-shadow(0px 0px 7px mediumvioletred);
+    }
+}
+
+#sparkleTwo img {
+    margin-top: 3%;
+    margin-left: 85%;
+    animation: sparkleTwo-glow-pulse 1.75s ease-in-out 2.05s infinite;
+}
+@keyframes sparkleTwo-glow-pulse {
+    50% {
+        opacity: 1;
+        transform: scale(3);
+        filter: drop-shadow(0px 0px 1px red)
+        drop-shadow(0px 0px 2px orange)
+        drop-shadow(0px 0px 3px yellow)
+        drop-shadow(0px 0px 4px lawngreen)
+        drop-shadow(0px 0px 5px deepskyblue)
+        drop-shadow(0px 0px 6px blueviolet)
+        drop-shadow(0px 0px 7px mediumvioletred);
+    }
+}
+
+#sparkleThree img {
+    margin-top: 3%;
+    margin-left: 40%;
+    animation: sparkleThree-glow-pulse 1.75s ease-in-out .9s infinite;
+}
+@keyframes sparkleThree-glow-pulse {
+    50% {
+        opacity: 1;
+        transform: scale(3);
+        filter: drop-shadow(0px 0px 1px red)
+        drop-shadow(0px 0px 2px orange)
+        drop-shadow(0px 0px 3px yellow)
+        drop-shadow(0px 0px 4px lawngreen)
+        drop-shadow(0px 0px 5px deepskyblue)
+        drop-shadow(0px 0px 6px blueviolet)
+        drop-shadow(0px 0px 7px mediumvioletred);
+    }
+}
+
+p {
+    font-family: Charm, sans-serif;
+    font-size: 6rem;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    animation: words-glow-pulse-one 2s ease-in-out infinite;
+}
+@keyframes words-glow-pulse-one {
+    0%, 100% {
+        filter: drop-shadow(0px 0px 1px red)
+        drop-shadow(0px 0px 2px orange)
+        drop-shadow(0px 0px 3px yellow)
+        drop-shadow(0px 0px 4px lawngreen)
+        drop-shadow(0px 0px 5px deepskyblue)
+        drop-shadow(0px 0px 6px blueviolet)
+        drop-shadow(0px 0px 7px mediumvioletred);
+    }
+    50% {
+        filter: drop-shadow(0px 0px 2px red)
+        drop-shadow(0px 0px 3px orange)
+        drop-shadow(0px 0px 4px yellow)
+        drop-shadow(0px 0px 5px lawngreen)
+        drop-shadow(0px 0px 6px deepskyblue)
+        drop-shadow(0px 0px 7px blueviolet)
+        drop-shadow(0px 0px 8px mediumvioletred);
+    }
+}
+
+#sparkleFour img {
+    margin-top: 3%;
+    margin-left: 15%;
+    animation: sparkleFour-glow-pulse 1.75s ease-in-out 1.5s infinite;
+}
+@keyframes sparkleFour-glow-pulse {
+    50% {
+        opacity: 1;
+        transform: scale(3);
+        filter: drop-shadow(0px 0px 1px red)
+        drop-shadow(0px 0px 2px orange)
+        drop-shadow(0px 0px 3px yellow)
+        drop-shadow(0px 0px 4px lawngreen)
+        drop-shadow(0px 0px 5px deepskyblue)
+        drop-shadow(0px 0px 6px blueviolet)
+        drop-shadow(0px 0px 7px mediumvioletred);
+    }
+}
+
+#sparkleFive img {
+    margin-top: 3%;
+    margin-left: 75%;
+    animation: sparkleFive-glow-pulse 1.75s ease-in-out .45s infinite;
+}
+@keyframes sparkleFive-glow-pulse {
+    50% {
+        opacity: 1;
+        transform: scale(3);
+        filter: drop-shadow(0px 0px 1px red)
+        drop-shadow(0px 0px 2px orange)
+        drop-shadow(0px 0px 3px yellow)
+        drop-shadow(0px 0px 4px lawngreen)
+        drop-shadow(0px 0px 5px deepskyblue)
+        drop-shadow(0px 0px 6px blueviolet)
+        drop-shadow(0px 0px 7px mediumvioletred);
+    }
+}
+
+#sparkleSix img {
+    margin-top: 3%;
+    margin-left: 45%;
+    animation: sparkleSix-glow-pulse 1.75s ease-in-out 1.15s infinite;
+}
+@keyframes sparkleSix-glow-pulse {
+    50% {
+        opacity: 1;
+        transform: scale(3);
+        filter: drop-shadow(0px 0px 1px red)
+        drop-shadow(0px 0px 2px orange)
+        drop-shadow(0px 0px 3px yellow)
+        drop-shadow(0px 0px 4px lawngreen)
+        drop-shadow(0px 0px 5px deepskyblue)
+        drop-shadow(0px 0px 6px blueviolet)
+        drop-shadow(0px 0px 7px mediumvioletred);
+    }
+}
