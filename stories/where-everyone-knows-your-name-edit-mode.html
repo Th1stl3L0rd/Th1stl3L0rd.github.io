@@ -3,214 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <title>Where Everyone Knows Your Name</title>
+    <script src="/scripts/page-fade-to-black.js"></script>
+    <link rel="stylesheet" href="/css/page-fade-to-black.css">
+    <link rel="stylesheet" href="/css/story-edit-mode.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yatra One">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster Two">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marcellus">
-    <style>
-
-        html {
-            margin: 0;
-        }
-
-        body {
-            font-family: "Calibri", serif;
-            margin: 0;
-            /*margin: 5rem;*/
-            /*margin-right: 3rem;*/
-            /*margin-left: 3rem;*/
-            background-color: antiquewhite;
-            scroll-margin-top: 20px;
-            scroll-margin-bottom: 20px;
-        }
-
-        #mainContent {
-            margin: 5rem;
-            margin-right: 3rem;
-            margin-left: 3rem;
-        }
-
-
-        img {
-            display: block;
-            /*margin-top: 25%;*/
-            margin-bottom: 25px;
-            margin-left: auto;
-            margin-right: auto;
-            width: 90%;
-            border-style: ridge;
-            border-color: rebeccapurple;
-            border-radius: 5px;
-            border-width: 5px;
-        }
-
-        h1 {
-            text-align: center;
-            margin-top: 2.5rem;
-        }
-
-        h4 {
-            text-align: center;
-            margin-bottom: 5rem;
-        }
-
-        #summary {
-            margin-bottom: 2.5rem;
-        }
-
-        #notes {
-            margin-bottom: 10rem;
-        }
-
-        hr {
-            margin-bottom: 10rem;
-            margin-right: auto;
-            margin-left: auto;
-            width: 50%;
-            border: 3px solid #d30b83;
-
-        }
-
-        p {
-            margin-bottom: 3rem;
-            width: 100%;
-        }
-
-        #firstP::first-letter {
-            font-weight: bold;
-            font-size: 15rem;
-            float: left;
-            line-height: 1;
-            margin-right: 0.2rem;
-            font-family: Marcellus, sans-serif;
-            color: #934817;
-            text-shadow: 5px 5px 5px blueviolet;
-        }
-
-
-
-        a {
-            font-size: 1.5rem;
-            font-family: Yatra One, sans-serif;
-            font-weight: bold;
-            color: black;
-            text-shadow: 3px 3px 3px limegreen;
-            border-style: none;
-            border-radius: 25px;
-            padding: .5rem;
-            /*background-color: rgba(138, 43, 226, 0.65);*/
-            display: block;
-            /*margin-top: 25%;*/
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 5rem;
-            width: 80%;
-            text-align: center;
-
-        }
-
-        #navbarContainer {
-            display: grid;
-            grid-auto-flow: column;
-            /*justify-content: right;*/
-            height: 100px;
-        }
-
-        #bookmarkNavbar {
-            display: grid;
-            justify-content: right;
-        }
-
-        #bookmarkLink {
-            border: none;
-            display: none;
-            width: 100px;
-            justify-self: right;
-        }
-
-        #wand {
-            border: none;
-            width: 100px;
-        }
-
-        .bookmarked {
-            background-image: url('smoke.png');
-            background-repeat: no-repeat;
-            background-position: 100% 50%;
-            background-size: 50px 50px;
-        }
-
-        .markedUp {
-            font-weight: bold;
-            color: red;
-        }
-
-
-        #navbar {
-            position: sticky;
-            top: 0;
-            overflow: hidden;
-            background-color: rosybrown;
-            display: grid;
-            grid-auto-flow: column;
-            padding: 20px;
-            width: 100vw;
-        }
-
-        button {
-
-            width: 20vw;
-            padding: 20px;
-            background-color: rgba(94, 108, 131, 0.25);
-            margin: 15px;
-            font-weight: bold;
-            font-size: 1.5rem;
-        }
-
-        .highlighted {
-
-            background-color: rgba(155, 114, 166, 0.45);
-        }
-
-        #currentIndexDisplay {
-            font-weight: bold;
-            font-size: 1.5rem;
-            border: 5px ridge rgba(211, 220, 50, .6);
-            border-radius: 2px;
-            padding: 5px;
-        }
-
-        @media only screen and (max-width: 800px) {
-
-
-            #navbar {
-                margin-top: 10px;
-            }
-
-            button {
-                width: 20vw;
-                padding: 15px;
-                background-color: rgba(94, 108, 131, 0.25);
-            }
-
-            body {
-                background-color: #00d800;
-            }
-
-        }
-
-        .pageBreak {
-            border-style: none;
-        }
-
-
-    </style>
 </head>
 
 
 <body>
 
-<div id="navbar">
+<svg id="fader"></svg>
+<script>
+    fadeInPage();
+</script>
 
+<div id="navbar">
     <div id="navbarControls">
         <button id="nextWord">next</button>
         <button id="previousWord">previous</button>
@@ -221,7 +30,6 @@
             <span id="totalMarkedWords"></span>
         </span>
     </div>
-
 </div>
 
 <a href="editing-index.html">Return to Edit Mode Index</a>
@@ -230,7 +38,7 @@
 
 <div id="navbarContainer">
     <div id="bookmarkNavbar">
-        <a id="bookmarkLink" href="#bookmark"><img id="wand" src="magic-wand-ezgif.com-gif-maker(1).gif"></a>
+        <a id="bookmarkLink" href="#bookmark"><img id="wand" src="images/magic-wand-ezgif.com-gif-maker(1).gif"></a>
     </div>
 </div>
 

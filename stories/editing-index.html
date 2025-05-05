@@ -1,0 +1,51 @@
+
+
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thy ThistleLord's Story Edit Mode</title>
+    <script src="../scripts/page-fade-to-black.js"></script>
+    <link rel="stylesheet" href="../css/page-fade-to-black.css">
+    <link rel="stylesheet" href="../css/thistle-lord-main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yatra One">
+</head>
+<body>
+
+<svg id="fader"></svg>
+<script>
+    fadeInPage();
+</script>
+
+<div class="stickyTop">
+    <nav class="navA-secondary">
+        <img class="navbar-brand-secondary"
+             src="../images/ThistleLord_Brand1_Thistle_Transparent_Purple_Magenta_Lime_Bloom%20Only_Scale321x274.png"
+             alt="Image of thistle">
+        <a href="../projects-school.html">School</a>
+        <a href="../projects-portfolio.html">Portfolio</a>
+        <a class="active" href="#">Stories</a>
+        <a href="../index.html">Home</a>
+    </nav>
+</div>
+
+<a href="where-everyone-knows-your-name-edit-mode.html">Where Everyone Knows Your Name</a>
+<a href="taking-the-biscuit-edit-mode.html">Taking the Biscuit</a>
+<a href="sparkles-edit-mode.html">Sparkles!</a>
+<a href="../index.html">Return to Thy Thistle Lord's Keep</a>
+
+<script>
+
+    const bgClasses = ["bg21","bg22","bg23","bg24","bg25","bg26","bg27","bg28","bg29","bg30","bg31",
+        "bg32","bg33","bg34","bg35","bg36"];
+    const myNumber = Math.floor((Math.random() * bgClasses.length) + 1);
+    document.querySelector("body").classList.add(bgClasses[myNumber]);
+
+
+
+</script>
+
+</body>
+</html>
+
+
