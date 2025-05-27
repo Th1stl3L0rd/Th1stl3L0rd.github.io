@@ -11,7 +11,7 @@
     -webkit-animation: div-fade-out 3.5s ease-in-out forwards;
     animation: div-fade-out 3.5s ease-in-out forwards;
     animation-delay: 13.5s;
-    z-index: 9999999999999999999;
+    z-index: 99;
 }
 
 
