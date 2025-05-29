@@ -145,12 +145,13 @@
             font-weight: bold;
             color: black;
             text-decoration: none;
-            /*text-shadow: 2px 2px 2px limegreen,*/
-            /*            3px 3px 3px limegreen,*/
-            /*            4px 4px 4px darkviolet,*/
-            /*            5px 5px 5px darkviolet,*/
-            /*            6px 6px 6px darkmagenta;*/
-            animation: return-pulse 2s ease-in-out infinite;
+            text-shadow:
+                        /*2px 2px 2px limegreen,*/
+                        4px 4px 4px limegreen,
+                        6px 6px 6px darkviolet;
+                        /*8px 8px 8px darkviolet;*/
+                        /*6px 6px 6px darkmagenta;*/
+            /*animation: return-pulse 3.5s ease-in-out infinite;*/
             border-style: none;
             border-radius: 25px;
             padding: .5rem;
@@ -165,19 +166,19 @@
 
         }
 
-        @keyframes return-pulse {
-            50% {
-                text-shadow: 2px 2px 2px limegreen,
-                            3px 3px 3px limegreen;
-                filter: drop-shadow(0px 0px 2px blueviolet)
-                        drop-shadow(0px 0px 4px blueviolet);
-                -webkit-filter: drop-shadow(0px 0px 2px blueviolet)
-                                drop-shadow(0px 0px 4px blueviolet);
-                -webkit-transition: all 1s ease-in-out;
-                -o-transition: all 1s ease-in-out;
-                transition: all 1s ease-in-out;
-            }
-        }
+        /*@keyframes return-pulse {*/
+        /*    50% {*/
+        /*        text-shadow: 2px 2px 2px limegreen,*/
+        /*                    3px 3px 3px limegreen;*/
+        /*        filter: drop-shadow(0px 0px 2px blueviolet)*/
+        /*                drop-shadow(0px 0px 4px blueviolet);*/
+        /*        -webkit-filter: drop-shadow(0px 0px 2px blueviolet)*/
+        /*                        drop-shadow(0px 0px 4px blueviolet);*/
+        /*        -webkit-transition: all 1s ease-in-out;*/
+        /*        -o-transition: all 1s ease-in-out;*/
+        /*        transition: all 1s ease-in-out;*/
+        /*    }*/
+        /*}*/
 
 
         p {
