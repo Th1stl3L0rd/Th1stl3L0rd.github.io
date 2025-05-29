@@ -261,6 +261,72 @@
             transform: scale(1.1);
         }
 
+        #arrow {
+            float: left;
+            margin: 0;
+            height: 75px;
+            border-style: none;
+            /*background-color: lightgreen;*/
+            filter: drop-shadow(1px 1px 3px deeppink)
+                    drop-shadow(2px 2px 6px deeppink)
+                    drop-shadow(3px 3px 9px deeppink)
+                    drop-shadow(4px 4px 12px ghostwhite);
+            animation: arrow-pulse 3.5s ease-in-out 5s infinite;
+            opacity: 0;
+        }
+
+        @keyframes arrow-pulse {
+            0% {
+                opacity: 0;
+                transform: scale(.98);
+                /*filter: drop-shadow(0px 0px 8px black);*/
+                transition: all 2s ease-in-out;
+                filter: drop-shadow(1px 1px 1px deeppink)
+                drop-shadow(2px 2px 2px deeppink)
+                drop-shadow(3px 3px 3px deeppink)
+                drop-shadow(4px 4px 4px ghostwhite);
+            }
+            25% {
+                opacity: 1;
+                transform: scale(1);
+                /*filter: drop-shadow(0px 0px 18px black);*/
+                transition: all 2s ease-in-out;
+                filter: drop-shadow(1px 1px 3px deeppink)
+                drop-shadow(2px 2px 6px deeppink)
+                drop-shadow(3px 3px 9px deeppink)
+                drop-shadow(4px 4px 12px ghostwhite);
+            }
+            50% {
+                transform: scale(.98);
+                /*filter: drop-shadow(0px 0px 8px black);*/
+                transition: all 1s ease-in-out;
+                filter: drop-shadow(1px 1px 1px deeppink)
+                drop-shadow(2px 2px 2px deeppink)
+                drop-shadow(3px 3px 3px deeppink)
+                drop-shadow(4px 4px 4px ghostwhite);
+            }
+            75% {
+                opacity: 1;
+                transform: scale(1);
+                /*filter: drop-shadow(0px 0px 18px black);*/
+                transition: all 1s ease-in-out;
+                filter: drop-shadow(1px 1px 3px deeppink)
+                drop-shadow(2px 2px 6px deeppink)
+                drop-shadow(3px 3px 9px deeppink)
+                drop-shadow(4px 4px 12px ghostwhite);
+            }
+            100% {
+                opacity: 0;
+                transform: scale(.98);
+                /*filter: drop-shadow(0px 0px 8px black);*/
+                transition: all 1s ease-in-out;
+                filter: drop-shadow(1px 1px 1px deeppink)
+                drop-shadow(2px 2px 2px deeppink)
+                drop-shadow(3px 3px 3px deeppink)
+                drop-shadow(4px 4px 4px ghostwhite);
+            }
+        }
+
 
 
     </style>
@@ -274,7 +340,9 @@
 
 
 <div id="navbarContainer">
-    <a id="returnLink" href="../stories.html">Return to Stories</a>
+    <a id="returnLink" href="../stories.html">
+        <img id="arrow"
+             src="../images/arrow_left_alt_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"></a>
     <div id="bookmarkNavbar">
         <a id="bookmarkLink" href="#bookmark"><img id="wand" src="../images/magic-wand-ezgif.com-gif-maker(1).gif"></a>
     </div>
