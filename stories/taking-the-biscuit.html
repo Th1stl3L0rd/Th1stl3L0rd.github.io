@@ -34,15 +34,31 @@
             border-width: 5px;
         }
 
-        h1 {
+        .storyTitle {
+            font-size: 4rem;
+            font-weight: bolder;
             text-align: center;
-            margin-top: 2.5rem;
+            margin-top: 0;
+            margin-bottom: 0;
         }
 
-        h4 {
+        .storyAuthor {
+            font-size: 1.5rem;
+            font-weight: bolder;
             text-align: center;
-            margin-bottom: 5rem;
+            margin-top: 0;
+            margin-bottom: 5%;
         }
+
+        /*h1 {*/
+        /*    text-align: center;*/
+        /*    margin-top: 2.5rem;*/
+        /*}*/
+
+        /*h4 {*/
+        /*    text-align: center;*/
+        /*    margin-bottom: 5rem;*/
+        /*}*/
 
         #summary {
             margin-bottom: 2.5rem;
@@ -114,7 +130,9 @@
             font-family: Yatra One, sans-serif;
             font-weight: bold;
             color: black;
-            text-shadow: 2px 2px 2px limegreen,
+            text-decoration: none;
+            text-shadow:
+                        2px 2px 2px limegreen,
                         3px 3px 3px limegreen,
                         4px 4px 4px darkviolet,
                         5px 5px 5px darkviolet,
@@ -195,12 +213,14 @@
     </div>
 </div>
 
-<h1>
-    <strong>Taking the Biscuit</strong>
-</h1>
-<h4>
-    <strong>By:</strong> DonnyWhoLovedBowling<br/>
-</h4>
+<p class="storyTitle">
+    Taking the Biscuit
+</p>
+
+<p class="storyAuthor">
+    By: DonnyWhoLovedBowling<br/>
+</p>
+
 <p id="summary">
     <strong>Summary:</strong> Someone has stolen Remus’ chocolate!  Will this
     old Marauder solve the mystery and have his revenge against the  thief?
