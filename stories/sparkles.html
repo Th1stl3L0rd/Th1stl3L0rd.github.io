@@ -6,7 +6,7 @@
     <script src="/scripts/page-fade-to-black.js"></script>
     <link rel="stylesheet" href="/css/page-fade-to-black.css">
     <link rel="stylesheet" href="/css/story-master.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<!--    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">-->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charm">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster Two">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yatra One">
@@ -222,17 +222,9 @@
 
 <a href="../stories.html">Return to Stories</a>
 
-
-
-
-<!--<img src="../images/RotumaGroupIsland_TanHaeHefHefu.jpg">-->
-
 <img src="../images/Beach-Hut_istockphoto-689527656-612x612.jpg">
 
 <div id="navbarContainer">
-    <!--    <a id="returnLink" href="../stories.html">-->
-    <!--        <img id="arrow"-->
-    <!--             src="../images/arrow_left_alt_24dp_1F1F1F_FILL0_wght400_GRAD0_opsz24.svg"></a>-->
     <div id="bookmarkNavbar">
         <a id="bookmarkLink" href="#bookmark"><img id="wand" src="../images/magic-wand-ezgif.com-gif-maker(2).gif"></a>
     </div>
@@ -6494,54 +6486,57 @@
 
 
 <a href="../stories.html">Return to Stories</a>
-<script>
 
-    //set data attributes with ordered index numbers on p elements
-    let paragraphs = document.getElementsByTagName("p");
-    let count = 1;
-    for (let paragraph of paragraphs) {
-        paragraph.setAttribute("data-index",count.toString());
-        count++;
-    }
+<script src="/scripts/story-bookmark.js"></script>
 
-    //check if local storage has a bookmark index
-    if(localStorage.getItem("bookmark")) {
-        let bookmarkIndex = localStorage.getItem("bookmark");
-        console.log(bookmarkIndex);
-        document.querySelector(`p[data-index="${bookmarkIndex}"]`).classList.add("bookmarked");
-        document.querySelector(`p[data-index="${bookmarkIndex}"]`).setAttribute("id", "bookmark");
-        document.querySelector("#bookmarkLink").style.display = "grid";
-    }
+<!--<script>-->
+
+<!--    //set data attributes with ordered index numbers on p elements-->
+<!--    let paragraphs = document.getElementsByTagName("p");-->
+<!--    let count = 1;-->
+<!--    for (let paragraph of paragraphs) {-->
+<!--        paragraph.setAttribute("data-index",count.toString());-->
+<!--        count++;-->
+<!--    }-->
+
+<!--    //check if local storage has a bookmark index-->
+<!--    if(localStorage.getItem("bookmark")) {-->
+<!--        let bookmarkIndex = localStorage.getItem("bookmark");-->
+<!--        console.log(bookmarkIndex);-->
+<!--        document.querySelector(`p[data-index="${bookmarkIndex}"]`).classList.add("bookmarked");-->
+<!--        document.querySelector(`p[data-index="${bookmarkIndex}"]`).setAttribute("id", "bookmark");-->
+<!--        document.querySelector("#bookmarkLink").style.display = "grid";-->
+<!--    }-->
 
 
-    window.onclick = e => {
-        if (e.target.tagName.toLowerCase() == "p") {
-            if (document.querySelector("#bookmark") !== null) {
-                if(e.target.getAttribute("id") == "bookmark"){
-                    localStorage.clear();
-                    document.querySelector("#bookmark").classList.remove("bookmarked");
-                    document.querySelector("#bookmark").removeAttribute("id");
-                    document.querySelector("#bookmarkLink").style.display = "none";
-                }
-                else{
-                    document.querySelector("#bookmark").classList.remove("bookmarked");
-                    document.querySelector("#bookmark").removeAttribute("id");
-                    e.target.classList.add("bookmarked");
-                    e.target.setAttribute("id", "bookmark");
-                    localStorage.setItem("bookmark", e.target.getAttribute("data-index"));
-                    document.querySelector("#bookmarkLink").style.display = "grid";
-                }
-            }
-            else {
-                e.target.classList.add("bookmarked");
-                e.target.setAttribute("id", "bookmark");
-                localStorage.setItem("bookmark", e.target.getAttribute("data-index"));
-                document.querySelector("#bookmarkLink").style.display = "grid";
-            }
-        }
-        console.log(localStorage.getItem("bookmark"));
-    }
+<!--    window.onclick = e => {-->
+<!--        if (e.target.tagName.toLowerCase() == "p") {-->
+<!--            if (document.querySelector("#bookmark") !== null) {-->
+<!--                if(e.target.getAttribute("id") == "bookmark"){-->
+<!--                    localStorage.clear();-->
+<!--                    document.querySelector("#bookmark").classList.remove("bookmarked");-->
+<!--                    document.querySelector("#bookmark").removeAttribute("id");-->
+<!--                    document.querySelector("#bookmarkLink").style.display = "none";-->
+<!--                }-->
+<!--                else{-->
+<!--                    document.querySelector("#bookmark").classList.remove("bookmarked");-->
+<!--                    document.querySelector("#bookmark").removeAttribute("id");-->
+<!--                    e.target.classList.add("bookmarked");-->
+<!--                    e.target.setAttribute("id", "bookmark");-->
+<!--                    localStorage.setItem("bookmark", e.target.getAttribute("data-index"));-->
+<!--                    document.querySelector("#bookmarkLink").style.display = "grid";-->
+<!--                }-->
+<!--            }-->
+<!--            else {-->
+<!--                e.target.classList.add("bookmarked");-->
+<!--                e.target.setAttribute("id", "bookmark");-->
+<!--                localStorage.setItem("bookmark", e.target.getAttribute("data-index"));-->
+<!--                document.querySelector("#bookmarkLink").style.display = "grid";-->
+<!--            }-->
+<!--        }-->
+<!--        console.log(localStorage.getItem("bookmark"));-->
+<!--    }-->
 
-</script>
+<!--</script>-->
 </body>
 </html>

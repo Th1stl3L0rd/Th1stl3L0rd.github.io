@@ -4,6 +4,29 @@ body {
     background-color: antiquewhite;
 }
 
+a {
+    font-size: 1.5rem;
+    font-family: Yatra One, sans-serif;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    text-shadow:
+            2px 2px 2px limegreen,
+            3px 3px 3px limegreen,
+            4px 4px 4px darkviolet,
+            5px 5px 5px darkviolet,
+            6px 6px 6px darkmagenta;
+    border-style: none;
+    border-radius: 25px;
+    padding: .5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    width: 80%;
+    text-align: center;
+}
+
 img {
     display: block;
     margin-bottom: 25px;
@@ -14,6 +37,38 @@ img {
     border-color: purple;
     border-radius: 5px;
     border-width: 5px;
+}
+
+#navbarContainer {
+    display: grid;
+    grid-auto-flow: column;
+    height: 100px;
+}
+
+#bookmarkNavbar {
+    display: grid;
+    justify-content: right;
+}
+
+#bookmarkLink {
+    border: none;
+    display: none;
+    width: 100px;
+    justify-self: right;
+}
+
+#wand {
+    border: none;
+    width: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.bookmarked {
+    background-image: url('../images/smoke.png');
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: 50px 50px;
 }
 
 .storyTitle {
@@ -54,11 +109,6 @@ img {
     margin-bottom: 5rem;
 }
 
-.pageBreak {
-    border-style: none;
-    margin-bottom: 15%;
-}
-
 #sparklesQuote {
     font-family: Charm, sans-serif;
     font-size: large;
@@ -80,6 +130,11 @@ img {
     font-size: 7rem;
     text-align: center;
     margin-bottom: 0;
+}
+
+.pageBreak {
+    border-style: none;
+    margin-bottom: 15%;
 }
 
 p {
@@ -121,29 +176,6 @@ p {
     text-shadow: 5px 5px 5px blueviolet;
 }
 
-a {
-    font-size: 1.5rem;
-    font-family: Yatra One, sans-serif;
-    font-weight: bold;
-    color: black;
-    text-decoration: none;
-    text-shadow:
-            2px 2px 2px limegreen,
-            3px 3px 3px limegreen,
-            4px 4px 4px darkviolet,
-            5px 5px 5px darkviolet,
-            6px 6px 6px darkmagenta;
-    border-style: none;
-    border-radius: 25px;
-    padding: .5rem;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 5rem;
-    width: 80%;
-    text-align: center;
-}
-
 #pBeforeWeasleyLetter {
     margin-bottom: 2rem;
 }
@@ -156,38 +188,6 @@ a {
 
 #pAfterWeasleyLetter {
     margin-top: 2rem;
-}
-
-#navbarContainer {
-    display: grid;
-    grid-auto-flow: column;
-    height: 100px;
-}
-
-#bookmarkNavbar {
-    display: grid;
-    justify-content: right;
-}
-
-#bookmarkLink {
-    border: none;
-    display: none;
-    width: 100px;
-    justify-self: right;
-}
-
-#wand {
-    border: none;
-    width: 100px;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.bookmarked {
-    background-image: url('../images/smoke.png');
-    background-repeat: no-repeat;
-    background-position: 100% 50%;
-    background-size: 50px 50px;
 }
 
 #storyEndImage {
