@@ -5,334 +5,213 @@
     <title>Sparkles!</title>
     <script src="/scripts/page-fade-to-black.js"></script>
     <link rel="stylesheet" href="/css/page-fade-to-black.css">
+    <link rel="stylesheet" href="/css/story-master.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yatra One">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster Two">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Eagle Lake">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charm">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster Two">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yatra One">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Mystery Quest">
-    <style>
-        body {
-            font-family: "Calibri", serif;
-            margin: 5rem;
-            margin-right: 3rem;
-            margin-left: 3rem;
-            background-color: antiquewhite;
-        }
+<!--    <style>-->
 
+<!--        body {-->
+<!--            font-family: "Calibri", serif;-->
+<!--            margin: 5rem 3rem 5rem 3rem;-->
+<!--            background-color: antiquewhite;-->
+<!--        }-->
 
-        img {
-            display: block;
-            /*margin-top: 25%;*/
-            margin-bottom: 25px;
-            margin-left: auto;
-            margin-right: auto;
-            width: 90%;
-            border-style: ridge;
-            border-color: purple;
-            border-radius: 5px;
-            border-width: 5px;
-        }
+<!--        img {-->
+<!--            display: block;-->
+<!--            margin-bottom: 25px;-->
+<!--            margin-left: auto;-->
+<!--            margin-right: auto;-->
+<!--            width: 90%;-->
+<!--            border-style: ridge;-->
+<!--            border-color: purple;-->
+<!--            border-radius: 5px;-->
+<!--            border-width: 5px;-->
+<!--        }-->
 
-        .storyTitle {
-            font-size: 4rem;
-            font-weight: bolder;
-            text-align: center;
-            margin-top: 0;
-            margin-bottom: 0;
-        }
+<!--        .storyTitle {-->
+<!--            font-size: 4rem;-->
+<!--            font-weight: bolder;-->
+<!--            text-align: center;-->
+<!--            margin-top: 0;-->
+<!--            margin-bottom: 0;-->
+<!--        }-->
 
-        .storyAuthor {
-            font-size: 1.5rem;
-            font-weight: bolder;
-            text-align: center;
-            margin-top: 0;
-            margin-bottom: 5%;
-        }
+<!--        .storyAuthor {-->
+<!--            font-size: 1.5rem;-->
+<!--            font-weight: bolder;-->
+<!--            text-align: center;-->
+<!--            margin-top: 0;-->
+<!--            margin-bottom: 5%;-->
+<!--        }-->
 
-        #summary {
-            margin-bottom: 2.5rem;
-        }
+<!--        .summary {-->
+<!--            margin-bottom: 2.5rem;-->
+<!--        }-->
 
-        #storyDetails {
-            border-style: ridge;
-            border-color: purple;
-            border-radius: 5px;
-            border-width: 3.5px;
-            height: auto;
-            margin-bottom: 2.5rem;
-            padding: 1.25%;
-        }
+<!--        .storyDetails {-->
+<!--            border-style: ridge;-->
+<!--            border-color: purple;-->
+<!--            border-radius: 5px;-->
+<!--            border-width: 4px;-->
+<!--            height: auto;-->
+<!--            margin-bottom: 2.5rem;-->
+<!--            padding: 1.25%;-->
+<!--        }-->
 
-        #storyDetails p {
-            margin: auto;
-        }
+<!--        .storyDetails p {-->
+<!--            margin: auto;-->
+<!--        }-->
 
-        .notes {
-            margin-bottom: 5rem;
-        }
+<!--        .notes {-->
+<!--            margin-bottom: 5rem;-->
+<!--        }-->
 
-        /*hr {*/
-        /*    margin-bottom: 10rem;*/
-        /*    margin-right: auto;*/
-        /*    margin-left: auto;*/
-        /*    width: 50%;*/
-        /*    border: 3px solid rebeccapurple;*/
+<!--        .pageBreak {-->
+<!--            border-style: none;-->
+<!--            margin-bottom: 15%;-->
+<!--        }-->
 
-        /*}*/
+<!--        #sparklesQuote {-->
+<!--            font-family: Charm, sans-serif;-->
+<!--            font-size: large;-->
+<!--            font-weight: bolder;-->
+<!--            color: steelblue;-->
+<!--            text-align: center;-->
+<!--            border-top-style: solid;-->
+<!--            border-bottom-style: solid;-->
+<!--            border-color: steelblue;-->
+<!--            margin-bottom: 2.5rem;-->
+<!--            padding: 2%;-->
+<!--        }-->
 
-        .pageBreak {
-            border-style: none;
-            margin-bottom: 15%;
-        }
+<!--        #sparklesQuote p {-->
+<!--            margin: auto;-->
+<!--        }-->
 
-        .quotes {
-            font-family: Charm, sans-serif;
-            font-size: large;
-            font-weight: bolder;
-            color: steelblue;
-            text-align: center;
-            border-top-style: solid;
-            border-bottom-style: solid;
-            border-color: steelblue;
-            margin-bottom: 2.5rem;
-            padding: 2%;
-        }
+<!--        .chapterTitle {-->
+<!--            font-size: 7rem;-->
+<!--            text-align: center;-->
+<!--            margin-bottom: 0;-->
+<!--        }-->
 
-        .quotes p {
-            margin: auto;
+<!--        p {-->
+<!--            margin-bottom: 3rem;-->
+<!--        }-->
 
-        }
+<!--        #sparklesFirstP {-->
+<!--            font-size: 4rem;-->
+<!--            margin-bottom: 2rem;-->
+<!--        }-->
 
-        .chapterTitle {
-            font-size: 7rem;
-            text-align: center;
-            margin-bottom: 0;
-        }
+<!--        #sparklesFirstP::first-letter {-->
+<!--            font-weight: bold;-->
+<!--            font-size: 15rem;-->
+<!--            font-family: Lobster Two, sans-serif;-->
+<!--            color: rgba(11, 94, 11, 0.8);-->
+<!--            text-shadow: 5px 5px 5px blueviolet;-->
+<!--        }-->
 
-        p {
-            margin-bottom: 3rem;
-        }
+<!--        a {-->
+<!--            font-size: 1.5rem;-->
+<!--            font-family: Yatra One, sans-serif;-->
+<!--            font-weight: bold;-->
+<!--            color: black;-->
+<!--            text-decoration: none;-->
+<!--            text-shadow:-->
+<!--                        2px 2px 2px limegreen,-->
+<!--                        3px 3px 3px limegreen,-->
+<!--                        4px 4px 4px darkviolet,-->
+<!--                        5px 5px 5px darkviolet,-->
+<!--                        6px 6px 6px darkmagenta;-->
+<!--            border-style: none;-->
+<!--            border-radius: 25px;-->
+<!--            padding: .5rem;-->
+<!--            display: block;-->
+<!--            margin-left: auto;-->
+<!--            margin-right: auto;-->
+<!--            margin-bottom: 5rem;-->
+<!--            width: 80%;-->
+<!--            text-align: center;-->
+<!--        }-->
 
-        #firstP {
-            font-size: 4rem;
-            margin-bottom: 2rem;
+<!--        #pBeforeWeasleyLetter {-->
+<!--            margin-bottom: 2rem;-->
+<!--        }-->
 
-        }
+<!--        .weasleyLetter {-->
+<!--            font-family: Mystery Quest, sans-serif;-->
+<!--            margin-top: 0;-->
+<!--            margin-bottom: .75rem;-->
+<!--        }-->
 
-        #firstP::first-letter {
-            font-weight: bold;
-            font-size: 15rem;
-            /*float: left;*/
-            /*line-height: 1;*/
-            /*margin-right: 0.5rem;*/
-            font-family: Lobster Two, sans-serif;
-            color: rgba(11, 94, 11, 0.8);
-            text-shadow: 5px 5px 5px blueviolet;
+<!--        #pAfterWeasleyLetter {-->
+<!--            margin-top: 2rem;-->
+<!--        }-->
 
-        }
+<!--        #navbarContainer {-->
+<!--            display: grid;-->
+<!--            grid-auto-flow: column;-->
+<!--            height: 100px;-->
+<!--        }-->
 
-        /*#secondP {*/
-        /*    margin-top: 10rem;*/
-        /*}*/
+<!--        #bookmarkNavbar {-->
+<!--            display: grid;-->
+<!--            justify-content: right;-->
+<!--        }-->
 
+<!--        #bookmarkLink {-->
+<!--            /*float: right;*/-->
+<!--            border: none;-->
+<!--            display: none;-->
+<!--            width: 100px;-->
+<!--            justify-self: right;-->
+<!--        }-->
 
-        a {
-            /*float: left;*/
-            font-size: 1.5rem;
-            font-family: Yatra One, sans-serif;
-            font-weight: bold;
-            color: black;
-            text-decoration: none;
-            text-shadow:
-                        2px 2px 2px limegreen,
-                        3px 3px 3px limegreen,
-                        4px 4px 4px darkviolet,
-                        5px 5px 5px darkviolet,
-                        6px 6px 6px darkmagenta;
-            /*animation: return-pulse 3.5s ease-in-out infinite;*/
-            border-style: none;
-            border-radius: 25px;
-            padding: .5rem;
-            /*background-color: rgba(138, 43, 226, 0.65);*/
-            display: block;
-            /*margin-top: 25%;*/
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 5rem;
-            width: 80%;
-            text-align: center;
+<!--        #wand {-->
+<!--            border: none;-->
+<!--            width: 100px;-->
+<!--            margin-top: 0;-->
+<!--            margin-bottom: 0;-->
+<!--        }-->
 
-        }
+<!--        .bookmarked {-->
+<!--            background-image: url('../images/smoke.png');-->
+<!--            background-repeat: no-repeat;-->
+<!--            background-position: 100% 50%;-->
+<!--            background-size: 50px 50px;-->
+<!--        }-->
 
-        /*@keyframes return-pulse {*/
-        /*    50% {*/
-        /*        text-shadow: 2px 2px 2px limegreen,*/
-        /*                    3px 3px 3px limegreen;*/
-        /*        filter: drop-shadow(0px 0px 2px blueviolet)*/
-        /*                drop-shadow(0px 0px 4px blueviolet);*/
-        /*        -webkit-filter: drop-shadow(0px 0px 2px blueviolet)*/
-        /*                        drop-shadow(0px 0px 4px blueviolet);*/
-        /*        -webkit-transition: all 1s ease-in-out;*/
-        /*        -o-transition: all 1s ease-in-out;*/
-        /*        transition: all 1s ease-in-out;*/
-        /*    }*/
-        /*}*/
+<!--        #storyEndImage {-->
+<!--            border-style: none;-->
+<!--            width: 50%;-->
+<!--            margin-top: 10rem;-->
+<!--            margin-bottom: 10rem;-->
+<!--        }-->
 
+<!--        #sparklesCitations a {-->
+<!--            text-align: left;-->
+<!--            margin: 0 1% 0 1%;-->
+<!--            font-family: Calibri, sans-serif;-->
+<!--            font-size: 1.125rem;-->
+<!--            font-weight: normal;-->
+<!--            color: purple;-->
+<!--            text-shadow: none;-->
+<!--            transition: all .2s ease-in-out;-->
+<!--        }-->
 
-        p {
-            /*width: 75vw;*/
-            /*padding: 40px 40px 0 40px;*/
-        }
-
-        #pBeforeWeasleyLetter {
-            margin-bottom: 2rem;
-        }
-
-        .weasleyLetter {
-            font-family: Mystery Quest, sans-serif;
-            margin-top: 0;
-            margin-bottom: .75rem;
-        }
-
-        #pAfterWeasleyLetter {
-            margin-top: 2rem;
-        }
-
-
-        #navbarContainer {
-            display: grid;
-            grid-auto-flow: column;
-            /*justify-content: right;*/
-            height: 100px;
-            /*margin-bottom: 5%;*/
-            /*background-color: rosybrown;*/
-        }
-
-        #bookmarkNavbar {
-            display: grid;
-            justify-content: right;
-        }
-
-        #bookmarkLink {
-            float: right;
-            border: none;
-            display: none;
-            width: 100px;
-            justify-self: right;
-        }
-
-        #wand {
-            border: none;
-            width: 100px;
-            margin-top: 0;
-            margin-bottom: 0;
-        }
-
-        .bookmarked {
-            background-image: url('../images/smoke.png');
-            background-repeat: no-repeat;
-            background-position: 100% 50%;
-            background-size: 50px 50px;
-        }
-
-        #storyEndImage {
-            border-style: none;
-            width: 50%;
-            margin-top: 10rem;
-            margin-bottom: 10rem;
-        }
-
-
-        #citations a {
-            text-align: left;
-            margin: 0 1% 0 1%;
-            font-family: Calibri, sans-serif;
-            font-size: 1.125rem;
-            font-weight: normal;
-            color: purple;
-            text-shadow: none;
-            transition: all .2s ease-in-out;
-
-        }
-
-        #citations a:hover {
-            font-size: 1.25rem;
-            color: deepskyblue;
-            text-shadow: 1px 1px black, 2px 2px 5px deepskyblue;
-            transform: scale(1.1);
-        }
-
-        /*#arrow {*/
-        /*    float: left;*/
-        /*    margin: 0;*/
-        /*    height: 75px;*/
-        /*    border-style: none;*/
-        /*    !*background-color: lightgreen;*!*/
-        /*    !*filter: drop-shadow(1px 1px 3px deeppink)*!*/
-        /*    !*        drop-shadow(2px 2px 6px deeppink);*!*/
-        /*            !*drop-shadow(3px 3px 9px deeppink);*!*/
-        /*            !*drop-shadow(4px 4px 12px ghostwhite);*!*/
-        /*    animation: arrow-pulse 3.5s ease-in-out infinite;*/
-        /*    !*opacity: 0;*!*/
-        /*}*/
-
-        /*@keyframes arrow-pulse {*/
-        /*    0% {*/
-        /*        !*opacity: 0;*!*/
-        /*        transform: scale(.98);*/
-        /*        !*filter: drop-shadow(0px 0px 8px black);*!*/
-        /*        transition: all 2s ease-in-out;*/
-        /*        filter: drop-shadow(1px 1px 1px darkviolet)*/
-        /*        drop-shadow(2px 2px 2px darkviolet);*/
-        /*        !*drop-shadow(3px 3px 3px deeppink);*!*/
-        /*        !*drop-shadow(4px 4px 4px ghostwhite);*!*/
-        /*    }*/
-        /*    25% {*/
-        /*        !*opacity: 1;*!*/
-        /*        transform: scale(1);*/
-        /*        !*filter: drop-shadow(0px 0px 18px black);*!*/
-        /*        transition: all 2s ease-in-out;*/
-        /*        filter: drop-shadow(1px 1px 3px darkviolet)*/
-        /*        drop-shadow(2px 2px 6px darkviolet);*/
-        /*        !*drop-shadow(3px 3px 9px deeppink);*!*/
-        /*        !*drop-shadow(4px 4px 12px ghostwhite);*!*/
-        /*    }*/
-        /*    50% {*/
-        /*        transform: scale(.98);*/
-        /*        !*filter: drop-shadow(0px 0px 8px black);*!*/
-        /*        transition: all 1s ease-in-out;*/
-        /*        filter: drop-shadow(1px 1px 1px darkviolet)*/
-        /*        drop-shadow(2px 2px 2px darkviolet);*/
-        /*        !*drop-shadow(3px 3px 3px deeppink);*!*/
-        /*        !*drop-shadow(4px 4px 4px ghostwhite);*!*/
-        /*    }*/
-        /*    75% {*/
-        /*        !*opacity: 1;*!*/
-        /*        transform: scale(1);*/
-        /*        !*filter: drop-shadow(0px 0px 18px black);*!*/
-        /*        transition: all 1s ease-in-out;*/
-        /*        filter: drop-shadow(1px 1px 3px darkviolet)*/
-        /*        drop-shadow(2px 2px 6px darkviolet);*/
-        /*        !*drop-shadow(3px 3px 9px deeppink);*!*/
-        /*        !*drop-shadow(4px 4px 12px ghostwhite);*!*/
-        /*    }*/
-        /*    100% {*/
-        /*        !*opacity: 0;*!*/
-        /*        transform: scale(.98);*/
-        /*        !*filter: drop-shadow(0px 0px 8px black);*!*/
-        /*        transition: all 1s ease-in-out;*/
-        /*        filter: drop-shadow(1px 1px 1px darkviolet)*/
-        /*        drop-shadow(2px 2px 2px darkviolet);*/
-        /*        !*drop-shadow(3px 3px 3px deeppink);*!*/
-        /*        !*drop-shadow(4px 4px 4px ghostwhite);*!*/
-        /*    }*/
-        /*}*/
+<!--        #sparklesCitations a:hover {-->
+<!--            font-size: 1.25rem;-->
+<!--            color: deepskyblue;-->
+<!--            text-shadow: 1px 1px black, 2px 2px 5px deepskyblue;-->
+<!--            transform: scale(1.1);-->
+<!--        }-->
 
 
 
-    </style>
+<!--    </style>-->
 </head>
 <body>
 
@@ -367,7 +246,7 @@
     By: DonnyWhoLovedBowling
 </p>
 
-<p>
+<p class="summary">
     <strong>Summary:</strong> Severus snips.  Severus snarls. Severus sneers.
     But Severus does NOT sparkle! Until now. Oh,  those insolent Weasley Twins!
     He’ll make them rue the day! But not before he  must suffer through the
@@ -377,7 +256,7 @@
     falter on the brink of insanity? And who will be there to help him along the
     way?
 </p>
-<div id="storyDetails">
+<div class="storyDetails">
     <p align="center">
         <strong>Genre:</strong> Harry Potter |
         <strong>Rating:</strong> Mature/Adult | <strong>Word Count:</strong>
@@ -385,7 +264,7 @@
     </p>
 </div>
 
-<p>
+<p class="tags">
     <strong>Tags:
         TW for references of PTSD(mild), ED[Eating Disorder](mild), substance  abuse(mild),
         self-harm/suicidal thoughts(mild), spousal abuse(mild), and child abuse(mild),
@@ -416,9 +295,7 @@
     School for Dunderheads.
 </p>
 
-<!--<hr>-->
-
-<div class="quotes">
+<div class="quotes" id="sparklesQuote">
     <p>
         The thousand pranks of Messrs Weasley I had  born as best I could, but
         when they ventured upon sparkles, I vowed revenge!
@@ -429,7 +306,7 @@
 <img class="pageBreak" src="../images/HP_Page%20Break_Transparent_Large_Purple.png">
 
 
-<p id="firstP">
+<p class="firstP" id="sparklesFirstP">
     Severus was <em>FURIOUS!</em>
 </p>
 
@@ -6606,7 +6483,7 @@
     of mats (päega),  being adorned by a garland of leaves and flowers (tefui),
     and feasting on foods  baked in an oven dug into the ground (koua).
 </p>
-<p class="notes" id="citations">
+<p class="notes" id="sparklesCitations">
     <strong>Citations:</strong><br>
     <a>http://www.rotuma.net/os/ceremonies/mamasa.htm</a><br>
     <a>http://www.rotuma.net/os/ceremonies/glossary.htm</a><br>

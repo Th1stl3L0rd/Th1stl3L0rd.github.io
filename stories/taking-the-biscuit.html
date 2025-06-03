@@ -5,192 +5,166 @@
     <title>Taking the Biscuit</title>
     <script src="/scripts/page-fade-to-black.js"></script>
     <link rel="stylesheet" href="/css/page-fade-to-black.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yatra One">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster Two">
+    <link rel="stylesheet" href="/css/story-master.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marcellus">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Eagle Lake">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charm">
-    <style>
-        body {
-            font-family: "Calibri", serif;
-            margin: 5rem;
-            margin-right: 3rem;
-            margin-left: 3rem;
-            background-color: antiquewhite;
-        }
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yatra One">
+
+<!--    <style>-->
+
+<!--        body {-->
+<!--            font-family: "Calibri", serif;-->
+<!--            margin: 5rem 3rem 5rem 3rem;-->
+<!--            background-color: antiquewhite;-->
+<!--        }-->
 
 
-        img {
-            display: block;
-            /*margin-top: 25%;*/
-            margin-bottom: 25px;
-            margin-left: auto;
-            margin-right: auto;
-            width: 90%;
-            border-style: ridge;
-            border-color: purple;
-            border-radius: 5px;
-            border-width: 5px;
-        }
+<!--        img {-->
+<!--            display: block;-->
+<!--            margin-bottom: 25px;-->
+<!--            margin-left: auto;-->
+<!--            margin-right: auto;-->
+<!--            width: 90%;-->
+<!--            border-style: ridge;-->
+<!--            border-color: purple;-->
+<!--            border-radius: 5px;-->
+<!--            border-width: 5px;-->
+<!--        }-->
 
-        .storyTitle {
-            font-size: 4rem;
-            font-weight: bolder;
-            text-align: center;
-            margin-top: 0;
-            margin-bottom: 0;
-        }
+<!--        .storyTitle {-->
+<!--            font-size: 4rem;-->
+<!--            font-weight: bolder;-->
+<!--            text-align: center;-->
+<!--            margin-top: 0;-->
+<!--            margin-bottom: 0;-->
+<!--        }-->
 
-        .storyAuthor {
-            font-size: 1.5rem;
-            font-weight: bolder;
-            text-align: center;
-            margin-top: 0;
-            margin-bottom: 5%;
-        }
+<!--        .storyAuthor {-->
+<!--            font-size: 1.5rem;-->
+<!--            font-weight: bolder;-->
+<!--            text-align: center;-->
+<!--            margin-top: 0;-->
+<!--            margin-bottom: 5%;-->
+<!--        }-->
 
-        /*h1 {*/
-        /*    text-align: center;*/
-        /*    margin-top: 2.5rem;*/
-        /*}*/
+<!--        .summary {-->
+<!--            margin-bottom: 2.5rem;-->
+<!--        }-->
 
-        /*h4 {*/
-        /*    text-align: center;*/
-        /*    margin-bottom: 5rem;*/
-        /*}*/
+<!--        .storyDetails {-->
+<!--            border-style: ridge;-->
+<!--            border-color: purple;-->
+<!--            border-radius: 5px;-->
+<!--            border-width: 4px;-->
+<!--            height: auto;-->
+<!--            margin-bottom: 2.5rem;-->
+<!--            padding: 1.25%;-->
+<!--        }-->
 
-        #summary {
-            margin-bottom: 2.5rem;
-        }
+<!--        .storyDetails p {-->
+<!--            margin: auto;-->
+<!--        }-->
 
-        #storyDetails {
-            border-style: ridge;
-            border-color: purple;
-            border-radius: 5px;
-            border-width: 3.5px;
-            height: auto;
-            margin-bottom: 2.5rem;
-            padding: 1.25%;
-        }
+<!--        .notes {-->
+<!--            margin-bottom: 5rem;-->
+<!--        }-->
 
-        #storyDetails p {
-            margin: auto;
-        }
 
-        .notes {
-            margin-bottom: 6rem;
-        }
+<!--        .pageBreak {-->
+<!--            border-style: none;-->
+<!--            margin-bottom: 15%;-->
+<!--        }-->
 
-        /*hr {*/
-        /*    margin-bottom: 10rem;*/
-        /*    margin-right: auto;*/
-        /*    margin-left: auto;*/
-        /*    width: 50%;*/
-        /*    border: 3px solid #d30b83;*/
+<!--        .quotes {-->
+<!--            font-family: Tangerine, sans-serif;-->
+<!--            font-size: xx-large;-->
+<!--            font-weight: bolder;-->
+<!--            color: olivedrab;-->
+<!--            border-top-style: solid;-->
+<!--            border-bottom-style: solid;-->
+<!--            border-color: olivedrab;-->
+<!--            margin-bottom: 2.5rem;-->
+<!--            padding: 2%;-->
+<!--        }-->
 
-        /*}*/
+<!--        p {-->
+<!--            margin-bottom: 3rem;-->
+<!--        }-->
 
-        .pageBreak {
-            border-style: none;
-            margin-bottom: 15%;
-        }
-
-        .quotes {
-            font-family: Tangerine, sans-serif;
-            font-size: xx-large;
-            font-weight: bolder;
-            color: olivedrab;
-            border-top-style: solid;
-            border-bottom-style: solid;
-            border-color: olivedrab;
-            margin-bottom: 2.5rem;
-            padding: 2%;
-        }
-
-        p {
-            margin-bottom: 3rem;
-        }
-
-        #firstP::first-letter {
-            font-weight: bold;
-            font-size: 15rem;
-            float: left;
-            line-height: 1;
-            margin-right: 0.2rem;
-            font-family: Marcellus, sans-serif;
-            color: #934817;
-            text-shadow: 5px 5px 5px blueviolet;
-        }
+<!--        #biscuitFirstP::first-letter {-->
+<!--            font-weight: bold;-->
+<!--            font-size: 15rem;-->
+<!--            float: left;-->
+<!--            line-height: 1;-->
+<!--            margin-right: 0.2rem;-->
+<!--            font-family: Marcellus, sans-serif;-->
+<!--            color: #934817;-->
+<!--            text-shadow: 5px 5px 5px blueviolet;-->
+<!--        }-->
 
 
 
-        a {
-            font-size: 1.5rem;
-            font-family: Yatra One, sans-serif;
-            font-weight: bold;
-            color: black;
-            text-decoration: none;
-            text-shadow:
-                        2px 2px 2px limegreen,
-                        3px 3px 3px limegreen,
-                        4px 4px 4px darkviolet,
-                        5px 5px 5px darkviolet,
-                        6px 6px 6px darkmagenta;
-            border-style: none;
-            border-radius: 25px;
-            padding: .5rem;
-            /*background-color: rgba(138, 43, 226, 0.65);*/
-            display: block;
-            /*margin-top: 25%;*/
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 5rem;
-            width: 80%;
-            text-align: center;
+<!--        a {-->
+<!--            font-size: 1.5rem;-->
+<!--            font-family: Yatra One, sans-serif;-->
+<!--            font-weight: bold;-->
+<!--            color: black;-->
+<!--            text-decoration: none;-->
+<!--            text-shadow:-->
+<!--                        2px 2px 2px limegreen,-->
+<!--                        3px 3px 3px limegreen,-->
+<!--                        4px 4px 4px darkviolet,-->
+<!--                        5px 5px 5px darkviolet,-->
+<!--                        6px 6px 6px darkmagenta;-->
+<!--            border-style: none;-->
+<!--            border-radius: 25px;-->
+<!--            padding: .5rem;-->
+<!--            display: block;-->
+<!--            margin-left: auto;-->
+<!--            margin-right: auto;-->
+<!--            margin-bottom: 5rem;-->
+<!--            width: 80%;-->
+<!--            text-align: center;-->
+<!--        }-->
 
-        }
+<!--        #navbarContainer {-->
+<!--            display: grid;-->
+<!--            grid-auto-flow: column;-->
+<!--            height: 100px;-->
+<!--        }-->
 
-        #navbarContainer {
-            display: grid;
-            grid-auto-flow: column;
-            /*justify-content: right;*/
-            height: 100px;
-        }
+<!--        #bookmarkNavbar {-->
+<!--            display: grid;-->
+<!--            justify-content: right;-->
+<!--        }-->
 
-        #bookmarkNavbar {
-            display: grid;
-            justify-content: right;
-        }
+<!--        #bookmarkLink {-->
+<!--            border: none;-->
+<!--            display: none;-->
+<!--            width: 100px;-->
+<!--            justify-self: right;-->
+<!--        }-->
 
-        #bookmarkLink {
-            border: none;
-            display: none;
-            width: 100px;
-            justify-self: right;
-        }
+<!--        #wand {-->
+<!--            border: none;-->
+<!--            width: 100px;-->
+<!--        }-->
 
-        #wand {
-            border: none;
-            width: 100px;
-        }
+<!--        .bookmarked {-->
+<!--            background-image: url('../images/smoke.png');-->
+<!--            background-repeat: no-repeat;-->
+<!--            background-position: 100% 50%;-->
+<!--            background-size: 50px 50px;-->
+<!--        }-->
 
-        .bookmarked {
-            background-image: url('../images/smoke.png');
-            background-repeat: no-repeat;
-            background-position: 100% 50%;
-            background-size: 50px 50px;
-        }
-
-        #storyEndImage {
-            border-style: none;
-            width: 50%;
-        }
+<!--        #storyEndImage {-->
+<!--            border-style: none;-->
+<!--            width: 50%;-->
+<!--        }-->
 
 
 
 
-    </style>
+<!--    </style>-->
 </head>
 
 
@@ -221,18 +195,19 @@
     By: DonnyWhoLovedBowling<br/>
 </p>
 
-<p id="summary">
+<p class="summary">
     <strong>Summary:</strong> Someone has stolen Remus’ chocolate!  Will this
     old Marauder solve the mystery and have his revenge against the  thief?
 </p>
-<div id="storyDetails">
+
+<div class="storyDetails">
     <p align="center">
         <strong>Genre:</strong> Harry Potter |
         <strong>Rating:</strong> Mature/Adult | <strong>Word Count:</strong>
         9k+ | <strong>Language:</strong> English | <strong>Chapters:</strong> 0
     </p>
 </div>
-<p>
+<p class="tags">
     <strong>Tags:</strong> Sirius  Black/Remus Lupin, Sirius Black/Remus
     Lupin/Severus Snape[Implied/Future], Canon-compliant  through PoA, AU
     beginning with GoF, E.W.E., Sirius Black Lives!, Dumbledore Lives!, Remus
@@ -244,13 +219,10 @@
 <p class="notes">
     <strong>Notes:</strong> See end of story.
 </p>
-<!--<p>-->
-<!--    <strong></strong>-->
-<!--</p>-->
 
 <img class="pageBreak" src="../images/HP_Page%20Break_Transparent_Large_Purple.png">
 
-<p id="firstP">
+<p class="firstP" id="biscuitFirstP">
     It was early afternoon when Remus finally, and very much reluctantly,
     opened his eyes. He was lying face down in bed with his head resting halfway
     off his pillow, his arms flung out haphazardly from his body and his legs

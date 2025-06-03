@@ -1,0 +1,216 @@
+body {
+    font-family: "Calibri", serif;
+    margin: 5rem 3rem 5rem 3rem;
+    background-color: antiquewhite;
+}
+
+img {
+    display: block;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    border-style: ridge;
+    border-color: purple;
+    border-radius: 5px;
+    border-width: 5px;
+}
+
+.storyTitle {
+    font-size: 4rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.storyAuthor {
+    font-size: 1.5rem;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 5%;
+}
+
+.summary {
+    margin-bottom: 2.5rem;
+}
+
+.storyDetails {
+    border-style: ridge;
+    border-color: purple;
+    border-radius: 5px;
+    border-width: 4px;
+    height: auto;
+    margin-bottom: 2.5rem;
+    padding: 1.25%;
+}
+
+.storyDetails p {
+    margin: auto;
+}
+
+.notes {
+    margin-bottom: 5rem;
+}
+
+.pageBreak {
+    border-style: none;
+    margin-bottom: 15%;
+}
+
+#sparklesQuote {
+    font-family: Charm, sans-serif;
+    font-size: large;
+    font-weight: bolder;
+    color: steelblue;
+    text-align: center;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: steelblue;
+    margin-bottom: 2.5rem;
+    padding: 2%;
+}
+
+#sparklesQuote p {
+    margin: auto;
+}
+
+.chapterTitle {
+    font-size: 7rem;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+p {
+    margin-bottom: 3rem;
+}
+
+#everyoneFirstP::first-letter {
+    font-weight: bold;
+    font-size: 15rem;
+    float: left;
+    line-height: 1;
+    margin-right: 0.5rem;
+    font-family: Lobster Two, sans-serif;
+    color: #d30b83;
+    text-shadow: 5px 5px 5px blueviolet;
+}
+
+#biscuitFirstP::first-letter {
+    font-weight: bold;
+    font-size: 15rem;
+    float: left;
+    line-height: 1;
+    margin-right: 0.2rem;
+    font-family: Marcellus, sans-serif;
+    color: #934817;
+    text-shadow: 5px 5px 5px blueviolet;
+}
+
+#sparklesFirstP {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+}
+
+#sparklesFirstP::first-letter {
+    font-weight: bold;
+    font-size: 15rem;
+    font-family: Lobster Two, sans-serif;
+    color: rgba(11, 94, 11, 0.8);
+    text-shadow: 5px 5px 5px blueviolet;
+}
+
+a {
+    font-size: 1.5rem;
+    font-family: Yatra One, sans-serif;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    text-shadow:
+            2px 2px 2px limegreen,
+            3px 3px 3px limegreen,
+            4px 4px 4px darkviolet,
+            5px 5px 5px darkviolet,
+            6px 6px 6px darkmagenta;
+    border-style: none;
+    border-radius: 25px;
+    padding: .5rem;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5rem;
+    width: 80%;
+    text-align: center;
+}
+
+#pBeforeWeasleyLetter {
+    margin-bottom: 2rem;
+}
+
+.weasleyLetter {
+    font-family: Mystery Quest, sans-serif;
+    margin-top: 0;
+    margin-bottom: .75rem;
+}
+
+#pAfterWeasleyLetter {
+    margin-top: 2rem;
+}
+
+#navbarContainer {
+    display: grid;
+    grid-auto-flow: column;
+    height: 100px;
+}
+
+#bookmarkNavbar {
+    display: grid;
+    justify-content: right;
+}
+
+#bookmarkLink {
+    border: none;
+    display: none;
+    width: 100px;
+    justify-self: right;
+}
+
+#wand {
+    border: none;
+    width: 100px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.bookmarked {
+    background-image: url('../images/smoke.png');
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: 50px 50px;
+}
+
+#storyEndImage {
+    border-style: none;
+    width: 50%;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+#sparklesCitations a {
+    text-align: left;
+    margin: 0 1% 0 1%;
+    font-family: Calibri, sans-serif;
+    font-size: 1.125rem;
+    font-weight: normal;
+    color: purple;
+    text-shadow: none;
+    transition: all .2s ease-in-out;
+}
+
+#sparklesCitations a:hover {
+    font-size: 1.25rem;
+    color: deepskyblue;
+    text-shadow: 1px 1px black, 2px 2px 5px deepskyblue;
+    transform: scale(1.1);
+}

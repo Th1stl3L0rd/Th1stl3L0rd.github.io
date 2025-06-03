@@ -5,198 +5,163 @@
     <title>Where Everyone Knows Your Name</title>
     <script src="/scripts/page-fade-to-black.js"></script>
     <link rel="stylesheet" href="/css/page-fade-to-black.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yatra One">
+    <link rel="stylesheet" href="/css/story-master.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster Two">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Eagle Lake">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Charm">
-    <style>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Yatra One">
 
-        body {
-            font-family: "Calibri", serif;
-            margin: 5rem;
-            margin-right: 3rem;
-            margin-left: 3rem;
-            background-color: antiquewhite;
-        }
+<!--    <style>-->
 
-        img {
-            display: block;
-            /*margin-top: 25%;*/
-            margin-bottom: 25px;
-            margin-left: auto;
-            margin-right: auto;
-            width: 90%;
-            border-style: ridge;
-            border-color: purple;
-            border-radius: 5px;
-            border-width: 5px;
-        }
+<!--        body {-->
+<!--            font-family: "Calibri", serif;-->
+<!--            margin: 5rem 3rem 5rem 3rem;-->
+<!--            background-color: antiquewhite;-->
+<!--        }-->
 
-        .storyTitle {
-            font-size: 4rem;
-            font-weight: bolder;
-            text-align: center;
-            margin-top: 0;
-            margin-bottom: 0;
-        }
+<!--        img {-->
+<!--            display: block;-->
+<!--            margin-bottom: 25px;-->
+<!--            margin-left: auto;-->
+<!--            margin-right: auto;-->
+<!--            width: 90%;-->
+<!--            border-style: ridge;-->
+<!--            border-color: purple;-->
+<!--            border-radius: 5px;-->
+<!--            border-width: 5px;-->
+<!--        }-->
 
-        .storyAuthor {
-            font-size: 1.5rem;
-            font-weight: bolder;
-            text-align: center;
-            margin-top: 0;
-            margin-bottom: 5%;
-        }
+<!--        .storyTitle {-->
+<!--            font-size: 4rem;-->
+<!--            font-weight: bolder;-->
+<!--            text-align: center;-->
+<!--            margin-top: 0;-->
+<!--            margin-bottom: 0;-->
+<!--        }-->
 
-        /*h1 {*/
-        /*    text-align: center;*/
-        /*    margin-top: 2.5rem;*/
-        /*}*/
+<!--        .storyAuthor {-->
+<!--            font-size: 1.5rem;-->
+<!--            font-weight: bolder;-->
+<!--            text-align: center;-->
+<!--            margin-top: 0;-->
+<!--            margin-bottom: 5%;-->
+<!--        }-->
 
-        /*h4 {*/
-        /*    text-align: center;*/
-        /*    margin-bottom: 5rem;*/
-        /*}*/
+<!--        .summary {-->
+<!--            margin-bottom: 2.5rem;-->
+<!--        }-->
 
-        #summary {
-            margin-bottom: 2.5rem;
-        }
+<!--        .storyDetails {-->
+<!--            border-style: ridge;-->
+<!--            border-color: purple;-->
+<!--            border-radius: 5px;-->
+<!--            border-width: 4px;-->
+<!--            height: auto;-->
+<!--            margin-bottom: 2.5rem;-->
+<!--            padding: 1.25%;-->
+<!--        }-->
 
-        #storyDetails {
-            border-style: ridge;
-            border-color: purple;
-            border-radius: 5px;
-            border-width: 3.5px;
-            height: auto;
-            margin-bottom: 2.5rem;
-            padding: 1.25%;
-        }
+<!--        .storyDetails p {-->
+<!--            margin: auto;-->
+<!--        }-->
 
-        #storyDetails p {
-            margin: auto;
-        }
+<!--        .notes {-->
+<!--            margin-bottom: 5rem;-->
+<!--        }-->
 
-        .notes {
-            margin-bottom: 6rem;
-        }
+<!--        .pageBreak {-->
+<!--            border-style: none;-->
+<!--            margin-bottom: 15%;-->
+<!--        }-->
 
-        /*hr {*/
-        /*    margin-bottom: 10rem;*/
-        /*    margin-right: auto;*/
-        /*    margin-left: auto;*/
-        /*    width: 50%;*/
-        /*    border: 3px solid rebeccapurple;*/
+<!--        .quotes {-->
+<!--            font-family: Tangerine, sans-serif;-->
+<!--            font-size: xx-large;-->
+<!--            font-weight: bolder;-->
+<!--            color: olivedrab;-->
+<!--            border-top-style: solid;-->
+<!--            border-bottom-style: solid;-->
+<!--            border-color: olivedrab;-->
+<!--            margin-bottom: 2.5rem;-->
+<!--            padding: 2%;-->
+<!--        }-->
 
-        /*}*/
+<!--        p {-->
+<!--            margin-bottom: 3rem;-->
+<!--        }-->
 
-        .pageBreak {
-            border-style: none;
-            margin-bottom: 15%;
-        }
+<!--        #everyoneFirstP::first-letter {-->
+<!--            font-weight: bold;-->
+<!--            font-size: 15rem;-->
+<!--            float: left;-->
+<!--            line-height: 1;-->
+<!--            margin-right: 0.5rem;-->
+<!--            font-family: Lobster Two, sans-serif;-->
+<!--            color: #d30b83;-->
+<!--            text-shadow: 5px 5px 5px blueviolet;-->
+<!--        }-->
 
-        .quotes {
-            font-family: Tangerine, sans-serif;
-            font-size: xx-large;
-            font-weight: bolder;
-            color: olivedrab;
-            border-top-style: solid;
-            border-bottom-style: solid;
-            border-color: olivedrab;
-            margin-bottom: 2.5rem;
-            padding: 2%;
-        }
+<!--        a {-->
+<!--            font-size: 1.5rem;-->
+<!--            font-family: Yatra One, sans-serif;-->
+<!--            font-weight: bold;-->
+<!--            color: black;-->
+<!--            text-decoration: none;-->
+<!--            text-shadow:-->
+<!--                        2px 2px 2px limegreen,-->
+<!--                        3px 3px 3px limegreen,-->
+<!--                        4px 4px 4px darkviolet,-->
+<!--                        5px 5px 5px darkviolet,-->
+<!--                        6px 6px 6px darkmagenta;-->
+<!--            border-style: none;-->
+<!--            border-radius: 25px;-->
+<!--            padding: .5rem;-->
+<!--            display: block;-->
+<!--            margin-left: auto;-->
+<!--            margin-right: auto;-->
+<!--            margin-bottom: 5rem;-->
+<!--            width: 80%;-->
+<!--            text-align: center;-->
+<!--        }-->
 
-        p {
-            margin-bottom: 3rem;
-        }
+<!--        #navbarContainer {-->
+<!--            display: grid;-->
+<!--            grid-auto-flow: column;-->
+<!--            height: 100px;-->
+<!--        }-->
 
-        #firstP::first-letter {
-            font-weight: bold;
-            font-size: 15rem;
-            float: left;
-            line-height: 1;
-            margin-right: 0.5rem;
-            font-family: Lobster Two, sans-serif;
-            color: #d30b83;
-            text-shadow: 5px 5px 5px blueviolet;
-        }
+<!--        #bookmarkNavbar {-->
+<!--            display: grid;-->
+<!--            justify-content: right;-->
+<!--        }-->
 
+<!--        #bookmarkLink {-->
+<!--            border: none;-->
+<!--            display: none;-->
+<!--            width: 100px;-->
+<!--            justify-self: right;-->
+<!--        }-->
 
+<!--        #wand {-->
+<!--            border: none;-->
+<!--            width: 100px;-->
+<!--        }-->
 
-        a {
-            font-size: 1.5rem;
-            font-family: Yatra One, sans-serif;
-            font-weight: bold;
-            color: black;
-            text-decoration: none;
-            text-shadow:
-                        2px 2px 2px limegreen,
-                        3px 3px 3px limegreen,
-                        4px 4px 4px darkviolet,
-                        5px 5px 5px darkviolet,
-                        6px 6px 6px darkmagenta;
-            border-style: none;
-            border-radius: 25px;
-            padding: .5rem;
-            /*background-color: rgba(138, 43, 226, 0.65);*/
-            display: block;
-            /*margin-top: 25%;*/
-            margin-left: auto;
-            margin-right: auto;
-            margin-bottom: 5rem;
-            width: 80%;
-            text-align: center;
+<!--        .bookmarked {-->
+<!--            background-image: url('../images/smoke.png');-->
+<!--            background-repeat: no-repeat;-->
+<!--            background-position: 100% 50%;-->
+<!--            background-size: 50px 50px;-->
+<!--        }-->
 
-        }
-
-        p {
-            /*width: 75vw;*/
-            /*padding: 40px 40px 0 40px;*/
-        }
-
-
-        #navbarContainer {
-            display: grid;
-            grid-auto-flow: column;
-            /*justify-content: right;*/
-            height: 100px;
-        }
-
-        #bookmarkNavbar {
-            display: grid;
-            justify-content: right;
-        }
-
-        #bookmarkLink {
-            border: none;
-            display: none;
-            width: 100px;
-            justify-self: right;
-        }
-
-        #wand {
-            border: none;
-            width: 100px;
-        }
-
-        .bookmarked {
-            background-image: url('../images/smoke.png');
-            background-repeat: no-repeat;
-            background-position: 100% 50%;
-            background-size: 50px 50px;
-        }
-
-        #storyEndImage {
-            border-style: none;
-            width: 50%;
-        }
+<!--        #storyEndImage {-->
+<!--            border-style: none;-->
+<!--            width: 50%;-->
+<!--        }-->
 
 
 
 
 
-    </style>
+<!--    </style>-->
 </head>
 <body>
 
@@ -205,18 +170,7 @@
     fadeInPage();
 </script>
 
-
 <a href="../stories.html">Return to Stories</a>
-
-<!--<img src="Freds_Place_Scale500x294.png">-->
-
-<!--<img src="../images/brighton-south-sussex-united-kingdom-december-pub-brighton-old-colorful-historical-pub-facade-pub-brighton-old-colorful-132094955_scale750x814.jpg">-->
-
-<!--<img src="../images/COLORS-designrulz-002.jpg">-->
-
-<!--<img src="../images/bar-design1_scale750x613.jpg">-->
-
-<!--<img src="../images/Food_750x250.jpg">-->
 
 <img src="../images/Drink_Aether_istockphoto-1357274590-612x612.jpg">
 
@@ -227,27 +181,29 @@
     </div>
 
 <p class="storyTitle">
-    Where Everyone Knows  Your Name
+    Where Everyone Knows Your Name
 </p>
 
 <p class="storyAuthor">
     By: DonnyWhoLovedBowling
 </p>
 
-<p id="summary">
+<p class="summary">
     <strong>Summary:</strong> Join  Fred Weasley and his friends as they
     traverse a small sliver of time well spent  in The Beyond. Have some laughs,
     enjoy the nibbles, and ignore the tension brewing  between two very heated
     rivals.
 </p>
-<div id="storyDetails">
+
+<div class="storyDetails">
     <p align="center">
         <strong>Genre:</strong> Harry Potter |
         <strong>Rating:</strong> Mature/Adult | <strong>Word Count:</strong>
         27k+ | <strong>Language:</strong> English | <strong>Chapters:</strong> 0
     </p>
 </div>
-<p>
+
+<p class="tags">
     <strong>Tags: Major Character  Death, Minor Character Death,</strong>
     Sirius Black/Remus Lupin, Sirius  Black/Severus Snape, Sirius Black/Remus
     Lupin/Severus Snape[Implied], Remus  Lupin/Nymphadora Tonks(Lupin), James
@@ -259,6 +215,7 @@
     World-Building  Elements, Angst, Comedy, Drama, Fluff, Slash(mild),
     Het(mild), Polyamory,  Everyone is Bi unless explicitly stated otherwise
 </p>
+
 <p class="notes">
     <strong>Notes:</strong> This is  my first fanfiction. Some of this story is
     canon compliant- including books, films  and games, some of it is fanon,
@@ -268,11 +225,9 @@
     it.
 </p>
 
-<!--<hr>-->
-
 <img class="pageBreak" src="../images/HP_Page%20Break_Transparent_Large_Purple.png">
 
-<p id="firstP">
+<p class="firstP" id="everyoneFirstP">
     Fred Weasley was a <em>very</em> clever young man. He was  calculating,
     perceptive, enterprising, and above all, highly ambitious with a flair  for
     mischief. However, most of these wonderful qualities were entirely
