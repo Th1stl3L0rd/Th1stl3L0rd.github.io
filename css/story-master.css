@@ -12,7 +12,7 @@ body {
 
 .container {
     /*width: 50vw;*/
-    margin: 0;
+    margin: auto;
     padding: 3%;
     /*overflow: scroll;*/
     /*margin-right: auto;*/
@@ -235,23 +235,23 @@ p {
     transform: scale(1.1);
 }
 
-/*@media screen and (min-width: 420px) {*/
+/*@media screen and (max-width: 420px) {*/
 /*    .container {*/
 /*        width: 100vw;*/
 /*        margin: 0;*/
 /*    }*/
 /*}*/
 
-@media screen and (min-width: 800px) {
-    .container {
-        width: 75vw;
-        margin: auto;
-    }
-}
+/*@media screen and (min-width: 800px) {*/
+/*    .container {*/
+/*        width: 75vw;*/
+/*        margin: auto;*/
+/*    }*/
+/*}*/
 
-@media screen and (min-width: 1200px) {
-    .container {
-        width: 50vw;
-        margin: auto;
-    }
-}
+/*@media screen and (min-width: 1200px) {*/
+/*    .container {*/
+/*        width: 50vw;*/
+/*        margin: auto;*/
+/*    }*/
+/*}*/
