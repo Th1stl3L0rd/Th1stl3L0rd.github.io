@@ -3,6 +3,7 @@ body {
     /*margin: 5rem 3rem 5rem 3rem;*/
     /*background-color: antiquewhite;*/
     width: 100vw;
+    margin: 0;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -10,8 +11,8 @@ body {
 }
 
 .container {
-    width: 50vw;
-    margin: auto;
+    /*width: 50vw;*/
+    margin: 0;
     padding: 3%;
     /*overflow: scroll;*/
     /*margin-right: auto;*/
@@ -234,17 +235,23 @@ p {
     transform: scale(1.1);
 }
 
+/*@media screen and (min-width: 420px) {*/
+/*    .container {*/
+/*        width: 100vw;*/
+/*        margin: 0;*/
+/*    }*/
+/*}*/
 
-/*tablet*/
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 800px) {
     .container {
         width: 75vw;
+        margin: auto;
     }
 }
 
-/*mobile*/
-@media screen and (max-width: 400px) {
+@media screen and (min-width: 1200px) {
     .container {
-        width: 100vw;
+        width: 50vw;
+        margin: auto;
     }
 }
