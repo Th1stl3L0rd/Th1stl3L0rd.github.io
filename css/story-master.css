@@ -242,16 +242,18 @@ p {
 /*    }*/
 /*}*/
 
-/*@media screen and (min-width: 800px) {*/
-/*    .container {*/
-/*        width: 75vw;*/
-/*        margin: auto;*/
-/*    }*/
-/*}*/
 
-/*@media screen and (min-width: 1200px) {*/
-/*    .container {*/
-/*        width: 50vw;*/
-/*        margin: auto;*/
-/*    }*/
-/*}*/
+@media screen and (min-width: 900px) and (orientation: landscape) {
+    .container {
+        width: 75vw;
+        margin: auto;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    .container {
+        width: 50vw;
+        margin: auto;
+    }
+}
