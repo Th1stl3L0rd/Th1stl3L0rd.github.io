@@ -38,10 +38,11 @@
 /*Image has two separate animations, one for the pulse effect and one for the fade in and out effect*/
 #splashThistleImage {
     display: block;
-    margin-left: 15%;
-    margin-right: 15%;
-    padding-top: 50%;
-    width: 75%;
+    /*margin-left: 15%;*/
+    /*margin-right: 15%;*/
+    margin: auto;
+    /*padding-top: 50%;*/
+    /*width: 75%;*/
     -webkit-animation: thistle-pulse 3.5s ease-in-out infinite, fade-in-out-thistle 12.5s ease-in-out forwards;
     animation: thistle-pulse 3.5s ease-in-out infinite, fade-in-out-thistle 12.5s ease-in-out forwards;
 }
