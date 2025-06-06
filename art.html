@@ -23,21 +23,28 @@
         <img class="navbar-brand-secondary"
              src="images/ThistleLord_Brand1_Thistle_Transparent_Purple_Magenta_Lime_Bloom%20Only_Scale321x274.png"
              alt="Image of thistle">
-        <a class="active" href="#">School</a>
-        <a href="projects-portfolio.html">Portfolio</a>
+<!--        <a class="active" href="#">School</a>-->
+        <a href="projects-portfolio.html">Web</a>
+        <a href="art.html">Art</a>
         <a href="stories.html">Stories</a>
         <a href="index.html">Home</a>
     </nav>
 </div>
 
-<a href="school-projects/sesame-law/index.html">Sesame Law</a>
-<a href="school-projects/harmless-little-bunny/index.html">Harmless Little Bunny</a>
-<a href="school-projects/requisition-go/requisition-go.html">Requisition Form</a>
-<a href="school-projects/CIS234-75_Flex_vs_Grid/flexExample.html">Flex Example</a>
-<a href="school-projects/CIS234-75_Flex_vs_Grid/gridExample.html">Grid Example</a>
-<a href="school-projects/CIS%20137_Assignment%207_Otterbatch/Otterbatch.html">Cryptic Zoo</a>
-<a href="school-projects/CIS%20137_Practice/example_html_file.html">My Very First Web Developer Project!</a>
-<a href="">Python Projects</a>
+<a href="#">Comics - 2D</a>
+<a href="#">Doodles - 2D</a>
+<a href="#">Amigurumi - Fiber Art</a>
+<a href="#">Free-Form - Fiber Art</a>
+<a href="#">Pottery - 3D</a>
+
+<!--<a href="school-projects/sesame-law/index.html">Sesame Law</a>-->
+<!--<a href="school-projects/harmless-little-bunny/index.html">Harmless Little Bunny</a>-->
+<!--<a href="school-projects/requisition-go/requisition-go.html">Requisition Form</a>-->
+<!--<a href="school-projects/CIS234-75_Flex_vs_Grid/flexExample.html">Flex Example</a>-->
+<!--<a href="school-projects/CIS234-75_Flex_vs_Grid/gridExample.html">Grid Example</a>-->
+<!--<a href="school-projects/CIS%20137_Assignment%207_Otterbatch/Otterbatch.html">Cryptic Zoo</a>-->
+<!--<a href="school-projects/CIS%20137_Practice/example_html_file.html">My Very First Web Developer Project!</a>-->
+<!--<a href="">Python Projects</a>-->
 
 
 <!--Script below is for the random backgrounds for this page. The css is in thistle-lord-main.css-->
@@ -45,7 +52,8 @@
 
     const bgClasses = ["bg55","bg56","bg57","bg58","bg59","bg60","bg61","bg62","bg63","bg64",
                         "bg65","bg66","bg67","bg68","bg69","bg70"];
-    const myNumber = Math.floor((Math.random() * bgClasses.length) + 1);
+    const myNumber = Math.floor(Math.random() * bgClasses.length);
+    console.log(myNumber);
     document.querySelector("body").classList.add(bgClasses[myNumber]);
     console.log(bgClasses[myNumber]);
 

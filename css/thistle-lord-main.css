@@ -265,16 +265,16 @@ body {
 }
 
 .navbar-brand-secondary {
-    height: 35px;
+    height: 37px;
     margin-top: 5px;
     margin-left: 5px;
 }
 
 .navA-secondary a {
     float: right;
-    display: block;
+    display: flex;
     margin: auto;
-    padding-right: 33px;
+    /*padding-right: 45px;*/
     padding-bottom: 15px;
     border-style: none;
     border-color: transparent;
@@ -283,7 +283,9 @@ body {
     font-weight: bolder;
     text-shadow: none;
     text-align: center;
-    width: 33px;
+    justify-content: center;
+
+    width: 54px;
     /*height: 5%;*/
     color: mediumseagreen;
 }

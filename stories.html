@@ -24,8 +24,9 @@
         <img class="navbar-brand-secondary"
              src="images/ThistleLord_Brand1_Thistle_Transparent_Purple_Magenta_Lime_Bloom%20Only_Scale321x274.png"
              alt="Image of thistle">
-        <a href="projects-school.html">School</a>
-        <a href="projects-portfolio.html">Portfolio</a>
+<!--        <a href="art.html">School</a>-->
+        <a href="projects-portfolio.html">Web</a>
+        <a href="art.html">Art</a>
         <a class="active" href="#">Stories</a>
         <a href="index.html">Home</a>
     </nav>
@@ -42,7 +43,8 @@
 
     const bgClasses = ["bg21","bg22","bg23","bg24","bg25","bg26","bg27","bg28","bg29","bg30","bg31",
                         "bg32","bg33","bg34","bg35","bg36"];
-    const myNumber = Math.floor((Math.random() * bgClasses.length) + 1);
+    const myNumber = Math.floor(Math.random() * bgClasses.length);
+    console.log(myNumber);
     document.querySelector("body").classList.add(bgClasses[myNumber]);
     console.log(bgClasses[myNumber]);
 
