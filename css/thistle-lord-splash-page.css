@@ -40,7 +40,9 @@
     display: block;
     /*margin-left: 15%;*/
     /*margin-right: 15%;*/
-    margin: auto;
+    margin: 30% auto 0 auto;
+    /*padding-top: 10vw;*/
+    height: 50%;
     /*padding-top: 50%;*/
     /*width: 75%;*/
     -webkit-animation: thistle-pulse 3.5s ease-in-out infinite, fade-in-out-thistle 12.5s ease-in-out forwards;
@@ -164,7 +166,7 @@
 
 /*Sets the stage for our animated words. Adds progressively blurring shadows to the text.*/
 #splashThistleWords {
-    margin-top: 10%;
+    margin-top: 2%;
     text-align: center;
     font-size: 1.75rem;
     font-family: metamorphous, sans-serif;
@@ -255,5 +257,27 @@
     100% {
         opacity: 0;
         transform: translate(0px, 0px) rotate(1800deg) scale(1);
+    }
+}
+
+/*@media screen and (min-width: 600px) and (orientation: landscape) {*/
+/*    #splashThistleImage {*/
+/*        margin: 10% auto 0 auto;*/
+/*        height: 50%;*/
+/*    }*/
+/*}*/
+
+@media screen and (min-width: 900px) and (orientation: landscape) {
+    #splashThistleImage {
+        margin: 10% auto 0 auto;
+        height: 50%;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+    #splashThistleImage {
+        margin: 10% auto 0 auto;
+        height: 50%;
     }
 }
