@@ -274,7 +274,7 @@ body {
     float: right;
     display: flex;
     margin: auto;
-    /*padding-right: 45px;*/
+    padding-right: 12px;
     padding-bottom: 15px;
     border-style: none;
     border-color: transparent;
@@ -284,7 +284,7 @@ body {
     text-shadow: none;
     text-align: center;
     justify-content: center;
-    width: 50px;
+    width: 54px;
     /*height: 5%;*/
     color: mediumseagreen;
 }
