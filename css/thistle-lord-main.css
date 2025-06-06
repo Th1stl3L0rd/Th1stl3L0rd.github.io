@@ -260,7 +260,7 @@ body {
     font-weight: bolder;
     text-shadow: none;
     text-align: center;
-    width: 60px;
+    /*width: 60px;*/
     color: mediumseagreen;
 }
 
@@ -284,8 +284,7 @@ body {
     text-shadow: none;
     text-align: center;
     justify-content: center;
-
-    width: 54px;
+    width: 50px;
     /*height: 5%;*/
     color: mediumseagreen;
 }
