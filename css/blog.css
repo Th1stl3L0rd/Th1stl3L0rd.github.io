@@ -1,0 +1,276 @@
+body {
+    background-color: black;
+}
+
+#container {
+    color: white;
+    margin: 2% 3% 2% 3%;
+    display: grid;
+    /*grid-template-rows: 3fr 1fr;*/
+}
+
+#blogTitle {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-row: auto;
+    margin-top: 1%;
+    margin-bottom: 0;
+    background-image: linear-gradient(45deg, mediumvioletred, crimson, red, orangered, orange,
+                                    gold, yellow, lawngreen, green, deepskyblue, dodgerblue,
+                                    indigo, blueviolet, darkviolet, purple, darkmagenta, magenta);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-family: "Cabin Sketch", sans-serif;
+    font-size: 10.5rem;
+    font-weight: 700;
+    font-style: normal;
+    filter: drop-shadow(0px 0px 1px ghostwhite);
+    text-align: center;
+}
+
+#blogNav {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr 1fr 2fr 1fr;
+    grid-row: auto;
+    margin: 1% 1% 0 1%;
+    /*margin-bottom: 0;*/
+    justify-content: center;
+    align-content: center;
+}
+
+#blogNav a {
+    margin: auto;
+    /*margin-top: 1%;*/
+    /*margin-bottom: 0;*/
+    /*justify-content: center;*/
+    /*align-content: center;*/
+    /*padding: 0 1% 0 1%;*/
+    text-decoration: none;
+    text-align: center;
+    color: silver;
+    /*color: #ca76f5;*/
+    font-size: 1.5rem;
+    font-family: "Overlock SC", sans-serif;
+}
+
+#blogNav a:hover {
+    background-image: linear-gradient(45deg, mediumvioletred, crimson, red, orangered, orange,
+    gold, yellow, lawngreen, green, deepskyblue, dodgerblue,
+    indigo, blueviolet, darkviolet, purple, darkmagenta, magenta);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    filter: drop-shadow(0px 20px 10px ghostwhite);
+}
+
+hr {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+    width: 90vw;
+    margin: auto;
+    /*background: linear-gradient(45deg, mediumvioletred, crimson, red, orangered, orange,*/
+    /*gold, yellow, lawngreen, green, deepskyblue, dodgerblue,*/
+    /*indigo, blueviolet, darkviolet, purple, darkmagenta, magenta);*/
+    /*height: 2px;*/
+}
+
+#bodyContainer {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    grid-gap: 10px 10px;
+    width: 90vw;
+    margin: auto;
+    padding: 3% 1% 1% 1%;
+
+}
+
+img {
+    width: 100%;
+}
+
+#alertNews {
+    display: grid;
+    grid-column: 1/3;
+    /*grid-row: 1/2;*/
+    /*border-style: solid;*/
+    /*border-radius: 5px;*/
+    color: aqua;
+    font-family: "Rubik Dirt", sans-serif;
+    font-size: 4rem;
+    margin-bottom: 0;
+    width: 57vw;
+    /*grid-row-gap: 0;*/
+}
+
+/*#latestNewsImage {*/
+/*    width: 100%;*/
+/*}*/
+
+#latestNews {
+    display: grid;
+    grid-column: 1/3;
+    /*grid-row: 2/3;*/
+    width: 57vw;
+    /*height: 80vw;*/
+    /*border-style: solid;*/
+    /*border-radius: 5px;*/
+    color: #ff0999;
+    font-family: "Overlock SC", sans-serif;
+    font-size: 1.5rem;
+    /*border-color: #f32af3;*/
+    /*background-color: dodgerblue;*/
+    /*grid-row: 3;*/
+    /*grid-template-columns: 2fr 1fr;*/
+    /*grid-column: 1/1;*/
+}
+
+/*#bioImage {*/
+
+/*    width: 100%;*/
+/*}*/
+
+#asideContainer {
+    /*display: grid;*/
+    grid-column: 3/4;
+    grid-row: 1/3;
+}
+
+#asideBio {
+    /*display: grid;*/
+    /*grid-column: 3/4;*/
+    /*grid-row: 1/2;*/
+    width: 28vw;
+    /*height: 50vw;*/
+    /*border-style: solid;*/
+    /*border-radius: 5px;*/
+    color: #ca76f5;
+    font-family: "Overlock SC", sans-serif;
+    font-size: 1.5rem;
+    margin-bottom: 3vw;
+    /*background-color: violet;*/
+}
+
+#recentThoughts {
+    /*display: grid;*/
+    /*grid-column: 3/4;*/
+    /*grid-row: 2/3;*/
+    width: 28vw;
+    /*height: 35vw;*/
+    /*border-style: solid;*/
+    /*border-radius: 5px;*/
+    color: chartreuse;
+    font-family: "Overlock SC", sans-serif;
+    font-size: 1.5rem;
+}
+
+#alertRecent {
+    display: grid;
+    grid-column: 1/4;
+    grid-row: 5/5;
+    /*border-style: solid;*/
+    /*border-radius: 5px;*/
+    color: aqua;
+    font-family: "Rubik Dirt", sans-serif;
+    font-size: 4rem;
+    margin-bottom: 0;
+    width: 87vw;
+    /*grid-row-gap: 0;*/
+}
+
+/*#recentArticleContainer {*/
+/*    display: grid;*/
+/*    grid-template-columns: auto auto auto;*/
+/*    grid-template-rows: auto;*/
+/*    grid-gap: 20px;*/
+/*    width: 90vw;*/
+/*    margin: auto;*/
+/*    padding: 3%;*/
+/*}*/
+
+
+/*.recentArticles {*/
+/*    display: grid;*/
+/*}*/
+
+#recentArticleOne {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 6/6;
+    width: 28vw;
+    /*height: 60px;*/
+    /*border-style: solid;*/
+    /*border-radius: 5px;*/
+    color: #ff8000;
+    font-family: "Overlock SC", sans-serif;
+    font-size: 1.5rem;
+}
+
+#recentArticleTwo {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 6/6;
+    width: 28vw;
+    /*border-style: solid;*/
+    /*border-radius: 5px;*/
+    color: #ff0066;
+    font-family: "Overlock SC", sans-serif;
+    font-size: 1.5rem;
+}
+
+#recentArticleThree {
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 6/6;
+    width: 28vw;
+    /*border-style: solid;*/
+    /*border-radius: 5px;*/
+    color: gold;
+    font-family: "Overlock SC", sans-serif;
+    font-size: 1.5rem;
+}
+
+
+h1 {
+    margin: 1% 0 0 0;
+    padding: 0 3% 0 3%;
+
+}
+
+h2 {
+    margin: 1% 0 0 0;
+    padding: 0 3% 0 3%;
+}
+
+h5 {
+    margin: 1% 0 5% 0;
+    padding: 0 3% 0 3%;
+}
+
+p {
+    margin: 0 0 2% 0;
+    padding: 0 3% 0 3%;
+    font-family: "Calibri", sans-serif;
+}
+
+#pOne {
+    color: #ff0999;
+}
+
+#pTwo {
+    color: aqua;
+}
+
+#pThree {
+    color: chartreuse;
+}
+
+#pFour {
+    color: #ca76f5;
+}
+
+#pFive {
+    color: #ff0066;
+}
