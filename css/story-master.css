@@ -157,6 +157,12 @@ img {
     margin-bottom: 15%;
 }
 
+.smallPageBreak {
+    border-style: none;
+    margin: 5% auto;
+    width: 40%;
+}
+
 p {
     margin-bottom: 3rem;
 }

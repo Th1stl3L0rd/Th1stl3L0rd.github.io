@@ -2,28 +2,27 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>The Queer Hermit</title>
+    <title>Home Page | The Queer Hermit</title>
     <link rel="stylesheet" href="css/blog.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin Sketch">
-
-
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shizuru">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik Dirt">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Londrina Shadow">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Londrina Outline">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredericka the Great">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tilt Prism">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sour Gummy">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overlock SC">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black And White Picture">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik Dirt">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Encode Sans">
+
+<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Shizuru">-->
+<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Londrina Shadow">-->
+<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Londrina Outline">-->
+<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fredericka the Great">-->
+<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tilt Prism">-->
+<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sour Gummy">-->
+<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Black And White Picture">-->
+<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">-->
+<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">-->
+<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Archivo">-->
+<!--    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Encode Sans">-->
 
 </head>
 
@@ -31,7 +30,7 @@
 
 <div id="container">
 
-    <h1 id="blogTitle">The Queer Hermit</h1>
+    <a id="titleLink" href="blog.html"><h1 id="blogTitle">The Queer Hermit</h1></a>
 
 <nav id="blogNav">
     <a id="blogFoodLink" href="#">Food</a>
@@ -60,7 +59,7 @@
 <!--                <a id="blogWritingLink" href="#">Writing</a>-->
 <!--            </div>-->
 <!--        </div>-->
-    <a id="blogMiscLink" href="#">Misc.</a>
+    <a id="blogMiscLink" href="blog-pages/misc-page-Blog.html">Misc.</a>
 <!--            <div class="dropdown">-->
 <!--                <button class="dropbtn">Dropdown-->
 <!--                    <i class="fa fa-caret-down"></i>-->
@@ -91,13 +90,14 @@
 
     <div id="bodyContainer">
 
-        <div id="alertNews">What's New</div>
+        <div id="latestNews">What's New</div>
 
-<div id="latestNews">
-    <img id="latestNewsImage" src="/images/Coffe-and-a-good-Book_pexels-photo-2299028.jpeg">
+<div id="featuredArticle">
+    <img id="featuredArticleImage" src="/images/pexels-enginakyurt-2299028.jpg">
+    <cite>Image by Engin Akyurt, pexels.com</cite>
     <h1>The Obligatory First Post</h1>
-    <h5>June 13th 2025</h5>
-    <p>
+    <h5 class="articleDate">June 13th 2025</h5>
+    <p class="articleFirstP">
         Well, it  had to happen, didn’t it? You can’t very well start a blog without
         an initial  post, can you? Hmm… I suppose you could skip the first post and
         proceed to the  second, but then you might lose count along the way. Carry
@@ -246,33 +246,40 @@
 
         <div id="asideContainer">
     <div id="asideBio">
-        <img id="bioImage" src="images/Raven_pexels-photo-20109707.webp">
+        <img id="bioImage" src="images/pexels-robertkso-20109707.jpg">
+        <cite>Image by Robert So, pexels.com</cite>
         <h2>Who is The Queer Hermit?</h2>
-        <p>Once upon a midnight dreary, while I pondered, weak and weary,
-            Over many a quaint and curious volume of forgotten lore—
-            While I nodded, nearly napping, suddenly there came a tapping,
-            As of some one gently rapping, rapping at my chamber door.
-            “’Tis some visitor,” I muttered, “tapping at my chamber door—
-            Only this and nothing more.”</p>
+        <p class="articleFirstP">
+<!--            Joan of Snark, that's who! But you can call me T. Just T. I'm an Old (sort of),-->
+<!--            Neurodivergent, Trans, Queer person that is fed up with the lack of compassion and community in this world.-->
+<!--            I'm here to vent all my frustrations, and you're along for the ride. I might occasionally talk about some-->
+<!--            art or nature, but most of this stuff will be serious. Reader beware! (Oh, I almost forgot. Tap/click the-->
+<!--            image of you want to see my actual face, so you know I'm not a robot, I guess.)-->
+            A Neurodivergent, Trans, Queer person with bit of snark thrown in for good measure. I'm also a parent, a
+            writer, and an artist- when I find the time. This blog is for anyone who just wants to take a break from
+            their own lives and listen to me ramble. Tap/click the photo to see my face if you want, or just keep
+            staring at the raven. There's not much difference either way.
+        </p>
     </div>
 
         <div id="recentThoughts">
-            <img id="recentThoughtsImage" src="images/Thoughts_free-photo-of-colorful-sticky-notes-on-a-wall.jpeg">
+            <img id="recentThoughtsImage" src="images/pexels-vanessa-riecke-492151-30592638.jpg">
+            <cite>Image by Vanessa Riecke, pexels.com</cite>
             <h2>Recent Thoughts</h2>
-            <p>Why is a Raven like a Writing Desk?”</p>
+            <p class="articleFirstP">Why is a Raven like a Writing Desk?”</p>
             <p>Do you KNOW the Muffin Man?</p>
             <p><em>Have You Ever Seen the Rain?!</em></p>
         </div>
         </div>
 
-        <div id="alertRecent">Recent Posts</div>
+        <div id="recentPosts">Recent Posts</div>
 
 <!--        <div id="recentArticleContainer">-->
 
         <div class="recentArticles" id="recentArticleOne">
             <img id="recentArticleOneImage" src="images/Food-Rainbow_pexels-photo-1196516.webp">
             <h2>Older Post 1</h2>
-            <h5>June 1st 2025</h5>
+            <h5 class="articleDate">June 1st 2025</h5>
 <!--            <p>Once upon a midnight dreary, while I pondered, weak and weary,-->
 <!--                Over many a quaint and curious volume of forgotten lore—-->
 <!--                While I nodded, nearly napping, suddenly there came a tapping,-->
@@ -284,7 +291,7 @@
         <div class="recentArticles" id="recentArticleTwo">
             <img id="recentArticleTwoImage" src="images/Palestine_free-photo-of-sticker-with-a-palestinian-flag.jpeg">
             <h2>Older Post 2</h2>
-            <h5>May 24th 2025</h5>
+            <h5 class="articleDate">May 24th 2025</h5>
 <!--            <p>Once upon a midnight dreary, while I pondered, weak and weary,-->
 <!--                Over many a quaint and curious volume of forgotten lore—-->
 <!--                While I nodded, nearly napping, suddenly there came a tapping,-->
@@ -296,7 +303,7 @@
         <div class="recentArticles" id="recentArticleThree">
             <img id="recentArticleThreeImage" src="images/Amigurumi_istockphoto-1587487552-612x612.jpg">
             <h2>Older Post 3</h2>
-            <h5>May 16th 2025</h5>
+            <h5 class="articleDate">May 16th 2025</h5>
 <!--            <p>Once upon a midnight dreary, while I pondered, weak and weary,-->
 <!--                Over many a quaint and curious volume of forgotten lore—-->
 <!--                While I nodded, nearly napping, suddenly there came a tapping,-->
