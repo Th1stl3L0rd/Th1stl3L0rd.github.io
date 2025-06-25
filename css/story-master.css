@@ -167,12 +167,16 @@ p {
     margin-bottom: 3rem;
 }
 
+.firstP {
+    margin-bottom: 2.5rem;
+}
+
 #everyoneFirstP::first-letter {
     font-weight: bold;
     font-size: 15rem;
     float: left;
-    line-height: 1;
-    margin-right: 0.5rem;
+    line-height: .75;
+    margin-right: 1.25rem;
     font-family: Lobster Two, sans-serif;
     color: #d30b83;
     text-shadow: 5px 5px 5px blueviolet;
