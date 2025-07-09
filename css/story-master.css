@@ -159,7 +159,7 @@ img {
 
 .smallPageBreak {
     border-style: none;
-    margin: 5% auto;
+    margin: 10% auto 10% auto;
     width: 50%;
 }
 
@@ -207,7 +207,7 @@ p {
 }
 
 #pBeforeWeasleyLetter {
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
 }
 
 .weasleyLetter {
@@ -217,7 +217,7 @@ p {
 }
 
 #pAfterWeasleyLetter {
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 #storyEndImage {
