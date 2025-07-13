@@ -351,6 +351,153 @@ cite {
     font-size: 1.5rem;
 }
 
+#doodleJanuary {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 4/4;
+    width: 28vw;
+    /*height: 60px;*/
+    /*border-style: solid;*/
+    /*border-radius: 5px;*/
+    color: #ff8000;
+    font-family: "Overlock SC", sans-serif;
+    font-size: 1.5rem;
+}
+
+#doodleFebruary {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 4/4;
+    width: 28vw;
+    /*border-style: solid;*/
+    /*border-radius: 5px;*/
+    color: #ff0066;
+    font-family: "Overlock SC", sans-serif;
+    font-size: 1.5rem;
+}
+
+#doodleMarch {
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 4/4;
+    width: 28vw;
+    /*border-style: solid;*/
+    /*border-radius: 5px;*/
+    color: gold;
+    font-family: "Overlock SC", sans-serif;
+    font-size: 1.5rem;
+}
+
+#doodleApril {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 5/5;
+    width: 28vw;
+    /*border-style: solid;*/
+    /*border-radius: 5px;*/
+    color: gold;
+    font-family: "Overlock SC", sans-serif;
+    font-size: 1.5rem;
+}
+
+#doodleMay {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 5/5;
+    width: 28vw;
+    /*border-style: solid;*/
+    /*border-radius: 5px;*/
+    color: #ff0066;
+    font-family: "Overlock SC", sans-serif;
+    font-size: 1.5rem;
+}
+
+#doodleJune {
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 5/5;
+    width: 28vw;
+    /*border-style: solid;*/
+    /*border-radius: 5px;*/
+    color: gold;
+    font-family: "Overlock SC", sans-serif;
+    font-size: 1.5rem;
+}
+
+#doodleJuly {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 6/6;
+    width: 28vw;
+    /*height: 60px;*/
+    /*border-style: solid;*/
+    /*border-radius: 5px;*/
+    color: #ff8000;
+    font-family: "Overlock SC", sans-serif;
+    font-size: 1.5rem;
+}
+
+#doodleAugust {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 6/6;
+    width: 28vw;
+    /*border-style: solid;*/
+    /*border-radius: 5px;*/
+    color: #ff0066;
+    font-family: "Overlock SC", sans-serif;
+    font-size: 1.5rem;
+}
+
+#doodleSeptember {
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 6/6;
+    width: 28vw;
+    /*border-style: solid;*/
+    /*border-radius: 5px;*/
+    color: gold;
+    font-family: "Overlock SC", sans-serif;
+    font-size: 1.5rem;
+}
+
+#doodleOctober {
+    display: grid;
+    grid-column: 1/2;
+    grid-row: 7/7;
+    width: 28vw;
+    /*height: 60px;*/
+    /*border-style: solid;*/
+    /*border-radius: 5px;*/
+    color: #ff8000;
+    font-family: "Overlock SC", sans-serif;
+    font-size: 1.5rem;
+}
+
+#doodleNovember {
+    display: grid;
+    grid-column: 2/3;
+    grid-row: 7/7;
+    width: 28vw;
+    /*border-style: solid;*/
+    /*border-radius: 5px;*/
+    color: #ff0066;
+    font-family: "Overlock SC", sans-serif;
+    font-size: 1.5rem;
+}
+
+#doodleDecember {
+    display: grid;
+    grid-column: 3/4;
+    grid-row: 7/7;
+    width: 28vw;
+    /*border-style: solid;*/
+    /*border-radius: 5px;*/
+    color: gold;
+    font-family: "Overlock SC", sans-serif;
+    font-size: 1.5rem;
+}
+
 
 h1 {
     margin: 2% 0 0 0;
