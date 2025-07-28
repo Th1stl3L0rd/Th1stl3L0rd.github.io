@@ -206,6 +206,17 @@ p {
     text-shadow: 5px 5px 5px blueviolet;
 }
 
+#shadowSoulFirstP::first-letter {
+    font-weight: bold;
+    font-size: 6rem;
+    float: left;
+    line-height: 1;
+    margin-right: 0.2rem;
+    font-family: Marcellus, sans-serif;
+    color: rgba(0, 128, 0, 0.8);
+    text-shadow: 5px 5px 5px blueviolet;
+}
+
 #pBeforeWeasleyLetter {
     margin-bottom: 3rem;
 }
