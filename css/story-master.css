@@ -217,6 +217,10 @@ p {
     text-shadow: 5px 5px 5px blueviolet;
 }
 
+#biscuitPageBreak {
+    margin-top: 5%;
+}
+
 #pBeforeWeasleyLetter {
     margin-bottom: 3rem;
 }
