@@ -221,19 +221,20 @@ p {
     margin-top: 10%;
 }
 
-#pBeforeWeasleyLetter {
-    margin-bottom: 3rem;
-}
+/*#pBeforeWeasleyLetter {*/
+/*    margin-bottom: 3rem;*/
+/*}*/
 
 .weasleyLetter {
     font-family: Mystery Quest, sans-serif;
-    margin-top: 0;
-    margin-bottom: .75rem;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    line-height: max(2.5rem);
 }
 
-#pAfterWeasleyLetter {
-    margin-top: 3rem;
-}
+/*#pAfterWeasleyLetter {*/
+/*    margin-top: 3rem;*/
+/*}*/
 
 #storyEndImage {
     border-style: none;
