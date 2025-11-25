@@ -1,0 +1,732 @@
+body {
+    background-color: black;
+    font-family: Cinzel, sans-serif;
+    font-size: 1.25rem;
+    color: darkgrey;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 65% 35%;
+    grid-template-rows: 15% 45% 40%;
+    padding: 2%;
+}
+
+#main-photo {
+    display: grid;
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+    height: min-content;
+}
+
+#main-image {
+    width: 90%;
+}
+
+#main-nav {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+/*#brandWordsOne {*/
+/*    font-size: 1rem;*/
+/*}*/
+
+/*#brandWordsTwo {*/
+/*    font-size: 2rem;*/
+/*}*/
+
+#bannerLink {
+    justify-self: right;
+}
+
+#art-Tom-Cantwell_Brand {
+    width: 30vw;
+    padding: 0 0 1% 0;
+
+}
+
+hr {
+    height: 1%;
+    width: 100%;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*background-color: #333333;*/
+}
+
+ul li {
+    float: right;
+    padding: 0 3%;
+}
+
+ul li a {
+    display: block;
+    color: darkgrey;
+    font-size: 1.125rem;
+    text-align: left;
+    padding: 2% 10%;
+    text-decoration: none;
+}
+
+/*ul li a i {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+#activeLink {
+    color: orange;
+    /*text-shadow: none;*/
+}
+
+#activeLink:hover {
+    text-shadow: 0 0 white;
+}
+
+a:hover {
+    color: deepskyblue;
+    text-shadow: 0 0 white;
+    /*filter: drop-shadow(0px 20px 10px ghostwhite);*/
+}
+
+/*#activeLinkPortfolio {*/
+/*    color: orange;*/
+/*    !*text-shadow: none;*!*/
+/*}*/
+
+/*ul li a:hover {*/
+/*    !*background-color: #111111;*!*/
+/*}*/
+
+
+#main-nav ul li ul li {
+    float: none;
+    /*font-family: Roboto, sans-serif;*/
+}
+
+#main-nav ul li ul li a {
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+}
+
+#main-nav ul li ul {
+    display: block;
+    position: absolute;
+    background: none;
+    top: 65px;
+    opacity: 0;
+    /*transition: opacity 0.5s ease-in;*/
+}
+
+#main-nav ul li:hover>ul {
+    display: block;
+    width: 100px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+
+#portfolio-nav ul li ul li {
+    float: none;
+    /*font-family: Roboto, sans-serif;*/
+}
+
+#portfolio-nav ul li ul li a {
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+
+}
+
+/*.dropdown-portfolio:hover {*/
+/*    display: block;*/
+/*    opacity: 1;*/
+/*    !*transition: opacity 0.5s ease-in;*!*/
+/*}*/
+
+#portfolio-nav ul li ul {
+    display: block;
+    position: absolute;
+    background: none;
+    top: 140px;
+    opacity: 0;
+    /*transition: opacity 0.5s ease-in;*/
+}
+
+#portfolio-nav ul li:hover>ul {
+    display: block;
+    width: 100px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+/*#portfolio-nav ul li ul li a:active {*/
+/*    color: orange;*/
+/*}*/
+
+/*#portfolio-nav a:hover {*/
+/*    color: deepskyblue;*/
+/*}*/
+
+
+#about-nav ul li ul li {
+    float: none;
+    /*font-family: Roboto, sans-serif;*/
+}
+
+#about-nav ul li ul li a {
+    font-family: Roboto, sans-serif;
+    font-size: 1rem;
+
+}
+
+
+#about-nav ul li ul {
+    display: block;
+    position: absolute;
+    background: none;
+    top: 140px;
+    opacity: 0;
+    /*transition: opacity 0.5s ease-in;*/
+}
+
+#about-nav ul li:hover>ul {
+    display: block;
+    width: 100px;
+    opacity: 1;
+    transition: opacity 0.5s ease-in;
+}
+
+
+#main-name-container {
+   display: grid;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    grid-auto-flow: dense;
+    /*height: min-content;*/
+    /*align-self: end;*/
+
+    /*text-align: end;*/
+    /*vertical-align: baseline;*/
+}
+
+#bio-name-container {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    grid-auto-flow: dense;
+    margin-top: 150px;
+
+}
+
+/*#bio-h1 {*/
+/*    display: grid;*/
+/*    grid-column: 2 / 3;*/
+/*    grid-row: 3 / 4;*/
+/*}*/
+
+
+.main-name-words {
+    display: grid;
+    text-align: right;
+    margin: 0;
+    line-height: 1.1;
+    /*padding: 0;*/
+    /*vertical-align: text-bottom;*/
+
+}
+
+
+
+#main-name-word-one {
+    font-size: 1.5rem;
+}
+#main-name-word-two {
+    font-size: 1.5rem;
+}
+#main-name-word-three {
+    font-size: 1.5rem;
+}
+#main-name-word-four {
+    font-size: 6rem;
+}
+#main-name-word-five {
+    font-size: 6rem;
+    line-height: 0.8;
+}
+
+#contact-h1 {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.bioP {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.35rem;
+    text-align: justify;
+    padding-top: 5%;
+}
+
+
+.contactP {
+    font-family: Montserrat, sans-serif;
+    font-size: 1.35rem;
+    text-align: justify;
+    margin: 0;
+    /*padding-top: 3%;*/
+    text-decoration: none;
+}
+
+.contactP a {
+    color: deepskyblue;
+}
+
+/*#contact-icons {*/
+/*    display: block;*/
+/*}*/
+
+/*#contact-icons li a {*/
+/*    margin-left: 1%;*/
+/*}*/
+
+#portfolioP {
+    padding-top: 10%;
+    padding-left: 4%;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+#portfolio-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 15% 45% 40%;
+    padding: 2%;
+    /*overflow: hidden;*/
+}
+
+#portfolio-nav {
+    display: grid;
+    grid-column: 1 / 1;
+    grid-row: 1 / 2;
+}
+
+#portfolio-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    /*background-color: #333333;*/
+}
+
+#portfolio-nav ul li {
+    float: right;
+    padding: 0 3%;
+}
+
+#portfolio-nav ul li a {
+    display: block;
+    color: darkgrey;
+    font-size: 1.125rem;
+    text-align: left;
+    padding: 2% 10% 2% 0;
+    text-decoration: none;
+}
+
+/*.btn {*/
+/*    width: 5%;*/
+/*}*/
+
+#portfolio-nav a:hover {
+    color: deepskyblue;
+}
+
+
+
+/*a #activeLinkPortfolio {*/
+/*    color: orange;*/
+/*}*/
+
+/*#activeLinkPortfolio a:active {*/
+/*    color: orange;*/
+/*    text-shadow: none;*/
+/*}*/
+
+#portfolio-title {
+    display: grid;
+    grid-column: 1 / 1;
+    grid-row: 2 / 3;
+    margin-top: 40%;
+    text-align: right;
+    font-size: 2.25rem;
+}
+
+h1 {
+    /*position: absolute;*/
+    /*top: 31%;*/
+    /*left: 12%;*/
+    margin: 0;
+}
+
+
+#portfolio-name-container {
+    display: grid;
+    grid-column: 1 / 1;
+    grid-row: 3 / 4;
+    grid-auto-flow: dense;
+    /*transition: 0.6s ease;*/
+    /*animation: fade 2s;*/
+    /*from {opacity: .1}*/
+    /*to {opacity: 1}*/
+    /*height: min-content;*/
+    /*align-self: end;*/
+
+    /*text-align: end;*/
+    /*vertical-align: baseline;*/
+}
+
+/*.fade-words {*/
+/*    animation-name: fade-words;*/
+/*    animation-duration: 2s;*/
+/*}*/
+
+/*@keyframes fade-words {*/
+/*    from {opacity: .1}*/
+/*    to {opacity: 1}*/
+/*}*/
+
+
+
+.portfolio-name-words {
+    display: grid;
+    text-align: right;
+    margin: 0 2%;
+    line-height: 1.1;
+
+    /*transition: 0.6s ease;*/
+    /*padding: 0;*/
+    /*vertical-align: text-bottom;*/
+
+}
+
+#portfolio-name-word-one {
+    padding-top: 13%;
+    font-size: 3rem;
+}
+#portfolio-name-word-two {
+    font-size: 1.5rem;
+}
+#portfolio-name-word-three {
+    font-size: 1.5rem;
+}
+#portfolio-name-word-four {
+    font-size: 1.5rem;
+}
+
+
+#portfolio-photo {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 1 / 5;
+    height: min-content;
+    margin-left: 5%;
+}
+
+#portfolio-image {
+    width: 90%;
+}
+
+
+
+* {box-sizing: border-box}
+
+.mySlides {display: none}
+
+img {margin: 0; width: 100%}
+
+/* Slideshow container */
+.slideshow-container {
+    max-width: 825px;
+    position: relative;
+    margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: 75px;
+    padding-left: 27px;
+    margin-top: -25px;
+    color: white;
+    font-weight: bold;
+    font-size: 5rem;
+    transition: 0.6s ease;
+    border-radius: 50%;
+    user-select: none;
+}
+
+.prev {
+    left: -75px;
+    border-radius: 10%;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: -75px;
+    border-radius: 10%;
+}
+
+.grow {
+    transition: all 0.2s ease-in-out;
+}
+
+.grow:hover {
+    transform: scale(1.5);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 15px 2px 2px 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.4s ease;
+}
+
+.active, .dot:hover {
+    background-color: deepskyblue;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 2s;
+}
+
+@keyframes fade {
+    from {opacity: .1}
+    to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+    .prev, .next,.text {font-size: 11px}
+}
+
+
+
+
+/** {*/
+/*    box-sizing: border-box;*/
+/*}*/
+
+/* Float four columns side by side */
+.column {
+    float: left;
+    width: 33%;
+    padding:0 25px 0 0;
+}
+
+.column-archives {
+    float: left;
+    width: 50%;
+    padding:0 25px 0 0;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 50px -5px 0 -5px;}
+
+.row-archives {margin: 0 -5px 0 -5px;}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+        display: block;
+        margin-bottom: 20px;
+    }
+}
+
+/* Style the counter cards */
+.card {
+    text-align: center;
+    background-color: transparent;
+}
+
+p {
+    margin-top: 0;
+    padding-bottom: 20px;
+}
+
+.archivesP {
+    margin-top: 0;
+    padding-bottom: 10px;
+}
+
+
+
+#portfolio-event {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 2 / 5;
+    /*height: min-content;*/
+    margin: 0 10%;
+    /*padding: 2% 5%;*/
+    /*background-color: rgba(238, 130, 238, 0.9);*/
+    /*color: white;*/
+    /*border-style: none;*/
+    /*border-radius: 10px;*/
+    height: 15%;
+    overflow: scroll;
+    scrollbar-color: ghostwhite rgba(92, 90, 90, 0.8);
+    scrollbar-width: auto;
+}
+
+.event-item {
+    background-color: rgba(92, 90, 90, 0.8);
+    color: ghostwhite;
+    margin: 0 0 3% 0;
+    padding: 0 5% 5% 5%;
+    width: 95%;
+    /*height: 80%;*/
+    border-style: none;
+    border-radius: 10px;
+}
+
+/*.event-title {*/
+/*    display: inline-block;*/
+/*    width: 100%;*/
+/*}*/
+
+.event-name {
+    display: inline-block;
+    font-size: 2rem;
+    margin-top: 4%;
+}
+
+.event-break {
+    display: inline-block;
+    font-size: 2rem;
+}
+
+.event-place {
+    display: inline-block;
+    font-size: 1.2rem;
+    font-family: Montserrat, sans-serif;
+}
+
+.event-hr {
+    height: 5px;
+    /*color: ghostwhite;*/
+    background-color: ghostwhite;
+    margin-top: -40px;
+    margin-bottom: 35px;
+}
+
+
+
+.year {
+    margin: 0;
+    padding: 0;
+    /*height: 10%;*/
+    font-size: 1.25rem;
+}
+
+.event-title {
+    /*border-bottom-style: solid;*/
+    /*border-color: black;*/
+    /*margin-bottom: -50px;*/
+    /*margin: 0;*/
+    /*padding: 0;*/
+    /*font-family: Montserrat, sans-serif;*/
+    /*height: 30%;*/
+    /*font-size: 2rem;*/
+    /*line-height: 2.1rem;*/
+}
+
+.location {
+    /*display: inline-block;*/
+    /*width: 40%;*/
+    /*height: 25%;*/
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, sans-serif;
+    font-size: 1.15rem;
+}
+
+.event-details {
+    font-family: Montserrat, sans-serif;
+    margin-top: 20px;
+}
+
+.details-list {
+    list-style-type: disc;
+    /*padding-left: 6%;*/
+}
+
+.details-list li {
+    padding: 1% 10% 1% 1%;
+    margin: auto;
+    width: 90%;
+    /*list-style-type: square;*/
+}
+
+/*.archive-cards * {*/
+/*    overflow-y: scroll;*/
+/*    overflow-x: hidden;*/
+/*}*/
+
+.archive-cards {
+    display: grid;
+    grid-column: 2 / 3;
+    grid-row: 1 / 5;
+    /*height: min-content;*/
+    margin: 0 4%;
+    height: 85%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scrollbar-color: ghostwhite rgba(92, 90, 90, 0.8);
+    scrollbar-width: auto;
+
+}
+
+.archive-cards .card {
+    padding: 2%;
+    width: 305px;
+}
+
+#portfolio-title-archives {
+    display: grid;
+    grid-column: 1 / 1;
+    grid-row: 2 / 3;
+    margin-top: 40%;
+    margin-bottom: -10%;
+    text-align: right;
+    font-size: 2.25rem;
+}
+
+/*#popoverCaption {*/
+/*    display: inline-block;*/
+/*}*/
+

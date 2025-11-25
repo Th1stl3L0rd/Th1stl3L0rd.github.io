@@ -1,0 +1,50 @@
+/*The original code was designed by Christopher Aue.*/
+/*https://christopheraue.net/design/fading-pages-on-load-and-unload*/
+
+/*I have adjusted the code to suit my personal preferences, but most of it remains in its original state.*/
+
+/*YOU MUST USE:   <svg id="fader"></svg>    IN THE BODY OF THE HTML.*/
+/*IT MUST BE THE FIRST LINE OF CODE OR THE EFFECT WILL NOT WORK!*/
+/*YOU MUST IMPORT THIS css FILE: <link rel="stylesheet" href="page-fade-to-black.css"> INTO THE HEAD!*/
+/*DO NOT FORGET TO IMPORT THE ACCOMPANYING JS FILE  < script src = "page-fade-to-black.js" > < /script>  IN THE HEAD!*/
+/*THIS JS FILE MUST BE FIRST IN THE HEAD BEFORE ANY OTHER SCRIPT, UNLESS ANOTHER SCRIPT IN NECESSARY TO LOAD THE PAGE!*/
+
+/*This CSS was finalized on April 12th 2025 by Trista Fedoruk*/
+
+
+/* Positions the element above everything else in the body while also covering it entirely
+ and assigns animation properties */
+#fader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+    pointer-events: none;
+    background: black;
+    animation-duration: .5s;
+    animation-timing-function: ease-in;
+}
+
+/* keyframes are assigned to the elements listed below. They define the fade in
+ and fade out effects. */
+@keyframes fade-out {
+    from { opacity: 1 }
+    to { opacity: 0 }
+}
+
+@keyframes fade-in {
+    from { opacity: 0 }
+    to { opacity: 1 }
+}
+
+#fader.fade-out {
+    opacity: 0;
+    animation-name: fade-out;
+}
+
+#fader.fade-in {
+    opacity: 1;
+    animation-name: fade-in;
+}

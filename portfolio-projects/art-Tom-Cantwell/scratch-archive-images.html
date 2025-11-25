@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scratch Abstract | Archives | The Art of Tom Cantwell</title>
+    <script src="/scripts/page-fade-to-black.js"></script>
+    <link rel="stylesheet" href="/css/quick-fade.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cinzel">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quicksand">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+
+    <style>
+        #mypopover{
+            width: 100vw;
+            background-color: rgba(0, 0, 0, 0.7);
+            /*background-image: radial-gradient(black);*/
+        /*radial-gradient(red)*/
+            /*background: radial-gradient(*/
+            /*        circle at 100%,*/
+            /*        !*#333333,*!*/
+            /*        !*#333333 50%,*!*/
+            /*        !*#eeeeee 75%,*!*/
+            /*        black 0%*/
+            ;
+            /*background-image: radial-gradient();*/
+            /*background-color: transparent;*/
+            /*padding: 0;*/
+            /*width: 58%*/
+            /*height: 80vh;*/
+        }
+
+        #inner-popover {
+            padding: 0;
+            width: 58%;
+            margin: auto;
+
+        }
+
+        #popoverCaption {
+            display: flex;
+            justify-content: center;
+            /*width: 80%;*/
+            /*margin-right: auto;*/
+            /*margin-left: auto;*/
+            font-size: 1.25rem;
+            /*padding-top: 1%;*/
+            padding: 0 2%;
+            background-color: rgba(92, 90, 90);
+            color: white;
+            border-style: none;
+            border-radius: 10px;
+            width: auto;
+        }
+
+        #popoverCaption span {
+            /*align-self: flex-end;*/
+            padding: 0 2%;
+            /*background-color: rgba(92, 90, 90);*/
+            /*color: white;*/
+
+        }
+
+        #caption-title {
+            /*margin-top: 2%;*/
+            /*align-self: flex-end;*/
+            /*font-family: Montserrat sans-serif;*/
+            font-size: 2rem;
+            font-weight: bolder;
+            /*font-style: italic;*/
+            /*color: deepskyblue;*/
+            /*text-shadow: 3px 0 orange;*/
+            /*border-style: none;*/
+            /*border-top-left-radius: 10px;*/
+            /*border-bottom-left-radius: 10px;*/
+            /*padding: 0;*/
+            /*padding-top: 0;*/
+            /*padding-bottom: 0;*/
+        }
+
+        #caption-medium, #caption-size, #caption-year {
+            margin-top: 1%;
+            /*margin: auto;*/
+            /*padding-top: 5%;*/
+        }
+
+        /*#caption-year {*/
+        /*    margin-top: -5%;*/
+        /*    !*border-style: none;*!*/
+        /*    !*border-top-right-radius: 10px;*!*/
+        /*    !*border-bottom-right-radius: 10px;*!*/
+        /*    !*margin: auto;*!*/
+        /*    !*padding-top: 5%;*!*/
+        /*}*/
+
+
+
+    </style>
+
+
+</head>
+
+<body>
+
+<svg id="fader"></svg>
+<script>
+    fadeInPage();
+</script>
+
+<div id="portfolio-container">
+
+    <div popover id="mypopover">
+        <div id="inner-popover">
+        <img id="popoverImage">
+        <div id="popoverCaption">
+            <span id="caption-title">The Lake</span>
+            <span id="caption-medium">Oil on Canvas</span>
+            <span id="caption-size">24"x30"</span>
+            <span id="caption-year">2024</span>
+        </div>
+    </div>
+    </div>
+
+    <nav id="portfolio-nav">
+        <a id="bannerLink" href="index.html">
+            <img id="art-Tom-Cantwell_Brand" src="images/The-Art-of-Tom-Cantwell_Website_Brand_1883x169.png">
+        </a>
+        <hr>
+        <ul>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="about.html">About</a></li>
+            <li>
+                <a href="portfolio.html" class="dropdown-portfolio" style="color: orange">Portfolio</a>
+                <ul>
+                    <li><a href="abstract.html">Abstract</a></li>
+                    <li><a href="figures.html">Figures</a></li>
+                    <li><a href="landscape.html">Landscape</a></li>
+                    <li><a href="still-life.html">Still Life</a></li>
+                    <li><a href="exhibits.html">Exhibits</a></li>
+                    <li><a href="archives.html" id="activeLink" style="color: orange">Archives</a></li>
+                </ul>
+            </li>
+            <li><a href="index.html">Home</a></li>
+
+        </ul>
+    </nav>
+
+    <div id="portfolio-title-archives">
+        <h1>Archives</h1>
+        <p>Abstract</p>
+    </div>
+
+    <div id="portfolio-name-container">
+        <p id="portfolioP">Complete abstract oil on canvas collection spanning more than 20 years of artwork.
+            Tap or click an image for more information.</p>
+    </div>
+
+    <div class="archive-cards">
+
+        <div class="row">
+
+
+            <div class="column">
+                <div class="card">
+
+                    <img data-id="1" src="images/Main_Image_Art_of_Tom_Cantwell_993x693.png" alt="Archives">
+
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img data-id="2" src="images/La%20Barque%20Atelier%201876%20Claude%20Monet_993x693.jpg" alt="Archives">
+
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img data-id="3" src="images/Main_Image_Art_of_Tom_Cantwell_993x693.png" alt="Archives">
+
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img data-id="4" src="images/Main_Image_Art_of_Tom_Cantwell_993x693.png" alt="Archives">
+
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img data-id="5" src="images/Main_Image_Art_of_Tom_Cantwell_993x693.png" alt="Archives">
+
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img data-id="6" src="images/Main_Image_Art_of_Tom_Cantwell_993x693.png" alt="Archives">
+
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img data-id="7" src="images/Main_Image_Art_of_Tom_Cantwell_993x693.png" alt="Archives">
+
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img data-id="8" src="images/Main_Image_Art_of_Tom_Cantwell_993x693.png" alt="Archives">
+
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="card">
+                    <img data-id="9" src="images/Main_Image_Art_of_Tom_Cantwell_993x693.png" alt="Archives">
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script>
+    const popover = document.getElementById("mypopover");
+
+    popover.addEventListener("click", function() {
+        popover.hidePopover();
+    });
+
+    const paintingImages = document.querySelectorAll(".card img");
+
+    console.log(paintingImages);
+
+    paintingImages.forEach(function(elem) {
+            elem.addEventListener("click", function() {
+                popover.showPopover();
+                popover.querySelector("#popoverImage").setAttribute("src",elem.getAttribute("src"));
+            });
+        }
+    );
+
+
+
+
+
+    // document.addEventListener("keydown", (event) => {
+    //     if (event.key === "h") {
+    //         popover.showPopover();
+    //     }
+    // });
+</script>
+
+
+
+</body>
+
+</html>

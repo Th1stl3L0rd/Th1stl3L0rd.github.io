@@ -1,0 +1,20 @@
+{
+  "lake": {
+    "title": "Lake",
+    "medium": "Oil on Canvas",
+    "size": "24\"x30\"",
+    "year": "2024"
+  },
+  "meadow": {
+    "title": "Meadow",
+    "medium": "Oil on Canvas",
+    "size": "24\"x36\"",
+    "year": "1924"
+  },
+  "field": {
+    "title": "Field",
+    "medium": "Oil on Canvas",
+    "size": "30\"x36\"",
+    "year": "1925"
+  }
+}
