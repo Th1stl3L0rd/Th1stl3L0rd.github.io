@@ -1,20 +1,457 @@
 {
-  "lake": {
-    "title": "Lake",
+  "abstract-1": {
+    "title": "Abstract 1",
     "medium": "Oil on Canvas",
     "size": "24\"x30\"",
-    "year": "2024"
+    "year": "2008",
+    "filename": "Abstract_1_Dim.Unknown_797x1000_Bright-Contr30-15_DSC00382r.png"
   },
-  "meadow": {
-    "title": "Meadow",
+  "abstract-2": {
+    "title": "Abstract 2",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Abstract_2_Dim.Unknown_1000x800_Bright-Contr10_DSC04066.png"
+  },
+  "abstract-3": {
+    "title": "Interior",
+    "medium": "Oil on Canvas",
+    "size": "16\"x20\"",
+    "year": "N/A",
+    "filename": "Abstract_3_16x20_790x1000_#680_Interior_16x20_TRC.png"
+  },
+  "abstract-4": {
+    "title": "Abstract 4",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Abstract_4_Dim.Unknown_794x1000_Bright-Contr15-10_DSC00396r.png"
+  },
+  "abstract-5": {
+    "title": "Abstract 5",
     "medium": "Oil on Canvas",
     "size": "24\"x36\"",
-    "year": "1924"
+    "year": "N/A",
+    "filename": "Abstract_5_24x36_662x1000_Bright-Contr10_DSC_0126.png"
   },
-  "field": {
-    "title": "Field",
+  "abstract-6": {
+    "title": "Abstract 6",
     "medium": "Oil on Canvas",
-    "size": "30\"x36\"",
-    "year": "1925"
+    "size": "24\"x36\"",
+    "year": "N/A",
+    "filename": "Abstract_6_24x36_1000x667_Bright-Contr10_DSC_0138.png"
+  },
+  "abstract-7": {
+    "title": "Landscape with Trees",
+    "medium": "Oil on Canvas",
+    "size": "18\"x24\"",
+    "year": "N/A",
+    "filename": "Abstract_7_18x24_749x1000_Bright-Contr10_#691_Landscape with Trees_18x24_TRC.png"
+  },
+  "abstract-8": {
+    "title": "Abstract 8",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Abstract_8_Dim.Unknown_790x1000_Bright-Contr20-10_DSC_0812.png"
+  },
+  "abstract-9": {
+    "title": "Abstract 9",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Abstract_9_Dim.Unknown_797x1000_Bright-Contr20-10_DSC00409r.png"
+  },
+  "abstract-10": {
+    "title": "Abstract 10",
+    "medium": "Oil on Canvas",
+    "size": "24\"x30\"",
+    "year": "N/A",
+    "filename": "Abstract_10_24x36_1000x664_Bright-Contr10_DSC_0137.png"
+  },
+  "abstract-11": {
+    "title": "Abstract 11",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Abstract_11_Dim.Unknown_793x1000_Bright-Contr15-30_DSC00387r.png"
+  },
+  "abstract-12": {
+    "title": "Abstract 12",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Abstract_12_Dim.Unknown_803x1000_Bright-Contr25-10_DSC00386r.png"
+  },
+  "abstract-13": {
+    "title": "Abstract 13",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Abstract_13_Dim.Unknown_998x1000_Bright-Contr20-10_DSC00414r.png"
+  },
+  "abstract-14": {
+    "title": "Abstract 14",
+    "medium": "Oil on Canvas",
+    "size": "24\"x30\"",
+    "year": "N/A",
+    "filename": "Abstract_14_24x36_663x1000_Bright-Contr10_DSC_0135.png"
+  },
+  "figure-1": {
+    "title": "Figure 1",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Figure_1_Dim.Unknown_994x1000_DSC00401r.png"
+  },
+  "figure-2": {
+    "title": "Figure 2",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Figure_2_Dim.Unknown_737x1000_DSC00447r.png"
+  },
+  "figure-3": {
+    "title": "Figure 3",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Figure_3_Dim.Unknown_743x1000_DSC00400r.png"
+  },
+  "figure-4": {
+    "title": "Figure 4",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Figure_4_Dim.Unknown_811x1000_DSC_0859.png"
+  },
+  "figure-5": {
+    "title": "Figure 5",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Figure_5_Dim.Unknown_1000x776_DSC_0844.png"
+  },
+  "figure-6": {
+    "title": "Figure 6",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Figure_6_Dim.Unknown_1000x711_Bright-Contr25-40_DSC06330-10.png"
+  },
+  "figure-7": {
+    "title": "Figure 7",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Figure_7_Dim.Unknown_1000x745_DSC05715.png"
+  },
+  "figure-8": {
+    "title": "Figure 8",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Figure_8_Dim.Unknown_743x1000_DSC00448r.png"
+  },
+  "figure-9": {
+    "title": "Figure 9",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Figure_9_Dim.Unknown_1000x792_DSC04067.png"
+  },
+  "figure-10": {
+    "title": "Figure 10",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Figure_10_Dim.Unknown_739x1000_DSC00398r.png"
+  },
+  "figure-11": {
+    "title": "Figure 11",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Figure_11_Dim.Unknown_1000x729_DSC05718.png"
+  },
+  "figure-12": {
+    "title": "Figure 12",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Figure_12_Dim.Unknown_1000x833_Bright-Contr20_DSC05712.png"
+  },
+  "figure-13": {
+    "title": "Figure 13",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Figure_13_Dim.Unknown_749x1000_DSC00446r.png"
+  },
+  "figure-14": {
+    "title": "Figure 14",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Figure_14_Dim.Unknown_1000x802_Bright-Contr20_DSC05716.png"
+  },
+  "figure-15": {
+    "title": "Figure 15",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Figure_15_Dim.Unknown_748x1000_DSC00449r.png"
+  },
+  "figure-16": {
+    "title": "Figure 16",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Figure_16_Dim.Unknown_734x1000_DSC00443r.png"
+  },
+  "figure-17": {
+    "title": "Figure 17",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Figure_17_Dim.Unknown_1000x727_Bright-Contr50-40_DSC06384-60.png"
+  },
+  "figure-18": {
+    "title": "The Way",
+    "medium": "Oil on Canvas",
+    "size": "18\"x24\"",
+    "year": "N/A",
+    "filename": "Figure_18_18x24_739x1000_Bright-Contr10_#683_The Way_18x24_TRC.png"
+  },
+  "landscape-1": {
+    "title": "Landscape 1",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Landscape_1_Dim.Unknown_1000x698.png"
+  },
+  "landscape-2": {
+    "title": "Landscape 2",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Landscape_2_Dim.Unknown_1000x751_Bright-Contr20_DSC05708.png"
+  },
+  "landscape-3": {
+    "title": "Landscape 3",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Landscape_3_Dim.Unknown_1000x660_Bright-Contr20-10_DSC00406r.png"
+  },
+  "landscape-4": {
+    "title": "Landscape 4",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Landscape_4_Dim.Unknown_1000x834_DSC00444r.png"
+  },
+  "landscape-5": {
+    "title": "Landscape 5",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Landscape_5_Dim.Unknown_1000x792_DSC_0808.png"
+  },
+  "landscape-6": {
+    "title": "Landscape 6",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Landscape_6_Dim.Unknown_792x1000_DSC_0810.png"
+  },
+  "landscape-7": {
+    "title": "Landscape 7",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Landscape_7_Dim.Unknown_1000x789_DSC_0811.png"
+  },
+  "landscape-8": {
+    "title": "Landscape 8",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Landscape_8_Dim.Unknown_1000x741_Bright-Contr30-25_DSC_0822.png"
+  },
+  "landscape-9": {
+    "title": "Landscape 9",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Landscape_9_Dim.Unknown_771x1000_DSC_0849.png"
+  },
+  "landscape-10": {
+    "title": "Landscape 10",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Landscape_10_Dim.Unknown_813x1000_DSC00441r.png"
+  },
+  "landscape-11": {
+    "title": "Landscape 11",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Landscape_11_Dim.Unknown_753x1000_Bright-Contr20-15_DSC_0799.png"
+  },
+  "landscape-12": {
+    "title": "Landscape 12",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Landscape_12_Dim.Unknown_1000x743_DSC04073.png"
+  },
+  "landscape-13": {
+    "title": "Landscape 13",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Landscape_13_Dim.Unknown_1000x744_Bright-Contr20_DSC04071.png"
+  },
+  "landscape-14": {
+    "title": "Landscape 14",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Landscape_14_Dim.Unknown_1000x762_Bright-Contr20_DSC05710.png"
+  },
+  "landscape-15": {
+    "title": "Landscape 15",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Landscape_15_Dim.Unknown_1000x737_Bright-Contr20-15_DSC05707.png"
+  },
+  "landscape-16": {
+    "title": "Landscape 16",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Landscape_16_Dim.Unknown_788x1000_DSC_0855.png"
+  },
+  "still-life-1": {
+    "title": "Still life 1",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Still-Life_1_Dim.Unknown_1000x704_DSC00417r.png"
+  },
+  "still-life-2": {
+    "title": "Still life 2",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Still-Life_2_Dim.Unknown_781x1000_DSC00422r.png"
+  },
+  "still-life-3": {
+    "title": "Still life 3",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Still-Life_3_Dim.Unknown_1000x781_DSC00425r.png"
+  },
+  "still-life-4": {
+    "title": "Still life 4",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Still-Life_4_Dim.Unknown_708x1000_Bright-Contr10_DSC00427r.png"
+  },
+  "still-life-5": {
+    "title": "Still life 5",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Still-Life_5_Dim.Unknown_689x1000_DSC00433r.png"
+  },
+  "still-life-6": {
+    "title": "Still life 6",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Still-Life_6_Dim.Unknown_791x1000_Bright-Contr20_DSC_0815.png"
+  },
+  "still-life-7": {
+    "title": "Still life 7",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Still-Life_7_Dim.Unknown_1000x779_Bright-Contr15-10_DSC_0814.png"
+  },
+  "still-life-8": {
+    "title": "Still life 8",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Still-Life_8_Dim.Unknown_753x1000_DSC00430r.png"
+  },
+  "still-life-9": {
+    "title": "Still life 9",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Still-Life_9_Dim.Unknown_771x1000_DSC00437r.png"
+  },
+  "still-life-10": {
+    "title": "Still life 10",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Still-Life_10_Dim.Unknown_1000x746_DSC00431r.png"
+  },
+  "still-life-11": {
+    "title": "Still life 11",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Still-Life_11_Dim.Unknown_1000x794_DSC00420r.png"
+  },
+  "still-life-12": {
+    "title": "Still life 12",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Still-Life_12_Dim.Unknown_774x1000_DSC00439r.png"
+  },
+  "still-life-13": {
+    "title": "Still life 13",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Still-Life_13_Dim.Unknown_1000x786_DSC00424r.png"
+  },
+  "still-life-14": {
+    "title": "Still life 14",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Still-Life_14_Dim.Unknown_772x1000_DSC00438r.png"
+  },
+  "still-life-15": {
+    "title": "Still life 15",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Still-Life_15_18x24_1000x739_Bright-Contr10_DSC08955-472.png"
+  },
+  "still-life-16": {
+    "title": "Still life 16",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Still-Life_16_Dim.Unknown_775x1000_DSC_0804.png"
+  },
+  "still-life-17": {
+    "title": "Still life 17",
+    "medium": "Oil on Canvas",
+    "size": "N/A",
+    "year": "N/A",
+    "filename": "Still-Life_17_Dim.Unknown_1000x751_Bright-Contr20_DSC06331-11.png"
   }
 }

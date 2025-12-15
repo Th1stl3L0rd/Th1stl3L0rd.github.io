@@ -306,6 +306,7 @@ a:hover {
     text-align: justify;
 }
 
+
 #portfolio-container {
     display: grid;
     grid-template-columns: 30% 70%;
@@ -368,6 +369,9 @@ a:hover {
     margin-top: 40%;
     text-align: right;
     font-size: 2.25rem;
+    font-family: Cinzel, sans-serif;
+    color: rgba(248, 248, 255, 0.27);
+    /*text-shadow: 2px 2px whitesmoke;*/
 }
 
 h1 {
@@ -383,6 +387,7 @@ h1 {
     grid-column: 1 / 1;
     grid-row: 3 / 4;
     grid-auto-flow: dense;
+    font-family: Montserrat, sans-serif;
     /*transition: 0.6s ease;*/
     /*animation: fade 2s;*/
     /*from {opacity: .1}*/
@@ -410,7 +415,7 @@ h1 {
     display: grid;
     text-align: right;
     margin: 0 2%;
-    line-height: 1.1;
+    line-height: .5;
 
     /*transition: 0.6s ease;*/
     /*padding: 0;*/
@@ -419,17 +424,19 @@ h1 {
 }
 
 #portfolio-name-word-one {
-    padding-top: 13%;
-    font-size: 3rem;
+    padding-top: 15%;
+    padding-bottom: 5%;
+    font-size: 2.75rem;
+    color: deepskyblue;
 }
 #portfolio-name-word-two {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 #portfolio-name-word-three {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 #portfolio-name-word-four {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
 }
 
 
@@ -449,9 +456,43 @@ h1 {
 
 * {box-sizing: border-box}
 
-.mySlides {display: none}
+.mySlides {
+    display: none;
+    height: 85vh;
+}
 
-img {margin: 0; width: 100%}
+img {
+    margin: 0;
+    width: 100%;
+}
+
+.mySlides img {
+    height: 100%;
+    width: auto;
+}
+
+.mySlides.oversizedLandscape img {
+    width: 100%;
+    height: auto;
+    margin-top: 5%;
+}
+
+#landscape1 img {
+    height: 90%;
+    /*width: 98%;*/
+    /*margin-top: 0;*/
+    /*height: 85vw;*/
+    /*margin-bottom: 5%;*/
+}
+
+
+/*#abstract6 {*/
+/*    width: 100%;*/
+/*    height: auto;*/
+/*    margin-top: 7%;*/
+/*}*/
+
+
 
 /* Slideshow container */
 .slideshow-container {
