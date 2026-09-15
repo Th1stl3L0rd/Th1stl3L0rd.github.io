@@ -90,12 +90,12 @@ img {
     margin-bottom: 0;
 }
 
-#wonkaHat {
-    border: none;
-    width: 200px;
-    margin-top: 0;
-    margin-bottom: 0;
-}
+/*#wonkaHat {*/
+/*    border: none;*/
+/*    width: 100px;*/
+/*    margin-top: 0;*/
+/*    margin-bottom: 0;*/
+/*}*/
 
 .bookmarked {
     background-image: url('../images/smoke.png');
