@@ -252,13 +252,13 @@ p {
 
 #wonkaFirstP::first-letter {
     font-weight: bold;
-    font-size: 15rem;
+    font-size: 13rem;
     float: left;
     line-height: 1;
     margin-right: 0.2rem;
     font-family: "Metamorphous", sans-serif;
-    color: #934817;
-    text-shadow: 5px 5px 5px blueviolet;
+    color: darkviolet;
+    text-shadow: 5px 5px 5px deeppink;
 }
 
 #biscuitPageBreak {
