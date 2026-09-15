@@ -546,3 +546,18 @@ p {
 #pFive {
     color: #ff0066;
 }
+
+
+
+/*@media screen and (max-width: 768px) {*/
+/*    #blogTitle {*/
+/*        font-size: 5rem;*/
+/*    }*/
+/*}*/
+
+/*@media screen and (max-width: 480px) {*/
+/*    #blogTitle {*/
+/*        font-size: 2.8rem;*/
+
+/*    }*/
+/*}*/

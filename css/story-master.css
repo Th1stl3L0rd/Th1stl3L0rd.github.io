@@ -31,11 +31,17 @@ a {
     color: black;
     text-decoration: none;
     text-shadow:
-            2px 2px 2px limegreen,
-            3px 3px 3px limegreen,
+            1px 1px 1px violet,
+            2px 2px 2px violet,
+            3px 3px 3px magenta,
             4px 4px 4px darkviolet,
-            5px 5px 5px darkviolet,
-            6px 6px 6px darkmagenta;
+            5px 5px 5px darkmagenta;
+    /*text-shadow:*/
+    /*        2px 2px 2px limegreen,*/
+    /*        3px 3px 3px limegreen,*/
+    /*        4px 4px 4px darkviolet,*/
+    /*        5px 5px 5px darkviolet,*/
+    /*        6px 6px 6px darkmagenta;*/
     border-style: none;
     border-radius: 25px;
     padding: .5rem;
@@ -146,6 +152,28 @@ img {
     margin: auto;
 }
 
+#wonkaQuote {
+    font-family: "Aptos", sans-serif;
+    font-size: 14pt;
+    font-weight: bolder;
+    color: steelblue;
+    text-align: center;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    border-color: steelblue;
+    margin-bottom: 2.5rem;
+    padding: 2%;
+}
+
+#wonkaQuote p {
+    margin: auto;
+}
+
+#inWeGo {
+    font-family: "Berkshire Swash", sans-serif;
+    font-size: 14pt;
+}
+
 .chapterTitle {
     font-size: 7rem;
     text-align: center;
@@ -217,8 +245,35 @@ p {
     text-shadow: 5px 5px 5px blueviolet;
 }
 
+#wonkaFirstP {
+    font-size: 2.4rem;
+    margin-bottom: 2rem;
+}
+
+#wonkaFirstP::first-letter {
+    font-weight: bold;
+    font-size: 15rem;
+    float: left;
+    line-height: 1;
+    margin-right: 0.2rem;
+    font-family: "Metamorphous", sans-serif;
+    color: #934817;
+    text-shadow: 5px 5px 5px blueviolet;
+}
+
 #biscuitPageBreak {
     margin-top: 10%;
+}
+
+
+
+#candyManSong {
+    font-family: Harrington, sans-serif;
+    margin: 5% 25% 5% 25%;
+    text-align: center;
+    /*margin-top: 10%;*/
+    /*margin-bottom: 10%;*/
+    /*line-height: max(2.5rem);*/
 }
 
 /*#pBeforeWeasleyLetter {*/
@@ -235,6 +290,28 @@ p {
 /*#pAfterWeasleyLetter {*/
 /*    margin-top: 3rem;*/
 /*}*/
+
+.wonkaLetter {
+    font-family: "Berkshire Swash", sans-serif;
+    /*margin-top: 10%;*/
+    /*margin-bottom: 10%;*/
+    line-height: max(2.5rem);
+}
+
+#paradiseSong {
+    font-family: "Berkshire Swash", sans-serif;
+    margin: 5% 20% 5% 20%;
+    text-align: center;
+    /*margin-top: 10%;*/
+    /*margin-bottom: 10%;*/
+    /*line-height: max(2.5rem);*/
+}
+
+.screenPlayNotes {
+    font-family: "Courier New", sans-serif;
+    margin: 5% 10% 5% 10%;
+
+}
 
 #storyEndImage {
     border-style: none;
